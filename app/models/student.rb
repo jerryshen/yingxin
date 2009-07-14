@@ -13,4 +13,19 @@ class Student < ActiveRecord::Base
     end
     return hash.to_json
   end
+
+  #import students to all steps and proces
+  def self.import_to_steps
+    students = self.all
+    students.each do |s|
+      Step1.create(:student_id => s.id)
+      Step2.create(:student_id => s.id)
+      Step3.create(:student_id => s.id)
+      Step4.create(:student_id => s.id)
+      Step5.create(:student_id => s.id)
+      Step6.create(:student_id => s.id)
+      Step7.create(:student_id => s.id)
+      Proce.create(:student_id => s.id)
+    end
+  end
 end

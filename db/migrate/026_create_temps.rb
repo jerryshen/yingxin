@@ -6,8 +6,8 @@ class CreateTemps < ActiveRecord::Migration
       t.string :f2
       t.string :f3
       t.string :f4
-      t.string :f5
-      t.string :f6
+      t.float  :f5
+      t.float  :f6
       t.string :f7
       t.string :f8
       t.string :f9

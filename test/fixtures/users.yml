@@ -1,0 +1,13 @@
+--- 
+users_001: 
+  name: !binary |
+    57O757uf566h55CG5ZGY
+
+  created_at: 2009-06-09 09:57:08
+  theme: ext-all
+  updated_at: 2009-06-24 01:33:24
+  id: "1"
+  gender: m
+  login_id: marco
+  password: 7c4a8d09ca3762af61e59520943dc26494f8941b
+  department_id: "1"

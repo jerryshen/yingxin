@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  room: 
+  bed: MyString
+  student: 
+
+two:
+  room: 
+  bed: MyString
+  student: 

@@ -1,0 +1,151 @@
+--- 
+pages_008: 
+  name: !binary |
+    57O757uf5Y+C5pWw6YWN572u
+
+  created_at: 2009-06-14 08:41:20
+  updated_at: 2009-06-16 09:14:56
+  url: /app_configs
+  id: "8"
+  icon: syssetting.png
+  function: !binary |
+    57O757uf5Y+C5pWw6YWN572u
+
+  index: 
+  page_module_id: "3"
+  hidden: f
+pages_009: 
+  name: !binary |
+    5L+u5pS55a+G56CB
+
+  created_at: 2009-06-16 06:53:13
+  updated_at: 2009-07-09 07:14:35
+  url: /users/change_my_password
+  id: "9"
+  icon: key.png
+  function: !binary |
+    5L+u5pS55a+G56CB
+
+  index: 
+  page_module_id: "4"
+  hidden: f
+pages_010: 
+  name: !binary |
+    5p+l55yL5Liq5Lq65L+h5oGv
+
+  created_at: 2009-06-16 06:56:30
+  updated_at: 2009-07-09 07:14:24
+  url: /users/my_profile
+  id: "10"
+  icon: userinfo.png
+  function: !binary |
+    5p+l55yL5Liq5Lq65L+h5oGv
+
+  index: 
+  page_module_id: "4"
+  hidden: f
+pages_001: 
+  name: !binary |
+    566h55CG5ZGY
+
+  created_at: 2009-06-02 03:46:41
+  updated_at: 2009-07-09 05:19:21
+  url: /users
+  id: "1"
+  icon: userinfo.png
+  function: !binary |
+    566h55CG5ZGY
+
+  index: 
+  page_module_id: "2"
+  hidden: f
+pages_002: 
+  name: !binary |
+    6Zmi57O75Y+K6YOo6Zeo
+
+  created_at: 2009-06-02 03:57:51
+  updated_at: 2009-06-09 17:02:36
+  url: /departments
+  id: "2"
+  icon: department.png
+  function: !binary |
+    5rWL6K+VIOezu+mDqOWfuuacrOS/oeaBr+euoeeQhg==
+
+  index: 
+  page_module_id: "2"
+  hidden: f
+pages_003: 
+  name: !binary |
+    5qih5Z2X
+
+  created_at: 2009-06-09 03:25:05
+  updated_at: 2009-06-09 16:59:03
+  url: /page_modules
+  id: "3"
+  icon: module.png
+  function: !binary |
+    6aG16Z2i5qih5Z2X566h55CG
+
+  index: 
+  page_module_id: "1"
+  hidden: f
+pages_004: 
+  name: !binary |
+    5Yqf6IO9
+
+  created_at: 2009-06-09 03:25:44
+  updated_at: 2009-06-09 16:59:13
+  url: /pages
+  id: "4"
+  icon: page.png
+  function: !binary |
+    6aG16Z2i566h55CG
+
+  index: 
+  page_module_id: "1"
+  hidden: f
+pages_005: 
+  name: !binary |
+    6KeS6Imy
+
+  created_at: 2009-06-09 03:26:12
+  updated_at: 2009-06-09 17:04:40
+  url: /roles
+  id: "5"
+  icon: role.png
+  function: !binary |
+    6KeS6Imy566h55CG
+
+  index: 
+  page_module_id: "1"
+  hidden: f
+pages_006: 
+  name: !binary |
+    6KeS6Imy5p2D6ZmQ5YiG6YWN
+
+  created_at: 2009-06-09 03:26:39
+  updated_at: 2009-06-09 16:58:30
+  url: /page_roles
+  id: "6"
+  icon: range.png
+  function: !binary |
+    6aG16Z2i77yN6KeS6Imy566h55CG
+
+  index: 
+  page_module_id: "1"
+  hidden: f
+pages_007: 
+  name: !binary |
+    55So5oi36KeS6Imy6K6+5a6a
+
+  created_at: 2009-06-09 03:27:25
+  updated_at: 2009-06-09 16:58:46
+  url: /role_users
+  id: "7"
+  icon: user-role.png
+  function: !binary |
+    6KeS6Imy77yN55So5oi3566h55CG
+
+  index: 
+  page_module_id: "1"
+  hidden: f

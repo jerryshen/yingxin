@@ -1,6 +1,13 @@
 <% form_for(@student) do |f| %>
   <fieldset>
     <legend>修改新生</legend>
+    <p>
+      <img id="student_thumb" src="<%= @student.thumb_url %>" alt="用户头像" style="width:150px; height:100px;" />
+    </p>
+	<div id="uploading" style="display:none">
+	  	图片上传中...
+	</div
+    <iframe id="upload_iframe" src="/students/upload_thumb/<%=@student.id %>" style="height:50px" frameborder="no" />	
     <%= render :partial => 'form', :locals => { :f => f }  %>
     <p class="bbar">
       <%= f.submit '保存' %>

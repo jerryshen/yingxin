@@ -89,6 +89,16 @@ class StudentsController < ApplicationController
     end
   end
 
+  def upload_thumb
+    @student = Student.find(params[:id])
+    @thumb_url = ''
+    if request.post?
+      if params[:thumb]
+        @thumb_url = @student.upload_thumb(params[:thumb])
+      end
+    end
+  end
+
   private
   def get_json
     load_page_data

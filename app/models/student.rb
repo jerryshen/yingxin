@@ -28,4 +28,30 @@ class Student < ActiveRecord::Base
       Proce.create(:student_id => s.id)
     end
   end
+
+  def upload_thumb(file)
+    begin
+      old_thumb = self.thumb
+      file_name = FileUploadUtil.make_timestamp_file_name(file)
+      dir = "#{RAILS_ROOT}/public/uploads/thumbs"
+      FileUploadUtil.save_file(file, dir, file_name)
+      update_attributes!(:thumb => file_name)
+      unless old_thumb.blank?
+        path = dir + "/" + old_thumb
+        File.delete(path) if File.exist? path
+      end
+      return self.thumb_url
+    rescue 
+      return ''
+    end
+  end
+  
+  def thumb_url
+    unless self.thumb.blank?
+      "/uploads/thumbs/#{self.thumb}" 
+    else
+      ""
+    end
+  end
+
 end

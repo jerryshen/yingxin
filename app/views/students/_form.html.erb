@@ -49,7 +49,7 @@
 
 <div style="float:left;width:50%"><p>
     <%= f.label :info_class_id, "专业" %>
-    <%= f.select :info_class_id, InfoClass.all.collect {|p| [ p.name, p.id ] }, {:include_blank => "请选择专业..." }, :class => "required" %>
+    <%#= f.select :info_class_id, InfoClass.all.collect {|p| [ p.name, p.id ] }, {:include_blank => "请选择专业..." }, :class => "required" %>
 </p></div>
 
 <div style="float:left;width:50%"><p>
@@ -110,5 +110,5 @@
 
 <div style="float:left;width:100%"><p>
     <label for="state_city">生源地</label>
-    <%= state_and_city_select :student, :state, :city, {:state => {:include_blank => '请选择省'}, :city => {:include_blank => '请选择城市'}}  %>
+    <%#= state_and_city_select :student, :state, :city, {:state => {:include_blank => '请选择省'}, :city => {:include_blank => '请选择城市'}}  %>
 </p></div>

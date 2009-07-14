@@ -5,7 +5,7 @@ class AdminController < ApplicationController
   end
 
   def login
-    if !session[:user_id].blank?
+    if session[:user_id]
       redirect_to :action => 'index'
     end
   end

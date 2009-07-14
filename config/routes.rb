@@ -67,7 +67,7 @@ ActionController::Routing::Routes.draw do |map|
   # Note: These default routes make all actions in every controller accessible via GET requests. You should
   # consider removing the them or commenting them out if you're using named routes and resources.
   map.connect '/departments/users_to_json', :controller => "departments", :action => "users_to_json"
-  map.root :controller => 'admin', :action => 'login'
+  map.root :controller => 'admin', :action => 'index'
   map.connect ':controller/:action', :controller => ['admin']
   map.connect '/logout', :controller => 'admin', :action => 'logout'
   map.connect '/signin', :controller => 'admin', :action => 'login'

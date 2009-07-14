@@ -1,0 +1,11 @@
+<% form_for(@room) do |f| %>
+  <fieldset>
+    <legend>添加宿舍</legend>
+    <%= render :partial => 'form', :locals => { :f => f }  %>
+    <p class="bbar">
+      <input type="button" value='保存并新增' id ="save_and_new"  />
+      <%= f.submit '保存并返回' %>
+      <input type="button" onclick="$page.showListView()" value="返回列表" />
+    </p>
+  </fieldset>
+<% end %>

@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html lang='en-US' xml:lang='en-US' xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <meta content='text/html; charset=iso-8859-1' http-equiv='Content-type' />
+    <title><%= app_name  %></title>
+    <%= stylesheet_link_tag "styles.css" %>
+  </head>
+  <body>
+    <input id="auth_token" name="auth_token" type="hidden" value="c68869a1c59b2e14fab34990de3171f4c211d7be" />
+    <div class='onboard_page' id='page'>
+
+      <div class='login_page preserve_links'>
+        <div class='frame'>
+          <div class='frame_top'>
+
+            <div class='corners_left'></div>
+            <div class='inner'>
+              <h2>系统登录</h2>
+            </div>
+
+            <div class='corners_right'></div>
+          </div>
+          <div class='frame_content'>
+            <div class='flash_boxes' title='Click to Hide Message'>
+            </div>
+            <form action="/admin/try_to_login" id="loginForm" class="onboard_form" method="post"><div style="margin:0;padding:0"><input name="authenticity_token" type="hidden" value="c68869a1c59b2e14fab34990de3171f4c211d7be" /></div>
+              <%= flash.now[:notice]  %>
+              <div class='field text_field'>
+                <label for="login_id">帐户</label>
+
+                <input id="login_id" name="login_id" type="text" />
+              </div>
+              <div class='field text_field'>
+                <label for="password">密码</label>
+                <input id="password" name="password" type="password" value="" />
+              </div>
+
+              <div class='actions'>
+                <input class="gist_button" name="commit" type="submit" value="登录" onclick="login()" />
+              </div>
+            </form>
+
+          </div>
+          <div class='frame_bottom'>
+
+            <div class='corners_left'></div>
+            <div class='inner'></div>
+
+            <div class='corners_right'></div>
+          </div>
+        </div>
+      </div>
+      <div id='footer'>
+        &copy; 2009-2012 <%= app_name  %>
+      </div>
+    </div>
+  </body>
+
+</html>
+
+<script>
+  if(self!=top){top.location=self.location;} //防止被iframe
+  function login(){
+    var username=document.getElementById("login_id").value;
+    var password=document.getElementById("password").value;
+    if(username.length==0){
+      alert("请输入帐号!");
+      return;
+    }
+    if(password.length==0){
+      alert("请输入密码!");
+      return;
+    }
+    document.getElementById("loginForm").submit();
+  }
+
+  function enterSubmit(event)
+  {
+    if (event.keyCode == 13) //13: enter
+    {
+      event.returnValue=false;
+      event.cancel = true;
+      login();
+    }
+  }
+</script>

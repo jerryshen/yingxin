@@ -1,0 +1,14 @@
+<fieldset>
+  <legend>查看[<%= @step3.user.name %>]的军训费用缴纳情况</legend>
+  <p>
+    <b>是否缴纳:</b>
+    <%=h @step3.pass %>
+  </p>
+    <p>
+    <b>缴纳时间:</b>
+    <%=h @step3.date %>
+  </p>
+  <p class="bbar">
+    <input type="button" onclick="$page.showListView()" value="返回列表" />
+  </p>
+</fieldset>

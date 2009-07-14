@@ -1,0 +1,21 @@
+<%= stylesheet_link_tag "form.css" %>
+<fieldset>
+  <legend>我的个人信息</legend>
+  <p>
+    <b>姓名:</b>
+    <%=h @current_user.name %>
+  </p>
+  <p>
+    <b>系部:</b>
+    <%=h @current_user.department.name if @current_user.department %>
+  </p>
+  <p>
+    <b>性别:</b>
+    <%=h fuzzy_gender(@current_user.gender) %>
+  </p>
+  <p>
+    <b>登录用户名:</b>
+    <%=h @current_user.login_id %>
+  </p>
+
+</fieldset>

@@ -1,0 +1,14 @@
+<fieldset>
+  <legend>查看[<%= @step2.user.name %>]的缴费情况</legend>
+  <p>
+    <b>是否缴费:</b>
+    <%=h @step1.pass %>
+  </p>
+    <p>
+    <b>复查时间:</b>
+    <%=h @step1.date %>
+  </p>
+  <p class="bbar">
+    <input type="button" onclick="$page.showListView()" value="返回列表" />
+  </p>
+</fieldset>

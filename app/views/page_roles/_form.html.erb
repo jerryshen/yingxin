@@ -1,0 +1,9 @@
+<%= f.error_messages %>
+<p>
+  <%= f.label :page_id, "页面" %>
+  <%= f.select :page_id, Page.all.collect {|p| [ p.name, p.id ] }, {:include_blank => "请选择页面..." } %>
+</p>
+<p>
+<%= f.label :role_id, "角色" %>
+<%= f.select :role_id, Role.all.collect {|p| [ p.name, p.id ] }, {:include_blank => "请选择角色..." } %>
+</p>

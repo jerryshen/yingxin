@@ -1,0 +1,135 @@
+<link href="/javascripts/ext-2.2.1/resources/css/ext-all.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/grid.css" media="screen" rel="stylesheet" type="text/css" />
+<%= stylesheet_link_tag "form.css" %>
+<div id="list-view">
+  <form style="margin: 10px 0px;" id="search_form">
+    <label for="search_name">标题:</label>
+    <input type="text" value="" name="search_name" id="search_name"/>
+    <input class="button" type="button" id="btnSearch" value="搜索"/>
+    <input value="重置"class="btnreset" type="reset" />
+    <input value="刷新 " onclick="window.location.reload()" class="btnrefresh" type="button"  />
+  </form>
+  <div>
+    <div class="nav">
+      <span class="button" id="newItem" onclick="$page.showNewView()"><img  src="/images/icons/new.png"/>新建</span>
+    </div>
+    <div id="grid-wrap">
+    </div>
+  </div>
+</div>
+<%= javascript_include_tag 'ext-2.2.1/adapter/jquery/jquery.js'%>
+<%= javascript_include_tag 'ext-2.2.1/adapter/jquery/ext-jquery-adapter.js'%>
+<%= javascript_include_tag 'ext-2.2.1/ext-all.js'%>
+<%= javascript_include_tag 'ExtListPage.js' %>
+<%= javascript_include_tag 'jquery-validate/lib/jquery.form.js' %>
+<%= javascript_include_tag 'jquery-validate/jquery.validate.js' %>
+<%= javascript_include_tag 'jquery-validate/localization/messages_cn.js' %>
+<%= javascript_include_tag 'AjaxForm.js' %>
+<script>
+  var users = <%= User.to_json%>
+  var getUserName = function(value){
+    return users[value]
+  }
+
+  var makeAsHideLink = function(value, p, record){
+    var text = value.toString()=="true" ? "已隐藏" : "已显示";
+    return String.format("<a href='#' action ='hidden' title='Hidden' class='gridButton' url='/tips/hide/{0}'>{1}</a>",record.data.id,text);
+  }
+
+  var bind_hidden_link_click = function(alink){
+    var url = alink.getAttribute("url");
+    Ext.get(alink).on("click",function(){
+      Ext.Ajax.request({
+        url: url,
+        success: function(rq,params){ //rq:请求的响应，params请求时的参数（此处为｛url,success,failure｝)
+          if(rq.responseText=="true"){
+            $page.refreshGridData();
+          }else{
+            Ext.MessageBox.show({msg:"更新隐藏/显示状态失败",buttons: Ext.MessageBox.OK,icon:Ext.MessageBox.ERROR});
+          }
+        },
+        failure: function(){
+          Ext.MessageBox.show({msg:"请求服务器失败，请检查网络连接或与系统管理员联系",buttons: Ext.MessageBox.OK,icon:Ext.MessageBox.WARNING});
+        }
+      });
+    })
+  }
+
+  var makeAsTopLink = function(value, p, record){
+    var text = value.toString()=="true" ? "已置顶" : "普通";
+    return String.format("<a href='#' action ='top' title='Top' class='gridButton' url='/tips/top/{0}'>{1}</a>",record.data.id,text);
+  }
+
+  var bind_top_link_click = function(alink){
+    var url = alink.getAttribute("url");
+    Ext.get(alink).on("click",function(){
+      Ext.Ajax.request({
+        url: url,
+        success: function(rq,params){ //rq:请求的响应，params请求时的参数（此处为｛url,success,failure｝)
+          if(rq.responseText=="true"){
+            $page.refreshGridData();
+          }else{
+            Ext.MessageBox.show({msg:"更新隐藏/显示状态失败",buttons: Ext.MessageBox.OK,icon:Ext.MessageBox.ERROR});
+          }
+        },
+        failure: function(){
+          Ext.MessageBox.show({msg:"请求服务器失败，请检查网络连接或与系统管理员联系",buttons: Ext.MessageBox.OK,icon:Ext.MessageBox.WARNING});
+        }
+      });
+    })
+  }
+  //{header: [dataIndex(首字母大写)], renderer: money(Function),menuDisabled: [true],
+  // dataIndex: "fieldName" ,width: 100, sortable: [false], resizable: [false]}
+  //框[]中的为默认值
+  Ext.onReady(function(){
+    var columns = [{
+        header: "ID",
+        dataIndex: 'id',
+        width: 30,
+        sortable: true,
+        type: "int",
+        resizable: false
+      }, {
+        header: "标题",
+        dataIndex: 'title',
+        sortable: true
+      }, {
+        header: "发布者",
+        dataIndex: 'user_id',
+        sortable: true,
+        renderer: getUserName
+      }, {
+        header: "内容",
+        dataIndex: 'content',
+        sortable: true
+      }, {
+        header: "置顶",
+        dataIndex: 'top',
+        type: 'boolean',
+        sortable: true,
+        renderer: makeAsTopLink
+      }, {
+        header: "隐藏",
+        dataIndex: 'hidden',
+        type: 'boolean',
+        sortable: true,
+        renderer: makeAsHideLink
+      }, {
+        header: "发布时间",
+        dataIndex: 'created_at',
+        sortable: true
+      }]
+    var controllerName = "tips";
+    options = {
+      baseUrl: "http://" + window.location.host + "/" + controllerName,
+      gridTitle: "通知管理列表",
+      newItemLink: "newItem",
+      columns: columns,
+      bindlinks: {
+        "hidden": bind_hidden_link_click,
+        "top"   : bind_top_link_click
+      }
+    }
+    $page = new ExtListPage(options);
+  })
+</script>

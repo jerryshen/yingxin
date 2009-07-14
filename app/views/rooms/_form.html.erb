@@ -1,0 +1,23 @@
+<%= f.error_messages %>
+<p>
+  <%= f.label :building_id, "宿舍大楼" %>
+  <%= f.select :building_id, Building.all.collect {|p| [ p.name, p.id ] }, {:include_blank => "请选择宿舍大楼..." }, :class => "required" %>
+</p>
+<p>
+  <%= f.label :name, "宿舍号" %>
+  <%= f.text_field :name, :class => "required" %>
+</p>
+<p>
+  <label>床位数量</label>
+  <label for="beds_1"><input id="beds_1" type="radio" name="room[beds]" value="1" />4人间</label>
+  <label for="beds_0"><input id="beds_0" type="radio" name="room[beds]" value="0" />6人间</label>
+</p>
+<p>
+  <label>宿舍类型</label>
+  <label for="type_1"><input id="type_1" type="radio" name="room[type]" value="1" />男生宿舍</label>
+  <label for="type_0"><input id="type_0" type="radio" name="room[type]" value="0" />女生宿舍</label>
+</p>
+<p>
+  <%= f.label :phone, "电话" %>
+  <%= f.text_field :phone, :class => "required" %>
+</p>

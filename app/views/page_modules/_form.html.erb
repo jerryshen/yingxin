@@ -1,0 +1,13 @@
+<%= f.error_messages %>
+<p>
+  <%= f.label :name, "名称" %>
+  <%= f.text_field :name, :class => "required" %>
+</p>
+<p>
+  <%= f.label :index, "显示顺序" %>
+  <%= f.text_field :index, :class => "required" %>
+</p>
+<p>
+  <%= f.label :description, "描述" %>
+  <%= f.text_area :description, :rows => 10 %>
+</p>

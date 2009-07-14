@@ -1,0 +1,224 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title><%= app_name  %></title>
+    <%= javascript_include_tag 'ext-2.2.1/adapter/ext/ext-base.js','ext-2.2.1/ext-all.js' %>
+    <link href="/javascripts/ext-2.2.1/resources/css/ext-all.css" media="screen" rel="stylesheet" type="text/css" />
+    <% unless @current_user.theme.nil? %>
+      <link id="theme" href="/javascripts/ext-2.2.1/resources/css/<%= h @current_user.theme %>.css" media="screen" rel="stylesheet" type="text/css" />
+    <% end %>
+    <%= stylesheet_link_tag 'nav-menu.css','ext-cn.css' %>
+    <script>
+      function init_clock(){
+        var _getNewDate = function(){
+          document.getElementById("clock").innerHTML = (new Date()).format("Y年m月d日 H:i");
+        };
+        window.setInterval(_getNewDate, 1000);
+      };
+
+      function make_outlook_menu(modules,icon_base_path,item_click){
+        var navmenu = [];
+        for (var i = 0, l = modules.length; i < l; i++) {
+          var amodule = modules[i];
+          var submenus = [];
+          for (var j = 0, k = amodule.pages.length; j < k; j++) {
+            var apage = amodule.pages[j];
+            submenus.push(String.format("<li url='{1}' name='{0}' ><img src='{3}{2}' /><br/><span>{0}</span></li>", apage.name, apage.url, apage.icon,icon_base_path));
+          };
+
+          var option = {};
+          option.title = amodule.name;
+          option.collapsible = true;
+          option.autoScroll = true;
+          //option.autoHeight = true;
+          option.html = "<ul class='nav-page-list'>" + submenus.join('') + "</ul>";
+          //if(i)option.collapsed  = true; //默认只展开第一个面板,其他收起
+          var panel = new Ext.Panel(option);
+          navmenu.push(panel);
+        }
+        return navmenu;
+      };
+
+      function handle_nav_menu_click()
+      {
+        Ext.select("ul.nav-page-list img,ul.nav-page-list span",true).each(function(item){
+          item.on("click",function(){
+            var li = this.dom.parentNode;
+            var url = li.getAttribute('url');
+            var name = li.getAttribute('name');
+            open_page(url,name);
+          })
+        })
+      };
+
+      function init_gui(navmenu){
+        var _viewport = new Ext.Viewport({
+          layout: 'border',
+          items: [{
+              region: "north",
+              contentEl: "header",
+              height: 40
+            }, {
+              region: "west",
+              title: "功能导航",
+              width: 200,
+              collapsible: true,
+              margins: "0 0 5 5",
+              layout: "accordion",
+              items: navmenu
+            }, {
+              id: "taskbar",
+              xtype: "tabpanel",
+              activeTab: 0,
+              region: "center",
+              margins: "0 5 5 0",
+              items: [{
+                  xtype: "panel",
+                  title: "欢迎"
+                }]
+            }]
+        });
+        _viewport.render();
+      }
+
+      function reset_iframe_size(iframe)
+      {
+        var p = iframe.parentNode;
+        var w = p.offsetWidth;
+        var h = p.offsetHeight;
+        iframe.style.width = w + 'px';
+        iframe.style.height = h + 'px';
+      }
+
+      function open_page(url,title)
+      {
+        var taskbar = Ext.getCmp("taskbar");
+        taskbar.add({
+          title: title,
+          html: "<iframe style='padding:10px' onload='reset_iframe_size(this)' scrolling='auto' frameborder='0'  src='" + url + "'/>",
+          closable:true,
+          listeners: {"resize":function(cmp){
+              Ext.select("iframe",true,cmp.body.dom).each(function(item){
+                reset_iframe_size(item.dom);
+              });
+            }}
+        }).show();
+        /*
+              Ext.Ajax.request({
+                url: url,
+                method: "GET",
+                success: function(rq,rqopt)
+                {
+                  var taskbar = Ext.getCmp("taskbar");
+                  taskbar.add({
+                    title: title,
+                    html: rq.responseText,
+                    closable:true
+                  }).show();
+                },
+                failure: function(rq,rqopt){
+                  if(rq.status == "404")
+                    Ext.MessageBox.show({msg:"打开[" + title + "]页面失败,服务器未找到页面",buttons: Ext.MessageBox.OK,icon:Ext.MessageBox.ERROR});
+                }
+              })
+         */
+      }
+
+      var url = "admin/get_session_past_due_minutes"
+      function check_session ()
+      {
+        Ext.Ajax.request({
+          url: url,
+          success: function(rq,params)
+          {
+            var past_due_minutes = parseInt(rq.responseText);
+            if(!isNaN(past_due_minutes))
+            {
+              if(past_due_minutes > 0)
+              {
+                window.setTimeout(check_session,past_due_minutes * 60 * 1000);
+              }
+              else
+              {
+                Ext.MessageBox.show({
+                  title: "警告",
+                  msg: "会话已经过期，请重新登陆！",
+                  buttons: Ext.MessageBox.OK,
+                  fn: function(){window.location.replace("login")},
+                  icon: Ext.MessageBox.WARNING
+                });
+              }
+            }
+          },
+          asynchronous: true
+        });
+      };
+
+      function changeSkin(value){
+        $CURR_STYLE = value;
+				Ext.util.CSS.swapStyleSheet('theme', '/javascripts/ext-2.2.1/resources/css/' + value + '.css');
+        Ext.Ajax.request({
+          method: "POST",
+          url: "/users/update_theme",
+          params: {"theme": value},
+          success: function(rq,params)
+          {
+            if(rq.responseText == "true"){
+              var tabs = document.getElementsByTagName("iframe");
+              for(var i=0,l=tabs.length; i<l; i++){
+                var atab = tabs[i];
+                var fun = atab.contentWindow.changeSkin;
+                if(fun)atab.contentWindow.location.reload();
+                //if(fun)fun.call(atab.contentWindow,value);
+              }
+            }
+            else{
+              Ext.MessageBox.show({
+                  title: "更改主题",
+                  msg: "更新主题失败！",
+                  buttons: Ext.MessageBox.OK,
+                  icon: Ext.MessageBox.WARNING
+              });
+            }
+          }
+        })
+			};
+
+      Ext.onReady(function(){
+        $CURR_STYLE = document.getElementById("selStyle").value;
+        var $nav_menu_icon_path = "/images/nav-menu-icons/";
+        var $modules = <%= @current_user.menu %>
+        Ext.BLANK_IMAGE_URL = "/javascripts/ext-2.2.1/resources/images/default/s.gif";
+
+        var navmenu = make_outlook_menu($modules,$nav_menu_icon_path);
+        init_gui(navmenu);
+        handle_nav_menu_click();
+        init_clock();
+        check_session();
+      })
+    </script>
+  </head>
+  <body>
+    <div id="header" style='padding: 0px 10px 0px 50px;margin-top:10px;'>
+      <div style='float:left;'>
+        <h3><%= app_name  %></h3>
+      </div>
+      <div style='float:right;'>
+        <label for="selStyle">主题：</label>
+        <select id="selStyle" onchange="changeSkin(this.value)">
+          <option value="ext-all" selected="selected">默认主题</option>
+          <option value="xtheme-gray">银白风格</option>
+          <option value="xtheme-purple">紫色风格</option>
+          <option value="xtheme-olive">绿色风格</option>
+          <option value="xtheme-darkgray">灰色风格</option>
+          <option value="xtheme-black">黑色风格</option>
+          <option value="xtheme-slate">深蓝风格</option>
+          <option value="xtheme-vista">Vista风格</option>
+        </select>
+        <span style='margin-right:15px;' id="clock"></span>
+        登录用户：<span style='color:green'><%= @current_user.name %></span>，<img src="/images/icons/logout.png" /><a href='/logout'>退出</a>
+      </div>
+    </div>
+  </body>
+</html>

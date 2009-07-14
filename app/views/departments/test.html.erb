@@ -1,0 +1,45 @@
+<% form_for(@department) do |f| %>
+ <fieldset>
+    <legend>新建系部</legend>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :name, "名称" %>
+    <%= f.text_field :name, :class => "required" %>
+  </p>
+  <p>
+    <label>email</label>
+    <input type="text" size="30" class="required email" />
+  </p>
+  <p>
+    <label>性别</label>
+    <label for="sexy_1"><input id="sexy_1" type="radio" name="sexy" value="1" />男</label>
+    <label for="sexy_0"><input id="sexy_0" type="radio" name="sexy" value="0" />女</label>
+  </p>
+  <p>
+    <label>自我介绍</label>
+    <textarea rows="8" name="ak" class="required" ></textarea>
+  </p>
+  <p>
+    <label>省份</label>
+    <select name="sf" id="sf">
+      <option value="">选择...</option>
+      <option value="1">江西</option>
+      <option value="2">湖北</option>
+      <option value="3">四川</option>
+      <option value="4">湖南</option>
+      <option value="5">陕西</option>
+    </select>
+  </p>
+  <p>
+    <label>爱好</label>
+    <label for="ck1"><input id="ck1" type="checkbox" value="1" />文学</label>
+    <label for="ck2"><input id="ck2" type="checkbox" value="2" />戏剧</label>
+    <label for="ck3"><input id="ck3" type="checkbox" value="3" />电影</label>
+    <label for="ck4"><input id="ck4" type="checkbox" value="4" />音乐</label>
+  </p>
+  <p class="bbar">
+    <%= f.submit '保存' %>
+    <input type="button" onclick="$page.showListView()" value="取消" />
+  </p>
+</fieldset>
+<% end %>

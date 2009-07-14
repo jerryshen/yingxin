@@ -1,0 +1,15 @@
+<fieldset>
+  <legend>查看页面－角色关系</legend>
+<p>
+  <b>页面:</b>
+  <%=h @page_role.page.name %>
+</p>
+
+<p>
+  <b>角色:</b>
+  <%=h @page_role.role.name %>
+</p>
+  <p class="bbar">
+    <input type="button" onclick="$page.showListView()" value="返回列表" />
+  </p>
+</fieldset>

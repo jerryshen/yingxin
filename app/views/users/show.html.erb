@@ -1,0 +1,54 @@
+<fieldset>
+  <legend>查看教职工详细信息</legend>
+  <p>
+    <b>姓名:</b>
+    <%=h @user.name %>
+  </p>
+  <p>
+    <b>系部:</b>
+    <%=h @user.department.name %>
+  </p>
+  <p>
+    <b>教学所属系部:</b>
+    <%=h @user.td_belongs.name %>
+  </p>
+  <p>
+    <b>性别:</b>
+    <%=h fuzzy_gender(@user.gender) %>
+  </p>
+  <p>
+    <b>职称:</b>
+    <%=h @user.title.name %>
+  </p>
+  <p>
+    <b>职务:</b>
+    <%=h @user.position.name %>
+  </p>
+  <p>
+    <b>生日:</b>
+    <%=h fuzzy_time(@user.birthday) %>
+  </p>
+  <p>
+    <b>身份证号:</b>
+    <%=h @user.id_card %>
+  </p>
+  <p>
+    <b>登录用户名:</b>
+    <%=h @user.login_id %>
+  </p>
+  <p>
+    <b>密码:</b>
+    <%=h @user.password %>
+  </p>
+  <p>
+    <b>是否入编:</b>
+    <%=h @user.is_nature.to_s == "true" ? "是" : "否" %>
+  </p>
+  <p>
+    <b>是否离退休:</b>
+    <%=h @user.is_retired.to_s == "true" ? "是" : "否" %>
+  </p>
+  <p class="bbar">
+    <input type="button" onclick="$page.showListView()" value="返回列表" />
+  </p>
+</fieldset>

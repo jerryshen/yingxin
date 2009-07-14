@@ -1,0 +1,26 @@
+<fieldset>
+  <legend>查看报到事项</legend>
+  <p>
+    <b>办理顺序:</b>
+    <%=h @subject.index %>
+  </p>
+  <p>
+    <b>办理项目:</b>
+    <%=h @subject.name %>
+  </p>
+  <p>
+    <b>办理地点:</b>
+    <%=h @subject.addr %>
+  </p>
+  <p>
+    <b>办理部门:</b>
+    <%=h @subject.department %>
+  </p>
+  <p>
+    <b>办理事项:</b>
+    <%=h @subject.content %>
+  </p>
+  <p class="bbar">
+    <input type="button" onclick="$page.showListView()" value="返回列表" />
+  </p>
+</fieldset>

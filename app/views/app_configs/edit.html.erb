@@ -1,0 +1,10 @@
+<% form_for(@app_config) do |f| %>
+  <fieldset>
+    <legend>修改系统参数</legend>
+    <%= render :partial => 'form', :locals => {:f =>f}  %>
+    <p class="bbar">
+      <%= f.submit '更新' %>
+      <input type="button" onclick="$page.showListView()" value="取消" />
+    </p>
+  </fieldset>
+<% end %>

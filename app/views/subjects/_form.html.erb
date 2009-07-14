@@ -1,0 +1,21 @@
+<%= f.error_messages %>
+<p>
+  <%= f.label :name, "办理项目" %>
+  <%= f.text_field :name, :class => "required" %>
+</p>
+<p>
+  <%= f.label :index, "办理顺序" %>
+  <%= f.text_field :index, :class => "required" %>
+</p>
+<p>
+  <%= f.label :addr, "办理地点" %>
+  <%= f.text_field :addr, :class => "required" %>
+</p>
+<p>
+  <%= f.label :department, "办理部门" %>
+  <%= f.text_field :department, :class => "required" %>
+</p>
+<p>
+  <%= f.label :content, "办理事项" %>
+  <%= f.text_area :content, :class => "required" %>
+</p>

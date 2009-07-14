@@ -1,0 +1,14 @@
+<fieldset>
+  <legend>查看[<%= @step7.user.name %>]的公寓入住情况</legend>
+  <p>
+    <b>是否入住:</b>
+    <%=h @step7.pass %>
+  </p>
+    <p>
+    <b>入住时间:</b>
+    <%=h @step7.date %>
+  </p>
+  <p class="bbar">
+    <input type="button" onclick="$page.showListView()" value="返回列表" />
+  </p>
+</fieldset>

@@ -1,0 +1,90 @@
+<link href="/javascripts/ext-2.2.1/resources/css/ext-all.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/grid.css" media="screen" rel="stylesheet" type="text/css" />
+<%= stylesheet_link_tag "form.css" %>
+<%= javascript_include_tag 'ext-2.2.1/adapter/jquery/jquery.js'%>
+<%= javascript_include_tag 'ext-2.2.1/adapter/jquery/ext-jquery-adapter.js'%>
+<%= javascript_include_tag 'ext-2.2.1/ext-all.js'%>
+<%= javascript_include_tag 'ExtListPage.js' %>
+<%= javascript_include_tag 'jquery-validate/lib/jquery.form.js' %>
+<%= javascript_include_tag 'jquery-validate/jquery.validate.js' %>
+<%= javascript_include_tag 'jquery-validate/localization/messages_cn.js' %>
+<%= javascript_include_tag 'AjaxForm.js' %>
+<div id="list-view">
+  <form style="margin: 10px 0px;" id="search_form">
+    <%= page_info  %>
+    <%= index_select_class  %>
+    <input class="button" type="button" id="btnSearch" value="搜索"/>
+    <input value="重置"class="btnreset" type="reset" />
+    <input value="刷新 " onclick="window.location.reload()" class="btnrefresh" type="button"  />
+  </form>
+  <div>
+    <div id="grid-wrap">
+    </div>
+  </div>
+</div>
+<script>
+  var users = <%= User.to_json%>
+  var getUserName = function(value){
+    return users[value]
+  }
+
+  var makeAsPassLink = function(value, p, record){
+    var text = value.toString()=="true" ? "已购买" : "未购买";
+    return String.format("<a href='#' action ='pass' title='Pass' class='gridButton' url='/step6s/pass/{0}'>{1}</a>",record.data.id,text);
+  }
+
+  var bind_pass_link_click = function(alink){
+    var url = alink.getAttribute("url");
+    Ext.get(alink).on("click",function(){
+      Ext.Ajax.request({
+        url: url,
+        success: function(rq,params){ //rq:请求的响应，params请求时的参数（此处为｛url,success,failure｝)
+          if(rq.responseText=="true"){
+            $page.refreshGridData();
+          }else{
+            Ext.MessageBox.show({msg:"更新隐藏/显示状态失败",buttons: Ext.MessageBox.OK,icon:Ext.MessageBox.ERROR});
+          }
+        },
+        failure: function(){
+          Ext.MessageBox.show({msg:"请求服务器失败，请检查网络连接或与系统管理员联系",buttons: Ext.MessageBox.OK,icon:Ext.MessageBox.WARNING});
+        }
+      });
+    })
+  }
+  //{header: [dataIndex(首字母大写)], renderer: money(Function),menuDisabled: [true],
+  // dataIndex: "fieldName" ,width: 100, sortable: [false], resizable: [false]}
+  //框[]中的为默认值
+  Ext.onReady(function(){
+    var columns = [{
+        header: "ID",
+        dataIndex: 'id',
+        width: 30,
+        sortable: true,
+        type: "int",
+        resizable: false
+      }, {
+        header: "新生姓名",
+        dataIndex: 'user_id',
+        sortable: true,
+        renderer: getUserName
+      }, {
+        header: "购买日用品",
+        dataIndex: 'pass',
+        type: 'boolean',
+        sortable: true,
+        renderer: makeAsPassLink
+      }, {
+        header: "购买时间",
+        dataIndex: 'date',
+        sortable: true
+      }]
+    var controllerName = "step6s";
+    options = {
+      baseUrl: "http://" + window.location.host + "/" + controllerName,
+      gridTitle: "日用品购买管理列表",
+      newItemLink: "newItem",
+      columns: columns
+    }
+    $page = new ExtListPage(options);
+  })
+</script>

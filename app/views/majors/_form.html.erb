@@ -1,0 +1,9 @@
+<%= f.error_messages %>
+<p>
+  <%= f.label :department_id, "院系" %>
+  <%= f.select :department_id, Department.all.collect {|p| [ p.name, p.id ] }, {:include_blank => "请选择院系..." }, :class => "required" %>
+</p>
+<p>
+  <%= f.label :name, "专业名称" %>
+  <%= f.text_field :name, :class => "required" %>
+</p>

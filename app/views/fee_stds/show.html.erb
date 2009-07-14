@@ -1,0 +1,30 @@
+<fieldset>
+  <legend>查看专业收费标准</legend>
+  <p>
+    <b>院系名称:</b>
+    <%=h @fee_std.major.department.name %>
+  </p>
+  <p>
+    <b>专业名称:</b>
+    <%=h @fee_std.major %>
+  </p>
+  <p>
+    <b>学费:</b>
+    <%=h @fee_std.fee1 %>
+  </p>
+  <p>
+    <b>代管费:</b>
+    <%=h @fee_std.fee2 %>
+  </p>
+  <p>
+    <b>住宿费:</b>
+    <%=h @fee_std.fee3 %>
+  </p>
+  <p>
+    <b>其他费用:</b>
+    <%=h @fee_std.fee4 %>
+  </p>
+  <p class="bbar">
+    <input type="button" onclick="$page.showListView()" value="返回列表" />
+  </p>
+</fieldset>

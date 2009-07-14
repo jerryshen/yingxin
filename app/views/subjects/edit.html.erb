@@ -1,0 +1,10 @@
+<% form_for(@subject) do |f| %>
+  <fieldset>
+    <legend>修改报到事项</legend>
+    <%= render :partial => 'form', :locals => { :f => f }  %>
+    <p class="bbar">
+      <%= f.submit '更新' %>
+      <input type="button" onclick="$page.showListView()" value="取消" />
+    </p>
+  </fieldset>
+<% end %>

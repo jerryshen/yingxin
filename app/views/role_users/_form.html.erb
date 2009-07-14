@@ -1,0 +1,7 @@
+<%= f.error_messages %>
+
+<%= select_user "role_user[user_id]" %>
+<p>
+  <%= f.label :role_id, "角色" %>
+  <%= f.select :role_id, Role.all.collect {|p| [ p.name, p.id ] }, {:include_blank => "请选择角色..." }, :class => "required" %>
+</p>

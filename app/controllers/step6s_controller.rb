@@ -1,0 +1,102 @@
+class Step6sController < ApplicationController
+  # GET /step6s
+  # GET /step6s.xml
+  def index
+    @step6s = Step6.all
+    @subject = Subject.find_by_index(6)
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @step6s }
+      format.json { render :text => get_json }
+    end
+  end
+
+  # GET /step6s/1
+  # GET /step6s/1.xml
+  def show
+    @step6 = Step6.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => @step6 }
+    end
+  end
+
+  # GET /step6s/1/edit
+  def edit
+    @step6 = Step6.find(params[:id])
+  end
+
+  # PUT /step6s/1
+  # PUT /step6s/1.xml
+  def update
+    @step6 = Step6.find(params[:id])
+
+    respond_to do |format|
+      if @step6.update_attributes(params[:step6])
+        format.html { redirect_to(@step6) }
+        format.xml  { head :ok }
+        format.json { render :text => '{status: "success", message: "成功更新日用品购买情况！"}'}
+      else
+        format.html { render :action => "edit" }
+        format.xml  { render :xml => @step6.errors, :status => :unprocessable_entity }
+        format.json { render :text => "{status: 'failed', error:#{@step6.errors.full_messages.to_json}}"}
+      end
+    end
+  end
+
+  # DELETE /step6s/1
+  # DELETE /step6s/1.xml
+  def destroy
+    @step6 = Step6.find(params[:id])
+    @step6.destroy
+
+    respond_to do |format|
+      format.html { redirect_to(step6s_url) }
+      format.xml  { head :ok }
+      format.json { render :text => '{status: "success"}'}
+    end
+  end
+
+  def pass
+    @step6 = Step6.find(params[:id])
+    if @step6.update_attributes(:pass => !@step6.pass, :date => Time.now)
+      render :text =>"true"
+    else
+      render :text =>"false"
+    end
+  end
+
+  def get_json
+    load_page_data
+
+    joins = "INNER JOIN students p ON step6s.student_id=p.id"
+    conditions = '1=1'
+    condition_values = []
+    if(!params[:department_id].blank?)
+      conditions += " AND p.department_id = ? "
+      condition_values << params[:department_id]
+    end
+
+    if(!params[:major_id].blank?)
+      conditions += " AND p.major_id = ? "
+      condition_values << params[:major_id]
+    end
+
+    if(!params[:class_id].blank?)
+      conditions += " AND p.class_id = ? "
+      condition_values << params[:class_id]
+    end
+
+    if(conditions != '1=1')
+      option_conditions = [conditions,condition_values].flatten!
+      @step6s = Step6.paginate(:order =>"id DESC", :joins => joins,:conditions => option_conditions,:per_page=> @pagesize, :page => params[:page] || 1)
+      count = Step6.count(:joins => joins, :conditions => option_conditions)
+    else
+      @step6s = Step6.paginate(:order =>"id DESC",:per_page=> @pagesize, :page => params[:page] || 1)
+      count = Step6.count
+    end
+    return render_json(@step4s,count)
+  end
+end

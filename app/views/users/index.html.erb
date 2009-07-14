@@ -1,0 +1,96 @@
+<link href="/javascripts/ext-2.2.1/resources/css/ext-all.css" media="screen" rel="stylesheet" type="text/css" />
+<% unless @current_user.theme.nil? %>
+  <link id="theme" href="/javascripts/ext-2.2.1/resources/css/<%= h @current_user.theme %>.css" media="screen" rel="stylesheet" type="text/css" />
+<% end %>
+<%= stylesheet_link_tag "grid.css" %>
+<%= stylesheet_link_tag "form.css" %>
+<div id="list-view">
+  <form style="margin: 10px 0px;" id="search_form">
+    <label for="search_name">
+      姓名：
+    </label>
+    <input type="text" value="" size="15" name="search_name" id="search_name"/>
+
+    <label for="search_department_id">系部:</label>
+    <% list_departments_for_search %>
+    <select style="margin:0px;padding:0px;float:none;" id="search_department_id" name="search_department_id">
+      <% @options.each do |option| %>
+        <option value="<%= option[1] %>"><%= option[0] %></option>
+      <% end %>
+    </select>
+
+    <input class="button" type="button" id="btnSearch" value="搜索"/>
+    <input value="重置"class="btnreset" type="reset" />
+    <input value="刷新 " onclick="window.location.reload()" class="btnrefresh" type="button"  />
+  </form>
+  <div>
+    <div class="nav">
+      <span class="button" id="newItem" onclick="$page.showNewView()"><img  src="/images/icons/new.png"/>新建</span>
+    </div>
+    <div id="grid-wrap">
+    </div>
+  </div>
+</div>
+<%= javascript_include_tag 'ext-2.2.1/adapter/jquery/jquery.js'%>
+<%= javascript_include_tag 'ext-2.2.1/adapter/jquery/ext-jquery-adapter.js'%>
+<%= javascript_include_tag 'ext-2.2.1/ext-all.js'%>
+<%= javascript_include_tag 'ExtListPage.js' %>
+<%= javascript_include_tag 'jquery-validate/lib/jquery.form.js' %>
+<%= javascript_include_tag 'jquery-validate/jquery.validate.js' %>
+<%= javascript_include_tag 'jquery-validate/localization/messages_cn.js' %>
+<%= javascript_include_tag 'AjaxForm.js' %>
+<script>
+  var departments = <%= Department.to_json%>
+  var getDepartmentName = function(value, p, record){
+    return departments[value]
+  }
+  //{header: [dataIndex(首字母大写)], renderer: money(Function),menuDisabled: [true],
+  // dataIndex: "fieldName" ,width: 100, sortable: [false], resizable: [false]}
+  //框[]中的为默认值
+  Ext.onReady(function(){
+    var columns = [{
+        header: "ID",
+        dataIndex: 'id',
+        width: 30,
+        sortable: true,
+        type: "int",
+        resizable: false
+      }, {
+        header: "姓名",
+        dataIndex: 'name',
+        width: 70,
+        sortable: true
+      }, {
+        header: "系部",
+        dataIndex: 'department_id',
+        sortable: true,
+        renderer: getDepartmentName
+      }, {
+        header: "性别",
+        dataIndex: 'gender',
+        width: 50,
+        sortable: true,
+        renderer: function(value, p, record){
+          return value.toString()=="m" ? "男" : "女"
+        }
+      }, {
+        header: "身份证号",
+        dataIndex: 'id_card',
+        sortable: true,
+        width: 130,
+        hidden: true
+      }, {
+        header: "用户名",
+        dataIndex: 'login_id',
+        sortable: true
+      }]
+    var controllerName = "users";
+    options = {
+      baseUrl: "http://" + window.location.host + "/" + controllerName,
+      gridTitle: "教职工信息列表",
+      newItemLink: "newItem",
+      columns: columns
+    }
+    $page = new ExtListPage(options);
+  })
+</script>

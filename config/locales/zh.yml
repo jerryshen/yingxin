@@ -1,0 +1,286 @@
+zh:     
+  activerecord:
+    errors:
+        messages:
+          inclusion: "不包含于列表中"
+          exclusion: "不能用"
+          invalid: "不合法"
+          confirmation: "与确认值不匹配"
+          accepted: "必须接受"
+          empty: "不能留空"
+          blank: "不能为空字符"
+          too_long: "过长 (不能超过 {{count}} 个字符)"
+          too_short: "过短 (不能少于 {{count}} 个字符)"
+          wrong_length: "长度非法 (必须为 {{count}} 个字符)"
+          taken: "不可用"
+          not_a_number: "不是数字"
+          greater_than: "必须大于 {{count}}"
+          greater_than_or_equal_to: "必须大于或等于 {{count}}"
+          equal_to: "必须等于 {{count}}"
+          less_than: "必须小于 {{count}}"
+          less_than_or_equal_to: "必须小于或等于 {{count}}"
+          odd: "必须为单数"
+          even: "必须为双数"
+      
+    models:
+        app_config: "系统参数配置"
+        assistant:  "辅导员"
+        bank_card: "银行卡"
+        bank: "银行"
+        basic_salary: "基本工资"
+        basic_salary_record: "基本工资记录"
+        class_benefit: "科研津贴"
+        class_month_benefit_record: "月发放课时津贴记录"
+        college_be_record: "学院补贴记录"
+        college_benefit: "学院补贴"
+        department: "系部"
+        fee_cutting_record: "扣款记录"
+        fee_cutting: "扣款"
+        page_module: "页面模块"
+        page_role: "角色权限分配"
+        page: "页面"
+        performance_benefit_record: "绩效津贴记录"
+        performance_benefit_std: "绩效津贴标准"
+        position: "职务"
+        retired_basic_salary: "离退休人员基本工资"
+        retired_basic_salary_record: "离退休人员基本工资记录"
+        retired_college_be_record: "离退休人员学院补贴记录"
+        retired_college_benefit: "退休人员学院补贴"
+        retired_fee_cutting_record: "离退休人员扣款记录"
+        retired_fee_cutting: "离退休人员扣款"
+        role_user: "用户角色设定"
+        role: "角色"
+        science_benefit: "科研津贴"
+        station_position_benefit_record: "岗位－职务津贴记录"
+        station_position_benefit: "岗位－职务津贴"
+        title: "职称"
+        undefind_fee: "不定费用"
+        user: "教职工"
+        welfare_benefit: "福利津贴"
+    attributes:
+        app_config:
+               key: "键"
+               value: "值"
+        assistant:
+               user_id: "教职工"
+               benefit: "辅导员津贴"
+        bank_cards:
+               user_id: "教职工"
+               bank_id: "银行"
+               card_number: "卡号"
+               description: "备注"
+        bank:
+               name: "名称"
+        basic_salary:
+               user_id: "教职工"
+               station_sa: "岗位工资"
+               position_sa: "职务工资"
+               station_be: "岗位紧贴"
+               foreign_be: "其他国家出台津补贴"
+               region_be: "地方出台津补贴"
+               hard_be: "艰苦边远"
+               stay_be: "公改保留补贴"
+        basic_salary_record:
+               user_id: "教职工"
+               year: "年度"
+               month: "月份"
+               station_sa: "岗位工资"
+               position_sa: "职务"
+               station_be: "岗位紧贴"
+               foreign_be: "其他国家出台津补贴"
+               region_be: "地方出台津补贴"
+               hard_be: "艰苦边远"
+               stay_be: "公改保留补贴"
+        class_benefit:
+               user_id: "教职工"
+               total_be: "学期总课时津贴"
+               term: "学期"
+               month: "计算月"
+               date: "发放日期"
+        class_month_benefit_record:
+               user_id: "教职工"
+               fee: "金额"
+               month: "发放月份"
+               date: "发放日期"
+        college_be_record:
+               user_id: "教职工"
+               year: "年度"
+               month: "月份"
+               life_be: "生活补贴"
+               diff_be: "补贴补差"
+               livesa_be: "活工资补贴"
+               tv_be: "电视补贴"
+               beaulty_be: "驻蓉补贴"
+               other_be: "其他"
+        college_benefit:
+               user_id: "教职工"
+               life_be: "生活补贴"
+               diff_be: "补贴补差"
+               livesa_be: "活工资补贴"
+               tv_be: "电视补贴"
+               beaulty_be: "驻蓉补贴"
+               other_be: "其他"
+        department:
+               name: "名称"
+        fee_cutting_record:
+               user_id: "教职工"
+               year: "年度"
+               month: "月份"
+               room_fee: "住房公积金"
+               med_fee: "医疗保险"
+               elc_fee: "水电气费"
+               net_fee: "上网费"
+               job_fee: "失业保险"
+               selfedu_fee: "职工个人教育费"
+               other_fee1: "其他扣款一"
+               other_fee2: "其他扣款二"
+               other_fee3: "其他扣款三"
+               self_tax: "个人所得税"
+        fee_cutting:
+               user_id: "教职工"
+               room_fee: "住房公积金"
+               med_fee: "医疗保险"
+               elc_fee: "水电气费"
+               net_fee: "上网费"
+               job_fee: "失业保险"
+               selfedu_fee: "职工个人教育费"
+               other_fee1: "其他扣款一"
+               other_fee2: "其他扣款二"
+               other_fee3: "其他扣款三"
+        page_module:
+               name: "名称"
+               index: "显示顺序"
+        page_role:
+               page_id: "页面"
+               role_id: "角色"
+        page:
+               name: "名称"
+               function: "页面功能"
+               url: "链接"
+               icon: "图标"
+               page_module_id: "页面模块"
+        performance_benefit_record:
+               user_id: "教职工"
+               term: "发放学期"
+               fee: "金额"
+               date: "发放日期"
+        performance_benefit_std:
+               user_id: "教职工"
+               std_fee: "绩效津贴标准金额"
+        position:
+               name: "名称"
+        retired_basic_salary:
+               user_id: "教职工"
+               basic_fee: "月基本退休费"
+               stay_be: "工改保留补贴_93年"
+               foreign_be: "其他国家出台津补贴"
+               region_be: "地方出台津补贴"
+        retired_basic_salary_record:
+               user_id: "教职工"
+               year: "年度"
+               month: "月份"
+               basic_fee: "月基本退休费"
+               stay_be: "工改保留补贴_93年"
+               foreign_be: "其他国家出台津补贴"
+               region_be: "地方出台津补贴"
+        retired_college_be_record:
+               user_id: "教职工"
+               year: "年度"
+               month: "月份"
+               diff_be: "补贴补差"
+               tv_be: "电视补贴"
+               beaulty_be: "驻蓉补贴"
+               other_be1: "其他1"
+               other_be2: "其他2"
+               other_be3: "其他3"
+        retired_college_benefit:
+               user_id: "教职工"
+               diff_be: "补贴补差"
+               tv_be: "电视补贴"
+               beaulty_be: "驻蓉补贴"
+               other_be1: "其他1"
+               other_be2: "其他2"
+               other_be3: "其他3"
+        retired_fee_cutting_record:
+               user_id: "教职工"
+               year: "年度"
+               month: "月份"
+               other_fee1: "其他扣款1"
+               other_fee2: "其他扣款2"
+               other_fee3: "其他扣款3"
+        retired_fee_cutting:
+               user_id: "教职工"
+               other_fee1: "其他扣款1"
+               other_fee2: "其他扣款2"
+               other_fee3: "其他扣款3"
+        role_user:
+               role_id: "角色"
+               user_id: "教职工"
+        role:
+               name : "名称"
+        science_benefit:
+               user_id: "教职工"
+               science_be: "科研津贴"
+               year: "年度"
+               month: "月份"
+               date: "发放日期"
+        station_position_benefit_record:
+               user_id: "教职工"
+               year: "年度"
+               month: "月份"
+               station_be: "岗位津贴"
+               position_be: "职务津贴"
+        station_position_benefit:
+               user_id: "教职工"
+               station_be: "岗位津贴"
+               position_be: "职务津贴"
+        title:
+               name: "名称"
+        undefind_fee:
+               user_id: "教职工"
+               subject: "名目"
+               fee:  "金额"
+               date: "发放日期"
+               be_type: "类型"
+        user:
+               name: "姓名"
+               department_id: "系部"
+               td_belongs_id: "教学所属系部"
+               gender: "性别"
+               title_id: "职称"
+               position_id: "职务"
+               birthday: "生日"
+               id_card: "身份证号"
+               login_id: "用户名"
+        welfare_benefit:
+               user_id: "教职工"
+               subject: "福利津贴名目"
+               fee: "金额"
+               date: "发放时间"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

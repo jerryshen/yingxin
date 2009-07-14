@@ -1,0 +1,14 @@
+<fieldset>
+  <legend>查看[<%= @step5.user.name %>]的入学报到注册情况</legend>
+  <p>
+    <b>是否注册:</b>
+    <%=h @step5.pass %>
+  </p>
+    <p>
+    <b>注册时间:</b>
+    <%=h @step5.date %>
+  </p>
+  <p class="bbar">
+    <input type="button" onclick="$page.showListView()" value="返回列表" />
+  </p>
+</fieldset>

@@ -1,0 +1,18 @@
+<%= f.error_messages %>
+<%= select_major "fee_std[major_id]" %>
+<p>
+  <%= f.label :fee1, "学费" %>
+  <%= f.text_field :fee1, :class => "required" %>
+</p>
+<p>
+  <%= f.label :fee2, "代管费" %>
+  <%= f.text_field :fee2, :class => "required" %>
+</p>
+<p>
+  <%= f.label :fee3, "住宿费" %>
+  <%= f.text_field :fee3, :class => "required" %>
+</p>
+<p>
+  <%= f.label :other, "其他费用" %>
+  <%= f.text_field :other, :class => "required" %>
+</p>

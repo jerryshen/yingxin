@@ -1,0 +1,14 @@
+<fieldset>
+  <legend>查看专业</legend>
+  <p>
+    <b>名称:</b>
+    <%=h @info_class.name %>
+  </p>
+    <p>
+    <b>专业:</b>
+    <%=h @info_class.major.name %>
+  </p>
+  <p class="bbar">
+    <input type="button" onclick="$page.showListView()" value="返回列表" />
+  </p>
+</fieldset>

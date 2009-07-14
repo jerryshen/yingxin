@@ -1,0 +1,2 @@
+module FeeStdsHelper
+end

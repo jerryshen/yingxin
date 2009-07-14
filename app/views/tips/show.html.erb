@@ -1,0 +1,22 @@
+<fieldset>
+  <legend>查看通知</legend>
+  <p>
+    <b>标题:</b>
+    <%=h @tip.title %>
+  </p>
+  <p>
+    <b>内容:</b>
+    <%=h @tip.content %>
+  </p>
+  <p>
+    <b>置顶:</b>
+    <%=h @tip.top %>
+  </p>
+  <p>
+    <b>隐藏:</b>
+    <%=h @tip.hidden %>
+  </p>
+  <p class="bbar">
+    <input type="button" onclick="$page.showListView()" value="返回列表" />
+  </p>
+</fieldset>

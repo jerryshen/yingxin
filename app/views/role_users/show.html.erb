@@ -1,0 +1,15 @@
+<fieldset>
+  <legend>查看角色－用户关系</legend>
+  <p>
+    <b>角色:</b>
+    <%=h @role_user.role.name if @role_user.role %>
+  </p>
+  <p>
+    <b>用户:</b>
+    <%=h @role_user.user.name if @role_user.user %>
+  </p>
+
+  <p class="bbar">
+    <input type="button" onclick="$page.showListView()" value="返回列表" />
+  </p>
+</fieldset>

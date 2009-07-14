@@ -1,0 +1,21 @@
+<%= f.error_messages %>
+<p>
+  <%= f.label :name, "姓名" %>
+  <%= f.text_field :name, :class => "required" %>
+</p>
+<p>
+  <%= f.label :department_id, "系部"%>
+  <%= f.select :department_id, Department.all.collect {|p| [ p.name, p.id ] }, {:include_blank => "请选择系部..." }, :class => "required" %>
+</p>
+<p>
+  <%= f.label :gender, "性别" %>
+  <%= f.select :gender, [["请选择性别...",""],["男","m"],["女","f"]],{}, :class => "required"  %>
+</p>
+<p>
+  <%= f.label :login_id, "用户名" %>
+  <%= f.text_field :login_id, :class => "required", :minlength => 5, :maxlength => 15 %>
+</p>
+<p>
+  <%= f.label :update_password, "密码" %>
+  <%= f.password_field :update_password, :class => "required", :minlength => 6 %>
+</p>

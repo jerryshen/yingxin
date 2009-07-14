@@ -1,0 +1,17 @@
+<%= f.error_messages %>
+<p>
+  <%= f.label :title, "标题" %>
+  <%= f.text_field :title, :class => "required" %>
+</p>
+<p>
+  <%= f.label :content, "内容" %>
+  <%= f.text_area :content, :class => "required" %>
+</p>
+<p>
+  <%= f.label :top, "置顶" %>
+  <%= f.check_box :top, :class => "required" %>
+</p>
+<p>
+  <%= f.label :hidden, "隐藏" %>
+  <%= f.check_box :hidden, :class => "required" %>
+</p>

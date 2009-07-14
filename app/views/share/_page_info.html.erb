@@ -1,0 +1,22 @@
+<div id="whatdiv">
+  <div style="text-align:left;"><a href="javascript:void(0);" id="whatdiv-close" onclick="toggleWhatdiv();">关闭</a></div>
+  <p><%= @subject.name  %>?</p>
+  <p><%= @subject.addr%> | <%= @subject.department %></p>
+  <p>
+  <p><% @subject.content.split("|").each do |c|  %>
+      <ul><li><%= c %></li></ul>
+    <% end %>
+  </p>
+</div>
+<script type="text/javascript">
+  insert_hint = function() {
+    if (document.getElementById) document.write('<p><span id="whatlink"><a href="javascript:void(0);" onclick="toggleWhatdiv(); return false;"><%=h @subject.name %>的详细信息</a></span></p>');
+    document.getElementById('whatdiv').style.display = 'none';
+  };
+  toggleWhatdiv = function() {
+    document.getElementById('whatdiv').style.display = (document.getElementById('whatdiv').style.display != 'none') ? 'none' : 'block';
+    document.getElementById('whatlink').style.display = (document.getElementById('whatdiv').style.display != 'none') ? 'none' : 'inline';
+    return false;
+  };
+</script>
+<script type="text/javascript">insert_hint();</script>

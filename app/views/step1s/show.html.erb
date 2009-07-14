@@ -1,0 +1,14 @@
+<fieldset>
+  <legend>查看[<%= @step1.user.name %>]的入学资格复查</legend>
+  <p>
+    <b>是否通过:</b>
+    <%=h @step1.pass %>
+  </p>
+    <p>
+    <b>复查时间:</b>
+    <%=h @step1.date %>
+  </p>
+  <p class="bbar">
+    <input type="button" onclick="$page.showListView()" value="返回列表" />
+  </p>
+</fieldset>

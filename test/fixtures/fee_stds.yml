@@ -1,15 +1,2 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+--- {}
 
-one:
-  major: 
-  fee1: 1.5
-  fee2: 1.5
-  fee3: 1.5
-  other: 1.5
-
-two:
-  major: 
-  fee1: 1.5
-  fee2: 1.5
-  fee3: 1.5
-  other: 1.5

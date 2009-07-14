@@ -1,15 +1,2 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+--- {}
 
-one:
-  building: 
-  name: MyString
-  beds: 1
-  phone: MyString
-  room_type: 1
-
-two:
-  building: 
-  name: MyString
-  beds: 1
-  phone: MyString
-  room_type: 1

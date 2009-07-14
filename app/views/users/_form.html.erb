@@ -8,8 +8,9 @@
   <%= f.select :department_id, Department.all.collect {|p| [ p.name, p.id ] }, {:include_blank => "请选择系部..." }, :class => "required" %>
 </p>
 <p>
-  <%= f.label :gender, "性别" %>
-  <%= f.select :gender, [["请选择性别...",""],["男","m"],["女","f"]],{}, :class => "required"  %>
+  <label>性别</label>
+  <label for="gender"><%= f.radio_button :gender, "m"  %>男</label>
+  <label for="gender"><%= f.radio_button :gender, "f"  %>女</label>
 </p>
 <p>
   <%= f.label :login_id, "用户名" %>

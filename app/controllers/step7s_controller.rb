@@ -61,10 +61,23 @@ class Step7sController < ApplicationController
 
   def pass
     @step7 = Step7.find(params[:id])
-    if @step7.update_attributes(:pass => !@step7.pass, :date => Time.now)
-      render :text =>"true"
+    @proce = Proce.find_by_student_id(@step7.student_id)
+    if !@step7.pass
+      if @step7.update_attributes(:pass => true, :date => Time.now)
+        @proce.update_attributes(:step7 => true, :step7_date => @step7.date)
+        Student.proc_end(@proce)
+        render :text =>"true"
+      else
+        render :text => "false"
+      end
     else
-      render :text =>"false"
+      if @step7.update_attributes(:pass => false, :date => nil)
+        @proce.update_attributes(:step7 => false, :step7_date => nil)
+        Student.proc_restart(@proce)
+        render :text =>"true"
+      else
+        render :text => "false"
+      end
     end
   end
 
@@ -99,6 +112,6 @@ class Step7sController < ApplicationController
       @step7s = Step7.paginate(:order =>"id DESC",:per_page=> @pagesize, :page => params[:page] || 1)
       count = Step7.count
     end
-    return render_json(@step4s,count)
+    return render_json(@step7s,count)
   end
 end

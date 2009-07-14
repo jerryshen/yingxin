@@ -83,7 +83,10 @@
       baseUrl: "http://" + window.location.host + "/" + controllerName,
       gridTitle: "公寓入住管理列表",
       newItemLink: "newItem",
-      columns: columns
+      columns: columns,
+      bindlinks: {
+        "pass" : bind_pass_link_click
+      }
     }
     $page = new ExtListPage(options);
   })

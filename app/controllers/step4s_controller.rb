@@ -61,10 +61,23 @@ class Step4sController < ApplicationController
 
   def pass
     @step4 = Step4.find(params[:id])
-    if @step4.update_attributes(:pass => !@step4.pass, :date => Time.now)
-      render :text =>"true"
+    @proce = Proce.find_by_student_id(@step4.student_id)
+    if !@step4.pass
+      if @step4.update_attributes(:pass => true, :date => Time.now)
+        @proce.update_attributes(:step4 => true, :step4_date => @step4.date)
+        Student.proc_end(@proce)
+        render :text =>"true"
+      else
+        render :text => "false"
+      end
     else
-      render :text =>"false"
+      if @step4.update_attributes(:pass => false, :date => nil)
+        @proce.update_attributes(:step4 => false, :step4_date => nil)
+        Student.proc_restart(@proce)
+        render :text =>"true"
+      else
+        render :text => "false"
+      end
     end
   end
 

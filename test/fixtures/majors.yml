@@ -1,0 +1,49 @@
+--- 
+majors_001: 
+  name: !binary |
+    6K6h566X5py656eR5a2m5LiO5oqA5pyv
+
+  created_at: 2009-07-10 08:18:26
+  updated_at: 2009-07-10 08:18:26
+  id: "1"
+  department_id: "4"
+majors_002: 
+  name: !binary |
+    5L+h5oGv566h55CG
+
+  created_at: 2009-07-10 08:18:34
+  updated_at: 2009-07-10 08:18:34
+  id: "2"
+  department_id: "4"
+majors_003: 
+  name: !binary |
+    55S15a2Q5L+h5oGv5oqA5pyv
+
+  created_at: 2009-07-10 08:18:59
+  updated_at: 2009-07-10 08:18:59
+  id: "3"
+  department_id: "4"
+majors_004: 
+  name: !binary |
+    5biC5Zy66JCl6ZSA
+
+  created_at: 2009-07-10 08:19:28
+  updated_at: 2009-07-10 08:19:28
+  id: "4"
+  department_id: "5"
+majors_005: 
+  name: !binary |
+    57uP5rWO566h55CG5LiT5LiaMQ==
+
+  created_at: 2009-07-10 08:20:32
+  updated_at: 2009-07-10 08:20:32
+  id: "5"
+  department_id: "5"
+majors_006: 
+  name: !binary |
+    57uP5rWO566h55CG5LiT5LiaMg==
+
+  created_at: 2009-07-10 08:20:43
+  updated_at: 2009-07-10 08:20:43
+  id: "6"
+  department_id: "5"

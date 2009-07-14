@@ -1,13 +1,2 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+--- {}
 
-one:
-  user: 
-  pass: false
-  date: 2009-07-12 15:36:00
-  major: 
-
-two:
-  user: 
-  pass: false
-  date: 2009-07-12 15:36:00
-  major: 

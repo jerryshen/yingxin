@@ -1,15 +1,131 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+--- 
+subjects_001: 
+  name: !binary |
+    5YWl5a2m6LWE5qC85aSN5p+l
 
-one:
-  name: MyString
-  index: 1
-  addr: MyString
-  department: MyString
-  content: MyText
+  created_at: 2009-07-12 03:56:39
+  updated_at: 2009-07-13 05:23:42
+  id: "1"
+  index: "1"
+  content: !binary |
+    5qOA6aqM5b2V5Y+W6YCa55+l5LmmfOmihuWPluOAijIwMDnnuqfmlrDnlJ/m
+    iqXliLDmtYHnqIvljZXjgIs=
 
-two:
-  name: MyString
-  index: 1
-  addr: MyString
-  department: MyString
-  content: MyText
+  department: !binary |
+    5oub55Sf5bCx5Lia5aSE
+
+  addr: !binary |
+    5pWZ5a2m5qW85YmN5bm/5Zy6
+
+subjects_002: 
+  name: !binary |
+    57y057qz6LS555So
+
+  created_at: 2009-07-12 03:59:44
+  updated_at: 2009-07-13 05:54:13
+  id: "2"
+  index: "2"
+  content: !binary |
+    5oyJ5oql5Yiw5LiT5Lia57y057qz5a2m6LS5LOS7o+euoei0uSzkvY/lrr/o
+    tLkgfCAo5rOoOumAmui/h+mTtuihjOi9rOW4kOeahOivt+WHuuekuumTtuih
+    jOi9rOW4kOWHreWNlSk=
+
+  department: !binary |
+    6K6h6LSi5aSE
+
+  addr: !binary |
+    5a6e6K6t5qW85LiA5qW8
+
+subjects_003: 
+  name: !binary |
+    57y057qz5Yab6K6t6LS5
+
+  created_at: 2009-07-12 04:02:14
+  updated_at: 2009-07-13 05:54:31
+  id: "3"
+  index: "3"
+  content: !binary |
+    57y057qz5Yab6K6t6aOf5a6/6LS5Mjcw5YWDL+S6uiB8IOWGm+iureacjeij
+    hei0uTQ45YWDL+S6ug==
+
+  department: !binary |
+    5L+d5Y2r5aSE
+
+  addr: !binary |
+    6KGM5pS/5qW85YmN5bm/5Zy6
+
+subjects_004: 
+  name: !binary |
+    5Yqe55CG5L+d6Zmp
+
+  created_at: 2009-07-12 04:03:11
+  updated_at: 2009-07-13 05:54:37
+  id: "4"
+  index: "4"
+  content: !binary |
+    5Yqe55CG5L+d6ZmpNTDlhYMv5Lq65bm0
+
+  department: !binary |
+    5a2m55Sf5aSE
+
+  addr: !binary |
+    6KGM5pS/5qW85YmN5bm/5Zy6
+
+subjects_005: 
+  name: !binary |
+    5YWl5a2m5oql5Yiw5rOo5YaM
+
+  created_at: 2009-07-12 04:10:43
+  updated_at: 2009-07-13 05:55:21
+  id: "5"
+  index: "5"
+  content: !binary |
+    5aGr5YaZ44CK5paw55Sf5Z+65pys5L+h5oGv55m76K6w6KGo44CLLOS6pOe6
+    uOi0qOaho+ahiO+8iOWmguacie+8iS4gfCDkuqTouqvku73or4HvvIjmiJbm
+    iLflj6PnsL/vvInlpI3ljbDku7bkuIDku73vvIjlj6/lnKjnjrDlnLrlhY3o
+    tLnlpI3ljbDvvIk75Lqk5LiA5a+455u454mHOOW8oC4gfCDms6jlhozlrabn
+    sY0sIOWHree8tOi0ueWPkeelqOWKnueQhi4gfCDpooblj5bjgIoyMDA557qn
+    5Yab6K6t5Y+K5YWl5a2m5pWZ6IKy5pel56iL5a6J5o6S6KGo44CL5ZKM44CK
+    5a2m55Sf566h55CG5omL5YaM44CL
+
+  department: !binary |
+    5ZCE5YiG6Zmi77yI6YOo77yJ6L6F5a+85ZGY5aSE
+
+  addr: !binary |
+    6ZKf5qW85bm/5Zy6
+
+subjects_006: 
+  name: !binary |
+    6LSt5Lmw5pel55So5ZOB
+
+  created_at: 2009-07-12 04:11:30
+  updated_at: 2009-07-13 05:55:26
+  id: "6"
+  index: "6"
+  content: !binary |
+    6LSt5Lmw5Y2n5YW35Y+K55Sf5rS755So5ZOB
+
+  department: !binary |
+    5ZCO5Yuk5Lqn5Lia5aSE
+
+  addr: !binary |
+    5L2T6IKy6aaG
+
+subjects_007: 
+  name: !binary |
+    5YWl5L2P5a2m55Sf5YWs5a+T
+
+  created_at: 2009-07-12 04:13:23
+  updated_at: 2009-07-13 05:55:44
+  id: "7"
+  index: "7"
+  content: !binary |
+    562+6K6i44CK5YWl5L2P5a2m55Sf5YWs5a+T5om/6K+65Lmm44CLLOS4iuS6
+    pOS4gOWvuOeFp+eJh+S4pOW8oC4gfCDlhaXkvY/lhazlr5M=
+
+  department: !binary |
+    5a6/6IiN566h55CG5Lit5b+D
+
+  addr: !binary |
+    5a2m55Sf5YWs5a+T56ys5LiJ5qCL
+

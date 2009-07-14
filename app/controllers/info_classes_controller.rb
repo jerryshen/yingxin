@@ -45,7 +45,6 @@ class InfoClassesController < ApplicationController
 
     respond_to do |format|
       if @info_class.save
-        flash[:notice] = 'InfoClass was successfully created.'
         format.html { redirect_to(@info_class) }
         format.xml  { render :xml => @info_class, :status => :created, :location => @info_class }
         format.json { render :text => '{status: "success", message: "成功添加班级！"}'}
@@ -64,7 +63,6 @@ class InfoClassesController < ApplicationController
 
     respond_to do |format|
       if @info_class.update_attributes(params[:info_class])
-        flash[:notice] = 'InfoClass was successfully updated.'
         format.html { redirect_to(@info_class) }
         format.xml  { head :ok }
         format.json { render :text => '{status: "success", message: "成功更新班级！"}'}

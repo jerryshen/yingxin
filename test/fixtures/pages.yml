@@ -1,4 +1,19 @@
 --- 
+pages_019: 
+  name: !binary |
+    5ZCE5LiT5Lia5pS26LS55qCH5YeG
+
+  created_at: 2009-07-12 04:34:53
+  updated_at: 2009-07-12 13:20:25
+  url: /fee_stds
+  id: "19"
+  icon: std.png
+  function: !binary |
+    5ZCE5LiT5Lia5pS26LS55qCH5YeG
+
+  index: 
+  page_module_id: "2"
+  hidden: f
 pages_008: 
   name: !binary |
     57O757uf5Y+C5pWw6YWN572u
@@ -13,6 +28,21 @@ pages_008:
 
   index: 
   page_module_id: "3"
+  hidden: f
+pages_020: 
+  name: !binary |
+    5YWl5a2m6LWE5qC85aSN5p+l
+
+  created_at: 2009-07-12 05:32:03
+  updated_at: 2009-07-12 13:20:14
+  url: /step1s
+  id: "20"
+  icon: step1.png
+  function: !binary |
+    5YWl5a2m6LWE5qC85aSN5p+l772c5oub55Sf5bCx5Lia5aSE
+
+  index: 
+  page_module_id: "7"
   hidden: f
 pages_009: 
   name: !binary |
@@ -29,6 +59,21 @@ pages_009:
   index: 
   page_module_id: "4"
   hidden: f
+pages_021: 
+  name: !binary |
+    57y057qz6LS555So
+
+  created_at: 2009-07-12 08:04:44
+  updated_at: 2009-07-12 13:20:03
+  url: /step2s
+  id: "21"
+  icon: step2.png
+  function: !binary |
+    5rWB56iL5o6n5Yi277yN57y057qz6LS555So
+
+  index: 
+  page_module_id: "7"
+  hidden: f
 pages_010: 
   name: !binary |
     5p+l55yL5Liq5Lq65L+h5oGv
@@ -43,6 +88,66 @@ pages_010:
 
   index: 
   page_module_id: "4"
+  hidden: f
+pages_022: 
+  name: !binary |
+    57y057qz5Yab6K6t6LS5
+
+  created_at: 2009-07-12 08:30:35
+  updated_at: 2009-07-12 13:19:49
+  url: /step3s
+  id: "22"
+  icon: step3.png
+  function: !binary |
+    57y057qz5Yab6K6t6LS5
+
+  index: 
+  page_module_id: "7"
+  hidden: f
+pages_011: 
+  name: !binary |
+    5LiT5Lia
+
+  created_at: 2009-07-09 07:27:36
+  updated_at: 2009-07-12 13:21:37
+  url: /majors
+  id: "11"
+  icon: major.png
+  function: !binary |
+    5LiT5Lia5L+h5oGv
+
+  index: 
+  page_module_id: "2"
+  hidden: f
+pages_023: 
+  name: !binary |
+    5Yqe55CG5L+d6Zmp
+
+  created_at: 2009-07-12 09:07:16
+  updated_at: 2009-07-12 13:19:38
+  url: /step4s
+  id: "23"
+  icon: step4.png
+  function: !binary |
+    5Yqe55CG5L+d6Zmp
+
+  index: 
+  page_module_id: "7"
+  hidden: f
+pages_012: 
+  name: !binary |
+    54+t57qn
+
+  created_at: 2009-07-09 07:51:05
+  updated_at: 2009-07-12 13:21:28
+  url: /info_classes
+  id: "12"
+  icon: class.png
+  function: !binary |
+    54+t57qn
+
+  index: 
+  page_module_id: "6"
   hidden: f
 pages_001: 
   name: !binary |
@@ -59,6 +164,36 @@ pages_001:
   index: 
   page_module_id: "2"
   hidden: f
+pages_024: 
+  name: !binary |
+    5YWl5a2m5oql5Yiw5rOo5YaM
+
+  created_at: 2009-07-12 09:09:34
+  updated_at: 2009-07-12 13:19:25
+  url: /step5s
+  id: "24"
+  icon: step5.png
+  function: !binary |
+    5YWl5a2m5oql5Yiw5rOo5YaM
+
+  index: 
+  page_module_id: "7"
+  hidden: f
+pages_013: 
+  name: !binary |
+    5a6/6IiN5aSn5qW8
+
+  created_at: 2009-07-09 08:46:33
+  updated_at: 2009-07-12 13:21:18
+  url: /buildings
+  id: "13"
+  icon: building.png
+  function: !binary |
+    5a6/6IiN5aSn5qW8IA==
+
+  index: 
+  page_module_id: "5"
+  hidden: f
 pages_002: 
   name: !binary |
     6Zmi57O75Y+K6YOo6Zeo
@@ -73,6 +208,36 @@ pages_002:
 
   index: 
   page_module_id: "2"
+  hidden: f
+pages_025: 
+  name: !binary |
+    6LSt5Lmw5pel55So5ZOB
+
+  created_at: 2009-07-12 09:10:25
+  updated_at: 2009-07-12 13:22:34
+  url: /step6s
+  id: "25"
+  icon: step6.png
+  function: !binary |
+    6LSt5Lmw5pel55So5ZOB
+
+  index: 
+  page_module_id: "7"
+  hidden: f
+pages_014: 
+  name: !binary |
+    5a6/6IiN5Y+3
+
+  created_at: 2009-07-09 12:25:24
+  updated_at: 2009-07-12 13:21:08
+  url: /rooms
+  id: "14"
+  icon: room.png
+  function: !binary |
+    5a6/6IiN
+
+  index: 
+  page_module_id: "5"
   hidden: f
 pages_003: 
   name: !binary |
@@ -89,6 +254,36 @@ pages_003:
   index: 
   page_module_id: "1"
   hidden: f
+pages_026: 
+  name: !binary |
+    5YWl5L2P5a2m55Sf5YWs5a+T
+
+  created_at: 2009-07-12 09:11:06
+  updated_at: 2009-07-12 13:19:04
+  url: /step7s
+  id: "26"
+  icon: step7.png
+  function: !binary |
+    5YWl5L2P5a2m55Sf5YWs5a+T
+
+  index: 
+  page_module_id: "7"
+  hidden: f
+pages_015: 
+  name: !binary |
+    5paw55Sf
+
+  created_at: 2009-07-09 13:36:01
+  updated_at: 2009-07-12 13:20:59
+  url: /students
+  id: "15"
+  icon: student.png
+  function: !binary |
+    5paw55Sf
+
+  index: 
+  page_module_id: "6"
+  hidden: f
 pages_004: 
   name: !binary |
     5Yqf6IO9
@@ -103,6 +298,36 @@ pages_004:
 
   index: 
   page_module_id: "1"
+  hidden: f
+pages_027: 
+  name: !binary |
+    5oql5Yiw5rWB56iL5oC75rGH
+
+  created_at: 2009-07-14 06:07:07
+  updated_at: 2009-07-14 06:23:02
+  url: /proces
+  id: "27"
+  icon: ""
+  function: !binary |
+    5oql5Yiw5rWB56iL5oC75rGH
+
+  index: 
+  page_module_id: "7"
+  hidden: f
+pages_016: 
+  name: !binary |
+    5Y2V5Liq5bqK5L2N5YiG6YWN
+
+  created_at: 2009-07-10 06:53:12
+  updated_at: 2009-07-12 13:20:49
+  url: /room_students
+  id: "16"
+  icon: bed.png
+  function: !binary |
+    5paw55Sf5a6/6IiN5YiG6YWN
+
+  index: 
+  page_module_id: "5"
   hidden: f
 pages_005: 
   name: !binary |
@@ -119,6 +344,36 @@ pages_005:
   index: 
   page_module_id: "1"
   hidden: f
+pages_028: 
+  name: !binary |
+    5paw55Sf5Li05pe25pWw5o2u
+
+  created_at: 2009-07-14 08:35:16
+  updated_at: 2009-07-14 08:35:16
+  url: /temps
+  id: "28"
+  icon: ""
+  function: !binary |
+    5paw55Sf5Li05pe25pWw5o2u
+
+  index: 
+  page_module_id: "8"
+  hidden: f
+pages_017: 
+  name: !binary |
+    6YCa55+l566h55CG
+
+  created_at: 2009-07-11 12:30:32
+  updated_at: 2009-07-12 13:22:50
+  url: /tips
+  id: "17"
+  icon: tip.png
+  function: !binary |
+    6YCa55+l566h55CG
+
+  index: 
+  page_module_id: "3"
+  hidden: f
 pages_006: 
   name: !binary |
     6KeS6Imy5p2D6ZmQ5YiG6YWN
@@ -133,6 +388,21 @@ pages_006:
 
   index: 
   page_module_id: "1"
+  hidden: f
+pages_018: 
+  name: !binary |
+    5oql5Yiw5LqL6aG5
+
+  created_at: 2009-07-12 03:54:00
+  updated_at: 2009-07-12 13:20:34
+  url: /subjects
+  id: "18"
+  icon: subject.png
+  function: !binary |
+    5oql5Yiw5LqL6aG5
+
+  index: 
+  page_module_id: "2"
   hidden: f
 pages_007: 
   name: !binary |

@@ -4,8 +4,8 @@ class CreateTips < ActiveRecord::Migration
       t.string :title
       t.references :user
       t.text :content
-      t.boolean :top
-      t.boolean :hidden
+      t.boolean :top, :default => false
+      t.boolean :hidden, :default => false
 
       t.timestamps
     end

@@ -2,7 +2,7 @@ class CreateDepartments < ActiveRecord::Migration
   def self.up
     create_table :departments do |t|
       t.string :name
-      t.boolean :de_type
+      t.boolean :de_type, :default => false
 
       t.timestamps
     end

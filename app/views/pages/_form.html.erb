@@ -20,6 +20,7 @@
   <%= f.text_field :icon %>
 </p>
 <p>
-  <%= f.label :hidden, "是否隐藏" %>
-  <%= f.check_box :hidden %>
+  <label>是否隐藏</label>
+  <label for="hidden"><%= f.radio_button :hidden, false  %>显示</label>
+  <label for="hidden"><%= f.radio_button :hidden, true   %>隐藏</label>
 </p>

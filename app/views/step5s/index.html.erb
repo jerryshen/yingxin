@@ -85,7 +85,10 @@
       baseUrl: "http://" + window.location.host + "/" + controllerName,
       gridTitle: "入学报到注册管理列表",
       newItemLink: "newItem",
-      columns: columns
+      columns: columns,
+      bindlinks: {
+        "pass" : bind_pass_link_click
+      }
     }
     $page = new ExtListPage(options);
   })

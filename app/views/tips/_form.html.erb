@@ -15,3 +15,15 @@
   <%= f.label :hidden, "隐藏" %>
   <%= f.check_box :hidden, :class => "required" %>
 </p>
+
+<p>
+  <label>置顶</label>
+  <label for="top"><%= f.radio_button :top, true  %>置顶</label>
+  <label for="top"><%= f.radio_button :top, false %>普通</label>
+</p>
+
+<p>
+  <label>隐藏</label>
+  <label for="top"><%= f.radio_button :top, true  %>隐藏</label>
+  <label for="top"><%= f.radio_button :top, false %>显示</label>
+</p>

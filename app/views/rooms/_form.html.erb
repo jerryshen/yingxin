@@ -8,16 +8,16 @@
   <%= f.text_field :name, :class => "required" %>
 </p>
 <p>
-  <label>床位数量</label>
-  <label for="beds_1"><input id="beds_1" type="radio" name="room[beds]" value="1" />4人间</label>
-  <label for="beds_0"><input id="beds_0" type="radio" name="room[beds]" value="0" />6人间</label>
+  <%= f.label :phone, "电话" %>
+  <%= f.text_field :phone, :class => "required" %>
 </p>
 <p>
   <label>宿舍类型</label>
-  <label for="type_1"><input id="type_1" type="radio" name="room[type]" value="1" />男生宿舍</label>
-  <label for="type_0"><input id="type_0" type="radio" name="room[type]" value="0" />女生宿舍</label>
+  <label for="beds"><%= f.radio_button :room_type, "0", :class => "required" %>男生宿舍</label>
+  <label for="beds"><%= f.radio_button :room_type, "1", :class => "required" %>女生宿舍</label>
 </p>
 <p>
-  <%= f.label :phone, "电话" %>
-  <%= f.text_field :phone, :class => "required" %>
+  <label>床位数量</label>
+  <label for="beds"><%= f.radio_button :beds, "4"  %>4人间</label>
+  <label for="beds"><%= f.radio_button :beds, "6"  %>6人间</label>
 </p>

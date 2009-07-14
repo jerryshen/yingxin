@@ -29,7 +29,7 @@
   }
 
   var makeAsPassLink = function(value, p, record){
-    var text = value.toString()=="true" ? "已通过复查" : "未通过复查";
+    var text = value.toString()=="true" ? "<img src='/images/icons/green.png' />" : "未通过复查";
     return String.format("<a href='#' action ='pass' title='Pass' class='gridButton' url='/step1s/pass/{0}'>{1}</a>",record.data.id,text);
   }
 
@@ -83,7 +83,10 @@
       baseUrl: "http://" + window.location.host + "/" + controllerName,
       gridTitle: "入学资格复查管理列表",
       newItemLink: "newItem",
-      columns: columns
+      columns: columns,
+      bindlinks: {
+        "pass" : bind_pass_link_click
+      }
     }
     $page = new ExtListPage(options);
   })

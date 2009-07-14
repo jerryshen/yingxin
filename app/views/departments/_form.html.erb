@@ -3,8 +3,8 @@
   <%= f.label :name, "名称" %>
   <%= f.text_field :name, :class => "required" %>
 </p>
-  <p>
-    <label>类型</label>
-    <label for="de_1"><input id="de_1" type="radio" name="department[de_type]" value="1" />面向学生</label>
-    <label for="de_0"><input id="de_0" type="radio" name="department[de_type]" value="0" />面向全部</label>
-  </p>
+<p>
+  <label>类型</label>
+  <label for="de_type"><%= f.radio_button :de_type, true  %>面向学生</label>
+  <label for="de_type"><%= f.radio_button :de_type, false  %>面向全部</label>
+</p>

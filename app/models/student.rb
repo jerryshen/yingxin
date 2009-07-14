@@ -5,6 +5,22 @@ class Student < ActiveRecord::Base
 
   belongs_to :room_student
 
+  # process end
+  def self.proc_end(proc)
+    if proc.step1 && proc.step2 && proc.step3 && proc.step4 && proc.step5 && proc.step6 && proc.step7 == true
+      student = Student.find(proc.student_id)
+      student.update_attributes(:confirm => true, :confirm_date => Time.now)
+    end
+  end
+
+  #process restart
+  def self.proc_restart(proc)
+    if proc.step1 && proc.step2 && proc.step3 && proc.step4 && proc.step5 && proc.step6 && proc.step7 == false
+      student = Student.find(proc.student_id)
+      student.update_attributes(:confirm => false, :confirm_date => nil)
+    end
+  end
+
   def self.to_json
     hash = {}
     find_by_sql("select id,name from students").each do |row|

@@ -7,7 +7,7 @@ class CreatePages < ActiveRecord::Migration
       t.integer :index
       t.string :icon
       t.references :page_module
-      t.boolean :hidden
+      t.boolean :hidden, :default => false
 
       t.timestamps
     end

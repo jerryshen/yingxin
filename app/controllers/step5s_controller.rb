@@ -85,7 +85,7 @@ class Step5sController < ApplicationController
     end
 
     if(!params[:class_id].blank?)
-      conditions += " AND p.class_id = ? "
+      conditions += " AND p.info_class_id = ? "
       condition_values << params[:class_id]
     end
 

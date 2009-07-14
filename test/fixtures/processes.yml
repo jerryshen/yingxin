@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  student: 
+  step1: false
+  step1_date: 2009-07-14 13:11:48
+
+two:
+  student: 
+  step1: false
+  step1_date: 2009-07-14 13:11:48

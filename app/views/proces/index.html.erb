@@ -11,7 +11,6 @@
 <%= javascript_include_tag 'AjaxForm.js' %>
 <div id="list-view">
   <form style="margin: 10px 0px;" id="search_form">
-    <%= page_info  %>
     <%= index_select_class  %>
     <input class="button" type="button" id="btnSearch" value="搜索"/>
     <input value="重置"class="btnreset" type="reset" />
@@ -26,30 +25,6 @@
   var students = <%= Student.to_json%>
   var getStudentName = function(value){
     return students[value]
-  }
-
-  var makeAsPassLink = function(value, p, record){
-    var text = value.toString()=="true" ? "已入住" : "未入住";
-    return String.format("<a href='#' action ='pass' title='Pass' class='gridButton' url='/step7s/pass/{0}'>{1}</a>",record.data.id,text);
-  }
-
-  var bind_pass_link_click = function(alink){
-    var url = alink.getAttribute("url");
-    Ext.get(alink).on("click",function(){
-      Ext.Ajax.request({
-        url: url,
-        success: function(rq,params){ //rq:请求的响应，params请求时的参数（此处为｛url,success,failure｝)
-          if(rq.responseText=="true"){
-            $page.refreshGridData();
-          }else{
-            Ext.MessageBox.show({msg:"更新隐藏/显示状态失败",buttons: Ext.MessageBox.OK,icon:Ext.MessageBox.ERROR});
-          }
-        },
-        failure: function(){
-          Ext.MessageBox.show({msg:"请求服务器失败，请检查网络连接或与系统管理员联系",buttons: Ext.MessageBox.OK,icon:Ext.MessageBox.WARNING});
-        }
-      });
-    })
   }
   //{header: [dataIndex(首字母大写)], renderer: money(Function),menuDisabled: [true],
   // dataIndex: "fieldName" ,width: 100, sortable: [false], resizable: [false]}
@@ -68,20 +43,73 @@
         sortable: true,
         renderer: getStudentName
       }, {
-        header: "公寓入住",
-        dataIndex: 'pass',
+        header: "入学资格复查",
+        dataIndex: 'step1',
         type: 'boolean',
-        sortable: true,
-        renderer: makeAsPassLink
+        sortable: true
+      }, {
+        header: "审查时间",
+        dataIndex: 'step1_date',
+        sortable: true
+      }, {
+        header: "缴纳费用",
+        dataIndex: 'step2',
+        type: 'boolean',
+        sortable: true
+      }, {
+        header: "缴纳时间",
+        dataIndex: 'step2_date',
+        sortable: true
+      }, {
+        header: "缴纳军训费",
+        dataIndex: 'step3',
+        type: 'boolean',
+        sortable: true
+      }, {
+        header: "缴纳时间",
+        dataIndex: 'step3_date',
+        sortable: true
+      }, {
+        header: "办理保险",
+        dataIndex: 'step4',
+        type: 'boolean',
+        sortable: true
+      }, {
+        header: "办理时间",
+        dataIndex: 'step4_date',
+        sortable: true
+      }, {
+        header: "入学报到注册",
+        dataIndex: 'step5',
+        type: 'boolean',
+        sortable: true
+      }, {
+        header: "注册时间",
+        dataIndex: 'step5_date',
+        sortable: true
+      }, {
+        header: "购买日用品",
+        dataIndex: 'step6',
+        type: 'boolean',
+        sortable: true
+      }, {
+        header: "购买时间",
+        dataIndex: 'step6_date',
+        sortable: true
+      }, {
+        header: "入住学生公寓",
+        dataIndex: 'step7',
+        type: 'boolean',
+        sortable: true
       }, {
         header: "入住时间",
-        dataIndex: 'date',
+        dataIndex: 'step7_date',
         sortable: true
       }]
-    var controllerName = "step7s";
+    var controllerName = "proces";
     options = {
       baseUrl: "http://" + window.location.host + "/" + controllerName,
-      gridTitle: "公寓入住管理列表",
+      gridTitle: "报到流程情况列表",
       newItemLink: "newItem",
       columns: columns
     }

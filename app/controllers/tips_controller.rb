@@ -42,6 +42,7 @@ class TipsController < ApplicationController
   # POST /tips.xml
   def create
     @tip = Tip.new(params[:tip])
+    @tip.user_id = @current_user.id
 
     respond_to do |format|
       if @tip.save

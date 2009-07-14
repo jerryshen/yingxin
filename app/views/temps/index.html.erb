@@ -1,0 +1,133 @@
+<link href="/javascripts/ext-2.2.1/resources/css/ext-all.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/grid.css" media="screen" rel="stylesheet" type="text/css" />
+<%= stylesheet_link_tag "form.css" %>
+<%= javascript_include_tag 'ext-2.2.1/adapter/jquery/jquery.js'%>
+<%= javascript_include_tag 'ext-2.2.1/adapter/jquery/ext-jquery-adapter.js'%>
+<%= javascript_include_tag 'ext-2.2.1/ext-all.js'%>
+<%= javascript_include_tag 'ExtListPage.js' %>
+<%= javascript_include_tag 'jquery-validate/lib/jquery.form.js' %>
+<%= javascript_include_tag 'jquery-validate/jquery.validate.js' %>
+<%= javascript_include_tag 'jquery-validate/localization/messages_cn.js' %>
+<%= javascript_include_tag 'AjaxForm.js' %>
+<div id="list-view">
+  <form style="margin: 10px 0px;" id="search_form">
+    <input class="button" type="button" id="btnSearch" value="搜索"/>
+    <input value="重置"class="btnreset" type="reset" />
+    <input value="刷新 " onclick="window.location.reload()" class="btnrefresh" type="button"  />
+  </form>
+  <div>
+    <div id="grid-wrap">
+    </div>
+  </div>
+</div>
+<script>
+  //{header: [dataIndex(首字母大写)], renderer: money(Function),menuDisabled: [true],
+  // dataIndex: "fieldName" ,width: 100, sortable: [false], resizable: [false]}
+  //框[]中的为默认值
+  Ext.onReady(function(){
+    var columns = [{
+        header: "ID",
+        dataIndex: 'id',
+        width: 30,
+        sortable: true,
+        type: "int",
+        resizable: false
+      }, {
+        header: "新生姓名",
+        dataIndex: 'name',
+        sortable: true
+      }, {
+        header: "考生号",
+        dataIndex: 'f1',
+        sortable: true
+      }, {
+        header: "准考证号",
+        dataIndex: 'f2',
+        sortable: true
+      }, {
+        header: "性别",
+        dataIndex: 'f3',
+        sortable: true
+      }, {
+        header: "出生年月",
+        dataIndex: 'f4',
+        sortable: true
+      }, {
+        header: "高考成绩",
+        dataIndex: 'f5',
+        sortable: true
+      }, {
+        header: "投档成绩",
+        dataIndex: 'f6',
+        sortable: true
+      }, {
+        header: "政治面貌",
+        dataIndex: 'f7',
+        sortable: true
+      }, {
+        header: "民族",
+        dataIndex: 'f8',
+        sortable: true
+      }, {
+        header: "考生类别",
+        dataIndex: 'f9',
+        sortable: true
+      }, {
+        header: "毕业类别",
+        dataIndex: 'f10',
+        sortable: true
+      }, {
+        header: "中学代码",
+        dataIndex: 'f11',
+        sortable: true
+      }, {
+        header: "中学名称",
+        dataIndex: 'f12',
+        sortable: true
+      }, {
+        header: "地区代码",
+        dataIndex: 'f13',
+        sortable: true
+      }, {
+        header: "地区名称",
+        dataIndex: 'f14',
+        sortable: true
+      }, {
+        header: "身份证号",
+        dataIndex: 'f15',
+        sortable: true
+      }, {
+        header: "投寄地址",
+        dataIndex: 'f16',
+        sortable: true
+      }, {
+        header: "邮政编码",
+        dataIndex: 'f17',
+        sortable: true
+      }, {
+        header: "联系电话",
+        dataIndex: 'f18',
+        sortable: true
+      }, {
+        header: "收件人",
+        dataIndex: 'f19',
+        sortable: true
+      }, {
+        header: "专业名称",
+        dataIndex: 'f20',
+        sortable: true
+      }, {
+        header: "学制",
+        dataIndex: 'f21',
+        sortable: true
+      }]
+    var controllerName = "temps";
+    options = {
+      baseUrl: "http://" + window.location.host + "/" + controllerName,
+      gridTitle: "新生临时数据列表列表",
+      newItemLink: "newItem",
+      columns: columns
+    }
+    $page = new ExtListPage(options);
+  })
+</script>

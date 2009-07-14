@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 24) do
+ActiveRecord::Schema.define(:version => 26) do
 
   create_table "app_configs", :force => true do |t|
     t.string   "key"
@@ -91,6 +91,28 @@ ActiveRecord::Schema.define(:version => 24) do
   end
 
   add_index "pages", ["page_module_id"], :name => "index_pages_on_page_module_id"
+
+  create_table "proces", :force => true do |t|
+    t.integer  "student_id"
+    t.boolean  "step1",      :default => false
+    t.boolean  "step2",      :default => false
+    t.boolean  "step3",      :default => false
+    t.boolean  "step4",      :default => false
+    t.boolean  "step5",      :default => false
+    t.boolean  "step6",      :default => false
+    t.boolean  "step7",      :default => false
+    t.datetime "step1_date"
+    t.datetime "step2_date"
+    t.datetime "step3_date"
+    t.datetime "step4_date"
+    t.datetime "step5_date"
+    t.datetime "step6_date"
+    t.datetime "step7_date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "proces", ["student_id"], :name => "index_proces_on_student_id"
 
   create_table "role_users", :force => true do |t|
     t.integer  "user_id"
@@ -239,6 +261,7 @@ ActiveRecord::Schema.define(:version => 24) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "confirm",       :default => false
+    t.datetime "confirm_date"
   end
 
   add_index "students", ["department_id"], :name => "index_students_on_department_id"
@@ -251,6 +274,33 @@ ActiveRecord::Schema.define(:version => 24) do
     t.string   "addr"
     t.string   "department"
     t.text     "content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "temps", :force => true do |t|
+    t.string   "name"
+    t.string   "f1"
+    t.string   "f2"
+    t.string   "f3"
+    t.string   "f4"
+    t.string   "f5"
+    t.string   "f6"
+    t.string   "f7"
+    t.string   "f8"
+    t.string   "f9"
+    t.string   "f10"
+    t.string   "f11"
+    t.string   "f12"
+    t.string   "f13"
+    t.string   "f14"
+    t.string   "f15"
+    t.string   "f16"
+    t.string   "f17"
+    t.string   "f18"
+    t.string   "f19"
+    t.string   "f20"
+    t.string   "f21"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

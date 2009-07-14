@@ -23,9 +23,9 @@
   </div>
 </div>
 <script>
-  var users = <%= User.to_json%>
-  var getUserName = function(value){
-    return users[value]
+  var students = <%= Student.to_json%>
+  var getStudentName = function(value){
+    return students[value]
   }
 
   var makeAsPassLink = function(value, p, record){
@@ -64,9 +64,9 @@
         resizable: false
       }, {
         header: "新生姓名",
-        dataIndex: 'user_id',
+        dataIndex: 'student_id',
         sortable: true,
-        renderer: getUserName
+        renderer: getStudentName
       }, {
         header: "军训费用缴纳情况",
         dataIndex: 'pass',

@@ -1,12 +1,12 @@
 <% form_tag("/students/upload_thumb", :method => "post", :multipart => true) do %>
   <input type="hidden" name="id" value="<%= @student.id %>" />
   <input type="file" name="thumb" id="student_thumb" />
-  <input type="submit" value="上传" onclick="top.document.getElementById('uploading').style.display = 'block'" />
+  <input type="submit" value="上传" onclick="parent.document.getElementById('uploading').style.display = 'block'" />
 <% end %>
 <script>
 	var src = '<%= @thumb_url %>';
 	if(src){
-		top.document.getElementById("student_thumb").src = src;
+		parent.document.getElementById("student_thumb").src = src;
 	}
-	top.document.getElementById('uploading').style.display = "none";
+	parent.document.getElementById('uploading').style.display = "none";
 </script>

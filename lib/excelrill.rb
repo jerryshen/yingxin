@@ -1,6 +1,14 @@
 require 'win32ole'
 require 'iconv'
 module ExcelRill
+  def self.get_rows_count(sheet)
+    sheet.UsedRange.Rows.count
+  end
+  
+  def self.get_cols_count(sheet)
+    sheet.UsedRange.columns.count
+  end
+  
 	def self.get_area_data(sheet, option)    
 		rows = sheet.UsedRange.Rows.count
 		cols = sheet.UsedRange.columns.count
@@ -8,17 +16,16 @@ module ExcelRill
 		default = {:start_row => 1,:start_column=> 1, :end_row => -1, :end_column => -1}
 		option = default.merge!(option)
 
-    raise "Êý¾ÝÇøÓò·¶Î§´íÎó£º¿ªÊ¼ÐÐºÅ±ØÐë´óÓÚµÈÓÚ0" unless option[:start_row] >= 0
-    raise "Êý¾ÝÇøÓò·¶Î§´íÎó£º¿ªÊ¼ÁÐºÅ±ØÐë´óÓÚµÈÓÚ0" unless option[:start_column] >= 0
+    raise "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î§ï¿½ï¿½ï¿½ó£º¿ï¿½Ê¼ï¿½ÐºÅ±ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½0" unless option[:start_row] >= 0
+    raise "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î§ï¿½ï¿½ï¿½ó£º¿ï¿½Ê¼ï¿½ÐºÅ±ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½0" unless option[:start_column] >= 0
 
 		startRow = option[:start_row] 
 		startCol = option[:start_column] 
 		endRow = rows + option[:end_row] 
 		endCol = cols + option[:end_column]
 
-    raise "Êý¾ÝÇøÓò·¶Î§´íÎó£º½áÊøÐÐºÅ#{endROw}´óÓÚÆðÊ¼ÐÐºÅ#{startRow}" unless endRow >= startRow
-    raise "Êý¾ÝÇøÓò·¶Î§´íÎó£º½áÊøÁÐºÅ#{endCol}´óÓÚÆðÊ¼ÁÐºÅ#{startCol}" unless endCol >= startCol
-
+    raise "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î§ï¿½ï¿½ï¿½ó£º½ï¿½ï¿½ï¿½ï¿½Ðºï¿½#{endROw}ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½Ðºï¿½#{startRow}" unless endRow >= startRow
+    raise "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î§ï¿½ï¿½ï¿½ó£º½ï¿½ï¿½ï¿½ï¿½Ðºï¿½#{endCol}ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½Ðºï¿½#{startCol}" unless endCol >= startCol
 		data = []
 		for row in startRow..endRow
 		  row_data = data[data.length] = []      
@@ -42,20 +49,20 @@ module ExcelRill
             hashRow[key] = ""
           end
         else
-          raise "µÚ#{col}ÁÐµÄkey²»´æÔÚ"
+          raise "ï¿½ï¿½#{col}ï¿½Ðµï¿½keyï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
         end
 		  end
 		end
 		return hashdata
 	end
 
-  #»ñÈ¡Ä³¸öµ¥Ôª¸ñµÄÖµ
+  #ï¿½ï¿½È¡Ä³ï¿½ï¿½Ôªï¿½ï¿½ï¿½Öµ
   def self.get_cell_value(sheet,row,col)
     return sheet.Cells(row+1,col+1).value
   end
 
-  def self.parse_excel(file_path,blocks,*encoding) #µÚÈý¸ö²ÎÊýÖ»ÊÇÎªÁËÓëexcelrillinux½Ó¿ÚÒ»ÖÂ
-    raise "ÎÄ¼þ²»´æÔÚ" unless File.exist?(file_path)
+  def self.parse_excel(file_path,blocks,*encoding) #ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö»ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½excelrillinuxï¿½Ó¿ï¿½Ò»ï¿½ï¿½
+    raise "ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" unless File.exist?(file_path)
     excel = WIN32OLE::new('excel.Application')
 		excel.visible = false     # in case you want to see what happens 
 		excel.Application.DisplayAlerts = false
@@ -63,7 +70,7 @@ module ExcelRill
     begin
       blocks.each{ |proc| proc.call(workbook)}
 		rescue => error
-      #raise error
+      raise error
 		ensure
       workbook.Close
 		  excel.Workbooks.Close

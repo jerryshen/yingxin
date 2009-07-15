@@ -24,6 +24,10 @@
   //{header: [dataIndex(首字母大写)], renderer: money(Function),menuDisabled: [true],
   // dataIndex: "fieldName" ,width: 100, sortable: [false], resizable: [false]}
   //框[]中的为默认值
+  function format_birthday(value, p, record){
+  	return (new Date(value)).format("Y-m-d");
+  }
+  
   Ext.onReady(function(){
     var columns = [{
         header: "ID",
@@ -51,7 +55,9 @@
       }, {
         header: "出生年月",
         dataIndex: 'f4',
-        sortable: true
+        sortable: true,
+		renderer: format_birthday,
+		type: 'date'
       }, {
         header: "高考成绩",
         dataIndex: 'f5',

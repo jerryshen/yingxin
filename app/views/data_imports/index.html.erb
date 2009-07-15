@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>数据导入</title>
+    <%= stylesheet_link_tag "form.css" %>
+	<style>
+		option{
+			padding-left: 10px;
+		}
+	</style>
+  </head>
+  <body>
+    <% form_tag('/data_imports/import', :multipart => true) do |f| %>
+      <fieldset>
+        <legend>数据导入</legend>
+        <p>
+          <label for="import_file">导入文件</label><input class="file" id="import_file" type="file" name="excel_file" />
+        </p>
+        <p class="bbar">
+          <input class="submit" type="submit" onclick="return check()" value="导入" />
+        </p>
+      </fieldset>
+    <% end %>
+	<script>
+		function check(){
+			if(document.getElementById("import_file").value == ''){
+				alert("请选择导入文件");
+				return false;
+			}	
+			if (document.getElementById("import_file").value.indexOf(".xls") == -1) {
+				alert("请选择扩展名为.xls的Excel文件导入");
+				return false;
+			}			
+			return true;
+		}
+	</script>
+  </body>
+</html>

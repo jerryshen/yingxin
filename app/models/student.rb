@@ -30,6 +30,15 @@ class Student < ActiveRecord::Base
     return hash.to_json
   end
 
+    def self.get_number
+    hash = {}
+    find_by_sql("select id,stu_number from students").each do |row|
+      attrs = row.attributes
+      hash[attrs["id"]] = attrs["stu_number"]
+    end
+    return hash.to_json
+  end
+
   #import students to all steps and proces
   def self.import_to_steps
     students = self.all

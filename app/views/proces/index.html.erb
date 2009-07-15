@@ -26,6 +26,11 @@
   var getStudentName = function(value){
     return students[value]
   }
+
+  var condition = function(value, p, record){
+    var text = value.toString()=="true" ? "<div class='grid-text-true'></div>" : "<div class='grid-text-false'></div>";
+    return String.format("<a href='#' action ='pass' title='Pass' class='gridButton' url='/step2s/pass/{0}'>{1}</a>",record.data.id,text);
+  }
   //{header: [dataIndex(首字母大写)], renderer: money(Function),menuDisabled: [true],
   // dataIndex: "fieldName" ,width: 100, sortable: [false], resizable: [false]}
   //框[]中的为默认值
@@ -38,7 +43,7 @@
         type: "int",
         resizable: false
       }, {
-        header: "新生姓名",
+        header: "姓名",
         dataIndex: 'student_id',
         sortable: true,
         renderer: getStudentName
@@ -46,65 +51,44 @@
         header: "入学资格复查",
         dataIndex: 'step1',
         type: 'boolean',
-        sortable: true
-      }, {
-        header: "审查时间",
-        dataIndex: 'step1_date',
-        sortable: true
+        sortable: true,
+        renderer: condition
       }, {
         header: "缴纳费用",
         dataIndex: 'step2',
         type: 'boolean',
-        sortable: true
-      }, {
-        header: "缴纳时间",
-        dataIndex: 'step2_date',
-        sortable: true
+        sortable: true,
+        renderer: condition
       }, {
         header: "缴纳军训费",
         dataIndex: 'step3',
         type: 'boolean',
-        sortable: true
-      }, {
-        header: "缴纳时间",
-        dataIndex: 'step3_date',
-        sortable: true
+        sortable: true,
+        renderer: condition
       }, {
         header: "办理保险",
         dataIndex: 'step4',
         type: 'boolean',
-        sortable: true
-      }, {
-        header: "办理时间",
-        dataIndex: 'step4_date',
-        sortable: true
+        sortable: true,
+        renderer: condition
       }, {
         header: "入学报到注册",
         dataIndex: 'step5',
         type: 'boolean',
-        sortable: true
-      }, {
-        header: "注册时间",
-        dataIndex: 'step5_date',
-        sortable: true
+        sortable: true,
+        renderer: condition
       }, {
         header: "购买日用品",
         dataIndex: 'step6',
         type: 'boolean',
-        sortable: true
-      }, {
-        header: "购买时间",
-        dataIndex: 'step6_date',
-        sortable: true
+        sortable: true,
+        renderer: condition
       }, {
         header: "入住学生公寓",
         dataIndex: 'step7',
         type: 'boolean',
-        sortable: true
-      }, {
-        header: "入住时间",
-        dataIndex: 'step7_date',
-        sortable: true
+        sortable: true,
+        renderer: condition
       }]
     var controllerName = "proces";
     options = {

@@ -73,7 +73,7 @@ class Step1sController < ApplicationController
     else
       if @step1.update_attributes(:pass => false, :date => nil)
         @proce.update_attributes(:step1 => false, :step1_date => nil)
-        Student.proc_restart(@proc)
+        Student.proc_restart(@proce)
         render :text =>"true"
       else
         render :text => "false"

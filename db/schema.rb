@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 26) do
+ActiveRecord::Schema.define(:version => 27) do
 
   create_table "app_configs", :force => true do |t|
     t.string   "key"
@@ -262,6 +262,7 @@ ActiveRecord::Schema.define(:version => 26) do
     t.datetime "updated_at"
     t.boolean  "confirm",       :default => false
     t.datetime "confirm_date"
+    t.string   "phone"
   end
 
   add_index "students", ["department_id"], :name => "index_students_on_department_id"
@@ -284,8 +285,8 @@ ActiveRecord::Schema.define(:version => 26) do
     t.string   "f2"
     t.string   "f3"
     t.string   "f4"
-    t.string   "f5"
-    t.string   "f6"
+    t.float    "f5"
+    t.float    "f6"
     t.string   "f7"
     t.string   "f8"
     t.string   "f9"

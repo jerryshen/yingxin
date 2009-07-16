@@ -1,18 +1,31 @@
 class ClassDist
 
   #dist classes
-  def dist(major_id, groups)
-    all_students = Major.find(major_id).students
-    ar_males     = all_students.reject{|s| s.gender != 'm'}.sort_by { |s| s.h_score }.reverse
-    ar_females   = all_students.reject{|s| s.gender != 'f'}.sort_by { |s| s.h_score }.reverse
-    arr = []
-    case groups
-    when 1
-      arr << ar_females << ar_males
-      return arr
-    when 2
-      arr1 = arr2 =[]
-      arr1 << ar_females[0]
+  def self.dispatch(major_id)
+    boys = Student.find(:all, :conditions => ["gender= 'm'  and major_id=?", major_id], :order => "h_score DESC").select{|x| x.info_class_id == nil}
+    girls = Student.find(:all, :conditions => ["gender= 'f' AND major_id=?", major_id], :order => "h_score DESC").select{|x| x.info_class_id == nil}
+    classes = Major.find(major_id).info_classes
+
+    i = 0
+    count = classes.count
+    for i in 0..count
+    girls.each do |g|
+      g.update_attributes(:info_class_id => classes[i].id)
+      i +=1
+      if(i==count)
+        i=0
+      end
     end
+
+
+    boys.each do |b|
+      b.update_attributes(:info_class_id => classes[i].id)
+      i +=1
+      if(i==count)
+        i=0
+      end
+    end
+    end
+
   end
 end

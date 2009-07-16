@@ -9,8 +9,11 @@
     </p></div>
     <%= render :partial => 'form', :locals => { :f => f }  %>
     <p class="bbar">
-      <%= f.submit '保存' %>
-      <input type="button" onclick="$page.showListView()" value="取消" />
+      <input type="button" value="上一条" id="btnPrev" />
+      <input type="button" value='保存' id ="update"  />
+      <input type="button" value='新增' id="btnNew"  />
+      <input type="button" onclick="$page.showListView('reloadData')" value="返回列表" />
+      <input type="button" value="下一条" id="btnNext" />
     </p>
   </fieldset>
 <% end %>

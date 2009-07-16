@@ -1,12 +1,21 @@
 <fieldset>
-  <legend>查看[<%= @step6.user.name %>]的日用品购买情况</legend>
-  <p>
-    <b>是否购买:</b>
-    <%=h @step6.pass %>
-  </p>
+  <legend>查看[<%= @step6.student.name %>的日用品购买情况</legend>
     <p>
-    <b>购买时间:</b>
-    <%=h @step6.date %>
+    <b>姓名:</b>
+    <%=h @step6.student.name %>
+  </p>
+      <p>
+    <b>专业:</b>
+    <%=h @step6.student.department.name if @step6.student.department %>
+    <%=h @step6.student.major.name if @step6.student.major%>
+  </p>
+  <p>
+    <b>是否完成:</b>
+    <%=h proc_format(@step6.pass) %>
+  </p>
+  <p>
+    <b>完成时间:</b>
+    <%=h fuzzy_time(@step6.date) if @step6.date%>
   </p>
   <p class="bbar">
     <input type="button" onclick="$page.showListView()" value="返回列表" />

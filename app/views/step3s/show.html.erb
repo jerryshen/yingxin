@@ -1,12 +1,21 @@
 <fieldset>
-  <legend>查看[<%= @step3.user.name %>]的军训费用缴纳情况</legend>
-  <p>
-    <b>是否缴纳:</b>
-    <%=h @step3.pass %>
-  </p>
+  <legend>查看[<%= @step3.student.name %>的军训费用缴纳</legend>
     <p>
-    <b>缴纳时间:</b>
-    <%=h @step3.date %>
+    <b>姓名:</b>
+    <%=h @step3.student.name %>
+  </p>
+      <p>
+    <b>专业:</b>
+    <%=h @step3.student.department.name if @step3.student.department %>
+    <%=h @step3.student.major.name if @step3.student.major%>
+  </p>
+  <p>
+    <b>是否完成:</b>
+    <%=h proc_format(@step3.pass) %>
+  </p>
+  <p>
+    <b>完成时间:</b>
+    <%=h fuzzy_time(@step3.date) if @step3.date%>
   </p>
   <p class="bbar">
     <input type="button" onclick="$page.showListView()" value="返回列表" />

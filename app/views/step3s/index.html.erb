@@ -1,5 +1,8 @@
 <link href="/javascripts/ext-2.2.1/resources/css/ext-all.css" media="screen" rel="stylesheet" type="text/css" />
 <link href="/stylesheets/grid.css" media="screen" rel="stylesheet" type="text/css" />
+<% unless @current_user.theme.nil? %>
+  <link id="theme" href="/javascripts/ext-2.2.1/resources/css/<%= h @current_user.theme %>.css" media="screen" rel="stylesheet" type="text/css" />
+<% end %>
 <%= stylesheet_link_tag "form.css" %>
 <%= javascript_include_tag 'ext-2.2.1/adapter/jquery/jquery.js'%>
 <%= javascript_include_tag 'ext-2.2.1/adapter/jquery/ext-jquery-adapter.js'%>

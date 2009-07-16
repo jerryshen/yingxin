@@ -1,4 +1,5 @@
 class StudentsController < ApplicationController
+  protect_from_forgery :except => [:prev, :next, :last]
   # GET /students
   # GET /students.xml
   def index
@@ -36,6 +37,33 @@ class StudentsController < ApplicationController
   # GET /students/1/edit
   def edit
     @student = Student.find(params[:id])
+  end
+
+  def prev
+    @student = Student.find(:last, :conditions => ["id < ?", params[:id]], :order => "id ASC")
+    if @student
+      render :action => "edit"
+    else
+      render :text => "nodata"
+    end
+  end
+
+  def next
+    @student =  Student.find(:first, :conditions => ["id > ?", params[:id]], :order => "id ASC")
+    if @student
+      render :action => "edit"
+    else
+      render :text => "nodata"
+    end
+  end
+
+  def last
+    @student =  Student.last
+    if @student
+      render :action => "edit"
+    else
+      render :text => "nodata"
+    end
   end
 
   # POST /students

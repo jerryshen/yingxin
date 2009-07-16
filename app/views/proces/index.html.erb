@@ -1,5 +1,8 @@
 <link href="/javascripts/ext-2.2.1/resources/css/ext-all.css" media="screen" rel="stylesheet" type="text/css" />
 <link href="/stylesheets/grid.css" media="screen" rel="stylesheet" type="text/css" />
+<% unless @current_user.theme.nil? %>
+  <link id="theme" href="/javascripts/ext-2.2.1/resources/css/<%= h @current_user.theme %>.css" media="screen" rel="stylesheet" type="text/css" />
+<% end %>
 <%= stylesheet_link_tag "form.css" %>
 <%= javascript_include_tag 'ext-2.2.1/adapter/jquery/jquery.js'%>
 <%= javascript_include_tag 'ext-2.2.1/adapter/jquery/ext-jquery-adapter.js'%>
@@ -27,9 +30,8 @@
     return students[value]
   }
 
-  var condition = function(value, p, record){
-    var text = value.toString()=="true" ? "<div class='grid-text-true'></div>" : "<div class='grid-text-false'></div>";
-    return String.format("<a href='#' action ='pass' title='Pass' class='gridButton' url='/step2s/pass/{0}'>{1}</a>",record.data.id,text);
+  var condition = function(value){
+    return value.toString()=="true" ? "<div class='grid-text-true'></div>" : "<div class='grid-text-false'></div>"
   }
   //{header: [dataIndex(首字母大写)], renderer: money(Function),menuDisabled: [true],
   // dataIndex: "fieldName" ,width: 100, sortable: [false], resizable: [false]}

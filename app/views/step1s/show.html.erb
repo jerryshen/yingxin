@@ -1,12 +1,21 @@
 <fieldset>
-  <legend>查看[<%= @step1.user.name %>]的入学资格复查</legend>
-  <p>
-    <b>是否通过:</b>
-    <%=h @step1.pass %>
-  </p>
+  <legend>查看[<%= @step1.student.name %>]的入学资格复查</legend>
     <p>
-    <b>复查时间:</b>
-    <%=h @step1.date %>
+    <b>姓名:</b>
+    <%=h @step1.student.name %>
+  </p>
+      <p>
+    <b>专业:</b>
+    <%=h @step1.student.department.name if @step1.student.department %>
+    <%=h @step1.student.major.name if @step1.student.major%>
+  </p>
+  <p>
+    <b>是否完成:</b>
+    <%=h proc_format(@step1.pass) %>
+  </p>
+  <p>
+    <b>完成时间:</b>
+    <%=h fuzzy_time(@step1.date) if @step1.date%>
   </p>
   <p class="bbar">
     <input type="button" onclick="$page.showListView()" value="返回列表" />

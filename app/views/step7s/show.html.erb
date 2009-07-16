@@ -1,12 +1,21 @@
 <fieldset>
-  <legend>查看[<%= @step7.user.name %>]的公寓入住情况</legend>
-  <p>
-    <b>是否入住:</b>
-    <%=h @step7.pass %>
-  </p>
+  <legend>查看[<%= @step7.student.name %>的学生公寓入住情况</legend>
     <p>
-    <b>入住时间:</b>
-    <%=h @step7.date %>
+    <b>姓名:</b>
+    <%=h @step7.student.name %>
+  </p>
+      <p>
+    <b>专业:</b>
+    <%=h @step7.student.department.name if @step7.student.department %>
+    <%=h @step7.student.major.name if @step7.student.major%>
+  </p>
+  <p>
+    <b>是否完成:</b>
+    <%=h proc_format(@step7.pass) %>
+  </p>
+  <p>
+    <b>完成时间:</b>
+    <%=h fuzzy_time(@step7.date) if @step7.date%>
   </p>
   <p class="bbar">
     <input type="button" onclick="$page.showListView()" value="返回列表" />

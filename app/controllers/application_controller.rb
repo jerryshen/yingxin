@@ -53,13 +53,19 @@ class ApplicationController < ActionController::Base
       render :text => "警告，你没有权限访问该页面！"
     end
   end
-
+  
   protected
   #get json data
   def render_json(records,total)
     json_texts = []
     records.to_a.each{ |cat| json_texts << cat.attributes.to_json }
     return "{'count':#{total},'rows':[#{json_texts.join(",")}]}"
+  end
+
+  def hash_to_json(records,total)
+    json_texts = []
+    records.to_a.each{|cat| json_texts << cat.to_json}
+     return "{'count':#{total},'rows':[#{json_texts.join(",")}]}"
   end
 
   def load_page_data
@@ -69,33 +75,4 @@ class ApplicationController < ActionController::Base
       if param_pagesize > 0 then @pagesize = param_pagesize end
     end
   end
-
-  def export_csv(data,fields,filename="data.csv")
-    require 'faster_csv'
-    require 'iconv'
-    content_type = if request.user_agent =~ /windows/i
-      'application/vnd.ms-excel'
-    else
-      'text/csv'
-    end
-    csv_string = FasterCSV.generate do |csv| 
-      header = []
-      fields.each_key { |key| header << Iconv.iconv("GB2312//IGNORE","UTF-8//IGNORE", fields[key]) } 
-      csv << header.reverse
-
-      data.each do |row|
-        csv_row = []
-        fields.each_key do |key|
-          v = row[key]
-          if v.class == String
-            v = Iconv.iconv("GB2312//IGNORE","UTF-8//IGNORE", v)
-          end
-          csv_row << v
-        end
-        csv << csv_row.reverse
-      end
-    end
-    send_data csv_string, :type => content_type, :filename => filename, :disposition => 'attachment'
-  end
-
 end

@@ -1,12 +1,21 @@
 <fieldset>
-  <legend>查看[<%= @step4.user.name %>]的保险办理情况</legend>
-  <p>
-    <b>是否办理:</b>
-    <%=h @step4.pass %>
-  </p>
+  <legend>查看[<%= @step4.student.name %>的保险办理情况</legend>
     <p>
-    <b>办理时间:</b>
-    <%=h @step4.date %>
+    <b>姓名:</b>
+    <%=h @step4.student.name %>
+  </p>
+      <p>
+    <b>专业:</b>
+    <%=h @step4.student.department.name if @step4.student.department %>
+    <%=h @step4.student.major.name if @step4.student.major%>
+  </p>
+  <p>
+    <b>是否完成:</b>
+    <%=h proc_format(@step4.pass) %>
+  </p>
+  <p>
+    <b>完成时间:</b>
+    <%=h fuzzy_time(@step4.date) if @step4.date%>
   </p>
   <p class="bbar">
     <input type="button" onclick="$page.showListView()" value="返回列表" />

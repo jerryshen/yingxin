@@ -1,9 +1,21 @@
 <%= f.error_messages %>
 <p>
-  <%= f.label :user_id, "新生姓名" %>
-  <%= @step4.user.name %>
+  <label for="stu">姓名:</label>
+  <label for="name"><%=h @step4.student.name %></label>
 </p>
 <p>
-  <%= f.label :pass, "保险办理" %>
-  <%= f.checkout :pass, :class => "required" %>
+  <label for="dep">专业:</label>
+  <label for="name">
+    <%=h @step4.student.department.name if @step4.student.department %>
+    <%=h @step4.student.major.name if @step4.student.major %>
+  </label>
+</p>
+<p>
+  <label for="info_cla">班级:</label>
+  <label for="name"><%=h @step4.student.info_class.name if @step4.student.info_class %></label>
+</p>
+<p>
+  <label>保险办理:</label>
+  <label for="check"><%= f.radio_button :pass, true  %>办理</label>
+  <label for="check"><%= f.radio_button :pass, false %>未办理</label>
 </p>

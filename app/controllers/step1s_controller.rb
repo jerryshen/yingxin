@@ -1,4 +1,5 @@
 class Step1sController < ApplicationController
+  protect_from_forgery :except => [:update_theme]
   # GET /step1s
   # GET /step1s.xml
   def index

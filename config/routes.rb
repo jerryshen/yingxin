@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :stats
+  map.resources :class_students
   map.resources :temps
   map.resources :proces
   map.resources :step7s

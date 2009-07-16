@@ -25,6 +25,9 @@ module ApplicationHelper
     gender.to_s == "m" ? "男" : "女"
   end
 
+  def proc_format(pass)
+    pass.to_s == "true" ? "完成" : "未完成"
+  end
 
   def current_admin?
     name = "admin"

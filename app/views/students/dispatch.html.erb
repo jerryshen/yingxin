@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>分班</title>
+	</head>
+	<body>
+	<h3>分班</h3>
+	<% form_tag("do_dispatch")  do  %>
+	<label for="major_id">专业：
+		<%= select_tag('major_id', options_for_select([["选择专业..." , ""]] + Major.all.collect{|x| [x.name, x.id] }),{:name => "major_id"}) %> 
+	</label>
+	<input type="submit" value="分班" onclick="return check()" />
+	<% end %>
+	<script>
+		function check(){
+			if (!document.getElementById("major_id").value) {
+				alert("请选择一个要分班的专业!")
+				return false;
+			}
+			return true;
+		}
+	</script>
+	</body>
+</html>

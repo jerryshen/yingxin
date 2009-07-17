@@ -73,6 +73,8 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/departments/users_to_json', :controller => "departments", :action => "users_to_json"
   map.root :controller => 'admin', :action => 'index'
   map.connect ':controller/:action', :controller => ['admin']
+  map.connect '/dispatch', :controller => "students", :action => "dispatch"
+  map.connect '/do_dispatch', :controller => "students", :action => "do_dispatch"
   map.connect '/logout', :controller => 'admin', :action => 'logout'
   map.connect '/signin', :controller => 'admin', :action => 'login'
   map.connect ':controller/:action/:id'

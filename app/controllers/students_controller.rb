@@ -4,7 +4,7 @@ class StudentsController < ApplicationController
   # GET /students.xml
   def index
     @students = Student.all
-
+    @search_major = ''
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @students }
@@ -63,6 +63,26 @@ class StudentsController < ApplicationController
       render :action => "edit"
     else
       render :text => "nodata"
+    end
+  end
+  
+  def dispatch
+    render :layout => false
+  end
+  
+  def do_dispatch
+    major = Major.find(params[:major_id])
+    if major
+      begin
+        if Student.dispatch(major.id)
+          @search_major = major.id
+          render :index
+        end
+      rescue => error
+        flash[:error] = error.to_s
+      end
+    else
+      render :dispatch
     end
   end
 
@@ -127,35 +147,27 @@ class StudentsController < ApplicationController
     end
   end
 
-  def class_dispatch
-
-  end
-
-  def dispatch
-    major_id = params[:major_id]
-    if major_id.blank?
-      return render :text => "未选择专业"
-    end
-    begin
-      success = Student.dispatch(major_id)
-      if success
-        redirect_to :action => 'index', :id => major_id
-      else
-        render :text => "批量分班失败"
-      end
-    rescue => error
-      render :text => error.to_s
-    end
-  end
-
   private
   def get_json
     load_page_data
+    sql = []
+    values = []
     if(params[:search_name] && params[:search_name].to_s!='')
-      @students = Student.paginate(:order =>"id ASC", :conditions => ["name like ?","%#{params[:search_name]}%"],:per_page=> @pagesize,:page => params[:page] || 1)
-      count = Student.count(:conditions =>["name like ?","%#{params[:search_name]}%"])
+      sql.push("name like ?")
+      values.push("%#{params[:search_name]}%")
+    end
+    if(params[:search_major] && params[:search_major].to_s!='')
+      sql.push("major_id = ?")
+      values.push(params[:search_major])      
+    end
+    if sql.length > 0
+      conditions = []
+      conditions << sql.join(" AND ")
+      conditions += values
+      @students = Student.paginate(:order =>"id DESC", :conditions => conditions,:per_page=> @pagesize,:page => params[:page] || 1)
+      count = Student.count(:conditions => conditions)
     else
-      @students = Student.paginate(:order =>"id ASC",:per_page=> @pagesize,:page => params[:page] || 1)
+      @students = Student.paginate(:order =>"id DESC",:per_page=> @pagesize,:page => params[:page] || 1)
       count = Student.count
     end
     return render_json(@students,count)

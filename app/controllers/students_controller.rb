@@ -127,6 +127,27 @@ class StudentsController < ApplicationController
     end
   end
 
+  def class_dispatch
+
+  end
+
+  def dispatch
+    major_id = params[:major_id]
+    if major_id.blank?
+      return render :text => "未选择专业"
+    end
+    begin
+      success = Student.dispatch(major_id)
+      if success
+        redirect_to :action => 'index', :id => major_id
+      else
+        render :text => "批量分班失败"
+      end
+    rescue => error
+      render :text => error.to_s
+    end
+  end
+
   private
   def get_json
     load_page_data

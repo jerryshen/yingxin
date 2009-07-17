@@ -1,7 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
 
-
-  map.resources :dispatches, :collection => { :class_dispatch => :get }
   map.resources :stats
   map.resources :temps
   map.resources :proces
@@ -16,7 +14,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :subjects
   map.resources :tips
   map.resources :room_students
-  map.resources :students
+  map.resources :students, :collection => { :class_dispatch => :get }
   map.resources :rooms
   map.resources :buildings
   map.resources :info_classes

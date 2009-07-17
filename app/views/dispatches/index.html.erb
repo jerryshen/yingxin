@@ -4,17 +4,8 @@
   <link id="theme" href="/javascripts/ext-2.2.1/resources/css/<%= h @current_user.theme %>.css" media="screen" rel="stylesheet" type="text/css" />
 <% end %>
 <%= stylesheet_link_tag "form.css" %>
-<%= javascript_include_tag 'ext-2.2.1/adapter/jquery/jquery.js'%>
-<%= javascript_include_tag 'ext-2.2.1/adapter/jquery/ext-jquery-adapter.js'%>
-<%= javascript_include_tag 'ext-2.2.1/ext-all.js'%>
-<%= javascript_include_tag 'ExtListPage.js' %>
-<%= javascript_include_tag 'jquery-validate/lib/jquery.form.js' %>
-<%= javascript_include_tag 'jquery-validate/jquery.validate.js' %>
-<%= javascript_include_tag 'jquery-validate/localization/messages_cn.js' %>
-<%= javascript_include_tag 'AjaxForm.js' %>
 <div id="list-view">
   <form style="margin: 10px 0px;" id="search_form">
-    <%= index_select_class  %>
     <input class="button" type="button" id="btnSearch" value="搜索"/>
     <input value="重置"class="btnreset" type="reset" />
     <input value="刷新 " onclick="window.location.reload()" class="btnrefresh" type="button"  />
@@ -24,51 +15,37 @@
     </div>
   </div>
 </div>
+<%= javascript_include_tag 'ext-2.2.1/adapter/jquery/jquery.js'%>
+<%= javascript_include_tag 'ext-2.2.1/adapter/jquery/ext-jquery-adapter.js'%>
+<%= javascript_include_tag 'ext-2.2.1/ext-all.js'%>
+<%= javascript_include_tag 'ExtListPage.js' %>
 <script>
-  var students = <%= Student.to_json %>
-  var getStudentName = function(value){
-    return students[value]
-  }
-
-  var numbers = <%= Student.get_number %>
-  var getNumber = function(value){
-    return numbers[value]
-  }
-
-  var classes = <%= InfoClass.to_json %>
-  var getClassName = function(value){
-    return classes[value]
+  var majors = <%= Major.to_json %>
+  var getMajorName = function(value){
+    return majors[value]
   }
   //{header: [dataIndex(首字母大写)], renderer: money(Function),menuDisabled: [true],
   // dataIndex: "fieldName" ,width: 100, sortable: [false], resizable: [false]}
   //框[]中的为默认值
   Ext.onReady(function(){
     var columns = [{
-        header: "ID",
-        dataIndex: 'id',
-        width: 30,
-        sortable: true,
-        type: "int",
-        resizable: false
+        header: "专业名称",
+        dataIndex: 'major_id',
+        width: 150
       }, {
         header: "班级",
-        dataIndex: 'info_class_id',
-        sortable: true,
-        renderer: getClassName
-      }, {
-        header: "学号",
-        dataIndex: 'stu_number',
-        renderer: getNumber
+        dataIndex: 'info_class_id'
       }, {
         header: "姓名",
-        dataIndex: 'student_id',
-        sortable: true,
-        renderer: getStudentName
+        dataIndex: 'name'
+      }, {
+        header: "学号",
+        dataIndex: 'stu_number'
       }]
-    var controllerName = "class_students";
+    var controllerName = "dispatches";
     options = {
       baseUrl: "http://" + window.location.host + "/" + controllerName,
-      gridTitle: "个别调整",
+      gridTitle: "分班记过",
       newItemLink: "newItem",
       columns: columns
     }

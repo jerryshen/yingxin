@@ -100,7 +100,7 @@ module ApplicationHelper
   end
 
   def select_major(name="major_id")
-    options = Department.all.collect{|x| "<option value='#{x.id}' >#{x.name}</option>"}.join('')
+    options = Department.find(:all, :conditions => ["de_type =?", true]).collect{|x| "<option value='#{x.id}' >#{x.name}</option>"}.join('')
     html = %q{
       <p>
         <label for="select_department_id">院系</label>

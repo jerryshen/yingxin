@@ -153,7 +153,7 @@ module ApplicationHelper
 
   #ajax selection for 3 lists  for index searching
   def index_select_class
-    options = Department.all.collect{|x| "<option value='#{x.id}' >#{x.name}</option>"}.join('')
+    options = Department.find(:all, :conditions => ["de_type=?",true]).collect{|x| "<option value='#{x.id}' >#{x.name}</option>"}.join('')
     html = %q{
         <label for="select_department_id">院系</label>
         <select id="select_department_id" name="department_id" style="margin:0px;padding:0px;float:none;">

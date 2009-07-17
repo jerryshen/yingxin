@@ -31,25 +31,6 @@
     return students[value]
   }
 
-  var numbers = <%= Student.get_number %>
-  var getNumber = function(value){
-    return numbers[value]
-  }
-
-  var departments = <%= Department.to_json %>
-  var getDepartmentName = function(value){
-    return departments[value]
-  }
-
-  var majors = <%= Major.to_json %>
-  var getMajorName = function(value){
-    return majors[value]
-  }
-
-  var classes = <%= InfoClass.to_json %>
-  var getClassName = function(value){
-    return classes[value]
-  }
 
   var makeAsPassLink = function(value, p, record){
     var text = value.toString()=="true" ? "<div class='grid-text-true'></div>" : "<div class='grid-text-false'></div>";
@@ -86,25 +67,10 @@
         type: "int",
         resizable: false
       }, {
-        header: "院系",
-        dataIndex: 'department_id',
-        renderer: getDepartmentName
-      }, {
-        header: "专业",
-        dataIndex: 'major_id',
-        renderer: getMajorName
-      }, {
-        header: "班级",
-        dataIndex: 'info_class_id',
-        renderer: getClassName
-      }, {
-        header: "学号",
-        dataIndex: 'stu_number',
-        renderer: getNumber
-      }, {
         header: "姓名",
         dataIndex: 'student_id',
         sortable: true,
+        width: 200,
         renderer: getStudentName
       }, {
         header: "入学资格复查",
@@ -115,7 +81,8 @@
       }, {
         header: "通过时间",
         dataIndex: 'date',
-        sortable: true
+        sortable: true,
+        width: 160
       }]
     var controllerName = "step1s";
     options = {

@@ -1,8 +1,8 @@
 <fieldset>
-  <legend>查看宿舍</legend>
+  <legend>查看[<%= @student.name  %>的档案</legend>
   <p>
-    <b>楼号:</b>
-    <%=h @room.name %>
+    <b>姓名:</b>
+    <%=h @student.name %>
   </p>
   <p class="bbar">
     <input type="button" onclick="$page.showListView()" value="返回列表" />

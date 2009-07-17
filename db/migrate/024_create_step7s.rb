@@ -2,8 +2,8 @@ class CreateStep7s < ActiveRecord::Migration
   def self.up
     create_table :step7s do |t|
       t.references :student
-      t.boolean :pass, :default => false
-      t.datetime :date
+      t.boolean    :pass, :default => false
+      t.datetime   :date
 
       t.timestamps
     end

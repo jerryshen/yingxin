@@ -152,10 +152,10 @@ class StudentsController < ApplicationController
   def get_json
     load_page_data
     if(params[:search_name] && params[:search_name].to_s!='')
-      @students = Student.paginate(:order =>"id DESC", :conditions => ["name like ?","%#{params[:search_name]}%"],:per_page=> @pagesize,:page => params[:page] || 1)
+      @students = Student.paginate(:order =>"id ASC", :conditions => ["name like ?","%#{params[:search_name]}%"],:per_page=> @pagesize,:page => params[:page] || 1)
       count = Student.count(:conditions =>["name like ?","%#{params[:search_name]}%"])
     else
-      @students = Student.paginate(:order =>"id DESC",:per_page=> @pagesize,:page => params[:page] || 1)
+      @students = Student.paginate(:order =>"id ASC",:per_page=> @pagesize,:page => params[:page] || 1)
       count = Student.count
     end
     return render_json(@students,count)

@@ -107,10 +107,10 @@ class Step1sController < ApplicationController
 
     if(conditions != '1=1')
       option_conditions = [conditions,condition_values].flatten!
-      @step1s = Step1.paginate(:order =>"id DESC", :joins => joins,:conditions => option_conditions,:per_page=> @pagesize, :page => params[:page] || 1)
+      @step1s = Step1.paginate(:order =>"id ASC", :joins => joins,:conditions => option_conditions,:per_page=> @pagesize, :page => params[:page] || 1)
       count = Step1.count(:joins => joins, :conditions => option_conditions)
     else
-      @step1s = Step1.paginate(:order =>"id DESC",:per_page=> @pagesize, :page => params[:page] || 1)
+      @step1s = Step1.paginate(:order =>"id ASC",:per_page=> @pagesize, :page => params[:page] || 1)
       count = Step1.count
     end
     return render_json(@step1s,count)

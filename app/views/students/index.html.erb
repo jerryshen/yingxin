@@ -4,9 +4,18 @@
   <link id="theme" href="/javascripts/ext-2.2.1/resources/css/<%= h @current_user.theme %>.css" media="screen" rel="stylesheet" type="text/css" />
 <% end %>
 <%= stylesheet_link_tag "form.css" %>
+<%= javascript_include_tag 'ext-2.2.1/adapter/jquery/jquery.js'%>
+<%= javascript_include_tag 'ext-2.2.1/adapter/jquery/ext-jquery-adapter.js'%>
+<%= javascript_include_tag 'ext-2.2.1/ext-all.js'%>
+<%= javascript_include_tag 'ExtListPage.js' %>
+<%= javascript_include_tag 'jquery-validate/lib/jquery.form.js' %>
+<%= javascript_include_tag 'jquery-validate/jquery.validate.js' %>
+<%= javascript_include_tag 'jquery-validate/localization/messages_cn.js' %>
+<%= javascript_include_tag 'AjaxForm.js' %>
 <div id="list-view">
   <form style="margin: 10px 0px;" id="search_form">
-    <label for="search_name">
+    <%= index_select_class  %><br />
+    <label for="search_name" style="margin:0px;padding:0px;float:none;">
       名称：
     </label>
     <input type="text" value="" name="search_name" id="search_name"/>
@@ -22,14 +31,6 @@
     </div>
   </div>
 </div>
-<%= javascript_include_tag 'ext-2.2.1/adapter/jquery/jquery.js'%>
-<%= javascript_include_tag 'ext-2.2.1/adapter/jquery/ext-jquery-adapter.js'%>
-<%= javascript_include_tag 'ext-2.2.1/ext-all.js'%>
-<%= javascript_include_tag 'ExtListPage.js' %>
-<%= javascript_include_tag 'jquery-validate/lib/jquery.form.js' %>
-<%= javascript_include_tag 'jquery-validate/jquery.validate.js' %>
-<%= javascript_include_tag 'jquery-validate/localization/messages_cn.js' %>
-<%= javascript_include_tag 'AjaxForm.js' %>
 <script>
   //{header: [dataIndex(首字母大写)], renderer: money(Function),menuDisabled: [true],
   // dataIndex: "fieldName" ,width: 100, sortable: [false], resizable: [false]}
@@ -45,6 +46,10 @@
       }, {
         header: "考生号",
         dataIndex: 'can_number',
+        sortable: true
+      }, {
+        header: "班级",
+        dataIndex: 'info_class_id',
         sortable: true
       }, {
         header: "学号",

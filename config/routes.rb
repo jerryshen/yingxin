@@ -77,6 +77,7 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/do_dispatch', :controller => "students", :action => "do_dispatch"
   map.connect '/logout', :controller => 'admin', :action => 'logout'
   map.connect '/signin', :controller => 'admin', :action => 'login'
+  map.connect '/welcome', :controller => "welcome"
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
 end

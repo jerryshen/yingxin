@@ -10,6 +10,7 @@
     <% end %>
     <%= stylesheet_link_tag 'nav-menu.css','ext-cn.css' %>
     <script>
+      var welcome_url = "/welcome"
       function init_clock(){
         var _getNewDate = function(){
           document.getElementById("clock").innerHTML = (new Date()).format("Y年m月d日 H:i");
@@ -72,10 +73,11 @@
               xtype: "tabpanel",
               activeTab: 0,
               region: "center",
-              margins: "0 5 5 0",
+              margins: "0 0 5 0",
               items: [{
                   xtype: "panel",
-                  title: "欢迎"
+                  title: "欢迎",
+				  html: "<iframe  onload='reset_iframe_size(this)' scrolling='auto' frameborder='0'  src='" + welcome_url + "'/>",				  
                 }]
             }]
         });
@@ -89,6 +91,8 @@
         var h = p.offsetHeight;
         iframe.style.width = w + 'px';
         iframe.style.height = h + 'px';
+		var body = iframe.contentWindow.document.body;
+		if(body)body.style.padding = "10px";
       }
 
       function open_page(url,title)
@@ -96,7 +100,7 @@
         var taskbar = Ext.getCmp("taskbar");
         taskbar.add({
           title: title,
-          html: "<iframe style='padding:10px' onload='reset_iframe_size(this)' scrolling='auto' frameborder='0'  src='" + url + "'/>",
+          html: "<iframe onload='reset_iframe_size(this)' scrolling='auto' frameborder='0'  src='" + url + "'/>",
           closable:true,
           listeners: {"resize":function(cmp){
               Ext.select("iframe",true,cmp.body.dom).each(function(item){

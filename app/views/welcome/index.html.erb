@@ -6,5 +6,11 @@
 	</head>
 	<body>
 		<h3>欢迎使用迎新系统</h3>
+		<h4>最新通知</h4>
+		<ul>
+		<% @tips.each do |tip| %>
+			<li><a title="<%= h(tip.title) %> " href="javascript:parent.open_page('/tips/<%= tip.id %>','<%= h(tip.title) %>')" > <%= h(tip.title) %></a></li>
+		<% end %>
+		</ul>
 	</body>
 </html>

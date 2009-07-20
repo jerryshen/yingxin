@@ -8,15 +8,6 @@
   <%= f.text_area :content, :class => "required" %>
 </p>
 <p>
-  <%= f.label :top, "置顶" %>
-  <%= f.check_box :top, :class => "required" %>
-</p>
-<p>
-  <%= f.label :hidden, "隐藏" %>
-  <%= f.check_box :hidden, :class => "required" %>
-</p>
-
-<p>
   <label>置顶</label>
   <label for="top"><%= f.radio_button :top, true  %>置顶</label>
   <label for="top"><%= f.radio_button :top, false %>普通</label>
@@ -24,6 +15,6 @@
 
 <p>
   <label>隐藏</label>
-  <label for="top"><%= f.radio_button :top, true  %>隐藏</label>
-  <label for="top"><%= f.radio_button :top, false %>显示</label>
+  <label for="hidden"><%= f.radio_button :hidden, true  %>隐藏</label>
+  <label for="hidden"><%= f.radio_button :hidden, false %>显示</label>
 </p>

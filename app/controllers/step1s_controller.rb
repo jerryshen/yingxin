@@ -90,7 +90,7 @@ class Step1sController < ApplicationController
     joins = "INNER JOIN students p ON step1s.student_id=p.id"
     conditions = '1=1'
     condition_values = []
-    if(!params[:dpartment_id].blank?)
+    if(!params[:department_id].blank?)
       conditions += " AND p.department_id = ? "
       condition_values << params[:department_id]
     end

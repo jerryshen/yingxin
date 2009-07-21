@@ -16,10 +16,10 @@ class ProcesController < ApplicationController
     load_page_data
 
     joins = "INNER JOIN students p ON proces.student_id=p.id"
-    conditions = '1=1'
+    conditions = ""
     condition_values = []
     if(!params[:department_id].blank?)
-      conditions += " AND p.department_id = ? "
+      conditions += "p.department_id = ? "
       condition_values << params[:department_id]
     end
 
@@ -33,7 +33,7 @@ class ProcesController < ApplicationController
       condition_values << params[:class_id]
     end
 
-    if(conditions != '1=1')
+    if(!conditions.blank?)
       option_conditions = [conditions,condition_values].flatten!
       @proces = Proce.paginate(:order =>"id DESC", :joins => joins,:conditions => option_conditions,:per_page=> @pagesize, :page => params[:page] || 1)
       count = Proce.count(:joins => joins, :conditions => option_conditions)

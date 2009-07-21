@@ -13,18 +13,31 @@ class Stat
   end
 
   #Count by departs and majors
-  def self.get_detail_data
+  def self.get_detail_data(department_id)
     arr = []
-    majors = Major.all
+    if department_id.blank?
+      majors = Major.all
+      all_ars = Student.count
+      all_ovs = Student.count(:conditions => ["confirm =?", true])
+      percent = all_ars == 0 ? "0%" : (all_ovs / all_ars*100).to_s + "%"
+      count = {"major_id" => "合计", "ar_count" => all_ars, "ov_count" => all_ovs, "percent" => percent }
+    else
+      majors = Department.find(department_id).majors
+      all_ars = Student.count(:conditions => ["department_id =?", department_id])
+      all_ovs = Student.count(:conditions => ["department_id =? AND confirm =?", department_id, true])
+      percent = all_ars == 0 ? "0%" : (all_ovs / all_ars*100).to_s + "%"
+      count = {"major_id" => "合计", "ar_count" => all_ars, "ov_count" => all_ovs, "percent" => percent }
+    end
+    
     majors.each do |m|
       ar_stus = Student.count(:conditions => ["major_id =?", m.id])
       ov_stus = Student.count(:conditions => ["major_id =? AND confirm =?", m.id, true])
-      la_stus = Student.find(:all,
-        :conditions => ["major_id =? AND confirm =?",m.id, false])
+      #      la_stus = Student.find(:all,
+      #        :conditions => ["major_id =? AND confirm =?",m.id, false])
       percent = ar_stus == 0 ? "0%" : (ov_stus / ar_stus*100).to_s + "%"
-      arr.push({"major_id" =>m.id, "ar_count" => ar_stus, "ov_count" => ov_stus, "percent" => percent, "la" => la_stus})
+      arr.push({"major_id" => m.id, "ar_count" => ar_stus, "ov_count" => ov_stus, "percent" => percent})
     end
-    return arr
+    return arr << count
   end
 
   #conditions stat
@@ -35,13 +48,5 @@ class Stat
     arr = [ar_count, br_count, br_stus]
     return arr
   end
-
-  def self.search(department_id)
-    arr = []
-    Stat.get_detail_data.each do |t|
-      if Major.find(t["major_id"]).department.id == department_id
-        arr << t
-      end
-    end
-  end
+  
 end

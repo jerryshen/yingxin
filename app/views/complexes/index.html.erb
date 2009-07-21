@@ -1,0 +1,110 @@
+<link href="/javascripts/ext-2.2.1/resources/css/ext-all.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/grid.css" media="screen" rel="stylesheet" type="text/css" />
+<% unless @current_user.theme.nil? %>
+  <link id="theme" href="/javascripts/ext-2.2.1/resources/css/<%= h @current_user.theme %>.css" media="screen" rel="stylesheet" type="text/css" />
+<% end %>
+<%= stylesheet_link_tag "form.css" %>
+<%= javascript_include_tag 'ext-2.2.1/adapter/jquery/jquery.js'%>
+<%= javascript_include_tag 'ext-2.2.1/adapter/jquery/ext-jquery-adapter.js'%>
+<%= javascript_include_tag 'ext-2.2.1/ext-all.js'%>
+<%= javascript_include_tag 'ExtListPage.js' %>
+<div id="list-view">
+  <form style="margin: 10px 0px;" id="search_form">
+
+    <%= index_select_class  %>
+    <p><label for="search_gender">性别</label>
+      <select name="search_gender" id="search_gender">
+        <option value="">请选择性别...</option>
+        <option value="m">男</option>
+        <option value="f">女</option>
+      </select>
+      <label for="search_polity">政治面貌</label>
+      <select name="search_polity" id="search_polity">
+        <option value="">请选择政治面貌...</option>
+        <option value="0">群众</option>
+        <option value="1">共青团员</option>
+        <option value="2">中共党员</option>
+      </select>
+      <label for="state_city">生源地</label>
+      <%= state_and_city_select :search, :state, :city, {:state => {:include_blank => '请选择省'}, :city => {:include_blank => '请选择城市'}}  %>
+    </p>
+    <p><label>民族</label>
+      <%= select_nation  %>
+      <label for="search_number">学号</label>
+      <input type="text" value="" name="search_number" id="search_number" size="10"/>
+      <label for="search_name">姓名</label>
+      <input type="text" value="" name="search_name" id="search_name" size="10"/>
+    </p>
+
+<p>
+    <label>报到情况</label>
+    <label for="proce"><%= radio_button :search, :proce, "", :style => "width:50px"  %>全部</label>
+    <label for="proce"><%= radio_button :search, :proce, true  %>已报到</label>
+    <label for="proce"><%= radio_button :search, :proce, false %>未报到</label>
+</p>
+    <input class="button" type="button" id="btnSearch" value="搜索"/>
+    <input value="重置"class="btnreset" type="reset" />
+    <input value="刷新 " onclick="window.location.reload()" class="btnrefresh" type="button"  />
+  </form>
+  <div>
+    <div id="grid-wrap">
+    </div>
+  </div>
+</div>
+<script>
+  //{header: [dataIndex(首字母大写)], renderer: money(Function),menuDisabled: [true],
+  // dataIndex: "fieldName" ,width: 100, sortable: [false], resizable: [false]}
+  //框[]中的为默认值
+  Ext.onReady(function(){
+    var columns = [{
+        header: "ID",
+        dataIndex: 'id',
+        width: 30,
+        sortable: true,
+        type: "int",
+        resizable: false
+      }, {
+        header: "考生号",
+        dataIndex: 'can_number',
+        width: 120,
+        sortable: true
+      }, {
+        header: "学号",
+        dataIndex: 'stu_number',
+        sortable: true
+      }, {
+        header: "姓名",
+        dataIndex: 'name',
+        sortable: true
+      }, {
+        header: "性别",
+        dataIndex: 'gender',
+        sortable: true
+      }, {
+        header: "院系",
+        dataIndex: 'department_id',
+        sortable: true
+      }, {
+        header: "专业",
+        dataIndex: 'major_id',
+        sortable: true
+      }, {
+        header: "班级",
+        dataIndex: 'info_class_id',
+        sortable: true
+      }, {
+        header: "报到情况",
+        dataIndex: 'confirm',
+        sortable: true
+      }]
+    var controllerName = "complexes";
+    options = {
+      baseUrl: "http://" + window.location.host + "/" + controllerName,
+      gridTitle: "综合查询",
+      newItemLink: "newItem",
+      columns: columns,
+      disableOprateColumn: true
+    }
+    $page = new ExtListPage(options);
+  })
+</script>

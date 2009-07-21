@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :complexes
+
 
   map.resources :stats
   map.resources :temps

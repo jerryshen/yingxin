@@ -93,7 +93,6 @@ class StudentsController < ApplicationController
 
     respond_to do |format|
       if @student.save
-        flash[:notice] = 'Student was successfully created.'
         format.html { redirect_to(@student) }
         format.xml  { render :xml => @student, :status => :created, :location => @student }
         format.json { render :text => '{status: "success", message: "成功添加新生！"}'}
@@ -112,7 +111,6 @@ class StudentsController < ApplicationController
 
     respond_to do |format|
       if @student.update_attributes(params[:student])
-        flash[:notice] = 'Student was successfully updated.'
         format.html { redirect_to(@student) }
         format.xml  { head :ok }
         format.json { render :text => '{status: "success", message: "成功更新新生！"}'}

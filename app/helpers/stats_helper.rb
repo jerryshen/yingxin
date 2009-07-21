@@ -9,4 +9,8 @@ module StatsHelper
       @options << ar
     end
   end
+
+  def policy_for_search
+    
+  end
 end

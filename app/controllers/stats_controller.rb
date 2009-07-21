@@ -6,24 +6,13 @@ class StatsController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @stats }
-      format.json { render :text => total_data }
-    end
-  end
-
-  #complex search
-  def show
-    @stats = Student.all
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @status }
-      format.json { render :text => total_data }
+      format.json { render :text => total_count }
     end
   end
 
   private
 
-  def total_data
+  def total_count
     load_page_data
 
     department_id = params[:search_department_id]
@@ -36,5 +25,4 @@ class StatsController < ApplicationController
     end
     return hash_to_json(@stats,count)
   end
-
 end

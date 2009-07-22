@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(:version => 27) do
   end
 
   create_table "beds", :force => true do |t|
-    t.string   "name"
+    t.integer  "number"
     t.integer  "room_id"
     t.integer  "student_id"
     t.datetime "created_at"
@@ -146,7 +146,7 @@ ActiveRecord::Schema.define(:version => 27) do
     t.integer  "info_class_id"
     t.integer  "student_id"
     t.string   "name"
-    t.integer  "beds"
+    t.integer  "bed_count"
     t.string   "phone"
     t.integer  "room_type"
     t.datetime "created_at"

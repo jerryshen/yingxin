@@ -5,7 +5,7 @@ class CreateRooms < ActiveRecord::Migration
       t.references :info_class
       t.references :student
       t.string :name
-      t.integer :beds
+      t.integer :bed_count
       t.string :phone
       t.integer :room_type
 

@@ -2,7 +2,7 @@ class Step7sController < ApplicationController
   # GET /step7s
   # GET /step7s.xml
   def index
-    @step7s = Step7.all
+    @step7s = Proce.all
     @subject = Subject.find_by_index(7)
 
     respond_to do |format|
@@ -15,7 +15,7 @@ class Step7sController < ApplicationController
   # GET /step7s/1
   # GET /step7s/1.xml
   def show
-    @step7 = Step7.find(params[:id])
+    @step7 = Proce.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -25,13 +25,13 @@ class Step7sController < ApplicationController
 
   # GET /step7s/1/edit
   def edit
-    @step7 = Step7.find(params[:id])
+    @step7 = Proce.find(params[:id])
   end
 
   # PUT /step7s/1
   # PUT /step7s/1.xml
   def update
-    @step7 = Step7.find(params[:id])
+    @step7 = Proce.find(params[:id])
 
     respond_to do |format|
       if @step7.update_attributes(params[:step7])
@@ -49,7 +49,7 @@ class Step7sController < ApplicationController
   # DELETE /step7s/1
   # DELETE /step7s/1.xml
   def destroy
-    @step7 = Step7.find(params[:id])
+    @step7 = Proce.find(params[:id])
     @step7.destroy
 
     respond_to do |format|
@@ -60,20 +60,17 @@ class Step7sController < ApplicationController
   end
 
   def pass
-    @step7 = Step7.find(params[:id])
-    @proce = Proce.find_by_student_id(@step7.student_id)
-    if !@step7.pass
-      if @step7.update_attributes(:pass => true, :date => Time.now)
-        @proce.update_attributes(:step7 => true, :step7_date => @step7.date)
-        Student.proc_end(@proce)
+    @step7 = Proce.find(params[:id])
+    if !@step7.step7
+      if @step7.update_attributes(:step7 => true, :step7_date => Time.now)
+        Student.proc_end(@step7)
         render :text =>"true"
       else
         render :text => "false"
       end
     else
-      if @step7.update_attributes(:pass => false, :date => nil)
-        @proce.update_attributes(:step7 => false, :step7_date => nil)
-        Student.proc_restart(@proce)
+      if @step7.update_attributes(:step7 => false, :step7_date => nil)
+        Student.proc_restart(@step7)
         render :text =>"true"
       else
         render :text => "false"
@@ -86,7 +83,7 @@ class Step7sController < ApplicationController
   def get_json
     load_page_data
 
-    joins = "INNER JOIN students p ON step7s.student_id=p.id"
+    joins = "INNER JOIN students p ON proces.student_id=p.id"
     conditions = '1=1'
     condition_values = []
     if(!params[:department_id].blank?)
@@ -106,11 +103,11 @@ class Step7sController < ApplicationController
 
     if(conditions != '1=1')
       option_conditions = [conditions,condition_values].flatten!
-      @step7s = Step7.paginate(:order =>"id DESC", :joins => joins,:conditions => option_conditions,:per_page=> @pagesize, :page => params[:page] || 1)
-      count = Step7.count(:joins => joins, :conditions => option_conditions)
+      @step7s = Proce.paginate(:order =>"id DESC", :joins => joins,:conditions => option_conditions,:per_page=> @pagesize, :page => params[:page] || 1)
+      count = Proce.count(:joins => joins, :conditions => option_conditions)
     else
-      @step7s = Step7.paginate(:order =>"id DESC",:per_page=> @pagesize, :page => params[:page] || 1)
-      count = Step7.count
+      @step7s = Proce.paginate(:order =>"id DESC",:per_page=> @pagesize, :page => params[:page] || 1)
+      count = Proce.count
     end
     return render_json(@step7s,count)
   end

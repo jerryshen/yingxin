@@ -1,7 +1,7 @@
 class CreateBeds < ActiveRecord::Migration
   def self.up
     create_table :beds do |t|
-      t.string :name
+      t.integer :number
       t.references :room
       t.references :student
 

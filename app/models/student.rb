@@ -30,27 +30,21 @@ class Student < ActiveRecord::Base
     return hash.to_json
   end
 
-  def self.get_number
-    hash = {}
-    find_by_sql("select id,stu_number from students").each do |row|
-      attrs = row.attributes
-      hash[attrs["id"]] = attrs["stu_number"]
-    end
-    return hash.to_json
-  end
-
   #import students to all steps and proces
-  def self.import_to_steps
-    students = self.all
-    students.each do |s|
-      Step1.create(:student_id => s.id)
-      Step2.create(:student_id => s.id)
-      Step3.create(:student_id => s.id)
-      Step4.create(:student_id => s.id)
-      Step5.create(:student_id => s.id)
-      Step6.create(:student_id => s.id)
-      Step7.create(:student_id => s.id)
-      Proce.create(:student_id => s.id)
+  def self.import_to_proce
+    all_stus = []
+    self.all.each do |s|
+      all_stus.push(s.id)
+    end
+
+    proc_stus = []
+    Proce.all.each do |s|
+      proc_stus.push(s.student_id)
+    end
+
+    ids = all_stus - proc_stus
+    ids.each do |i|
+      Proce.create(:student_id => i)
     end
   end
 

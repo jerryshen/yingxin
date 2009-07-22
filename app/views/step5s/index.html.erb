@@ -67,35 +67,19 @@
         type: "int",
         resizable: false
       }, {
-        header: "院系",
-        dataIndex: 'department_id',
-        renderer: getDepartmentName
-      }, {
-        header: "专业",
-        dataIndex: 'major_id',
-        renderer: getMajorName
-      }, {
-        header: "班级",
-        dataIndex: 'info_class_id',
-        renderer: getClassName
-      }, {
-        header: "学号",
-        dataIndex: 'stu_number',
-        renderer: getNumber
-      }, {
         header: "姓名",
         dataIndex: 'student_id',
         sortable: true,
         renderer: getStudentName
       }, {
         header: "入学报到注册",
-        dataIndex: 'pass',
+        dataIndex: 'step5',
         type: 'boolean',
         sortable: true,
         renderer: makeAsPassLink
       }, {
         header: "注册时间",
-        dataIndex: 'date',
+        dataIndex: 'step5_date',
         sortable: true
       }]
     var controllerName = "step5s";

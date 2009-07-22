@@ -76,7 +76,7 @@ ActionController::Routing::Routes.draw do |map|
   # consider removing the them or commenting them out if you're using named routes and resources.
   map.connect '/departments/users_to_json', :controller => "departments", :action => "users_to_json"
   map.root :controller => 'admin', :action => 'index'
-  map.connect ':controller/:action', :controller => ['admin']
+  map.connect ':controller/:action', :controller => ['admin','bed_assigning']
   map.connect '/dispatch', :controller => "students", :action => "dispatch"
   map.connect '/do_dispatch', :controller => "students", :action => "do_dispatch"
   map.connect '/logout', :controller => 'admin', :action => 'logout'

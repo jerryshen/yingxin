@@ -1,0 +1,145 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>宿舍安排</title>
+        <style>
+        	.room_wrap{
+        		width: 515px;
+				height: 115px;
+				padding: 15px 8px;
+				border: 1px solid black;
+        	}
+        	.room_info caption{
+        		text-decoration: underline;	
+				text-align: left;
+				height: 25px;
+        	}
+			.room_info td{
+				width: 100px;
+				border: none;
+			}
+			
+			.room_info td.header{
+				width: 50px;
+				text-align: center;
+				
+			}
+			
+        	label {
+        		font-weight: bold;
+        	}
+			
+			label span{
+				font-weight: normal;
+			}
+			
+        	table{
+				border-collapse: collapse;
+				table-layout:fixed;
+        	}
+			
+            td.on {
+                background-color: blue;
+				color: white;
+            }
+			
+			td.on a{
+				color: white;
+			}
+            
+            td {
+                padding-top: 1px;
+                padding-right: 1px;
+                padding-left: 1px;
+                mso-ignore: padding;
+                color: black;
+                font-size: 11.0pt;
+                font-weight: 400;
+                font-style: normal;
+                text-decoration: none;
+                font-family: 宋体;
+                mso-generic-font-family: auto;
+                mso-font-charset: 134;
+                mso-number-format: General;
+                text-align: general;
+                vertical-align: middle;
+                border-top: .5pt solid windowtext;
+                border-right: .5pt solid windowtext;
+                border-bottom: 1.0pt solid windowtext;
+                border-left: 1.0pt solid windowtext;
+                mso-background-source: auto;
+                mso-pattern: auto;
+                white-space: nowrap;
+            }
+			#building_map{
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+			#building_map td{
+				width: 50px;
+				text-align: center;
+				
+			}
+			a{
+				text-decoration : none;
+				color: black;
+			}
+			
+			a:visited, a:active{
+				color: black;
+			}
+			
+			a:hover{
+				background-color: blue;
+				color: white;
+			}
+			#beds td{
+				width: 70px;
+				text-align: center;
+			}
+			#beds {
+				margin-top: 10px;
+			}
+        </style>
+    </head>
+    <body>
+        <label for="building_id">
+            宿舍楼：<%= select_tag('building_id', options_for_select([["选择大楼..." , ""]] + Building.all.collect{|x| [x.name, x.id] }),{:name => "building_id", :onchange => "view_building()"}) %>
+        </label>
+        <div id="building_map">
+        </div>
+        <div id="room_info">
+        </div>
+        <%= javascript_include_tag "jquery-validate/lib/jquery" %>
+        <script>
+            var view_building = function(){
+                var building_id = $("#building_id").val();
+                if (building_id) {
+                    $.get("/bed_assigning/list_room", {
+                        building_id: building_id
+                    }, function(data){
+                        var building_map = $("#building_map");
+                        building_map.html(data);
+                        $("td", building_map).click(function(){
+                            $("td.on", building_map).removeClass("on");
+                            $(this).addClass("on");
+                        })
+                    })
+                }
+                else {
+                    $("#building_map").empty();
+                }
+            }
+            
+            var view_room = function(room_id){
+                $.get("/bed_assigning/room_info", {
+                    room_id: room_id
+                }, function(data){
+                    $("#room_info").html(data);
+                })
+            }
+            view_building();
+        </script>
+    </body>
+</html>

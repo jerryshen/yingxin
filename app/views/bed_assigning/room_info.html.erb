@@ -1,0 +1,36 @@
+<div class="room_wrap">
+<table class="room_info">
+	<caption>#宿舍<span><%= @room.name %>&nbsp;&nbsp;&nbsp;</span></caption>
+	<tr>
+		<td class="header"><label>班级：</label></td>
+		<td><span><%= @room.info_class.name if @room.info_class %></span></td>
+		<td class="header"><label>舍长：</label></td>
+		<td><span><%= @room.master.name if @room.master %></span></td>
+	</tr>
+	<tr>
+		<td class="header"><label>类别：</label></td>
+		<td><span><%= @room.room_type ? "男生宿舍" : "女生宿舍" %></span></td>
+		<td class="header"><label>电话：</label></td>
+		<td><span><%= @room.phone %></span></td>			
+	</tr>
+</table>
+
+<table id="beds">
+	<tr>
+		<td>
+			床位号
+		</td>
+		<% @room.bed_count.times do |i| %>
+		<td><%= i+1 %></td>
+		<% end %>
+	</tr>
+	<tr>
+		<td>
+			入住学生
+		</td>		
+		<% @beds.each do |bed| %>
+			<td><%= bed.student.name if(bed && bed.student) %></td>
+		<% end %>
+	</tr>
+</table>
+</div>

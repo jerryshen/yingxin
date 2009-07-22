@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :beds
+
   map.resources :complexes
 
 
@@ -15,8 +17,8 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :fee_stds
   map.resources :subjects
   map.resources :tips
-  map.resources :room_students
-  map.resources :students, :collection => { :class_dispatch => :get }
+
+  map.resources :students
   map.resources :rooms
   map.resources :buildings
   map.resources :info_classes

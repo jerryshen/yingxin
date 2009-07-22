@@ -2,6 +2,8 @@ class CreateRooms < ActiveRecord::Migration
   def self.up
     create_table :rooms do |t|
       t.references :building
+      t.references :info_class
+      t.references :student
       t.string :name
       t.integer :beds
       t.string :phone
@@ -10,6 +12,8 @@ class CreateRooms < ActiveRecord::Migration
       t.timestamps
     end
     add_index :rooms, :building_id
+    add_index :rooms, :info_class_id
+    add_index :rooms, :student_id
   end
 
   def self.down

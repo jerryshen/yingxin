@@ -11,6 +11,7 @@
 <div id="list-view">
   <form style="margin: 10px 0px;" id="search_form">
 
+    <p>综合查询：</p>
     <%= index_select_class  %>
     <p><label for="search_gender">性别</label>
       <select name="search_gender" id="search_gender">
@@ -30,18 +31,20 @@
     </p>
     <p><label>民族</label>
       <%= select_nation  %>
+      <label>报到情况</label>
+      <select name="search_proce" id="search_proce">
+        <option value="">全部...</option>
+        <option value="true">已报到</option>
+        <option value="false">未报到</option>
+      </select>
+    </p>
+    <p>
       <label for="search_number">学号</label>
-      <input type="text" value="" name="search_number" id="search_number" size="10"/>
+      <input type="text" value="" name="search_number" id="search_number" size="15"/>
       <label for="search_name">姓名</label>
-      <input type="text" value="" name="search_name" id="search_name" size="10"/>
+      <input type="text" value="" name="search_name" id="search_name" size="15"/>
     </p>
 
-<p>
-    <label>报到情况</label>
-    <label for="proce"><%= radio_button :search, :proce, "", :style => "width:50px"  %>全部</label>
-    <label for="proce"><%= radio_button :search, :proce, true  %>已报到</label>
-    <label for="proce"><%= radio_button :search, :proce, false %>未报到</label>
-</p>
     <input class="button" type="button" id="btnSearch" value="搜索"/>
     <input value="重置"class="btnreset" type="reset" />
     <input value="刷新 " onclick="window.location.reload()" class="btnrefresh" type="button"  />

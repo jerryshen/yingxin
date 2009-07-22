@@ -46,7 +46,6 @@ class BuildingsController < ApplicationController
 
     respond_to do |format|
       if @building.save
-        flash[:notice] = 'Building was successfully created.'
         format.html { redirect_to(@building) }
         format.xml  { render :xml => @building, :status => :created, :location => @building }
         format.json { render :text => '{status: "success", message: "成功添加宿舍大楼！"}'}
@@ -65,7 +64,6 @@ class BuildingsController < ApplicationController
 
     respond_to do |format|
       if @building.update_attributes(params[:building])
-        flash[:notice] = 'Building was successfully updated.'
         format.html { redirect_to(@building) }
         format.xml  { head :ok }
         format.json { render :text => '{status: "success", message: "成功更新宿舍大楼！"}'}

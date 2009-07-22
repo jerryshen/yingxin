@@ -25,7 +25,7 @@ class ComplexesController < ApplicationController
   def get_json
     load_page_data
 
-    conditions = ""
+    conditions = "1=1"
     condition_values = []
     if(!params[:department_id].blank?)
       conditions += "department_id = ? "
@@ -33,16 +33,51 @@ class ComplexesController < ApplicationController
     end
 
     if(!params[:major_id].blank?)
-      conditions += " AND p.major_id = ? "
+      conditions += " AND major_id = ? "
       condition_values << params[:major_id]
     end
 
     if(!params[:class_id].blank?)
-      conditions += " AND p.info_class_id = ? "
+      conditions += " AND info_class_id = ? "
       condition_values << params[:class_id]
     end
 
-    if(!conditions.blank?)
+    if(!params[:search_gender].blank?)
+      conditions += " AND gender = ? "
+      condition_values << params[:search_gender]
+    end
+
+    if(!params[:search_polity].blank?)
+      conditions += " AND polity = ? "
+      condition_values << params[:search_poplity]
+    end
+
+    if(!params[:search_nation].blank?)
+      conditions += " AND nation = ? "
+      condition_values << params[:search_nation]
+    end
+
+    if(!params[:search_number].blank?)
+      conditions += " AND stu_number = ? "
+      condition_values << params[:search_number]
+    end
+
+    if(!params[:search_name].blank?)
+      conditions += " AND name like ? "
+      condition_values << "%#{params[:search_name]}%"
+    end
+
+    if(!params[:search][:state])
+      conditions += " AND stat = ? "
+      condition_values << params[:search][:state]
+    end
+
+    if(!params[:search][:city])
+      conditions += " AND city = ? "
+      condition_values << params[:search][:city]
+    end
+
+    if(conditions != "1=1")
       option_conditions = [conditions,condition_values].flatten!
       @complexes = Student.paginate(:order =>"id ASC",:conditions => option_conditions,:per_page=> @pagesize, :page => params[:page] || 1)
       count = Student.count(:conditions => option_conditions)

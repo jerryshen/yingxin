@@ -18,6 +18,17 @@ ActiveRecord::Schema.define(:version => 27) do
     t.datetime "updated_at"
   end
 
+  create_table "beds", :force => true do |t|
+    t.string   "name"
+    t.integer  "room_id"
+    t.integer  "student_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "beds", ["room_id"], :name => "index_beds_on_room_id"
+  add_index "beds", ["student_id"], :name => "index_beds_on_student_id"
+
   create_table "buildings", :force => true do |t|
     t.string   "name"
     t.datetime "created_at"
@@ -26,7 +37,7 @@ ActiveRecord::Schema.define(:version => 27) do
 
   create_table "departments", :force => true do |t|
     t.string   "name"
-    t.boolean  "de_type"
+    t.boolean  "de_type",    :default => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -85,7 +96,7 @@ ActiveRecord::Schema.define(:version => 27) do
     t.integer  "index"
     t.string   "icon"
     t.integer  "page_module_id"
-    t.boolean  "hidden"
+    t.boolean  "hidden",         :default => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -130,19 +141,10 @@ ActiveRecord::Schema.define(:version => 27) do
     t.datetime "updated_at"
   end
 
-  create_table "room_students", :force => true do |t|
-    t.integer  "room_id"
-    t.string   "bed"
-    t.integer  "student_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "room_students", ["room_id"], :name => "index_room_students_on_room_id"
-  add_index "room_students", ["student_id"], :name => "index_room_students_on_student_id"
-
   create_table "rooms", :force => true do |t|
     t.integer  "building_id"
+    t.integer  "info_class_id"
+    t.integer  "student_id"
     t.string   "name"
     t.integer  "beds"
     t.string   "phone"
@@ -152,78 +154,8 @@ ActiveRecord::Schema.define(:version => 27) do
   end
 
   add_index "rooms", ["building_id"], :name => "index_rooms_on_building_id"
-
-  create_table "step1s", :force => true do |t|
-    t.integer  "student_id"
-    t.boolean  "pass",       :default => false
-    t.datetime "date"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "step1s", ["student_id"], :name => "index_step1s_on_student_id"
-
-  create_table "step2s", :force => true do |t|
-    t.integer  "student_id"
-    t.boolean  "pass",       :default => false
-    t.datetime "date"
-    t.integer  "major_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "step2s", ["major_id"], :name => "index_step2s_on_major_id"
-  add_index "step2s", ["student_id"], :name => "index_step2s_on_student_id"
-
-  create_table "step3s", :force => true do |t|
-    t.integer  "student_id"
-    t.boolean  "pass",       :default => false
-    t.datetime "date"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "step3s", ["student_id"], :name => "index_step3s_on_student_id"
-
-  create_table "step4s", :force => true do |t|
-    t.integer  "student_id"
-    t.boolean  "pass",       :default => false
-    t.datetime "date"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "step4s", ["student_id"], :name => "index_step4s_on_student_id"
-
-  create_table "step5s", :force => true do |t|
-    t.integer  "student_id"
-    t.boolean  "pass",       :default => false
-    t.datetime "date"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "step5s", ["student_id"], :name => "index_step5s_on_student_id"
-
-  create_table "step6s", :force => true do |t|
-    t.integer  "student_id"
-    t.boolean  "pass",       :default => false
-    t.datetime "date"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "step6s", ["student_id"], :name => "index_step6s_on_student_id"
-
-  create_table "step7s", :force => true do |t|
-    t.integer  "student_id"
-    t.boolean  "pass",       :default => false
-    t.datetime "date"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "step7s", ["student_id"], :name => "index_step7s_on_student_id"
+  add_index "rooms", ["info_class_id"], :name => "index_rooms_on_info_class_id"
+  add_index "rooms", ["student_id"], :name => "index_rooms_on_student_id"
 
   create_table "students", :force => true do |t|
     t.string   "can_number"
@@ -258,11 +190,11 @@ ActiveRecord::Schema.define(:version => 27) do
     t.string   "receiver"
     t.text     "description"
     t.string   "thumb"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string   "phone"
     t.boolean  "confirm",       :default => false
     t.datetime "confirm_date"
-    t.string   "phone"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   add_index "students", ["department_id"], :name => "index_students_on_department_id"
@@ -310,8 +242,8 @@ ActiveRecord::Schema.define(:version => 27) do
     t.string   "title"
     t.integer  "user_id"
     t.text     "content"
-    t.boolean  "top"
-    t.boolean  "hidden"
+    t.boolean  "top",        :default => false
+    t.boolean  "hidden",     :default => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

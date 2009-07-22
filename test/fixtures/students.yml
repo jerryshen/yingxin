@@ -1,0 +1,10290 @@
+--- 
+students_190: 
+  address: 
+  name: !binary |
+    6ZmI5oiQ
+
+  city: 
+  region: 
+  major_id: "20"
+  created_at: 2009-07-15 13:21:16
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:16
+  post_code: "610072"
+  id_number: "510107199001114618"
+  can_number: 08510120520107
+  thumb: 
+  region_code: "510120"
+  id: "190"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1990-01-11 00:00:00
+  phone: 
+  r_score: "459.0"
+  receiver: !binary |
+    6ZmI5oiQ
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "459.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_162: 
+  address: 
+  name: !binary |
+    6buE6Zuq5qKF
+
+  city: 
+  region: 
+  major_id: "18"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:15
+  post_code: "610072"
+  id_number: "511521198903036626"
+  can_number: 08510120520016
+  thumb: 
+  region_code: "510120"
+  id: "162"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1989-03-03 00:00:00
+  phone: 
+  r_score: "450.0"
+  receiver: !binary |
+    6buE6Zuq5qKF
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "450.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_134: 
+  address: 
+  name: !binary |
+    5rip5Z+55Li9
+
+  city: 
+  region: 
+  major_id: "7"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    5oiQ6YO95biC6Z2S576K5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5oiQ6YO95biC6buE55Sw5Z2d5oiQ6aOe5Lit5a2m
+
+  school_name: !binary |
+    5oiQ6aOe5a2Q5byf5Lit5a2m
+
+  updated_at: 2009-07-21 13:44:35
+  post_code: "610091"
+  id_number: "445222199003042246"
+  can_number: 08510102130059
+  thumb: 
+  region_code: "510102"
+  id: "134"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510102106"
+  exa_number: "010203015"
+  gra_type: "0"
+  birthday: 1990-03-04 00:00:00
+  phone: 
+  r_score: "381.0"
+  receiver: !binary |
+    5rip5Z+55Li9
+
+  description: 
+  edu_length: "3"
+  info_class_id: "1"
+  direction: 
+  h_score: "381.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_106: 
+  address: 
+  name: !binary |
+    546L5a625by6
+
+  city: 
+  region: 
+  major_id: "13"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    5Y2X5YWF5biC5Y2X6YOo5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Y2X6YOo5LiJ5Lit
+
+  school_name: !binary |
+    5Y2X6YOo5LiJ5Lit
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "637300"
+  id_number: "511321198701012916"
+  can_number: 08511105603035
+  thumb: 
+  region_code: "511105"
+  id: "106"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "511105131"
+  exa_number: "110540614"
+  gra_type: "0"
+  birthday: 1987-01-01 00:00:00
+  phone: 
+  r_score: "491.0"
+  receiver: !binary |
+    546L5a625by6
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "491.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_020: 
+  address: 
+  name: !binary |
+    5byg5pix
+
+  city: 
+  region: 
+  major_id: "8"
+  created_at: 2009-07-15 13:21:12
+  region_name: !binary |
+    5oiQ6YO95biC6ZSm5rGf5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5Y+M5qGl6Lev5Y2X5YWt6KGXMTkz5qCLNS025Y+3
+
+  school_name: !binary |
+    5oiQ6YO95LiJ5Lit
+
+  updated_at: 2009-07-15 13:21:12
+  post_code: "610000"
+  id_number: "510108198911150329"
+  can_number: 08510101170137
+  thumb: 
+  region_code: "510101"
+  id: "20"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510101122"
+  exa_number: 010193423
+  gra_type: "0"
+  birthday: 1989-11-15 00:00:00
+  phone: 
+  r_score: "282.0"
+  receiver: !binary |
+    5byg5pix
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "282.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_079: 
+  address: 
+  name: !binary |
+    546L5Li5
+
+  city: 
+  region: 
+  major_id: "8"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    5be05Lit5biC5Y2X5rGf5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5Y2X5rGf5Y6/5Y2X5rGf6ZWH57Gz5LuT5bGx5aSn6YGT5Y2X
+    56O35q61MTIx5Y+3OTAy5a6k
+
+  school_name: !binary |
+    5Zub5bed55yB5Y2X5rGf5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "636600"
+  id_number: "513722198811250026"
+  can_number: 08511504130077
+  thumb: 
+  region_code: "511504"
+  id: "79"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511504101"
+  exa_number: "150404617"
+  gra_type: "0"
+  birthday: 1988-11-25 00:00:00
+  phone: 
+  r_score: "236.0"
+  receiver: !binary |
+    546L5Li5
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "236.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_191: 
+  address: 
+  name: !binary |
+    6YKx5a2f
+
+  city: 
+  region: 
+  major_id: "20"
+  created_at: 2009-07-15 13:21:16
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:16
+  post_code: "610072"
+  id_number: "510105198908270267"
+  can_number: 08510120520106
+  thumb: 
+  region_code: "510120"
+  id: "191"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1989-08-27 00:00:00
+  phone: 
+  r_score: "519.0"
+  receiver: !binary |
+    6YKx5a2f
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "519.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_163: 
+  address: 
+  name: !binary |
+    6LW15re8
+
+  city: 
+  region: 
+  major_id: "18"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:15
+  post_code: "610072"
+  id_number: "510106198912042511"
+  can_number: 08510120520018
+  thumb: 
+  region_code: "510120"
+  id: "163"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1989-12-04 00:00:00
+  phone: 
+  r_score: "515.0"
+  receiver: !binary |
+    6LW15re8
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "515.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_135: 
+  address: 
+  name: !binary |
+    5b2t6K+X6Iyc
+
+  city: 
+  region: 
+  major_id: "7"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    5Y2X5YWF5biC6aG65bqG5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5Y2X5YWF5biC5YWt5Lit6auY5LiJ5bm057qn5LiD54+t
+
+  school_name: !binary |
+    5Y2X5YWF5YWt5Lit
+
+  updated_at: 2009-07-21 13:44:35
+  post_code: "637000"
+  id_number: "511324199010230045"
+  can_number: 08511101130295
+  thumb: 
+  region_code: "511101"
+  id: "135"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511101122"
+  exa_number: "110104112"
+  gra_type: "0"
+  birthday: 1990-10-23 00:00:00
+  phone: 
+  r_score: "303.0"
+  receiver: !binary |
+    5b2t6K+X6Iyc
+
+  description: 
+  edu_length: "3"
+  info_class_id: "1"
+  direction: 
+  h_score: "303.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_107: 
+  address: 
+  name: !binary |
+    6Im+5b+X6LaF
+
+  city: 
+  region: 
+  major_id: "16"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    5a6c5a6+5biC57+g5bGP5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5a6c5a6+5biC5Y2X5bm/6LevMTk35Y+35a6c5a6+5biC5ZWG5Lia6IGM5Lia
+    5Lit562J5LiT5Lia5a2m5qCh5pWZ5a2m5aSE
+
+  school_name: !binary |
+    5a6c5a6+5biC5ZWG6IGM5qCh
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "644002"
+  id_number: "511502198911172418"
+  can_number: 08511201603041
+  thumb: 
+  region_code: "511201"
+  id: "107"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "511201301"
+  exa_number: "120140425"
+  gra_type: "0"
+  birthday: 1989-11-17 00:00:00
+  phone: 
+  r_score: "485.0"
+  receiver: !binary |
+    6Im+5b+X6LaF
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "475.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_021: 
+  address: 
+  name: !binary |
+    5p2o5byL5pmW
+
+  city: 
+  region: 
+  major_id: "10"
+  created_at: 2009-07-15 13:21:12
+  region_name: !binary |
+    5oiQ6YO95biC6ZSm5rGf5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5oiQ5Y2O5Yy65Y+M5qGl6Lev5Y2X5LqU6KGXMTc45Y+35paw
+    5Y2O5ZWG5L2P5qW8QeW5ojMtMuWPtw==
+
+  school_name: !binary |
+    5oiQ6YO95Y2B5LiD5Lit
+
+  updated_at: 2009-07-15 13:21:12
+  post_code: "610061"
+  id_number: "510105198905202517"
+  can_number: 08510101170141
+  thumb: 
+  region_code: "510101"
+  id: "21"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "510101123"
+  exa_number: 010194023
+  gra_type: "0"
+  birthday: 1989-05-20 00:00:00
+  phone: 
+  r_score: "274.0"
+  receiver: !binary |
+    5p2o5byL5pmW
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "274.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_192: 
+  address: 
+  name: !binary |
+    5pu+56uL5Yuk
+
+  city: 
+  region: 
+  major_id: "20"
+  created_at: 2009-07-15 13:21:16
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:16
+  post_code: "610072"
+  id_number: "510107198903221768"
+  can_number: 08510120520105
+  thumb: 
+  region_code: "510120"
+  id: "192"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1989-03-22 00:00:00
+  phone: 
+  r_score: "611.0"
+  receiver: !binary |
+    5pu+56uL5Yuk
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "611.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_164: 
+  address: 
+  name: !binary |
+    6ZmI6L+Q5paH
+
+  city: 
+  region: 
+  major_id: "18"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:15
+  post_code: "610072"
+  id_number: "510108198907211811"
+  can_number: 08510120520020
+  thumb: 
+  region_code: "510120"
+  id: "164"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1989-07-21 00:00:00
+  phone: 
+  r_score: "552.0"
+  receiver: !binary |
+    6ZmI6L+Q5paH
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "552.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_136: 
+  address: 
+  name: !binary |
+    546L6ZuF6L+q
+
+  city: 
+  region: 
+  major_id: "7"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    5a6c5a6+5biC57+g5bGP5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5a6c5a6+5biC56ys5LiA5Lit5a2m5qCh
+
+  school_name: !binary |
+    5a6c5a6+5biC5LiA5Lit
+
+  updated_at: 2009-07-21 13:44:35
+  post_code: "644000"
+  id_number: "511502199003270025"
+  can_number: 08511201130082
+  thumb: 
+  region_code: "511201"
+  id: "136"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511201101"
+  exa_number: "120102103"
+  gra_type: "0"
+  birthday: 1990-03-27 00:00:00
+  phone: 
+  r_score: "296.0"
+  receiver: !binary |
+    546L6ZuF6L+q
+
+  description: 
+  edu_length: "3"
+  info_class_id: "2"
+  direction: 
+  h_score: "296.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_108: 
+  address: 
+  name: !binary |
+    5YiY5paH
+
+  city: 
+  region: 
+  major_id: "12"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    6YGC5a6B5biC6Ii55bGx5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB6YGC5a6B5biC5qGC6Iqx6IGM5Lia6auY57qn5Lit5a2m5qCh
+
+  school_name: !binary |
+    5qGC6Iqx6IGM5Lit
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "629013"
+  id_number: 51090219881224873X
+  can_number: 08510801610082
+  thumb: 
+  region_code: "510801"
+  id: "108"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "510801302"
+  exa_number: 080140928
+  gra_type: "0"
+  birthday: 1988-12-24 00:00:00
+  phone: 
+  r_score: "483.0"
+  receiver: !binary |
+    5YiY5paH
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "483.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_050: 
+  address: 
+  name: !binary |
+    6buE6Jm557u0
+
+  city: 
+  region: 
+  major_id: "9"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    5YaF5rGf5biC5aiB6L+c5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5YaF5rGf5biC5aiB6L+c5Y6/5aiB6L+c5Lit5a2m
+
+  school_name: !binary |
+    5aiB6L+c5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:13
+  post_code: "642450"
+  id_number: "511024198910227959"
+  can_number: 08510904130011
+  thumb: 
+  region_code: "510904"
+  id: "50"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "510904102"
+  exa_number: 090402511
+  gra_type: "0"
+  birthday: 1989-10-22 00:00:00
+  phone: 
+  r_score: "365.0"
+  receiver: !binary |
+    6buE6Jm557u0
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "365.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_022: 
+  address: 
+  name: !binary |
+    5L2Z5b+D5LmQ
+
+  city: 
+  region: 
+  major_id: "8"
+  created_at: 2009-07-15 13:21:12
+  region_name: !binary |
+    5oiQ6YO95biC6YeR54mb5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5oiQ6YO95biC55m+5p6c5p6X5bCP5Yy66YeR572X6LevNOWP
+    t+aIkOmDvTE45Lit5a2m
+
+  school_name: !binary |
+    5oiQ6YO95biC56ys5Y2B5YWr5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:12
+  post_code: "610072"
+  id_number: "510105198907263540"
+  can_number: 08510103130259
+  thumb: 
+  region_code: "510103"
+  id: "22"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510103103"
+  exa_number: "010301325"
+  gra_type: "0"
+  birthday: 1989-07-26 00:00:00
+  phone: 
+  r_score: "417.0"
+  receiver: !binary |
+    5L2Z5b+D5LmQ
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "417.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_193: 
+  address: 
+  name: !binary |
+    6YKT5LqR5LqR
+
+  city: 
+  region: 
+  major_id: "20"
+  created_at: 2009-07-15 13:21:16
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:16
+  post_code: "610072"
+  id_number: "510104199002271464"
+  can_number: 08510120520104
+  thumb: 
+  region_code: "510120"
+  id: "193"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1990-02-27 00:00:00
+  phone: 
+  r_score: "685.0"
+  receiver: !binary |
+    6YKT5LqR5LqR
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "685.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_165: 
+  address: 
+  name: !binary |
+    5ZSQ5pWP
+
+  city: 
+  region: 
+  major_id: "18"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:15
+  post_code: "610072"
+  id_number: "511621198908015897"
+  can_number: 08510120520022
+  thumb: 
+  region_code: "510120"
+  id: "165"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1989-08-01 00:00:00
+  phone: 
+  r_score: "606.0"
+  receiver: !binary |
+    5ZSQ5pWP
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "606.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_137: 
+  address: 
+  name: !binary |
+    5p2O6I+y
+
+  city: 
+  region: 
+  major_id: "7"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    6L6+5bee5biC6YCa5bed5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB6L6+5bee5biC56ys5LiA5Lit5a2m6auY5LiJMjDnj60g5p2O
+    6I+yKOaUtik=
+
+  school_name: !binary |
+    6L6+5bee5pyd6Ziz5Lit5a2m
+
+  updated_at: 2009-07-21 13:44:35
+  post_code: "635000"
+  id_number: "513001198811230826"
+  can_number: 08511401130260
+  thumb: 
+  region_code: "511401"
+  id: "137"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511401126"
+  exa_number: "140105320"
+  gra_type: "0"
+  birthday: 1988-11-23 00:00:00
+  phone: 
+  r_score: "297.0"
+  receiver: !binary |
+    5p2O6I+y
+
+  description: 
+  edu_length: "3"
+  info_class_id: "1"
+  direction: 
+  h_score: "297.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_109: 
+  address: 
+  name: !binary |
+    5ZC05a+G
+
+  city: 
+  region: 
+  major_id: "16"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    5bm/5a6J5biC5Y2O6JOl5biC
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5Y2O6JOl5biC5aSp5rGg6IGM5Lia5Lit5a2m5qCh
+
+  school_name: !binary |
+    5Y2O6JOl5biC5aSp5rGg6IGM5Lia5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "638601"
+  id_number: 51168119880905458X
+  can_number: 08511302603012
+  thumb: 
+  region_code: "511302"
+  id: "109"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511302323"
+  exa_number: "130240115"
+  gra_type: "0"
+  birthday: 1988-09-05 00:00:00
+  phone: 
+  r_score: "474.0"
+  receiver: !binary |
+    5ZC05a+G
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "474.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_051: 
+  address: 
+  name: !binary |
+    6ams55C0
+
+  city: 
+  region: 
+  major_id: "10"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    5Y2X5YWF5biC6auY5Z2q5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5Y2X5YWF6b6Z6Zeo5Lit5a2m
+
+  school_name: !binary |
+    5Y2X5YWF5biC6b6Z6Zeo5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:13
+  post_code: "637103"
+  id_number: 51130219900226372X
+  can_number: 08511102130032
+  thumb: 
+  region_code: "511102"
+  id: "51"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511102101"
+  exa_number: "110206003"
+  gra_type: "0"
+  birthday: 1990-02-26 00:00:00
+  phone: 
+  r_score: "374.0"
+  receiver: !binary |
+    6ams55C0
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "374.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_023: 
+  address: 
+  name: !binary |
+    5byg5bC56aao
+
+  city: 
+  region: 
+  major_id: "10"
+  created_at: 2009-07-15 13:21:12
+  region_name: !binary |
+    5oiQ6YO95biC5q2m5L6v5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC6Iiq56m66LevMTblj7fmiJDpg73luILnrKzkupTljYHkuK3l
+    raY=
+
+  school_name: !binary |
+    5oiQ6YO95biC56ys5LqU5Y2B5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:12
+  post_code: "610061"
+  id_number: "510107198912160020"
+  can_number: 08510104130175
+  thumb: 
+  region_code: "510104"
+  id: "23"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510104122"
+  exa_number: "010404017"
+  gra_type: "0"
+  birthday: 1989-12-16 00:00:00
+  phone: 
+  r_score: "392.0"
+  receiver: !binary |
+    5byg5bC56aao
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "392.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_194: 
+  address: 
+  name: !binary |
+    6ZmI5p+z6JCM
+
+  city: 
+  region: 
+  major_id: "20"
+  created_at: 2009-07-15 13:21:16
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:16
+  post_code: "610072"
+  id_number: "510106199007230744"
+  can_number: 08510120520103
+  thumb: 
+  region_code: "510120"
+  id: "194"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1990-07-23 00:00:00
+  phone: 
+  r_score: "488.0"
+  receiver: !binary |
+    6ZmI5p+z6JCM
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "488.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_166: 
+  address: 
+  name: !binary |
+    6YKT5a2m6L6J
+
+  city: 
+  region: 
+  major_id: "18"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:15
+  post_code: "610072"
+  id_number: "510106199002114816"
+  can_number: 08510120520024
+  thumb: 
+  region_code: "510120"
+  id: "166"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1990-02-11 00:00:00
+  phone: 
+  r_score: "479.0"
+  receiver: !binary |
+    6YKT5a2m6L6J
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "479.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_138: 
+  address: 
+  name: !binary |
+    546L5pum
+
+  city: 
+  region: 
+  major_id: "7"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    5YeJ5bGx5bee6KW/5piM5biC
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB6KW/5piM5biC56S85bee5Lit5a2m
+
+  school_name: !binary |
+    56S85bee5Lit5a2m
+
+  updated_at: 2009-07-21 13:44:35
+  post_code: "615014"
+  id_number: "513401890714272"
+  can_number: 08512101130288
+  thumb: 
+  region_code: "512101"
+  id: "138"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "512101113"
+  exa_number: "210105322"
+  gra_type: "0"
+  birthday: 1989-07-14 00:00:00
+  phone: 
+  r_score: "333.0"
+  receiver: !binary |
+    546L5pum
+
+  description: 
+  edu_length: "3"
+  info_class_id: "1"
+  direction: 
+  h_score: "313.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_052: 
+  address: 
+  name: !binary |
+    5byg54+K
+
+  city: 
+  region: 
+  major_id: "8"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    5Y2X5YWF5biC6auY5Z2q5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5Y2X5YWF5biC6auY5Z2q5Lit5a2m
+
+  school_name: !binary |
+    5Y2X5YWF5biC6auY5Z2q5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:13
+  post_code: "637100"
+  id_number: "511303199002280622"
+  can_number: 08511102130087
+  thumb: 
+  region_code: "511102"
+  id: "52"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511102121"
+  exa_number: "110201320"
+  gra_type: "0"
+  birthday: 1990-02-28 00:00:00
+  phone: 
+  r_score: "263.0"
+  receiver: !binary |
+    5byg54+K
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "263.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_024: 
+  address: 
+  name: !binary |
+    6YOR5pmT56eL
+
+  city: 
+  region: 
+  major_id: "9"
+  created_at: 2009-07-15 13:21:12
+  region_name: !binary |
+    5oiQ6YO95biC6b6Z5rOJ6am/5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5oiQ6YO95biC5rSb5bim5Lit5a2m
+
+  school_name: !binary |
+    5oiQ6YO95biC5rSb5bim5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:12
+  post_code: "610108"
+  id_number: 51011219890802094X
+  can_number: 08510106170039
+  thumb: 
+  region_code: "510106"
+  id: "24"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510106111"
+  exa_number: 010693914
+  gra_type: "0"
+  birthday: 1989-08-02 00:00:00
+  phone: 
+  r_score: "308.0"
+  receiver: !binary |
+    6YOR5pmT56eL
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "308.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_080: 
+  address: 
+  name: !binary |
+    5ZSQ5Y2r6Jm5
+
+  city: 
+  region: 
+  major_id: "9"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    55yJ5bGx5biC5Lic5Z2h5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB55yJ5bGx5Lit5a2m5qCh
+
+  school_name: !binary |
+    55yJ5bGx5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "620010"
+  id_number: "513821198705302821"
+  can_number: 08511701130073
+  thumb: 
+  region_code: "511701"
+  id: "80"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511701101"
+  exa_number: "170106123"
+  gra_type: "0"
+  birthday: 1987-05-30 00:00:00
+  phone: 
+  r_score: "350.0"
+  receiver: !binary |
+    5ZSQ5Y2r6Jm5
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "350.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_195: 
+  address: 
+  name: !binary |
+    6LW16K+j
+
+  city: 
+  region: 
+  major_id: "20"
+  created_at: 2009-07-15 13:21:16
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:16
+  post_code: "610072"
+  id_number: "510106198812172917"
+  can_number: 08510120520102
+  thumb: 
+  region_code: "510120"
+  id: "195"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1988-12-17 00:00:00
+  phone: 
+  r_score: "450.0"
+  receiver: !binary |
+    6LW16K+j
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "450.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_167: 
+  address: 
+  name: !binary |
+    5a2Z6aqP
+
+  city: 
+  region: 
+  major_id: "18"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:15
+  post_code: "610072"
+  id_number: "510106198905084414"
+  can_number: 08510120520023
+  thumb: 
+  region_code: "510120"
+  id: "167"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1989-05-08 00:00:00
+  phone: 
+  r_score: "483.0"
+  receiver: !binary |
+    5a2Z6aqP
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "483.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_139: 
+  address: 
+  name: !binary |
+    5p2o5rSL
+
+  city: 
+  region: 
+  major_id: "7"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    6YGC5a6B5biC5bCE5rSq5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5bCE5rSq5Y6/5aSq5ZKM5Lit5a2m
+
+  school_name: !binary |
+    5aSq5ZKM5Lit5a2m
+
+  updated_at: 2009-07-21 13:44:35
+  post_code: "629200"
+  id_number: 51092219880125438X
+  can_number: 08510803130865
+  thumb: 
+  region_code: "510803"
+  id: "139"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510803121"
+  exa_number: 080301122
+  gra_type: "0"
+  birthday: 1988-01-25 00:00:00
+  phone: 
+  r_score: "335.0"
+  receiver: !binary |
+    5p2o5rSL
+
+  description: 
+  edu_length: "3"
+  info_class_id: "2"
+  direction: 
+  h_score: "335.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_053: 
+  address: 
+  name: !binary |
+    5byg6b6Z
+
+  city: 
+  region: 
+  major_id: "8"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    5Y2X5YWF5biC6auY5Z2q5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5Y2X5YWF5biC6auY5Z2q5Lit5a2m
+
+  school_name: !binary |
+    5Y2X5YWF5biC6auY5Z2q5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:13
+  post_code: "637100"
+  id_number: "510723198802283671"
+  can_number: 08511102170024
+  thumb: 
+  region_code: "511102"
+  id: "53"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "511102121"
+  exa_number: "110297514"
+  gra_type: "0"
+  birthday: 1988-02-28 00:00:00
+  phone: 
+  r_score: "338.0"
+  receiver: !binary |
+    5byg6b6Z
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "338.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_025: 
+  address: 
+  name: !binary |
+    5p2O5biG
+
+  city: 
+  region: 
+  major_id: "8"
+  created_at: 2009-07-15 13:21:12
+  region_name: !binary |
+    5oiQ6YO95biC5Y+M5rWB5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5oiQ6YO95biC5Y+M5rWB6Im65L2T5Lit5a2m6auYMjAwOOe6
+    pzjnj60=
+
+  school_name: !binary |
+    5Zub5bed55yB5Y+M5rWB5Y6/6Im65L2T5a6e6aqM5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:12
+  post_code: "610203"
+  id_number: "510107198907253425"
+  can_number: 08510113130726
+  thumb: 
+  region_code: "510113"
+  id: "25"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510113121"
+  exa_number: "011302624"
+  gra_type: "0"
+  birthday: 1989-07-25 00:00:00
+  phone: 
+  r_score: "274.0"
+  receiver: !binary |
+    5p2O5biG
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "274.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_081: 
+  address: 
+  name: !binary |
+    6ZmI6ZuF5r6c
+
+  city: 
+  region: 
+  major_id: "8"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    6LWE6Ziz5biC5a6J5bKz5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5a6J5bKz5Y6/6YCa6LSk5Lit5a2m6LS55aaN5pS2
+
+  school_name: !binary |
+    5a6J5bKz5Y6/6YCa6LSk5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "642352"
+  id_number: "511023198908041163"
+  can_number: 08511803130470
+  thumb: 
+  region_code: "511803"
+  id: "81"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511803121"
+  exa_number: "180311111"
+  gra_type: "0"
+  birthday: 1989-08-04 00:00:00
+  phone: 
+  r_score: "264.0"
+  receiver: !binary |
+    6ZmI6ZuF5r6c
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "264.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_196: 
+  address: 
+  name: !binary |
+    6LCt5rOi
+
+  city: 
+  region: 
+  major_id: "20"
+  created_at: 2009-07-15 13:21:16
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:16
+  post_code: "610072"
+  id_number: 51010619890717291X
+  can_number: 08510120520101
+  thumb: 
+  region_code: "510120"
+  id: "196"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1989-07-17 00:00:00
+  phone: 
+  r_score: "589.0"
+  receiver: !binary |
+    6LCt5rOi
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "589.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_168: 
+  address: 
+  name: !binary |
+    546L55Ge
+
+  city: 
+  region: 
+  major_id: "19"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:15
+  post_code: "610072"
+  id_number: "510122199002193374"
+  can_number: 08510120520129
+  thumb: 
+  region_code: "510120"
+  id: "168"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1990-02-19 00:00:00
+  phone: 
+  r_score: "477.0"
+  receiver: !binary |
+    546L55Ge
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "477.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_054: 
+  address: 
+  name: !binary |
+    6buE5Lyf
+
+  city: 
+  region: 
+  major_id: "8"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    5Y2X5YWF5biC6KW/5YWF5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB6KW/5YWF5Lit5a2m5Lil5am35paHKOi9rCnpu4TkvJ8=
+
+  school_name: !binary |
+    6KW/5YWF5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:13
+  post_code: "637200"
+  id_number: "511325199006100033"
+  can_number: 08511106130009
+  thumb: 
+  region_code: "511106"
+  id: "54"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "511106101"
+  exa_number: "110603405"
+  gra_type: "0"
+  birthday: 1990-06-10 00:00:00
+  phone: 
+  r_score: "363.0"
+  receiver: !binary |
+    6buE5Lyf
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "363.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_026: 
+  address: 
+  name: !binary |
+    5pu+55CG
+
+  city: 
+  region: 
+  major_id: "10"
+  created_at: 2009-07-15 13:21:12
+  region_name: !binary |
+    5oiQ6YO95biC6YOr5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB6YOr5Y6/5Zub5Lit
+
+  school_name: !binary |
+    5Zub5bed55yB6YOr5Y6/5Zub5Lit
+
+  updated_at: 2009-07-15 13:21:12
+  post_code: "611731"
+  id_number: "510124198810051487"
+  can_number: 08510115130151
+  thumb: 
+  region_code: "510115"
+  id: "26"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510115123"
+  exa_number: "011501216"
+  gra_type: "0"
+  birthday: 1988-10-05 00:00:00
+  phone: 
+  r_score: "387.0"
+  receiver: !binary |
+    5pu+55CG
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "387.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_082: 
+  address: 
+  name: !binary |
+    5p2o6Jaq6K+a
+
+  city: 
+  region: 
+  major_id: "8"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    55SY5a2c5bee6YGT5a2a5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB55SY5a2c5bee6YGT5a2a5Y6/57Ku6aOf5bGA
+
+  school_name: !binary |
+    5oiQ6YO95rCR5peP6auY5LitKDQ25LitKQ==
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "626400"
+  id_number: 51332619890423001X
+  can_number: 08512006130002
+  thumb: 
+  region_code: "512006"
+  id: "82"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "510101125"
+  exa_number: "010100630"
+  gra_type: "0"
+  birthday: 1989-04-23 00:00:00
+  phone: 
+  r_score: "281.0"
+  receiver: !binary |
+    5p2o6Jaq6K+a
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "261.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_197: 
+  address: 
+  name: !binary |
+    5pu+5bqG
+
+  city: 
+  region: 
+  major_id: "20"
+  created_at: 2009-07-15 13:21:16
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:16
+  post_code: "610072"
+  id_number: "510106198909245123"
+  can_number: 08510120520100
+  thumb: 
+  region_code: "510120"
+  id: "197"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1989-09-24 00:00:00
+  phone: 
+  r_score: "703.0"
+  receiver: !binary |
+    5pu+5bqG
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "703.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_169: 
+  address: 
+  name: !binary |
+    5p2O5oiQ5rOi
+
+  city: 
+  region: 
+  major_id: "19"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:15
+  post_code: "610072"
+  id_number: "510104198905224875"
+  can_number: 08510120520128
+  thumb: 
+  region_code: "510120"
+  id: "169"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1989-05-22 00:00:00
+  phone: 
+  r_score: "552.0"
+  receiver: !binary |
+    5p2O5oiQ5rOi
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "552.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_055: 
+  address: 
+  name: !binary |
+    6IyD5aif
+
+  city: 
+  region: 
+  major_id: "7"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    5Y2X5YWF5biC6KW/5YWF5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5Y2X5YWF5biC6KW/5YWF5Y6/5pmL5Z+O5Lit5a2m
+
+  school_name: !binary |
+    5pmL5Z+O5Lit5a2m
+
+  updated_at: 2009-07-21 13:44:35
+  post_code: "637200"
+  id_number: "511325199008291320"
+  can_number: 08511106130080
+  thumb: 
+  region_code: "511106"
+  id: "55"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511106111"
+  exa_number: "110602808"
+  gra_type: "0"
+  birthday: 1990-08-29 00:00:00
+  phone: 
+  r_score: "309.0"
+  receiver: !binary |
+    6IyD5aif
+
+  description: 
+  edu_length: "3"
+  info_class_id: "2"
+  direction: 
+  h_score: "309.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_110: 
+  address: 
+  name: !binary |
+    5r2Y5rW354eV
+
+  city: 
+  region: 
+  major_id: "16"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    6L6+5bee5biC6YCa5bed5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    6L6+5bee5biC6IGM5Lia6auY57qn5Lit5a2m
+
+  school_name: !binary |
+    6L6+5bee5biC6IGM5Lia6auY57qn5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "635000"
+  id_number: "513001198910210249"
+  can_number: 08511401603052
+  thumb: 
+  region_code: "511401"
+  id: "110"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511401301"
+  exa_number: "140140112"
+  gra_type: "0"
+  birthday: 1989-10-21 00:00:00
+  phone: 
+  r_score: "473.0"
+  receiver: !binary |
+    5r2Y5rW354eV
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "473.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_027: 
+  address: 
+  name: !binary |
+    5a6m6buO6IyX
+
+  city: 
+  region: 
+  major_id: "9"
+  created_at: 2009-07-15 13:21:12
+  region_name: !binary |
+    5oiQ6YO95biC6YOr5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB6YOr5Y6/5Zub5Lit
+
+  school_name: !binary |
+    5Zub5bed55yB6YOr5Y6/5Zub5Lit
+
+  updated_at: 2009-07-15 13:21:12
+  post_code: "611731"
+  id_number: "510124199008110421"
+  can_number: 08510115170039
+  thumb: 
+  region_code: "510115"
+  id: "27"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510115123"
+  exa_number: 011590718
+  gra_type: "0"
+  birthday: 1990-08-11 00:00:00
+  phone: 
+  r_score: "287.0"
+  receiver: !binary |
+    5a6m6buO6IyX
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "287.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_083: 
+  address: 
+  name: !binary |
+    6IyD5piO54+g
+
+  city: 
+  region: 
+  major_id: "9"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    5YeJ5bGx5bee55SY5rSb5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB55SY5rSb5Y6/55SY5rSb5Lit5a2mICDlj6TmmI7np4vjgIjo
+    vazjgInojIPmmI7nj6A=
+
+  school_name: !binary |
+    55SY5rSb5Y6/5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "616850"
+  id_number: "513435198907050323"
+  can_number: 08512115170008
+  thumb: 
+  region_code: "512115"
+  id: "83"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "512115121"
+  exa_number: "211590619"
+  gra_type: "0"
+  birthday: 1989-07-05 00:00:00
+  phone: 
+  r_score: "322.0"
+  receiver: !binary |
+    6IyD5piO54+g
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "302.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_198: 
+  address: 
+  name: !binary |
+    6ZmI5LqR
+
+  city: 
+  region: 
+  major_id: "20"
+  created_at: 2009-07-15 13:21:16
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:16
+  post_code: "610072"
+  id_number: 51010719890505342X
+  can_number: 08510120520099
+  thumb: 
+  region_code: "510120"
+  id: "198"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1989-05-05 00:00:00
+  phone: 
+  r_score: "542.0"
+  receiver: !binary |
+    6ZmI5LqR
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "542.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_111: 
+  address: 
+  name: !binary |
+    5p2o5q+F
+
+  city: 
+  region: 
+  major_id: "17"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    5be05Lit5biC5be05bee5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5be05Lit5biC5be05bee5Yy65LiJ5rGH6ZWH6LmH5a625Z2q
+    5p2R5LqM57uE
+
+  school_name: !binary |
+    5be05Lit5biC5be05bee5Yy65oGp6Ziz5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "636069"
+  id_number: "513701198910126512"
+  can_number: 08511501606001
+  thumb: 
+  region_code: "511501"
+  id: "111"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "511501306"
+  exa_number: "150140813"
+  gra_type: "0"
+  birthday: 1989-10-12 00:00:00
+  phone: 
+  r_score: "449.0"
+  receiver: !binary |
+    5p2o5q+F
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "449.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_028: 
+  address: 
+  name: !binary |
+    5p6X5Lyf
+
+  city: 
+  region: 
+  major_id: "8"
+  created_at: 2009-07-15 13:21:12
+  region_name: !binary |
+    5oiQ6YO95biC5paw6YO95Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5oiQ6YO95biC5paw6YO95Yy65rOw5YW06ZWH5rOw5YW05Lit
+    5a2m
+
+  school_name: !binary |
+    5oiQ6YO95biC5paw6YO95Yy65rOw5YW05Lit5a2m
+
+  updated_at: 2009-07-15 13:21:12
+  post_code: "610512"
+  id_number: "510125198901013554"
+  can_number: 08510116130133
+  thumb: 
+  region_code: "510116"
+  id: "28"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "510116125"
+  exa_number: "011602712"
+  gra_type: "0"
+  birthday: 1989-01-01 00:00:00
+  phone: 
+  r_score: "311.0"
+  receiver: !binary |
+    5p6X5Lyf
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "311.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_084: 
+  address: 
+  name: !binary |
+    572X5rSB546y
+
+  city: 
+  region: 
+  major_id: "11"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    5Y2X5YWF5biC5Y2X6YOo5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Y2X6YOo5LiJ5Lit
+
+  school_name: !binary |
+    5Y2X6YOo5LiJ5Lit
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "637300"
+  id_number: 51132119880827748X
+  can_number: 08511105606055
+  thumb: 
+  region_code: "511105"
+  id: "84"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511105131"
+  exa_number: "110541509"
+  gra_type: "0"
+  birthday: 1988-08-27 00:00:00
+  phone: 
+  r_score: "368.0"
+  receiver: !binary |
+    572X5rSB546y
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "368.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_056: 
+  address: 
+  name: !binary |
+    5p2O6ZOt
+
+  city: 
+  region: 
+  major_id: "9"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    5Y2X5YWF5biC6KW/5YWF5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB6KW/5YWF5Y6/5LmJ5YW06ZWH5Lmm5oi/5bGxOeadkTTnpL4=
+
+  school_name: !binary |
+    5LmJ5YW05Lit5a2m
+
+  updated_at: 2009-07-15 13:21:13
+  post_code: "637230"
+  id_number: "511325198910232224"
+  can_number: 08511106170037
+  thumb: 
+  region_code: "511106"
+  id: "56"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511106122"
+  exa_number: "110697228"
+  gra_type: "0"
+  birthday: 1989-10-23 00:00:00
+  phone: 
+  r_score: "251.0"
+  receiver: !binary |
+    5p2O6ZOt
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "251.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_199: 
+  address: 
+  name: !binary |
+    5a2Z56Kn6I6J
+
+  city: 
+  region: 
+  major_id: "20"
+  created_at: 2009-07-15 13:21:16
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:16
+  post_code: "610072"
+  id_number: "510105198811152520"
+  can_number: 08510120520098
+  thumb: 
+  region_code: "510120"
+  id: "199"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1988-11-15 00:00:00
+  phone: 
+  r_score: "495.0"
+  receiver: !binary |
+    5a2Z56Kn6I6J
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "495.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_140: 
+  address: 
+  name: !binary |
+    5pu+6JaH
+
+  city: 
+  region: 
+  major_id: "7"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    5pSA5p6d6Iqx5biC5Lic5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5pSA5p6d6Iqx5biC56ys5Y2B5Zub5Lit5a2m
+
+  school_name: !binary |
+    5pSA5p6d6Iqx5biC56ys5Y2B5Zub5Lit5a2m5qCh
+
+  updated_at: 2009-07-21 13:44:35
+  post_code: "617063"
+  id_number: "510402198910066326"
+  can_number: 08510301130127
+  thumb: 
+  region_code: "510301"
+  id: "140"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510301125"
+  exa_number: "030101516"
+  gra_type: "0"
+  birthday: 1989-10-06 00:00:00
+  phone: 
+  r_score: "397.0"
+  receiver: !binary |
+    5pu+6JaH
+
+  description: 
+  edu_length: "3"
+  info_class_id: "2"
+  direction: 
+  h_score: "387.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_112: 
+  address: 
+  name: !binary |
+    5Lil5Li56JCN
+
+  city: 
+  region: 
+  major_id: "15"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    6YGC5a6B5biC5a6J5bGF5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB6YGC5a6B5biC5a6J5bGF6IKy5omN5Lit5a2m5qCh
+
+  school_name: !binary |
+    5a6J5bGF6IKy5omN5Lit5a2m6IGM6auY
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "629006"
+  id_number: "510902199003151043"
+  can_number: 08510805606067
+  thumb: 
+  region_code: "510805"
+  id: "112"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510805305"
+  exa_number: 080540821
+  gra_type: "0"
+  birthday: 1990-03-15 00:00:00
+  phone: 
+  r_score: "435.0"
+  receiver: !binary |
+    5Lil5Li56JCN
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "435.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_029: 
+  address: 
+  name: !binary |
+    6Km55pmT54eV
+
+  city: 
+  region: 
+  major_id: "8"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    5oiQ6YO95biC5aSn6YKR5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5aSn6YKR5Y6/5paw5Zy66ZWH5qGQ5p6X5p2RNee7hA==
+
+  school_name: !binary |
+    5aSn6YKR5Y6/5a6J5LuB5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:13
+  post_code: "611331"
+  id_number: "510129198906242124"
+  can_number: 08510117130061
+  thumb: 
+  region_code: "510117"
+  id: "29"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510117111"
+  exa_number: "011702604"
+  gra_type: "0"
+  birthday: 1989-06-24 00:00:00
+  phone: 
+  r_score: "333.0"
+  receiver: !binary |
+    6Km55pmT54eV
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "333.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_085: 
+  address: 
+  name: !binary |
+    6auY56WW5rSL
+
+  city: 
+  region: 
+  major_id: "12"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    5rO45bee5biC5rO45Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5rO45bee5biC5rO45Y6/5LqR6b6Z6ZWH6Iux6ZuE5p2R5LiD
+    56S+6JKL5bSH5rK75pS277yI6L2s77yJ
+
+  school_name: !binary |
+    5rO45Y6/5LqU5Lit
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "646104"
+  id_number: 51052119890601187X
+  can_number: 08510404610094
+  thumb: 
+  region_code: "510404"
+  id: "85"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "510404113"
+  exa_number: "040442416"
+  gra_type: "0"
+  birthday: 1989-06-01 00:00:00
+  phone: 
+  r_score: "511.0"
+  receiver: !binary |
+    6auY56WW5rSL
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "511.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_057: 
+  address: 
+  name: !binary |
+    5ZSQ6JaH
+
+  city: 
+  region: 
+  major_id: "9"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    5Y2X5YWF5biC5Luq6ZmH5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5Luq6ZmH5Y6/5Y+M6IOc6ZWH576k5Yip5p2R5LiA56S+
+
+  school_name: !binary |
+    5Luq6ZmH5Lit5a2m5paw5pS/5qCh5Yy6
+
+  updated_at: 2009-07-15 13:21:13
+  post_code: "637641"
+  id_number: "511324198910107363"
+  can_number: 08511108130052
+  thumb: 
+  region_code: "511108"
+  id: "57"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511108111"
+  exa_number: "110806413"
+  gra_type: "0"
+  birthday: 1989-10-10 00:00:00
+  phone: 
+  r_score: "285.0"
+  receiver: !binary |
+    5ZSQ6JaH
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "285.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_141: 
+  address: 
+  name: !binary |
+    5q616bil
+
+  city: 
+  region: 
+  major_id: "16"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    5b636Ziz5biC5LuA6YKh5biC
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5LuA6YKh5biC6IGM5Lia5Lit5LiT5a2m5qCh
+
+  school_name: !binary |
+    5LuA6YKh6IGM5Lit
+
+  updated_at: 2009-07-15 13:21:15
+  post_code: "618400"
+  id_number: "510682198912262788"
+  can_number: 08510503603002
+  thumb: 
+  region_code: "510503"
+  id: "141"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510503301"
+  exa_number: "050340112"
+  gra_type: "0"
+  birthday: 1989-12-26 00:00:00
+  phone: 
+  r_score: "487.0"
+  receiver: !binary |
+    5q616bil
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "487.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_086: 
+  address: 
+  name: !binary |
+    6ZmI57uD
+
+  city: 
+  region: 
+  major_id: "13"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    5rO45bee5biC5rO45Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5rO45Y6/55m+5ZKM6ZWH5pyx5be35p2RMTLnpL4=
+
+  school_name: !binary |
+    5rO45Y6/5LiA5Lit
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "646102"
+  id_number: "510521198812164103"
+  can_number: 08510404603033
+  thumb: 
+  region_code: "510404"
+  id: "86"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510404111"
+  exa_number: 040440928
+  gra_type: "0"
+  birthday: 1988-12-16 00:00:00
+  phone: 
+  r_score: "510.0"
+  receiver: !binary |
+    6ZmI57uD
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "510.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_058: 
+  address: 
+  name: !binary |
+    5aec5Yaw
+
+  city: 
+  region: 
+  major_id: "10"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    5a6c5a6+5biC57+g5bGP5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5a6c5a6+5biC5LiJ5Lit
+
+  school_name: !binary |
+    5a6c5a6+5biC5LiJ5Lit
+
+  updated_at: 2009-07-15 13:21:13
+  post_code: "644000"
+  id_number: "511502198907281646"
+  can_number: 08511201130274
+  thumb: 
+  region_code: "511201"
+  id: "58"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511201102"
+  exa_number: "120102802"
+  gra_type: "0"
+  birthday: 1989-07-28 00:00:00
+  phone: 
+  r_score: "330.0"
+  receiver: !binary |
+    5aec5Yaw
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "330.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_113: 
+  address: 
+  name: !binary |
+    5byg5piO5aqa
+
+  city: 
+  region: 
+  major_id: "17"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    5be05Lit5biC6YCa5rGf5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB6YCa5rGf5Y6/6Z2S5bOq5Lmh6Zer5a625Z2d5p2R5LiA56S+
+
+  school_name: !binary |
+    6YCa5rGf5Y6/5raq6Ziz5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "636700"
+  id_number: "513721198908060329"
+  can_number: 08511503606024
+  thumb: 
+  region_code: "511503"
+  id: "113"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511503121"
+  exa_number: "150341614"
+  gra_type: "0"
+  birthday: 1989-08-06 00:00:00
+  phone: 
+  r_score: "427.0"
+  receiver: !binary |
+    5byg5piO5aqa
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "427.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_170: 
+  address: 
+  name: !binary |
+    5Lil5Lyf
+
+  city: 
+  region: 
+  major_id: "19"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:15
+  post_code: "610072"
+  id_number: "510104198905182871"
+  can_number: 08510120520127
+  thumb: 
+  region_code: "510120"
+  id: "170"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1989-05-18 00:00:00
+  phone: 
+  r_score: "465.0"
+  receiver: !binary |
+    5Lil5Lyf
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "465.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_142: 
+  address: 
+  name: !binary |
+    6Ziz54+K
+
+  city: 
+  region: 
+  major_id: "11"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    5oiQ6YO95biC5b2t5bee5biC
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5b2t5bee5biC6IGM5Lia5Lit5a2m
+
+  school_name: !binary |
+    5b2t5bee6IGM5Lit
+
+  updated_at: 2009-07-15 13:21:15
+  post_code: "611930"
+  id_number: "510182198908304829"
+  can_number: 08510109606008
+  thumb: 
+  region_code: "510109"
+  id: "142"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510109301"
+  exa_number: 010940409
+  gra_type: "0"
+  birthday: 1989-08-30 00:00:00
+  phone: 
+  r_score: "399.0"
+  receiver: !binary |
+    6Ziz54+K
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "399.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_087: 
+  address: 
+  name: !binary |
+    6buE5Yev
+
+  city: 
+  region: 
+  major_id: "14"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    55yJ5bGx5biC5LuB5a+/5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5LuB5a+/5Y6/6auY5a626ZWH5q2H6amsOOe7hA==
+
+  school_name: !binary |
+    5LuB5a+/5LqM6IGM5Lit
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "620566"
+  id_number: "513822199003029091"
+  can_number: 08511702604166
+  thumb: 
+  region_code: "511702"
+  id: "87"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "511702301"
+  exa_number: "170240513"
+  gra_type: "0"
+  birthday: 1990-03-02 00:00:00
+  phone: 
+  r_score: "505.0"
+  receiver: !binary |
+    6buE5Yev
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "505.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_059: 
+  address: 
+  name: !binary |
+    5L6v6Iyc
+
+  city: 
+  region: 
+  major_id: "10"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    5a6c5a6+5biC57+g5bGP5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5a6c5a6+5biC5LiJ5Lit
+
+  school_name: !binary |
+    5a6c5a6+5biC5LiJ5Lit
+
+  updated_at: 2009-07-15 13:21:13
+  post_code: "644000"
+  id_number: "511502198912131706"
+  can_number: 08511201130275
+  thumb: 
+  region_code: "511201"
+  id: "59"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511201102"
+  exa_number: "120108313"
+  gra_type: "0"
+  birthday: 1989-12-13 00:00:00
+  phone: 
+  r_score: "278.0"
+  receiver: !binary |
+    5L6v6Iyc
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "278.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_114: 
+  address: 
+  name: !binary |
+    5piT5q+V546y
+
+  city: 
+  region: 
+  major_id: "17"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    5rO45bee5biC5rO45Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5Y+Z5rC45Y6/5ZCO5bGx6ZWH5rW35Z2d5p2R5LiA56S+MTM1
+    5Y+35piT5q+V546y77yI5pS277yJ
+
+  school_name: !binary |
+    5rO45Y6/5LqU5Lit
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "646415"
+  id_number: "510524199003073029"
+  can_number: 08510404606084
+  thumb: 
+  region_code: "510404"
+  id: "114"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510404113"
+  exa_number: "040442012"
+  gra_type: "0"
+  birthday: 1990-03-07 00:00:00
+  phone: 
+  r_score: "426.0"
+  receiver: !binary |
+    5piT5q+V546y
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "426.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_171: 
+  address: 
+  name: !binary |
+    6LWW6IOc6LaF
+
+  city: 
+  region: 
+  major_id: "19"
+  created_at: 2009-07-15 13:21:16
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:16
+  post_code: "610072"
+  id_number: "510107198908302970"
+  can_number: 08510120520126
+  thumb: 
+  region_code: "510120"
+  id: "171"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1989-08-30 00:00:00
+  phone: 
+  r_score: "519.0"
+  receiver: !binary |
+    6LWW6IOc6LaF
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "519.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_143: 
+  address: 
+  name: !binary |
+    5ZGo5aSp6LSi
+
+  city: 
+  region: 
+  major_id: "14"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    5b636Ziz5biC5Lit5rGf5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5Lit5rGf6IGM5Lia5Lit5LiT5a2m5qCh
+
+  school_name: !binary |
+    5LiA6IGM5Lit
+
+  updated_at: 2009-07-15 13:21:15
+  post_code: "618100"
+  id_number: "510623198811061637"
+  can_number: 08510505604010
+  thumb: 
+  region_code: "510505"
+  id: "143"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "510505301"
+  exa_number: "050540115"
+  gra_type: "0"
+  birthday: 1988-11-06 00:00:00
+  phone: 
+  r_score: "504.0"
+  receiver: !binary |
+    5ZGo5aSp6LSi
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "504.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_115: 
+  address: 
+  name: !binary |
+    6YK5576k6Iqz
+
+  city: 
+  region: 
+  major_id: "11"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    55yJ5bGx5biC5LuB5a+/5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5LuB5a+/5Y6/6Jme5Lie5Lmh5Y+N5bCB5p2R5LiD57uE
+
+  school_name: !binary |
+    5LuB5a+/5LqU6IGM5Lit
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "620500"
+  id_number: "513822198810078143"
+  can_number: 08511702606006
+  thumb: 
+  region_code: "511702"
+  id: "115"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511702322"
+  exa_number: "170241714"
+  gra_type: "0"
+  birthday: 1988-10-07 00:00:00
+  phone: 
+  r_score: "407.0"
+  receiver: !binary |
+    6YK5576k6Iqz
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "407.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_088: 
+  address: 
+  name: !binary |
+    5ZC05aif
+
+  city: 
+  region: 
+  major_id: "12"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    6LWE6Ziz5biC5a6J5bKz5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5a6J5bKz5Y6/5rC46aG66ZWH6Iqm6IyF5p2RM+e7hCjlkLTlqJ/mlLYp
+
+  school_name: !binary |
+    5a6J5bKz5Y6/5Z+O6ZWH6IGM5Lit
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "642356"
+  id_number: "511023199010093965"
+  can_number: 08511803610002
+  thumb: 
+  region_code: "511803"
+  id: "88"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511803302"
+  exa_number: "180340127"
+  gra_type: "0"
+  birthday: 1990-10-09 00:00:00
+  phone: 
+  r_score: "504.0"
+  receiver: !binary |
+    5ZC05aif
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "504.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_001: 
+  address: 
+  name: !binary |
+    5p2o6Zuo6JWK
+
+  city: 
+  region: 
+  major_id: "7"
+  created_at: 2009-07-15 13:21:12
+  region_name: !binary |
+    5oiQ6YO95biC6YO95rGf5aCw5biC
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    6YO95rGf5aCw5biC5Y2B5bGA5a2m5qChMjAwOOWxijbnj60=
+
+  school_name: !binary |
+    6YO95rGf5aCw5biC5Y2B5bGA5a2m5qCh
+
+  updated_at: 2009-07-21 13:44:35
+  post_code: "611830"
+  id_number: 51018119890421642X
+  can_number: 08510108130269
+  thumb: 
+  region_code: "510108"
+  id: "1"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510108126"
+  exa_number: 010804009
+  gra_type: "0"
+  birthday: 1989-04-21 00:00:00
+  phone: 
+  r_score: "203.0"
+  receiver: !binary |
+    5p2o6Zuo6JWK
+
+  description: 
+  edu_length: "3"
+  info_class_id: "1"
+  direction: 
+  h_score: "203.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_172: 
+  address: 
+  name: !binary |
+    5b6Q5piO5piO
+
+  city: 
+  region: 
+  major_id: "19"
+  created_at: 2009-07-15 13:21:16
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:16
+  post_code: "610072"
+  id_number: "510623198906063512"
+  can_number: 08510120520125
+  thumb: 
+  region_code: "510120"
+  id: "172"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1989-06-06 00:00:00
+  phone: 
+  r_score: "656.0"
+  receiver: !binary |
+    5b6Q5piO5piO
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "656.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_144: 
+  address: 
+  name: !binary |
+    5p2o57u0
+
+  city: 
+  region: 
+  major_id: "13"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    5bm/5YWD5biC6Z2S5bed5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5bm/5YWD5biC6Z2S5bed5Y6/5pyo6bG86ZWH5pyo6bG85p2R
+    5LiJ57uE
+
+  school_name: !binary |
+    6Z2S5bed6IGM5Lit
+
+  updated_at: 2009-07-15 13:21:15
+  post_code: "628100"
+  id_number: "510822199008096426"
+  can_number: 08510706603015
+  thumb: 
+  region_code: "510706"
+  id: "144"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510706301"
+  exa_number: "070640104"
+  gra_type: "0"
+  birthday: 1990-08-09 00:00:00
+  phone: 
+  r_score: "413.0"
+  receiver: !binary |
+    5p2o57u0
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "413.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_116: 
+  address: 
+  name: !binary |
+    5bqe5pWP
+
+  city: 
+  region: 
+  major_id: "15"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    6L6+5bee5biC6L6+5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB6L6+5Y6/6IGM5Lia6auY57qn5Lit5a2m
+
+  school_name: !binary |
+    6L6+5Y6/6IGM5Lia5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "635000"
+  id_number: "513001199002030220"
+  can_number: 08511403606020
+  thumb: 
+  region_code: "511403"
+  id: "116"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511403301"
+  exa_number: "140340706"
+  gra_type: "0"
+  birthday: 1990-02-03 00:00:00
+  phone: 
+  r_score: "405.0"
+  receiver: !binary |
+    5bqe5pWP
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "405.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_030: 
+  address: 
+  name: !binary |
+    5byg6LCm
+
+  city: 
+  region: 
+  major_id: "8"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    6Ieq6LSh5biC6I2j5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB6Ieq6LSh5biC6LSh5LqV5Yy65LqU5a6d6ZWH5YW06ZqG6KGX
+    MTI25Y+3
+
+  school_name: !binary |
+    5Zub5bed55yB6I2j5Y6/5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:13
+  post_code: "643106"
+  id_number: "510321198908192706"
+  can_number: 08510205130004
+  thumb: 
+  region_code: "510205"
+  id: "30"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510205101"
+  exa_number: "020501101"
+  gra_type: "0"
+  birthday: 1989-08-19 00:00:00
+  phone: 
+  r_score: "319.0"
+  receiver: !binary |
+    5byg6LCm
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "319.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_089: 
+  address: 
+  name: !binary |
+    5bq357qi5riF
+
+  city: 
+  region: 
+  major_id: "15"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    5YeJ5bGx5bee5YaV5a6B5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5YaV5a6B5Y6/5beo6b6Z6IGM5Lia5Lit5a2m
+
+  school_name: !binary |
+    5YaV5a6B5Y6/5beo6b6Z6IGM5Lia5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "615601"
+  id_number: "513433198902274528"
+  can_number: 08512113606011
+  thumb: 
+  region_code: "512113"
+  id: "89"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "512113301"
+  exa_number: "211340325"
+  gra_type: "0"
+  birthday: 1989-02-27 00:00:00
+  phone: 
+  r_score: "503.0"
+  receiver: !binary |
+    5bq357qi5riF
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "453.0"
+  stu_type: "0"
+  nation: !binary |
+    6JeP5peP
+
+  state: 
+  department_id: 
+students_002: 
+  address: 
+  name: !binary |
+    5b6Q5Li5
+
+  city: 
+  region: 
+  major_id: "8"
+  created_at: 2009-07-15 13:21:12
+  region_name: !binary |
+    5oiQ6YO95biC6YO95rGf5aCw5biC
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    6YO95rGf5aCw56ys5Zub5Lit5a2mMDgx54+t
+
+  school_name: !binary |
+    6YO95rGf5aCw5biC56ys5Zub5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:12
+  post_code: "611833"
+  id_number: "513221198908310028"
+  can_number: 08510108170095
+  thumb: 
+  region_code: "510108"
+  id: "2"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510108123"
+  exa_number: 010892316
+  gra_type: "0"
+  birthday: 1989-08-31 00:00:00
+  phone: 
+  r_score: "289.0"
+  receiver: !binary |
+    5b6Q5Li5
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "289.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_200: 
+  address: ""
+  name: !binary |
+    5p2o6Zyy
+
+  city: ""
+  region: 
+  major_id: "20"
+  created_at: 2009-07-15 13:21:16
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: ""
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-16 04:31:48
+  post_code: "610072"
+  id_number: "510181199005030044"
+  can_number: 08510120520097
+  thumb: 
+  region_code: "510120"
+  id: "200"
+  entrance_date: 2009-07-16 00:00:00
+  gender: f
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1990-05-03 00:00:00
+  phone: 
+  r_score: "695.0"
+  receiver: !binary |
+    5p2o6Zyy
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: ""
+  h_score: "695.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: ""
+  department_id: 
+students_173: 
+  address: 
+  name: !binary |
+    5bKz5a626am5
+
+  city: 
+  region: 
+  major_id: "19"
+  created_at: 2009-07-15 13:21:16
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:16
+  post_code: "610072"
+  id_number: "510107199003031277"
+  can_number: 08510120520124
+  thumb: 
+  region_code: "510120"
+  id: "173"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1990-03-03 00:00:00
+  phone: 
+  r_score: "450.0"
+  receiver: !binary |
+    5bKz5a626am5
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "450.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_145: 
+  address: 
+  name: !binary |
+    5pyx6YeR5Yek
+
+  city: 
+  region: 
+  major_id: "17"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    57u16Ziz5biC5YyX5bed5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    57u16Ziz6IGM5Lia5oqA5pyv5a2m5qCh77yI57u16Ziz5biC5b6h5peX6Lev
+    NeWPt++8iQ==
+
+  school_name: !binary |
+    57u16Ziz6IGM5Lia5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:15
+  post_code: "621000"
+  id_number: "510726198902270228"
+  can_number: 08510607606002
+  thumb: 
+  region_code: "510607"
+  id: "145"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510601301"
+  exa_number: "060740116"
+  gra_type: "0"
+  birthday: 1989-02-27 00:00:00
+  phone: 
+  r_score: "386.0"
+  receiver: !binary |
+    5pyx6YeR5Yek
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "336.0"
+  stu_type: "0"
+  nation: !binary |
+    576M5peP
+
+  state: 
+  department_id: 
+students_117: 
+  address: 
+  name: !binary |
+    6auY6Zuq5qKF
+
+  city: 
+  region: 
+  major_id: "11"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    5Y2X5YWF5biC5Y2X6YOo5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Y2X6YOo5LiJ5Lit
+
+  school_name: !binary |
+    5Y2X6YOo5LiJ5Lit
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "637300"
+  id_number: "511321198806117845"
+  can_number: 08511105606045
+  thumb: 
+  region_code: "511105"
+  id: "117"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511105131"
+  exa_number: "110541615"
+  gra_type: "0"
+  birthday: 1988-06-11 00:00:00
+  phone: 
+  r_score: "398.0"
+  receiver: !binary |
+    6auY6Zuq5qKF
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "398.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_031: 
+  address: 
+  name: !binary |
+    6ZmI5rOi5byf
+
+  city: 
+  region: 
+  major_id: "7"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    6Ieq6LSh5biC6I2j5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB6I2j5Y6/56ys5LiA5Lit5a2m
+
+  school_name: !binary |
+    5Zub5bed55yB6I2j5Y6/5LiA5Lit
+
+  updated_at: 2009-07-21 13:44:35
+  post_code: "643100"
+  id_number: "510321198810313688"
+  can_number: 08510205130109
+  thumb: 
+  region_code: "510205"
+  id: "31"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510205121"
+  exa_number: 020505809
+  gra_type: "0"
+  birthday: 1988-10-31 00:00:00
+  phone: 
+  r_score: "336.0"
+  receiver: !binary |
+    6ZmI5rOi5byf
+
+  description: 
+  edu_length: "3"
+  info_class_id: "1"
+  direction: 
+  h_score: "336.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_003: 
+  address: 
+  name: !binary |
+    546L6L+q
+
+  city: 
+  region: 
+  major_id: "9"
+  created_at: 2009-07-15 13:21:12
+  region_name: !binary |
+    5oiQ6YO95biC5bSH5bee5biC
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5bSH5bee5biC5buW5a626ZWH6b6Z5bKX5p2RNee7hA==
+
+  school_name: !binary |
+    5bSH5bee5biC5oCA6L+c5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:12
+  post_code: "611230"
+  id_number: "510184199001125563"
+  can_number: 08510111130112
+  thumb: 
+  region_code: "510111"
+  id: "3"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510111121"
+  exa_number: "011104614"
+  gra_type: "0"
+  birthday: 1990-01-12 00:00:00
+  phone: 
+  r_score: "299.0"
+  receiver: !binary |
+    546L6L+q
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "299.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_174: 
+  address: 
+  name: !binary |
+    546L5qKm
+
+  city: 
+  region: 
+  major_id: "19"
+  created_at: 2009-07-15 13:21:16
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:16
+  post_code: "610072"
+  id_number: "510106198903111482"
+  can_number: 08510120520123
+  thumb: 
+  region_code: "510120"
+  id: "174"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1989-03-11 00:00:00
+  phone: 
+  r_score: "514.0"
+  receiver: !binary |
+    546L5qKm
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "514.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_146: 
+  address: 
+  name: !binary |
+    5byg5L2z6Zyy
+
+  city: 
+  region: 
+  major_id: "14"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    5oiQ6YO95biC5b2t5bee5biC
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5b2t5bee5biC6IGM5Lia5Lit5a2m
+
+  school_name: !binary |
+    5b2t5bee6IGM5Lit
+
+  updated_at: 2009-07-15 13:21:15
+  post_code: "611930"
+  id_number: "510182199005015422"
+  can_number: 08510109604026
+  thumb: 
+  region_code: "510109"
+  id: "146"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510109301"
+  exa_number: 010940214
+  gra_type: "0"
+  birthday: 1990-05-01 00:00:00
+  phone: 
+  r_score: "511.0"
+  receiver: !binary |
+    5byg5L2z6Zyy
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "501.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_118: 
+  address: 
+  name: !binary |
+    5ZGo6aKW
+
+  city: 
+  region: 
+  major_id: "15"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    6L6+5bee5biC6L6+5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB6L6+5Y6/6IGM5Lia6auY57qn5Lit5a2m
+
+  school_name: !binary |
+    6L6+5Y6/6IGM5Lia5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "635000"
+  id_number: "513021199004138345"
+  can_number: 08511403606013
+  thumb: 
+  region_code: "511403"
+  id: "118"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511403301"
+  exa_number: "140340710"
+  gra_type: "0"
+  birthday: 1990-04-13 00:00:00
+  phone: 
+  r_score: "390.0"
+  receiver: !binary |
+    5ZGo6aKW
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "390.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_032: 
+  address: 
+  name: !binary |
+    5p2O5a6X6ZO2
+
+  city: 
+  region: 
+  major_id: "10"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    6Ieq6LSh5biC6I2j5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB6Ieq6LSh5biC6I2j5Y6/546J56ug6auY57qn5Lit5a2m
+
+  school_name: !binary |
+    5Zub5bed55yB6I2j5Y6/546J56ug6auY5Lit
+
+  updated_at: 2009-07-15 13:21:13
+  post_code: "643102"
+  id_number: "510321198905052150"
+  can_number: 08510205130229
+  thumb: 
+  region_code: "510205"
+  id: "32"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "510205122"
+  exa_number: 020501128
+  gra_type: "0"
+  birthday: 1989-05-05 00:00:00
+  phone: 
+  r_score: "379.0"
+  receiver: !binary |
+    5p2O5a6X6ZO2
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "379.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_004: 
+  address: 
+  name: !binary |
+    6ZmI5Y+M5qKF
+
+  city: 
+  region: 
+  major_id: "8"
+  created_at: 2009-07-15 13:21:12
+  region_name: !binary |
+    5b636Ziz5biC5peM6Ziz5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed5b636Ziz6buE6K646IGM5Lia5Lit5LiT
+
+  school_name: !binary |
+    6buE6K646IGM5Lit
+
+  updated_at: 2009-07-15 13:21:12
+  post_code: "618007"
+  id_number: "510603198907100682"
+  can_number: 08510501130201
+  thumb: 
+  region_code: "510501"
+  id: "4"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510501301"
+  exa_number: "050103211"
+  gra_type: "0"
+  birthday: 1989-07-10 00:00:00
+  phone: 
+  r_score: "209.0"
+  receiver: !binary |
+    6ZmI5Y+M5qKF
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "209.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_060: 
+  address: 
+  name: !binary |
+    5b6Q5Y+v
+
+  city: 
+  region: 
+  major_id: "10"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    5a6c5a6+5biC5rGf5a6J5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed5a6c5a6+5rGf5a6J5bqV6JOs5Lit5a2m5qCh
+
+  school_name: !binary |
+    5rGf5a6J5Y6/5bqV6JOs5Lit5a2m5qCh
+
+  updated_at: 2009-07-15 13:21:13
+  post_code: "644211"
+  id_number: "510503198806014579"
+  can_number: 08511204130185
+  thumb: 
+  region_code: "511204"
+  id: "60"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "511204125"
+  exa_number: "120400728"
+  gra_type: "0"
+  birthday: 1988-06-01 00:00:00
+  phone: 
+  r_score: "287.0"
+  receiver: !binary |
+    5b6Q5Y+v
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "287.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_175: 
+  address: 
+  name: !binary |
+    5rGf6Iux
+
+  city: 
+  region: 
+  major_id: "19"
+  created_at: 2009-07-15 13:21:16
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:16
+  post_code: "610072"
+  id_number: 51010519890806376X
+  can_number: 08510120520122
+  thumb: 
+  region_code: "510120"
+  id: "175"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1989-08-06 00:00:00
+  phone: 
+  r_score: "673.0"
+  receiver: !binary |
+    5rGf6Iux
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "673.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_147: 
+  address: 
+  name: !binary |
+    57+B5bqG6aKW
+
+  city: 
+  region: 
+  major_id: "13"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    6ZuF5a6J5biC6I2l57uP5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB6I2l57uP5Y6/6IGM5Lia6auY5Lit
+
+  school_name: !binary |
+    5Zub5bed55yB6I2l57uP5Y6/6IGM5Lia6auY5Lit
+
+  updated_at: 2009-07-15 13:21:15
+  post_code: "625200"
+  id_number: "513123198908270422"
+  can_number: 08511603603017
+  thumb: 
+  region_code: "511603"
+  id: "147"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511603301"
+  exa_number: "160340106"
+  gra_type: "0"
+  birthday: 1989-08-27 00:00:00
+  phone: 
+  r_score: "436.0"
+  receiver: !binary |
+    57+B5bqG6aKW
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "436.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_119: 
+  address: 
+  name: !binary |
+    5byg5qyi
+
+  city: 
+  region: 
+  major_id: "16"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    5bm/5a6J5biC6YK75rC05Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    6YK75rC05Y6/5Z+O5YyX6ZWH5Lq65rCR6Lev5YyX5q615LqM5q61MTIz5Y+3
+    5byg5qyi5pS2
+
+  school_name: !binary |
+    6YK75rC05Y6/6IGM5Lit
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "638500"
+  id_number: "511623198908141167"
+  can_number: 08511305603005
+  thumb: 
+  region_code: "511305"
+  id: "119"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511305303"
+  exa_number: "130540114"
+  gra_type: "0"
+  birthday: 1989-08-14 00:00:00
+  phone: 
+  r_score: "472.0"
+  receiver: !binary |
+    5byg5qyi
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "472.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_033: 
+  address: 
+  name: !binary |
+    5p2o56uL5pil
+
+  city: 
+  region: 
+  major_id: "9"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    6Ieq6LSh5biC6I2j5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB6I2j5Y6/5bqm5L2z6ZWH5p2o5a625p6X5p2RMee7hDIy5Y+3
+
+  school_name: !binary |
+    5Zub5bed55yB6I2j5Y6/6ZW/5bGx5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:13
+  post_code: "643109"
+  id_number: "510321199004265321"
+  can_number: 08510205170072
+  thumb: 
+  region_code: "510205"
+  id: "33"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510205123"
+  exa_number: 020593422
+  gra_type: "0"
+  birthday: 1990-04-26 00:00:00
+  phone: 
+  r_score: "266.0"
+  receiver: !binary |
+    5p2o56uL5pil
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "266.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_005: 
+  address: 
+  name: !binary |
+    5ZC05L2z5bqG
+
+  city: 
+  region: 
+  major_id: "9"
+  created_at: 2009-07-15 13:21:12
+  region_name: !binary |
+    5b636Ziz5biC5bm/5rGJ5biC
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5bm/5rGJ5biC6YeR6ZuB5Lit5a2mMDPlj7fkv6HnrrE=
+
+  school_name: !binary |
+    6YeR6ZuB5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:12
+  post_code: "618300"
+  id_number: "510681198908200318"
+  can_number: 08510502170010
+  thumb: 
+  region_code: "510502"
+  id: "5"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "510502102"
+  exa_number: 050293327
+  gra_type: "0"
+  birthday: 1989-08-20 00:00:00
+  phone: 
+  r_score: "220.0"
+  receiver: !binary |
+    5ZC05L2z5bqG
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "220.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_061: 
+  address: 
+  name: !binary |
+    6JKL6YeR6LGG
+
+  city: 
+  region: 
+  major_id: "9"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    5a6c5a6+5biC5rGf5a6J5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5a6c5a6+5biC5rGf5a6J5Y6/56ys5LiJ5Yid57qn5Lit5a2m
+    5qCh6YKT5oCd5Y2O
+
+  school_name: !binary |
+    5rGf5a6J5Y6/56ys5LiJ5Yid57qn5Lit5a2m5qCh
+
+  updated_at: 2009-07-15 13:21:13
+  post_code: "644201"
+  id_number: "511523198706132873"
+  can_number: 08511204130190
+  thumb: 
+  region_code: "511204"
+  id: "61"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "511204126"
+  exa_number: "120402830"
+  gra_type: "0"
+  birthday: 1987-06-13 00:00:00
+  phone: 
+  r_score: "376.0"
+  receiver: !binary |
+    6JKL6YeR6LGG
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "376.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_176: 
+  address: 
+  name: !binary |
+    5L2V5paH6Z2Z
+
+  city: 
+  region: 
+  major_id: "19"
+  created_at: 2009-07-15 13:21:16
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:16
+  post_code: "610072"
+  id_number: "513021198912208340"
+  can_number: 08510120520121
+  thumb: 
+  region_code: "510120"
+  id: "176"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1989-12-20 00:00:00
+  phone: 
+  r_score: "503.0"
+  receiver: !binary |
+    5L2V5paH6Z2Z
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "503.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_148: 
+  address: 
+  name: !binary |
+    546L5aec6L+c
+
+  city: 
+  region: 
+  major_id: "12"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    5bm/5YWD5biC5YmR6ZiB5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5bm/5YWD5biC5YmR6ZiB5Y6/576K5bKt6ZWH5YmR5a+65p2RMee7hA==
+
+  school_name: !binary |
+    6bmk6b6E6IGM5Lit
+
+  updated_at: 2009-07-15 13:21:15
+  post_code: "628309"
+  id_number: "510823891006773"
+  can_number: 08510704610039
+  thumb: 
+  region_code: "510704"
+  id: "148"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "510704302"
+  exa_number: 070440816
+  gra_type: "0"
+  birthday: 1989-10-06 00:00:00
+  phone: 
+  r_score: "511.0"
+  receiver: !binary |
+    546L5aec6L+c
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "511.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_034: 
+  address: 
+  name: !binary |
+    56em6I+B6JyT
+
+  city: 
+  region: 
+  major_id: "9"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    5rO45bee5biC5rO45Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5rO45bee5biC5rO45Y6/55+z5qGl6ZWH5Y2B5LiJ5Z2h5paw
+    5rCR5Yqg5rK556uZ
+
+  school_name: !binary |
+    5rO45Y6/5YWt5Lit
+
+  updated_at: 2009-07-15 13:21:13
+  post_code: "646125"
+  id_number: "510521198906293168"
+  can_number: 08510404130360
+  thumb: 
+  region_code: "510404"
+  id: "34"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510404124"
+  exa_number: "040403604"
+  gra_type: "0"
+  birthday: 1989-06-29 00:00:00
+  phone: 
+  r_score: "310.0"
+  receiver: !binary |
+    56em6I+B6JyT
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "310.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_006: 
+  address: 
+  name: !binary |
+    6YOR6K+X5aqa
+
+  city: 
+  region: 
+  major_id: "8"
+  created_at: 2009-07-15 13:21:12
+  region_name: !binary |
+    5b636Ziz5biC5Lit5rGf5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5Lit5rGf5Lit5a2m5qCh
+
+  school_name: !binary |
+    5Lit5rGf5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:12
+  post_code: "618100"
+  id_number: "510623198902080024"
+  can_number: 08510505130019
+  thumb: 
+  region_code: "510505"
+  id: "6"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510505111"
+  exa_number: "050501113"
+  gra_type: "0"
+  birthday: 1989-02-08 00:00:00
+  phone: 
+  r_score: "314.0"
+  receiver: !binary |
+    6YOR6K+X5aqa
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "314.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_090: 
+  address: 
+  name: !binary |
+    5YiY6Imz
+
+  city: 
+  region: 
+  major_id: "12"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    5a6c5a6+5biC5a6c5a6+5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5a6c5a6+5Y6/5p+z5ZiJ6IGM5Lit5pWZ5Yqh5aSE
+
+  school_name: !binary |
+    5a6c5a6+5Y6/5p+z5ZiJ6IGM5Lit
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "644605"
+  id_number: "511521198912133823"
+  can_number: 08511202610056
+  thumb: 
+  region_code: "511202"
+  id: "90"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511202301"
+  exa_number: "120241115"
+  gra_type: "0"
+  birthday: 1989-12-13 00:00:00
+  phone: 
+  r_score: "501.0"
+  receiver: !binary |
+    5YiY6Imz
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "501.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_062: 
+  address: 
+  name: !binary |
+    5p2o5byA5rSq
+
+  city: 
+  region: 
+  major_id: "7"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    5a6c5a6+5biC54+Z5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB54+Z5Y6/5Lit5a2m
+
+  school_name: !binary |
+    54+Z5Y6/5Lit5a2m
+
+  updated_at: 2009-07-21 13:44:35
+  post_code: "644500"
+  id_number: "511526198905220023"
+  can_number: 08511208170031
+  thumb: 
+  region_code: "511208"
+  id: "62"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511208121"
+  exa_number: "120890424"
+  gra_type: "0"
+  birthday: 1989-05-22 00:00:00
+  phone: 
+  r_score: "350.0"
+  receiver: !binary |
+    5p2o5byA5rSq
+
+  description: 
+  edu_length: "3"
+  info_class_id: "2"
+  direction: 
+  h_score: "350.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_177: 
+  address: 
+  name: !binary |
+    5byg5pmT55Cz
+
+  city: 
+  region: 
+  major_id: "19"
+  created_at: 2009-07-15 13:21:16
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:16
+  post_code: "610072"
+  id_number: "510108198908162126"
+  can_number: 08510120520120
+  thumb: 
+  region_code: "510120"
+  id: "177"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1989-08-16 00:00:00
+  phone: 
+  r_score: "489.0"
+  receiver: !binary |
+    5byg5pmT55Cz
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "489.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_149: 
+  address: 
+  name: !binary |
+    5ZSQ55Sw5rGg
+
+  city: 
+  region: 
+  major_id: "9"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    5oiQ6YO95biC5b2t5bee5biC
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5b2t5bee5biC5pWW5bmz5Lit5a2m
+
+  school_name: !binary |
+    5b2t5bee5biC5pWW5bmz5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:15
+  post_code: "611931"
+  id_number: "510182198911244425"
+  can_number: 08510109130148
+  thumb: 
+  region_code: "510109"
+  id: "149"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510109123"
+  exa_number: 010905414
+  gra_type: "0"
+  birthday: 1989-11-24 00:00:00
+  phone: 
+  r_score: "259.0"
+  receiver: !binary |
+    5ZSQ55Sw5rGg
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "259.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_007: 
+  address: 
+  name: !binary |
+    6KKB5pyI
+
+  city: 
+  region: 
+  major_id: "9"
+  created_at: 2009-07-15 13:21:12
+  region_name: !binary |
+    57u16Ziz5biC5rGf5rK55biC
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5rGf5rK55biC5Y+M5rKz6ZWH6YKT5a625aGU5p2RNOe7hA==
+
+  school_name: !binary |
+    5rGf5rK55piO6ZWc5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:12
+  post_code: "621711"
+  id_number: "510781199001101928"
+  can_number: 08510603130212
+  thumb: 
+  region_code: "510603"
+  id: "7"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510603124"
+  exa_number: 060306803
+  gra_type: "0"
+  birthday: 1990-01-10 00:00:00
+  phone: 
+  r_score: "345.0"
+  receiver: !binary |
+    6KKB5pyI
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "345.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_091: 
+  address: 
+  name: !binary |
+    5ZC05oCd5aWH
+
+  city: 
+  region: 
+  major_id: "16"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    6L6+5bee5biC6L6+5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB6L6+5Y6/6IGM5Lia6auY57qn5Lit5a2m
+
+  school_name: !binary |
+    6L6+5Y6/6IGM5Lia5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "635000"
+  id_number: "513021199106262507"
+  can_number: 08511403603001
+  thumb: 
+  region_code: "511403"
+  id: "91"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511403301"
+  exa_number: "140340328"
+  gra_type: "0"
+  birthday: 1991-06-26 00:00:00
+  phone: 
+  r_score: "500.0"
+  receiver: !binary |
+    5ZC05oCd5aWH
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "500.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_063: 
+  address: 
+  name: !binary |
+    5b2t5bq35YeM
+
+  city: 
+  region: 
+  major_id: "9"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    5a6c5a6+6KeC6Z+z5Lit5a2m
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5a6c5a6+5Y6/55m96Iqx5Lit5a2m5qCh
+
+  school_name: !binary |
+    5a6c5a6+5Y6/55m96Iqx5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:13
+  post_code: "644603"
+  id_number: "511521199002053052"
+  can_number: 08511211170033
+  thumb: 
+  region_code: "511211"
+  id: "63"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "511211123"
+  exa_number: "121193816"
+  gra_type: "0"
+  birthday: 1990-02-05 00:00:00
+  phone: 
+  r_score: "282.0"
+  receiver: !binary |
+    5b2t5bq35YeM
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "282.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_035: 
+  address: 
+  name: !binary |
+    6LW16Iul5am3
+
+  city: 
+  region: 
+  major_id: "10"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    5bm/5YWD5biC6IuN5rqq5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB6IuN5rqq5q2n5Z2q5Lit5a2m
+
+  school_name: !binary |
+    5q2n5Z2q5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:13
+  post_code: "628400"
+  id_number: "510824198909049043"
+  can_number: 08510707130110
+  thumb: 
+  region_code: "510707"
+  id: "35"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510707122"
+  exa_number: 070709427
+  gra_type: "0"
+  birthday: 1989-09-04 00:00:00
+  phone: 
+  r_score: "245.0"
+  receiver: !binary |
+    6LW16Iul5am3
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "245.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_178: 
+  address: 
+  name: !binary |
+    5puy5a6X6Iux
+
+  city: 
+  region: 
+  major_id: "19"
+  created_at: 2009-07-15 13:21:16
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:16
+  post_code: "610072"
+  id_number: "510107198805225423"
+  can_number: 08510120520119
+  thumb: 
+  region_code: "510120"
+  id: "178"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1988-05-22 00:00:00
+  phone: 
+  r_score: "563.0"
+  receiver: !binary |
+    5puy5a6X6Iux
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "563.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_008: 
+  address: 
+  name: !binary |
+    5p2O6K+65ra1
+
+  city: 
+  region: 
+  major_id: "9"
+  created_at: 2009-07-15 13:21:12
+  region_name: !binary |
+    57u16Ziz5biC5a6J5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5a6J5Y6/5Lit5a2m6auYMjAwOOe6pzLnj60=
+
+  school_name: !binary |
+    5a6J5Y6/5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:12
+  post_code: "622651"
+  id_number: "510703199001031326"
+  can_number: 08510604130006
+  thumb: 
+  region_code: "510604"
+  id: "8"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510604101"
+  exa_number: 060402228
+  gra_type: "0"
+  birthday: 1990-01-03 00:00:00
+  phone: 
+  r_score: "344.0"
+  receiver: !binary |
+    5p2O6K+65ra1
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "344.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_092: 
+  address: 
+  name: !binary |
+    5b6Q5p2w
+
+  city: 
+  region: 
+  major_id: "12"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    6YGC5a6B5biC6Ii55bGx5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB6YGC5a6B5biC5qGC6Iqx6IGM5Lia6auY57qn5Lit5a2m5qCh
+
+  school_name: !binary |
+    5qGC6Iqx6IGM5Lit
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "629013"
+  id_number: "510902198807068718"
+  can_number: 08510801610076
+  thumb: 
+  region_code: "510801"
+  id: "92"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "510801302"
+  exa_number: 080140828
+  gra_type: "0"
+  birthday: 1988-07-06 00:00:00
+  phone: 
+  r_score: "497.0"
+  receiver: !binary |
+    5b6Q5p2w
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "497.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_064: 
+  address: 
+  name: !binary |
+    5YyF5Z2H
+
+  city: 
+  region: 
+  major_id: "8"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    5bm/5a6J5biC6YK75rC05Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB6YK75rC05Y6/55+z5rC46ZWHNeadkTfnu4Q=
+
+  school_name: !binary |
+    55+z5rC45Lit5a2m
+
+  updated_at: 2009-07-15 13:21:13
+  post_code: "638500"
+  id_number: "511623198805196712"
+  can_number: 08511305130102
+  thumb: 
+  region_code: "511305"
+  id: "64"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "511305121"
+  exa_number: "130501608"
+  gra_type: "0"
+  birthday: 1988-05-19 00:00:00
+  phone: 
+  r_score: "259.0"
+  receiver: !binary |
+    5YyF5Z2H
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "259.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_036: 
+  address: 
+  name: !binary |
+    6IuP6I6Y6Iqu
+
+  city: 
+  region: 
+  major_id: "10"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    5bm/5YWD5biC6IuN5rqq5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB6IuN5rqq5q2n5Z2q5Lit5a2m5qCh
+
+  school_name: !binary |
+    5q2n5Z2q5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:13
+  post_code: "628400"
+  id_number: "510824199012075989"
+  can_number: 08510707130112
+  thumb: 
+  region_code: "510707"
+  id: "36"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510707122"
+  exa_number: 070708225
+  gra_type: "0"
+  birthday: 1990-12-07 00:00:00
+  phone: 
+  r_score: "279.0"
+  receiver: !binary |
+    6IuP6I6Y6Iqu
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "279.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_179: 
+  address: 
+  name: !binary |
+    6LW156yR6Iqm
+
+  city: 
+  region: 
+  major_id: "20"
+  created_at: 2009-07-15 13:21:16
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:16
+  post_code: "610072"
+  id_number: "510681199001060366"
+  can_number: 08510120520118
+  thumb: 
+  region_code: "510120"
+  id: "179"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1990-01-06 00:00:00
+  phone: 
+  r_score: "477.0"
+  receiver: !binary |
+    6LW156yR6Iqm
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "477.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_120: 
+  address: 
+  name: !binary |
+    546L5Li5
+
+  city: 
+  region: 
+  major_id: "16"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    6L6+5bee5biC6L6+5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    6L6+5Y6/5Lqt5a2Q6IGM5Lia6auY57qn5Lit5a2m
+
+  school_name: !binary |
+    6L6+5Y6/5Lqt5a2Q6IGM5Lia5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "635011"
+  id_number: 51302119900618744X
+  can_number: 08511403603075
+  thumb: 
+  region_code: "511403"
+  id: "120"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511403302"
+  exa_number: "140340207"
+  gra_type: "0"
+  birthday: 1990-06-18 00:00:00
+  phone: 
+  r_score: "471.0"
+  receiver: !binary |
+    546L5Li5
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "471.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_009: 
+  address: 
+  name: !binary |
+    5Yav5pmo
+
+  city: 
+  region: 
+  major_id: "10"
+  created_at: 2009-07-15 13:21:12
+  region_name: !binary |
+    57u16Ziz5biC55uQ5Lqt5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5rGf6IuP55yB5bi45bee5biC5qiq5p6X6ZWH5L2Z5be35p2R6KW/6KGXMzjl
+    j7c=
+
+  school_name: !binary |
+    55uQ5Lqt5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:12
+  post_code: "213101"
+  id_number: "320483199003080025"
+  can_number: 08510609130012
+  thumb: 
+  region_code: "510609"
+  id: "9"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510609101"
+  exa_number: 060902624
+  gra_type: "0"
+  birthday: 1990-03-08 00:00:00
+  phone: 
+  r_score: "247.0"
+  receiver: !binary |
+    5Yav5pmo
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "247.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_093: 
+  address: 
+  name: !binary |
+    5p2O5rSq5ruU
+
+  city: 
+  region: 
+  major_id: "12"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    5bm/5YWD5biC6IuN5rqq5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB6IuN5rqq5Y6/6YeR56mX5bCP5Yy65Z+O6KW/5be3MzDlj7c=
+
+  school_name: !binary |
+    5a6e6aqM5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "628400"
+  id_number: "510824198811190532"
+  can_number: 08510707610015
+  thumb: 
+  region_code: "510707"
+  id: "93"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "510707127"
+  exa_number: 070740519
+  gra_type: "0"
+  birthday: 1988-11-19 00:00:00
+  phone: 
+  r_score: "561.0"
+  receiver: !binary |
+    5p2O5rSq5ruU
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "561.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_065: 
+  address: 
+  name: !binary |
+    6ZmI57+w5p6X
+
+  city: 
+  region: 
+  major_id: "8"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    6L6+5bee5biC6YCa5bed5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB6L6+5bee5biC6YCa5bed5Yy657+g5bGP6LevMTUy5Y+36ZmI
+    5Zu95bmz
+
+  school_name: !binary |
+    6L6+5bee5biC5LiA5Lit
+
+  updated_at: 2009-07-15 13:21:13
+  post_code: "635000"
+  id_number: "513001198906160023"
+  can_number: 08511401130061
+  thumb: 
+  region_code: "511401"
+  id: "65"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511401101"
+  exa_number: "140102321"
+  gra_type: "0"
+  birthday: 1989-06-16 00:00:00
+  phone: 
+  r_score: "311.0"
+  receiver: !binary |
+    6ZmI57+w5p6X
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "311.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_037: 
+  address: 
+  name: !binary |
+    6IyD5YW1
+
+  city: 
+  region: 
+  major_id: "10"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    5bm/5YWD5biC6IuN5rqq5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB6IuN5rqq5Y6/5LqU6b6Z5Lit5a2m546L5riF5rSL6L2s6IyD
+    5YW15pS2
+
+  school_name: !binary |
+    5LqU6b6Z5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:13
+  post_code: "628405"
+  id_number: "510824198807282776"
+  can_number: 08510707130206
+  thumb: 
+  region_code: "510707"
+  id: "37"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "510707124"
+  exa_number: "070707414"
+  gra_type: "0"
+  birthday: 1988-07-28 00:00:00
+  phone: 
+  r_score: "324.0"
+  receiver: !binary |
+    6IyD5YW1
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "324.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_121: 
+  address: 
+  name: !binary |
+    5rGf5oiQ5qW3
+
+  city: 
+  region: 
+  major_id: "14"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    6Ieq6LSh5biC6Ieq5rWB5LqV5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    6Ieq6LSh5biC6Yec5rqq6IGM5Lia6auY57qn5Lit5a2m
+
+  school_name: !binary |
+    6Ieq6LSh5biC6Yec5rqq6IGM5Lia5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "643000"
+  id_number: "510322199003255232"
+  can_number: 08510201604001
+  thumb: 
+  region_code: "510201"
+  id: "121"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "510201301"
+  exa_number: "020140113"
+  gra_type: "0"
+  birthday: 1990-03-25 00:00:00
+  phone: 
+  r_score: "469.0"
+  receiver: !binary |
+    5rGf5oiQ5qW3
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "469.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_094: 
+  address: 
+  name: !binary |
+    546L5riF5aa5
+
+  city: 
+  region: 
+  major_id: "14"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    5LmQ5bGx5biC54qN5Li65Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed54qN5Li65qao6byT5Lmh6KeC5aCC5p2RMee7hA==
+
+  school_name: !binary |
+    54qN5Li65Y6/6IGM5Lia5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "614405"
+  id_number: "511123199002231665"
+  can_number: 08511006604011
+  thumb: 
+  region_code: "511006"
+  id: "94"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511006301"
+  exa_number: "100640230"
+  gra_type: "0"
+  birthday: 1990-02-23 00:00:00
+  phone: 
+  r_score: "547.0"
+  receiver: !binary |
+    546L5riF5aa5
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "537.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_066: 
+  address: 
+  name: !binary |
+    6LS+5Li95ZCb
+
+  city: 
+  region: 
+  major_id: "9"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    6L6+5bee5biC6YCa5bed5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    6L6+5bee5biC6auY57qn5Lit5a2m5oub5YqeIOWImOeOieWNjiDovawg6LS+
+    5Li95ZCb
+
+  school_name: !binary |
+    6L6+5bee5biC6auY57qn5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:13
+  post_code: "635000"
+  id_number: 51300119880410002X
+  can_number: 08511401130119
+  thumb: 
+  region_code: "511401"
+  id: "66"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511401111"
+  exa_number: "140101123"
+  gra_type: "0"
+  birthday: 1988-04-10 00:00:00
+  phone: 
+  r_score: "398.0"
+  receiver: !binary |
+    6LS+5Li95ZCb
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "398.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_038: 
+  address: 
+  name: !binary |
+    6ZKx5riF6JOJ
+
+  city: 
+  region: 
+  major_id: "10"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    5bm/5YWD5biC6IuN5rqq5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB6IuN5rqq5Y6/5LqU6b6Z5Lit5a2m5qCh546L5riF5rSL6L2s
+
+  school_name: !binary |
+    5LqU6b6Z5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:13
+  post_code: "628405"
+  id_number: "510824198909052568"
+  can_number: 08510707130222
+  thumb: 
+  region_code: "510707"
+  id: "38"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510707124"
+  exa_number: "070707312"
+  gra_type: "0"
+  birthday: 1989-09-05 00:00:00
+  phone: 
+  r_score: "280.0"
+  receiver: !binary |
+    6ZKx5riF6JOJ
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "280.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_150: 
+  address: 
+  name: !binary |
+    5p2O5qKm5amV
+
+  city: 
+  region: 
+  major_id: "18"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:15
+  post_code: "610072"
+  id_number: "510106198911100724"
+  can_number: 08510120520001
+  thumb: 
+  region_code: "510120"
+  id: "150"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1989-11-10 00:00:00
+  phone: 
+  r_score: "483.0"
+  receiver: !binary |
+    5p2O5qKm5amV
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "483.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_122: 
+  address: 
+  name: !binary |
+    6JKL5YWD5pil
+
+  city: 
+  region: 
+  major_id: "17"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    5be05Lit5biC5be05bee5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5be05Lit5biC5be05Lit5Yy66Iqx5Lib6ZWHMTYtNA==
+
+  school_name: !binary |
+    5be05Lit5biC5be05bee5Yy65oGp6Ziz5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "636085"
+  id_number: "513701198910304526"
+  can_number: 08511501606013
+  thumb: 
+  region_code: "511501"
+  id: "122"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511501306"
+  exa_number: "150140817"
+  gra_type: "0"
+  birthday: 1989-10-30 00:00:00
+  phone: 
+  r_score: "462.0"
+  receiver: !binary |
+    6JKL5YWD5pil
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "462.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_095: 
+  address: 
+  name: !binary |
+    5L2V6YKx5p6X
+
+  city: 
+  region: 
+  major_id: "13"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    5rO45bee5biC5rO45Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5rO45Y6/5LqR6b6Z6ZWH5oiY5peX5p2RMTLnpL4=
+
+  school_name: !binary |
+    5rO45Y6/5LiA5Lit
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "646123"
+  id_number: "510521198810251887"
+  can_number: 08510404603030
+  thumb: 
+  region_code: "510404"
+  id: "95"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510404111"
+  exa_number: 040440818
+  gra_type: "0"
+  birthday: 1988-10-25 00:00:00
+  phone: 
+  r_score: "536.0"
+  receiver: !binary |
+    5L2V6YKx5p6X
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "536.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_067: 
+  address: 
+  name: !binary |
+    5Lil5YeM
+
+  city: 
+  region: 
+  major_id: "7"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    6L6+5bee5biC6L6+5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB6L6+5Y6/56ys5LiJ5Lit5a2m5oub55Sf5YqeICDmm77lhpsg
+    6L2s
+
+  school_name: !binary |
+    6L6+5Y6/5LiJ5Lit
+
+  updated_at: 2009-07-21 13:44:35
+  post_code: "635000"
+  id_number: "513021890425598"
+  can_number: 08511403130466
+  thumb: 
+  region_code: "511403"
+  id: "67"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511403123"
+  exa_number: "140302724"
+  gra_type: "0"
+  birthday: 1989-04-25 00:00:00
+  phone: 
+  r_score: "320.0"
+  receiver: !binary |
+    5Lil5YeM
+
+  description: 
+  edu_length: "3"
+  info_class_id: "2"
+  direction: 
+  h_score: "320.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_039: 
+  address: 
+  name: !binary |
+    6Zm25qOA
+
+  city: 
+  region: 
+  major_id: "10"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    5bm/5YWD5biC6IuN5rqq5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB6IuN5rqq5Y6/5LqU6b6Z5Lit5a2m5qCh546L5riF5rSL6L2s
+
+  school_name: !binary |
+    5LqU6b6Z5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:13
+  post_code: "628405"
+  id_number: "510824198810102553"
+  can_number: 08510707130236
+  thumb: 
+  region_code: "510707"
+  id: "39"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "510707124"
+  exa_number: 070708116
+  gra_type: "0"
+  birthday: 1988-10-10 00:00:00
+  phone: 
+  r_score: "292.0"
+  receiver: !binary |
+    6Zm25qOA
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "292.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_151: 
+  address: 
+  name: !binary |
+    5rKI6Iyc
+
+  city: 
+  region: 
+  major_id: "18"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:15
+  post_code: "610072"
+  id_number: "510104198908184063"
+  can_number: 08510120520009
+  thumb: 
+  region_code: "510120"
+  id: "151"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1989-08-18 00:00:00
+  phone: 
+  r_score: "450.0"
+  receiver: !binary |
+    5rKI6Iyc
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "450.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_123: 
+  address: 
+  name: !binary |
+    6ZmI5Lyg5aWH
+
+  city: 
+  region: 
+  major_id: "17"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    5be05Lit5biC5be05bee5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5be05Lit5biC5be05bee5Yy65LiJ5rGH6ZWH55m95bKp5rm+
+    5p2R77yR56S+
+
+  school_name: !binary |
+    5be05Lit5biC5be05bee5Yy65oGp6Ziz5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "636069"
+  id_number: "513701198901176518"
+  can_number: 08511501606037
+  thumb: 
+  region_code: "511501"
+  id: "123"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "511501306"
+  exa_number: "150140922"
+  gra_type: "0"
+  birthday: 1989-01-17 00:00:00
+  phone: 
+  r_score: "460.0"
+  receiver: !binary |
+    6ZmI5Lyg5aWH
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "460.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_096: 
+  address: 
+  name: !binary |
+    6YKx5aiF
+
+  city: 
+  region: 
+  major_id: "12"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    5YaF5rGf5biC5Lic5YW05Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5YaF5rGf5biC56ys5LiA6IGM5Lia5Lit5a2m
+
+  school_name: !binary |
+    5YaF5rGf5LiA6IGM5Lit
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "641100"
+  id_number: "513901199005014129"
+  can_number: 08510902610006
+  thumb: 
+  region_code: "510902"
+  id: "96"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510902301"
+  exa_number: 090240223
+  gra_type: "0"
+  birthday: 1990-05-01 00:00:00
+  phone: 
+  r_score: "531.0"
+  receiver: !binary |
+    6YKx5aiF
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "521.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_068: 
+  address: 
+  name: !binary |
+    56ul5bCP5Yia
+
+  city: 
+  region: 
+  major_id: "8"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    6L6+5bee5biC5a6j5rGJ5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5a6j5rGJ5Y6/5Y2X5Z2d5Lit5a2m56iL5L6d5aWO6L2s
+
+  school_name: !binary |
+    5a6j5rGJ5Y6/5Y2X5Z2d5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:13
+  post_code: "636164"
+  id_number: "513022199001046193"
+  can_number: 08511404130155
+  thumb: 
+  region_code: "511404"
+  id: "68"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "511404111"
+  exa_number: "140407725"
+  gra_type: "0"
+  birthday: 1990-01-04 00:00:00
+  phone: 
+  r_score: "356.0"
+  receiver: !binary |
+    56ul5bCP5Yia
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "356.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_180: 
+  address: 
+  name: !binary |
+    5pyx6Iq454S2
+
+  city: 
+  region: 
+  major_id: "20"
+  created_at: 2009-07-15 13:21:16
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:16
+  post_code: "610072"
+  id_number: "510106198903160727"
+  can_number: 08510120520117
+  thumb: 
+  region_code: "510120"
+  id: "180"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1989-03-16 00:00:00
+  phone: 
+  r_score: "645.0"
+  receiver: !binary |
+    5pyx6Iq454S2
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "645.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_152: 
+  address: 
+  name: !binary |
+    546L6JaH
+
+  city: 
+  region: 
+  major_id: "18"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:15
+  post_code: "610072"
+  id_number: "510106198911112928"
+  can_number: 08510120520004
+  thumb: 
+  region_code: "510120"
+  id: "152"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1989-11-11 00:00:00
+  phone: 
+  r_score: "586.0"
+  receiver: !binary |
+    546L6JaH
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "586.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_124: 
+  address: 
+  name: !binary |
+    5p2o6YeR5YWo
+
+  city: 
+  region: 
+  major_id: "17"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    5be05Lit5biC5be05bee5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5be05Lit5biC5be05bee5Yy65p+z5p6X6ZWH5YWr5p2R5Zub
+    56S+
+
+  school_name: !binary |
+    5be05Lit5biC5be05bee5Yy65oGp6Ziz5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "636086"
+  id_number: "513701198912214612"
+  can_number: 08511501606007
+  thumb: 
+  region_code: "511501"
+  id: "124"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "511501306"
+  exa_number: "150140818"
+  gra_type: "0"
+  birthday: 1989-12-21 00:00:00
+  phone: 
+  r_score: "459.0"
+  receiver: !binary |
+    5p2o6YeR5YWo
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "459.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_097: 
+  address: 
+  name: !binary |
+    5p2o5oiQ5LuY
+
+  city: 
+  region: 
+  major_id: "13"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    5a6c5a6+5biC5a6c5a6+5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5a6c5a6+5Y6/5p+z5ZiJ6IGM5Lit5pWZ5Yqh5aSE
+
+  school_name: !binary |
+    5a6c5a6+5Y6/5p+z5ZiJ6IGM5Lit
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "644605"
+  id_number: "511521198906074871"
+  can_number: 08511202603062
+  thumb: 
+  region_code: "511202"
+  id: "97"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "511202301"
+  exa_number: "120240225"
+  gra_type: "0"
+  birthday: 1989-06-07 00:00:00
+  phone: 
+  r_score: "529.0"
+  receiver: !binary |
+    5p2o5oiQ5LuY
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "529.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_010: 
+  address: 
+  name: !binary |
+    55Sw5p2o
+
+  city: 
+  region: 
+  major_id: "7"
+  created_at: 2009-07-15 13:21:12
+  region_name: !binary |
+    5bm/5YWD5biC5Yip5bee5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5bm/5YWD5biC5Yip5bee5Yy6MTIw5L+h566x5Lit5Yy6MzXmoIsx5qW8NuWP
+    tw==
+
+  school_name: !binary |
+    5bm/5YWD5biC5a6e6aqM5Lit5a2m
+
+  updated_at: 2009-07-21 13:44:35
+  post_code: "628017"
+  id_number: "510802198911242020"
+  can_number: 08510701130283
+  thumb: 
+  region_code: "510701"
+  id: "10"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510701130"
+  exa_number: 070104219
+  gra_type: "0"
+  birthday: 1989-11-24 00:00:00
+  phone: 
+  r_score: "271.0"
+  receiver: !binary |
+    55Sw5p2o
+
+  description: 
+  edu_length: "3"
+  info_class_id: "1"
+  direction: 
+  h_score: "271.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_069: 
+  address: 
+  name: !binary |
+    54aK5bCP6Iyc
+
+  city: 
+  region: 
+  major_id: "7"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    6L6+5bee5biC5aSn56u55Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5aSn56u55Lit5a2m54aK5aSp5paH
+
+  school_name: !binary |
+    5aSn56u55Lit5a2m
+
+  updated_at: 2009-07-21 13:44:35
+  post_code: "635100"
+  id_number: "513029199106160042"
+  can_number: 08511406130006
+  thumb: 
+  region_code: "511406"
+  id: "69"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511406101"
+  exa_number: "140604203"
+  gra_type: "0"
+  birthday: 1991-06-16 00:00:00
+  phone: 
+  r_score: "396.0"
+  receiver: !binary |
+    54aK5bCP6Iyc
+
+  description: 
+  edu_length: "3"
+  info_class_id: "1"
+  direction: 
+  h_score: "396.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_181: 
+  address: 
+  name: !binary |
+    5L6v5L+K5p2w
+
+  city: 
+  region: 
+  major_id: "20"
+  created_at: 2009-07-15 13:21:16
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:16
+  post_code: "610072"
+  id_number: "510106198911100716"
+  can_number: 08510120520116
+  thumb: 
+  region_code: "510120"
+  id: "181"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1989-11-10 00:00:00
+  phone: 
+  r_score: "556.0"
+  receiver: !binary |
+    5L6v5L+K5p2w
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "556.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_153: 
+  address: 
+  name: !binary |
+    5ZC06aKc6Iy5
+
+  city: 
+  region: 
+  major_id: "18"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:15
+  post_code: "610072"
+  id_number: "510124198909283544"
+  can_number: 08510120520005
+  thumb: 
+  region_code: "510120"
+  id: "153"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1989-09-28 00:00:00
+  phone: 
+  r_score: "477.0"
+  receiver: !binary |
+    5ZC06aKc6Iy5
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "477.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_125: 
+  address: 
+  name: !binary |
+    5p2O6Zye
+
+  city: 
+  region: 
+  major_id: "17"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    5YeJ5bGx5bee5YaV5a6B5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5YaV5a6B5Y6/5beo6b6Z6IGM5Lia5Lit5a2m
+
+  school_name: !binary |
+    5YaV5a6B5Y6/5beo6b6Z6IGM5Lia5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "615601"
+  id_number: "513433198804102124"
+  can_number: 08512113606009
+  thumb: 
+  region_code: "512113"
+  id: "125"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "512113301"
+  exa_number: "211340314"
+  gra_type: "0"
+  birthday: 1988-04-10 00:00:00
+  phone: 
+  r_score: "457.0"
+  receiver: !binary |
+    5p2O6Zye
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "432.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_011: 
+  address: 
+  name: !binary |
+    546L6aOe
+
+  city: 
+  region: 
+  major_id: "10"
+  created_at: 2009-07-15 13:21:12
+  region_name: !binary |
+    5bm/5YWD5biC5YmR6ZiB5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5YmR6ZiB5Y6/576K5bKt6ZWH5bGF5aeU5LyaM+e7hDPlj7c=
+
+  school_name: !binary |
+    5YmR5bee5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:12
+  post_code: "628309"
+  id_number: "510823198911207753"
+  can_number: 08510704170043
+  thumb: 
+  region_code: "510704"
+  id: "11"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "510704121"
+  exa_number: 070490708
+  gra_type: "0"
+  birthday: 1989-11-20 00:00:00
+  phone: 
+  r_score: "318.0"
+  receiver: !binary |
+    546L6aOe
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "318.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_098: 
+  address: 
+  name: !binary |
+    546L5Yuk
+
+  city: 
+  region: 
+  major_id: "13"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    5oiQ6YO95biC5Y+M5rWB5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5Y+M5rWB5Y6/5Lit5ZKM6IGM5Lia5Lit5a2m
+
+  school_name: !binary |
+    5Zub5bed55yB5Y+M5rWB5Y6/5Lit5ZKM6IGM5Lia5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "610212"
+  id_number: "510107198908150882"
+  can_number: 08510113603033
+  thumb: 
+  region_code: "510113"
+  id: "98"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510113302"
+  exa_number: 011340129
+  gra_type: "0"
+  birthday: 1989-08-15 00:00:00
+  phone: 
+  r_score: "525.0"
+  receiver: !binary |
+    546L5Yuk
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "515.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_182: 
+  address: 
+  name: !binary |
+    57uD54+N54+N
+
+  city: 
+  region: 
+  major_id: "20"
+  created_at: 2009-07-15 13:21:16
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:16
+  post_code: "610072"
+  id_number: "510105198812183046"
+  can_number: 08510120520115
+  thumb: 
+  region_code: "510120"
+  id: "182"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1988-12-18 00:00:00
+  phone: 
+  r_score: "646.0"
+  receiver: !binary |
+    57uD54+N54+N
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "646.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_154: 
+  address: 
+  name: !binary |
+    5ZSQ5pmT6I6J
+
+  city: 
+  region: 
+  major_id: "18"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:15
+  post_code: "610072"
+  id_number: "511025198911150347"
+  can_number: 08510120520006
+  thumb: 
+  region_code: "510120"
+  id: "154"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1989-11-15 00:00:00
+  phone: 
+  r_score: "474.0"
+  receiver: !binary |
+    5ZSQ5pmT6I6J
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "474.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_126: 
+  address: 
+  name: !binary |
+    6buE5piO6Zye
+
+  city: 
+  region: 
+  major_id: "17"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    5YeJ5bGx5bee5YaV5a6B5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB6LCF5bGx5bee5YaV5a6B5Y6/5beo6b6Z6IGM5Lia5Lit5a2m
+
+  school_name: !binary |
+    5YaV5a6B5Y6/5beo6b6Z6IGM5Lia5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "615601"
+  id_number: "513433199001171622"
+  can_number: 08512113606006
+  thumb: 
+  region_code: "512113"
+  id: "126"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "512113301"
+  exa_number: "211340323"
+  gra_type: "0"
+  birthday: 1990-01-17 00:00:00
+  phone: 
+  r_score: "453.0"
+  receiver: !binary |
+    6buE5piO6Zye
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "428.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_012: 
+  address: 
+  name: !binary |
+    546L5q2j5rOi
+
+  city: 
+  region: 
+  major_id: "8"
+  created_at: 2009-07-15 13:21:12
+  region_name: !binary |
+    5bm/5YWD5biC5YmR6ZiB5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5bm/5YWD5biC5YmR6ZiB5Y6/576K5bKt6ZWH5aSn5Z+d5p2R
+    77yW57uE77yW5Y+3
+
+  school_name: !binary |
+    5YmR5bee5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:12
+  post_code: "628309"
+  id_number: "510823880621773"
+  can_number: 08510704170054
+  thumb: 
+  region_code: "510704"
+  id: "12"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "510704121"
+  exa_number: 070491815
+  gra_type: "0"
+  birthday: 1988-06-21 00:00:00
+  phone: 
+  r_score: "335.0"
+  receiver: !binary |
+    546L5q2j5rOi
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "335.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_040: 
+  address: 
+  name: !binary |
+    5ZC05am3
+
+  city: 
+  region: 
+  major_id: "8"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    5bm/5YWD5biC6IuN5rqq5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB6IuN5rqq5Y6/6biz5rqq6ZWH5byT5bKt5p2R5LiD57uE
+
+  school_name: !binary |
+    5a6e6aqM5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:13
+  post_code: "628405"
+  id_number: 51082419881001238X
+  can_number: 08510707130572
+  thumb: 
+  region_code: "510707"
+  id: "40"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510707127"
+  exa_number: 070703528
+  gra_type: "0"
+  birthday: 1988-10-01 00:00:00
+  phone: 
+  r_score: "307.0"
+  receiver: !binary |
+    5ZC05am3
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "307.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_099: 
+  address: 
+  name: !binary |
+    6KO05Yqg5qC5
+
+  city: 
+  region: 
+  major_id: "13"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    5oiQ6YO95biC5Y+M5rWB5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Y+M5rWB5Y6/5qOg5rmW5Lic6LevNTkg5Y+3MDjph5Hono3kuIDnj60=
+
+  school_name: !binary |
+    5Zub5bed55yB5Y+M5rWB5Y6/6IGM5Lia5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "610200"
+  id_number: "510122198801186416"
+  can_number: 08510113603016
+  thumb: 
+  region_code: "510113"
+  id: "99"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "510113301"
+  exa_number: 011340118
+  gra_type: "0"
+  birthday: 1988-01-18 00:00:00
+  phone: 
+  r_score: "523.0"
+  receiver: !binary |
+    6KO05Yqg5qC5
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "523.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_183: 
+  address: 
+  name: !binary |
+    5a2Z6I65
+
+  city: 
+  region: 
+  major_id: "20"
+  created_at: 2009-07-15 13:21:16
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:16
+  post_code: "610072"
+  id_number: "510106198911232524"
+  can_number: 08510120520114
+  thumb: 
+  region_code: "510120"
+  id: "183"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1989-11-23 00:00:00
+  phone: 
+  r_score: "556.0"
+  receiver: !binary |
+    5a2Z6I65
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "556.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_155: 
+  address: 
+  name: !binary |
+    5buW5LiW6JCN
+
+  city: 
+  region: 
+  major_id: "18"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:15
+  post_code: "610072"
+  id_number: "510107198905284623"
+  can_number: 08510120520008
+  thumb: 
+  region_code: "510120"
+  id: "155"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1989-05-28 00:00:00
+  phone: 
+  r_score: "524.0"
+  receiver: !binary |
+    5buW5LiW6JCN
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "524.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_127: 
+  address: 
+  name: !binary |
+    6LCv6I+y
+
+  city: 
+  region: 
+  major_id: "11"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    5rO45bee5biC5rO45Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5rO45Y6/56aP6ZuG6ZWH6b6Z5Z+O5pmv6IuRQeWMuuS5neWN
+    leWFgzMwMeWPtw==
+
+  school_name: !binary |
+    5rO45Y6/5LiA5Lit
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "646106"
+  id_number: "510521198904100027"
+  can_number: 08510404606052
+  thumb: 
+  region_code: "510404"
+  id: "127"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510404111"
+  exa_number: "040441730"
+  gra_type: "0"
+  birthday: 1989-04-10 00:00:00
+  phone: 
+  r_score: "375.0"
+  receiver: !binary |
+    6LCv6I+y
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "375.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_013: 
+  address: 
+  name: !binary |
+    5p2o5rSL
+
+  city: 
+  region: 
+  major_id: "10"
+  created_at: 2009-07-15 13:21:12
+  region_name: !binary |
+    5bm/5YWD5biC5YmR6ZiB5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5YmR6ZiB5Y6/5q2m6L+e6ZWH5p6j5Z6t5p2RM+e7hA==
+
+  school_name: !binary |
+    5YmR5bee5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:12
+  post_code: "628302"
+  id_number: "510823198906102420"
+  can_number: 08510704170088
+  thumb: 
+  region_code: "510704"
+  id: "13"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510704121"
+  exa_number: 070495623
+  gra_type: "0"
+  birthday: 1989-06-10 00:00:00
+  phone: 
+  r_score: "287.0"
+  receiver: !binary |
+    5p2o5rSL
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "287.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_041: 
+  address: 
+  name: !binary |
+    5byg5Y2a5b+X
+
+  city: 
+  region: 
+  major_id: "7"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    5bm/5YWD5biC6IuN5rqq5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB6IuN5rqq5Y6/5b2t5bqX5Lmh5bqZ5Z6t5p2RM+e7hA==
+
+  school_name: !binary |
+    5paH5piM5Lit5a2m
+
+  updated_at: 2009-07-21 13:44:34
+  post_code: "628431"
+  id_number: "510824199004027792"
+  can_number: 08510707170134
+  thumb: 
+  region_code: "510707"
+  id: "41"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "510707123"
+  exa_number: 070780110
+  gra_type: "0"
+  birthday: 1990-04-02 00:00:00
+  phone: 
+  r_score: "334.0"
+  receiver: !binary |
+    5byg5Y2a5b+X
+
+  description: 
+  edu_length: "3"
+  info_class_id: "1"
+  direction: 
+  h_score: "334.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_184: 
+  address: 
+  name: !binary |
+    5L2V6IuX
+
+  city: 
+  region: 
+  major_id: "20"
+  created_at: 2009-07-15 13:21:16
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:16
+  post_code: "610072"
+  id_number: "510104198909131887"
+  can_number: 08510120520113
+  thumb: 
+  region_code: "510120"
+  id: "184"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1989-09-13 00:00:00
+  phone: 
+  r_score: "529.0"
+  receiver: !binary |
+    5L2V6IuX
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "529.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_156: 
+  address: 
+  name: !binary |
+    56em6Zuq5L2z
+
+  city: 
+  region: 
+  major_id: "18"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:15
+  post_code: "610072"
+  id_number: "510107198905082968"
+  can_number: 08510120520007
+  thumb: 
+  region_code: "510120"
+  id: "156"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1989-05-08 00:00:00
+  phone: 
+  r_score: "482.0"
+  receiver: !binary |
+    56em6Zuq5L2z
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "482.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_128: 
+  address: 
+  name: !binary |
+    6YKT5bCP5Li9
+
+  city: 
+  region: 
+  major_id: "11"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    6L6+5bee5biC5a6j5rGJ5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5a6j5rGJ6IGM5Lia5Lit5LiT5a2m5qChICAgICAg57Kf5Y2O
+    5bmz77yI5pS277yJ
+
+  school_name: !binary |
+    5Zub5bed55yB5a6j5rGJ6IGM5Lia5Lit5LiT5a2m5qCh
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "636150"
+  id_number: "513022198809166206"
+  can_number: 08511404606013
+  thumb: 
+  region_code: "511404"
+  id: "128"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511404301"
+  exa_number: "140441017"
+  gra_type: "0"
+  birthday: 1988-09-16 00:00:00
+  phone: 
+  r_score: "378.0"
+  receiver: !binary |
+    6YKT5bCP5Li9
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "378.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_070: 
+  address: 
+  name: !binary |
+    6buE5rWq
+
+  city: 
+  region: 
+  major_id: "9"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    6L6+5bee5biC5aSn56u55Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5aSn56u55Y6/5rC46IOc5Lmh6buE5a6J5p2RMee7hA==
+
+  school_name: !binary |
+    5aSn56u55Y6/6KeC6Z+z5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:13
+  post_code: "635111"
+  id_number: "513029198802195092"
+  can_number: 08511406130125
+  thumb: 
+  region_code: "511406"
+  id: "70"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "511406111"
+  exa_number: "140602610"
+  gra_type: "0"
+  birthday: 1988-02-19 00:00:00
+  phone: 
+  r_score: "365.0"
+  receiver: !binary |
+    6buE5rWq
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "365.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_042: 
+  address: 
+  name: !binary |
+    5p2o5ZCI
+
+  city: 
+  region: 
+  major_id: "8"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    6YGC5a6B5biC6Ii55bGx5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB6YGC5a6B5Lit5a2m5qCh
+
+  school_name: !binary |
+    6YGC5a6B5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:13
+  post_code: "629000"
+  id_number: "510902199001279158"
+  can_number: 08510801130150
+  thumb: 
+  region_code: "510801"
+  id: "42"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "510801101"
+  exa_number: 080107113
+  gra_type: "0"
+  birthday: 1990-01-27 00:00:00
+  phone: 
+  r_score: "341.0"
+  receiver: !binary |
+    5p2o5ZCI
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "341.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_014: 
+  address: 
+  name: !binary |
+    6YOR5Li55Li5
+
+  city: 
+  region: 
+  major_id: "8"
+  created_at: 2009-07-15 13:21:12
+  region_name: !binary |
+    6ZuF5a6J5biC5ZCN5bGx5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB6ZuF5a6J5biC5ZCN5bGx5Y6/6Iy26YO95aSn6YGTMTIz5Y+3
+
+  school_name: !binary |
+    5Zub5bed55yB5ZCN5bGx5Y6/56ys5LiA5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:12
+  post_code: "625100"
+  id_number: "513122198901223723"
+  can_number: 08511602130059
+  thumb: 
+  region_code: "511602"
+  id: "14"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511602101"
+  exa_number: "160200429"
+  gra_type: "0"
+  birthday: 1989-01-22 00:00:00
+  phone: 
+  r_score: "276.0"
+  receiver: !binary |
+    6YOR5Li55Li5
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "276.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_185: 
+  address: 
+  name: !binary |
+    5buW54i9
+
+  city: 
+  region: 
+  major_id: "20"
+  created_at: 2009-07-15 13:21:16
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:16
+  post_code: "610072"
+  id_number: "510106199003170721"
+  can_number: 08510120520112
+  thumb: 
+  region_code: "510120"
+  id: "185"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1990-03-17 00:00:00
+  phone: 
+  r_score: "551.0"
+  receiver: !binary |
+    5buW54i9
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "551.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_157: 
+  address: 
+  name: !binary |
+    5aSP6IiS55Cz
+
+  city: 
+  region: 
+  major_id: "18"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:15
+  post_code: "610072"
+  id_number: "320125198903172043"
+  can_number: 08510120520003
+  thumb: 
+  region_code: "510120"
+  id: "157"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1989-03-17 00:00:00
+  phone: 
+  r_score: "480.0"
+  receiver: !binary |
+    5aSP6IiS55Cz
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "480.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_129: 
+  address: 
+  name: !binary |
+    5byg5r2H
+
+  city: 
+  region: 
+  major_id: "15"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    5be05Lit5biC6YCa5rGf5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB6YCa5rGf5Y6/6K+65rGf6ZWH5Lic6KGXMTnlj7c=
+
+  school_name: !binary |
+    6YCa5rGf5Y6/5raq6Ziz5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "636700"
+  id_number: 51372119900226002X
+  can_number: 08511503606031
+  thumb: 
+  region_code: "511503"
+  id: "129"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511503121"
+  exa_number: "150341613"
+  gra_type: "0"
+  birthday: 1990-02-26 00:00:00
+  phone: 
+  r_score: "379.0"
+  receiver: !binary |
+    5byg5r2H
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "379.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_071: 
+  address: 
+  name: !binary |
+    546L5pmo5pum
+
+  city: 
+  region: 
+  major_id: "9"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    6L6+5bee5biC5aSn56u55Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5aSn56u55Y6/5bqZ5Z2d6ZWH5paw5qGl6KGX6YGT5Lid5Y6C
+    5a+56Z2i546L5pmo5pum5pS2
+
+  school_name: !binary |
+    5aSn56u55Y6/5LqM5Lit
+
+  updated_at: 2009-07-15 13:21:13
+  post_code: "635102"
+  id_number: 51302919880411396X
+  can_number: 08511406130203
+  thumb: 
+  region_code: "511406"
+  id: "71"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511406121"
+  exa_number: "140607509"
+  gra_type: "0"
+  birthday: 1988-04-11 00:00:00
+  phone: 
+  r_score: "434.0"
+  receiver: !binary |
+    546L5pmo5pum
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "434.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_043: 
+  address: 
+  name: !binary |
+    5byg5a6B5a6B
+
+  city: 
+  region: 
+  major_id: "9"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    6YGC5a6B5biC6Ii55bGx5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB6YGC5a6B5biC56ys5YWt5Lit5a2m5paw5qCh5Yy65pWZ5Yqh
+    5aSE
+
+  school_name: !binary |
+    6YGC5a6B5YWt5Lit
+
+  updated_at: 2009-07-15 13:21:13
+  post_code: "629014"
+  id_number: "510902198801083327"
+  can_number: 08510801130324
+  thumb: 
+  region_code: "510801"
+  id: "43"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510801122"
+  exa_number: 080102210
+  gra_type: "0"
+  birthday: 1988-01-08 00:00:00
+  phone: 
+  r_score: "393.0"
+  receiver: !binary |
+    5byg5a6B5a6B
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "393.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_015: 
+  address: 
+  name: !binary |
+    6Km557uN6JKZ
+
+  city: 
+  region: 
+  major_id: "8"
+  created_at: 2009-07-15 13:21:12
+  region_name: !binary |
+    6ZuF5a6J5biC5ZCN5bGx5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5ZCN5bGx5Y6/56ys5LqM5Lit5a2m
+
+  school_name: !binary |
+    5Zub5bed55yB5ZCN5bGx5Y6/56ys5LqM5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:12
+  post_code: "625100"
+  id_number: "513122198911141916"
+  can_number: 08511602170040
+  thumb: 
+  region_code: "511602"
+  id: "15"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "511602121"
+  exa_number: "160290122"
+  gra_type: "0"
+  birthday: 1989-11-14 00:00:00
+  phone: 
+  r_score: "337.0"
+  receiver: !binary |
+    6Km557uN6JKZ
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "337.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_186: 
+  address: 
+  name: !binary |
+    6ZmI5q2G6Zye
+
+  city: 
+  region: 
+  major_id: "20"
+  created_at: 2009-07-15 13:21:16
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:16
+  post_code: "610072"
+  id_number: "510108198904220341"
+  can_number: 08510120520111
+  thumb: 
+  region_code: "510120"
+  id: "186"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1989-04-22 00:00:00
+  phone: 
+  r_score: "668.0"
+  receiver: !binary |
+    6ZmI5q2G6Zye
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "668.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_158: 
+  address: 
+  name: !binary |
+    5byg6I6O
+
+  city: 
+  region: 
+  major_id: "18"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:15
+  post_code: "610072"
+  id_number: "511324198806090063"
+  can_number: 08510120520002
+  thumb: 
+  region_code: "510120"
+  id: "158"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1988-06-09 00:00:00
+  phone: 
+  r_score: "533.0"
+  receiver: !binary |
+    5byg6I6O
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "533.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_072: 
+  address: 
+  name: !binary |
+    5ZC05b2s5b2s
+
+  city: 
+  region: 
+  major_id: "8"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    6L6+5bee5biC5aSn56u55Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5aSn56u55Y6/6auY5a626KGX6YGT6YKu5bGA5a+56Z2i
+
+  school_name: !binary |
+    5aSn56u55Y6/5bqZ5Z2d5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "635103"
+  id_number: "513029198903203442"
+  can_number: 08511406130341
+  thumb: 
+  region_code: "511406"
+  id: "72"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511406125"
+  exa_number: "140606022"
+  gra_type: "0"
+  birthday: 1989-03-20 00:00:00
+  phone: 
+  r_score: "320.0"
+  receiver: !binary |
+    5ZC05b2s5b2s
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "320.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_044: 
+  address: 
+  name: !binary |
+    5L2V5qKF
+
+  city: 
+  region: 
+  major_id: "9"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    6YGC5a6B5biC5bCE5rSq5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5bCE5rSq5Y6/6Z2S5bKX5Lit5a2m
+
+  school_name: !binary |
+    6Z2S5bKX5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:13
+  post_code: "629205"
+  id_number: "510922199003014888"
+  can_number: 08510803130570
+  thumb: 
+  region_code: "510803"
+  id: "44"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510803122"
+  exa_number: 080310908
+  gra_type: "0"
+  birthday: 1990-03-01 00:00:00
+  phone: 
+  r_score: "343.0"
+  receiver: !binary |
+    5L2V5qKF
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "343.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_016: 
+  address: 
+  name: !binary |
+    6LCi5pil54eV
+
+  city: 
+  region: 
+  major_id: "10"
+  created_at: 2009-07-15 13:21:12
+  region_name: !binary |
+    6ZuF5a6J5biC5aSp5YWo5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5aSp5YWo5Lit5a2m6auYMjAwOOe6pzXnj63osKLmmKXnh5Uo
+    5pS2KQ==
+
+  school_name: !binary |
+    5Zub5bed55yB5aSp5YWo5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:12
+  post_code: "625500"
+  id_number: 51312619890318062X
+  can_number: 08511606130080
+  thumb: 
+  region_code: "511606"
+  id: "16"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511606111"
+  exa_number: "160600510"
+  gra_type: "0"
+  birthday: 1989-03-18 00:00:00
+  phone: 
+  r_score: "331.0"
+  receiver: !binary |
+    6LCi5pil54eV
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "331.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_187: 
+  address: 
+  name: !binary |
+    5pu+6Zuq5Yek
+
+  city: 
+  region: 
+  major_id: "20"
+  created_at: 2009-07-15 13:21:16
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:16
+  post_code: "610072"
+  id_number: "510107198908205046"
+  can_number: 08510120520110
+  thumb: 
+  region_code: "510120"
+  id: "187"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1989-08-20 00:00:00
+  phone: 
+  r_score: "575.0"
+  receiver: !binary |
+    5pu+6Zuq5Yek
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "575.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_159: 
+  address: 
+  name: !binary |
+    6YK56I6J
+
+  city: 
+  region: 
+  major_id: "18"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:15
+  post_code: "610072"
+  id_number: "510105199001061787"
+  can_number: 08510120520010
+  thumb: 
+  region_code: "510120"
+  id: "159"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1990-01-06 00:00:00
+  phone: 
+  r_score: "515.0"
+  receiver: !binary |
+    6YK56I6J
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "515.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_073: 
+  address: 
+  name: !binary |
+    5p2O56eL55G+
+
+  city: 
+  region: 
+  major_id: "10"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    5be05Lit5biC5be05bee5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5be05Lit5biC6YKu5pS/5bGAIOWRqOe6ouaUtg==
+
+  school_name: !binary |
+    5be05Lit5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "636000"
+  id_number: 51370119890619001X
+  can_number: 08511501130067
+  thumb: 
+  region_code: "511501"
+  id: "73"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "511501101"
+  exa_number: "150103211"
+  gra_type: "0"
+  birthday: 1989-06-19 00:00:00
+  phone: 
+  r_score: "353.0"
+  receiver: !binary |
+    5p2O56eL55G+
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "353.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_045: 
+  address: 
+  name: !binary |
+    6ZmI5Li95bmz
+
+  city: 
+  region: 
+  major_id: "7"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    6YGC5a6B5biC5bCE5rSq5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5bCE5rSq5Y6/5aSq5ZKM5Lit5a2m
+
+  school_name: !binary |
+    5aSq5ZKM5Lit5a2m
+
+  updated_at: 2009-07-21 13:44:35
+  post_code: "629200"
+  id_number: "510922198910155102"
+  can_number: 08510803131042
+  thumb: 
+  region_code: "510803"
+  id: "45"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510803121"
+  exa_number: 080305630
+  gra_type: "0"
+  birthday: 1989-10-15 00:00:00
+  phone: 
+  r_score: "263.0"
+  receiver: !binary |
+    6ZmI5Li95bmz
+
+  description: 
+  edu_length: "3"
+  info_class_id: "2"
+  direction: 
+  h_score: "263.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_100: 
+  address: 
+  name: !binary |
+    5Lu756S8
+
+  city: 
+  region: 
+  major_id: "13"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    6YGC5a6B5biC5bCE5rSq5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5bCE5rSq5Y6/6IGM5Lia5Lit5LiT5pmu6auY5qCh5Yy6
+
+  school_name: !binary |
+    5bCE5rSq6IGM5Lit
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "629200"
+  id_number: "510922198802252650"
+  can_number: 08510803603030
+  thumb: 
+  region_code: "510803"
+  id: "100"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "510803126"
+  exa_number: 080340310
+  gra_type: "0"
+  birthday: 1988-02-25 00:00:00
+  phone: 
+  r_score: "522.0"
+  receiver: !binary |
+    5Lu756S8
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "522.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_017: 
+  address: 
+  name: !binary |
+    5p2o6YC4
+
+  city: 
+  region: 
+  major_id: "8"
+  created_at: 2009-07-15 13:21:12
+  region_name: !binary |
+    6Zi/5Z2d5bee5rG25bed5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed6YO95rGf5aCw5bm456aP6ZWH6I6y6Iqx5p2R5LqM57uEMTfluaIz
+    5Y2V5YWDMualvA==
+
+  school_name: !binary |
+    6YO95rGf5aCw5biC5Y2B5bGA5a2m5qCh
+
+  updated_at: 2009-07-15 13:21:12
+  post_code: "611830"
+  id_number: "513221199003180243"
+  can_number: 08511901130079
+  thumb: 
+  region_code: "511901"
+  id: "17"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510108126"
+  exa_number: "191400708"
+  gra_type: "0"
+  birthday: 1990-03-18 00:00:00
+  phone: 
+  r_score: "361.0"
+  receiver: !binary |
+    5p2o6YC4
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "326.0"
+  stu_type: "0"
+  nation: !binary |
+    576M5peP
+
+  state: 
+  department_id: 
+students_188: 
+  address: 
+  name: !binary |
+    5p2O5oCd5oiQ
+
+  city: 
+  region: 
+  major_id: "20"
+  created_at: 2009-07-15 13:21:16
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:16
+  post_code: "610072"
+  id_number: 51011219890108211X
+  can_number: 08510120520109
+  thumb: 
+  region_code: "510120"
+  id: "188"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1989-01-08 00:00:00
+  phone: 
+  r_score: "495.0"
+  receiver: !binary |
+    5p2O5oCd5oiQ
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "495.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_074: 
+  address: 
+  name: !binary |
+    5byg5aiF
+
+  city: 
+  region: 
+  major_id: "7"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    5be05Lit5biC5be05bee5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5be05Lit5biC5be05bee5Yy66I2J5Z2d6KGX6YOR546L6ZiB
+    MeWPt+alvDHljZXlhYM1MDPlvKDlqIXmlLY=
+
+  school_name: !binary |
+    5be05Lit5biC56ys5LqM5Lit5a2m
+
+  updated_at: 2009-07-21 13:44:35
+  post_code: "636000"
+  id_number: "513701199008190143"
+  can_number: 08511501130326
+  thumb: 
+  region_code: "511501"
+  id: "74"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511501121"
+  exa_number: "150104114"
+  gra_type: "0"
+  birthday: 1990-08-19 00:00:00
+  phone: 
+  r_score: "325.0"
+  receiver: !binary |
+    5byg5aiF
+
+  description: 
+  edu_length: "3"
+  info_class_id: "2"
+  direction: 
+  h_score: "325.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_046: 
+  address: 
+  name: !binary |
+    5L2V5pWP
+
+  city: 
+  region: 
+  major_id: "7"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    6YGC5a6B5biC5bCE5rSq5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5bCE5rSq5Y6/6Z2S5bKX5Lit5a2m
+
+  school_name: !binary |
+    6Z2S5bKX5Lit5a2m
+
+  updated_at: 2009-07-21 13:44:35
+  post_code: "629205"
+  id_number: "510922198908244245"
+  can_number: 08510803170359
+  thumb: 
+  region_code: "510803"
+  id: "46"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510803122"
+  exa_number: 080386008
+  gra_type: "0"
+  birthday: 1989-08-24 00:00:00
+  phone: 
+  r_score: "297.0"
+  receiver: !binary |
+    5L2V5pWP
+
+  description: 
+  edu_length: "3"
+  info_class_id: "2"
+  direction: 
+  h_score: "297.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_101: 
+  address: 
+  name: !binary |
+    5p+P5rOi
+
+  city: 
+  region: 
+  major_id: "13"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    6L6+5bee5biC6L6+5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    6L6+5Y6/6IGM5Lia6auY57qn5Lit5a2m
+
+  school_name: !binary |
+    6L6+5Y6/6IGM5Lia5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "635000"
+  id_number: "513021199007207465"
+  can_number: 08511403603009
+  thumb: 
+  region_code: "511403"
+  id: "101"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511403301"
+  exa_number: "140340109"
+  gra_type: "0"
+  birthday: 1990-07-20 00:00:00
+  phone: 
+  r_score: "518.0"
+  receiver: !binary |
+    5p+P5rOi
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "518.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_018: 
+  address: 
+  name: !binary |
+    6JGj5oCh5biG
+
+  city: 
+  region: 
+  major_id: "8"
+  created_at: 2009-07-15 13:21:12
+  region_name: !binary |
+    6Zi/5Z2d5bee55CG5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55CG5Y6/5YWs5a6J5bGAIOmbjeWkqeWFqO+8iOaUtu+8iQ==
+
+  school_name: !binary |
+    6YO95rGf5aCw5biC56ys5LiA5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:12
+  post_code: "623100"
+  id_number: "513222199005120769"
+  can_number: 08511902130007
+  thumb: 
+  region_code: "511902"
+  id: "18"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510108121"
+  exa_number: "191400128"
+  gra_type: "0"
+  birthday: 1990-05-12 00:00:00
+  phone: 
+  r_score: "236.0"
+  receiver: !binary |
+    6JGj5oCh5biG
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "201.0"
+  stu_type: "0"
+  nation: !binary |
+    576M5peP
+
+  state: 
+  department_id: 
+students_189: 
+  address: 
+  name: !binary |
+    5YiY5Li9
+
+  city: 
+  region: 
+  major_id: "20"
+  created_at: 2009-07-15 13:21:16
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:16
+  post_code: "610072"
+  id_number: "511025198910081124"
+  can_number: 08510120520108
+  thumb: 
+  region_code: "510120"
+  id: "189"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1989-10-08 00:00:00
+  phone: 
+  r_score: "525.0"
+  receiver: !binary |
+    5YiY5Li9
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "525.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_130: 
+  address: 
+  name: !binary |
+    5oii57qi54eV
+
+  city: 
+  region: 
+  major_id: "11"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    6LWE6Ziz5biC566A6Ziz5biC
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    566A6Ziz5biC6Zu35a625Zy66ZWH5rC46IOc6KGXMTLlj7c=
+
+  school_name: !binary |
+    566A6Ziz5biC6auY57qn6IGM5Lia5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "641416"
+  id_number: "513902198906059465"
+  can_number: 08511802606018
+  thumb: 
+  region_code: "511802"
+  id: "130"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511802301"
+  exa_number: "180240421"
+  gra_type: "0"
+  birthday: 1989-06-05 00:00:00
+  phone: 
+  r_score: "386.0"
+  receiver: !binary |
+    5oii57qi54eV
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "386.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_075: 
+  address: 
+  name: !binary |
+    572X6bmP6aOe
+
+  city: 
+  region: 
+  major_id: "9"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    5be05Lit5biC5be05bee5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5be05Lit5biC5be05bee5Yy65pu+5Y+j6ZWH5bCP6KGXMTjl
+    j7fnvZfpuY/po57mlLY=
+
+  school_name: !binary |
+    5be05Lit5biC5be05bee5Yy65pu+5Y+j5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "636000"
+  id_number: "513701198810152238"
+  can_number: 08511501130851
+  thumb: 
+  region_code: "511501"
+  id: "75"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "511501124"
+  exa_number: "150111305"
+  gra_type: "0"
+  birthday: 1988-10-15 00:00:00
+  phone: 
+  r_score: "273.0"
+  receiver: !binary |
+    572X6bmP6aOe
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "273.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_047: 
+  address: 
+  name: !binary |
+    6ams6Imz
+
+  city: 
+  region: 
+  major_id: "8"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    6YGC5a6B5biC5aSn6Iux5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5aSn6Iux6IKy5omN5Lit5a2m
+
+  school_name: !binary |
+    5aSn6Iux6IKy5omN5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:13
+  post_code: "629300"
+  id_number: "510923198905200024"
+  can_number: 08510804130390
+  thumb: 
+  region_code: "510804"
+  id: "47"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510804111"
+  exa_number: 080400718
+  gra_type: "0"
+  birthday: 1989-05-20 00:00:00
+  phone: 
+  r_score: "283.0"
+  receiver: !binary |
+    6ams6Imz
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "283.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_102: 
+  address: 
+  name: !binary |
+    5L2Z5p6X6Zu2
+
+  city: 
+  region: 
+  major_id: "12"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    6LWE6Ziz5biC6ZuB5rGf5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB6LWE6Ziz5biC6ZuB5rGf5Yy65b+g5LmJ6auY57qn6IGM5Lia
+    5Lit5a2m
+
+  school_name: !binary |
+    6ZuB5rGf5Yy65b+g5LmJ6IGM5Lia5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "641311"
+  id_number: "513901199102204848"
+  can_number: 08511801610053
+  thumb: 
+  region_code: "511801"
+  id: "102"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511801303"
+  exa_number: "180140627"
+  gra_type: "0"
+  birthday: 1991-02-20 00:00:00
+  phone: 
+  r_score: "513.0"
+  receiver: !binary |
+    5L2Z5p6X6Zu2
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "513.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_019: 
+  address: 
+  name: !binary |
+    6auY5YaJ6Zuv
+
+  city: 
+  region: 
+  major_id: "10"
+  created_at: 2009-07-15 13:21:12
+  region_name: !binary |
+    5oiQ6YO95biC6ZSm5rGf5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC6b6Z6Iif6Lev5bel5Yac6Zmi6KGXNjLlj7c=
+
+  school_name: !binary |
+    5oiQ6YO95Y2B5LiD5Lit
+
+  updated_at: 2009-07-15 13:21:12
+  post_code: "610000"
+  id_number: "510104198907113765"
+  can_number: 08510101130331
+  thumb: 
+  region_code: "510101"
+  id: "19"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510101123"
+  exa_number: "010102702"
+  gra_type: "0"
+  birthday: 1989-07-11 00:00:00
+  phone: 
+  r_score: "385.0"
+  receiver: !binary |
+    6auY5YaJ6Zuv
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "385.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_131: 
+  address: 
+  name: !binary |
+    6IOh5a65
+
+  city: 
+  region: 
+  major_id: "15"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    5be05Lit5biC6YCa5rGf5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB6YCa5rGf5Y6/6ZmI5rKz5Lmh55m96I2J5rGg5p2RNuekvg==
+
+  school_name: !binary |
+    6YCa5rGf5Y6/5raq6Ziz5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:15
+  post_code: "636700"
+  id_number: "513721198908275821"
+  can_number: 08511503606009
+  thumb: 
+  region_code: "511503"
+  id: "131"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511503121"
+  exa_number: "150341727"
+  gra_type: "0"
+  birthday: 1989-08-27 00:00:00
+  phone: 
+  r_score: "379.0"
+  receiver: !binary |
+    6IOh5a65
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "379.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_076: 
+  address: 
+  name: !binary |
+    5byg6ZSQ
+
+  city: 
+  region: 
+  major_id: "7"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    5be05Lit5biC5be05bee5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5be05Lit5biC5be05bee5Yy66Iy25Z2d6ZWHMTTmnZEz56S+
+
+  school_name: !binary |
+    5be05Lit5biC5be05bee5Yy66Iy25Z2d5Lit5a2m
+
+  updated_at: 2009-07-21 13:44:35
+  post_code: "636000"
+  id_number: 51370119890327391X
+  can_number: 08511501130902
+  thumb: 
+  region_code: "511501"
+  id: "76"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "511501127"
+  exa_number: "150110004"
+  gra_type: "0"
+  birthday: 1989-03-27 00:00:00
+  phone: 
+  r_score: "289.0"
+  receiver: !binary |
+    5byg6ZSQ
+
+  description: 
+  edu_length: "3"
+  info_class_id: "2"
+  direction: 
+  h_score: "289.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_048: 
+  address: 
+  name: !binary |
+    5Luj6YeR546J
+
+  city: 
+  region: 
+  major_id: "7"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    6YGC5a6B5biC5aSn6Iux5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5aSn6Iux5Y6/6IKy5omN5Lit5a2mMjAwOOe6pzE154+t
+
+  school_name: !binary |
+    5aSn6Iux6IKy5omN5Lit5a2m
+
+  updated_at: 2009-07-21 13:44:35
+  post_code: "629300"
+  id_number: "510623198804166449"
+  can_number: 08510804130447
+  thumb: 
+  region_code: "510804"
+  id: "48"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510804111"
+  exa_number: 080400628
+  gra_type: "0"
+  birthday: 1988-04-16 00:00:00
+  phone: 
+  r_score: "320.0"
+  receiver: !binary |
+    5Luj6YeR546J
+
+  description: 
+  edu_length: "3"
+  info_class_id: "1"
+  direction: 
+  h_score: "320.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_103: 
+  address: 
+  name: !binary |
+    5pyx5ZCJ5Lic
+
+  city: 
+  region: 
+  major_id: "14"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    55yJ5bGx5biC5LuB5a+/5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5LuB5a+/5Y6/6bOM6Zm15Lmh6ZuG5Lit5LqU57uE
+
+  school_name: !binary |
+    5LuB5a+/5LqM6IGM5Lit
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "620566"
+  id_number: "513822199107219199"
+  can_number: 08511702604164
+  thumb: 
+  region_code: "511702"
+  id: "103"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "511702301"
+  exa_number: "170240813"
+  gra_type: "0"
+  birthday: 1991-07-21 00:00:00
+  phone: 
+  r_score: "493.0"
+  receiver: !binary |
+    5pyx5ZCJ5Lic
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "493.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_160: 
+  address: 
+  name: !binary |
+    5L6v55Cz
+
+  city: 
+  region: 
+  major_id: "18"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:15
+  post_code: "610072"
+  id_number: "513822199001027041"
+  can_number: 08510120520013
+  thumb: 
+  region_code: "510120"
+  id: "160"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1990-01-02 00:00:00
+  phone: 
+  r_score: "506.0"
+  receiver: !binary |
+    5L6v55Cz
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "506.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_132: 
+  address: 
+  name: !binary |
+    5ZC06Z2Z6Zuq
+
+  city: 
+  region: 
+  major_id: "15"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    5pSA5p6d6Iqx5biC5Lic5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5pSA5p6d6Iqx5biC56ys5Y2B5Zub5Lit5a2m5qCh
+
+  school_name: !binary |
+    5pSA5p6d6Iqx5biC56ys5Y2B5Zub5Lit5a2m5qCh
+
+  updated_at: 2009-07-15 13:21:15
+  post_code: "617063"
+  id_number: "510402198908265123"
+  can_number: 08510301606007
+  thumb: 
+  region_code: "510301"
+  id: "132"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510301125"
+  exa_number: "030140221"
+  gra_type: "0"
+  birthday: 1989-08-26 00:00:00
+  phone: 
+  r_score: "374.0"
+  receiver: !binary |
+    5ZC06Z2Z6Zuq
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "364.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_049: 
+  address: 
+  name: !binary |
+    5pu+6bKB5Li9
+
+  city: 
+  region: 
+  major_id: "8"
+  created_at: 2009-07-15 13:21:13
+  region_name: !binary |
+    5YaF5rGf5biC5Lic5YW05Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5YaF5rGf5biC5Lic5YW05Yy66YOt5YyX6ZWH5riF5rWB5YyX
+    6LevMTjlj7c=
+
+  school_name: !binary |
+    5YaF5rGf5Y2B5LiJ5Lit
+
+  updated_at: 2009-07-15 13:21:13
+  post_code: "641109"
+  id_number: "511011198812013269"
+  can_number: 08510902130267
+  thumb: 
+  region_code: "510902"
+  id: "49"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510902123"
+  exa_number: 090200522
+  gra_type: "0"
+  birthday: 1988-12-01 00:00:00
+  phone: 
+  r_score: "361.0"
+  receiver: !binary |
+    5pu+6bKB5Li9
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "361.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_104: 
+  address: 
+  name: !binary |
+    6ZmI5bCP6b6Z
+
+  city: 
+  region: 
+  major_id: "14"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    5Y2X5YWF5biC5Luq6ZmH5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5Luq6ZmH5Y6/5p+z5Z6t6ZWHMTHmnZE156S+
+
+  school_name: !binary |
+    5Luq6ZmH5Y6/5p+z5Z6t6IGM5Lia5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "637681"
+  id_number: "511324198810062057"
+  can_number: 08511108604055
+  thumb: 
+  region_code: "511108"
+  id: "104"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "511108303"
+  exa_number: "110840203"
+  gra_type: "0"
+  birthday: 1988-10-06 00:00:00
+  phone: 
+  r_score: "493.0"
+  receiver: !binary |
+    6ZmI5bCP6b6Z
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "493.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_077: 
+  address: 
+  name: !binary |
+    5YiY5aqa
+
+  city: 
+  region: 
+  major_id: "7"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    5be05Lit5biC5be05bee5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5be05Lit5biC5be05bee5Yy66Iy25Z2d6ZWH5Lmd5p2R5LiJ56S+
+
+  school_name: !binary |
+    5be05Lit5biC5be05bee5Yy66Iy25Z2d5Lit5a2m
+
+  updated_at: 2009-07-21 13:44:35
+  post_code: "636000"
+  id_number: "513701198903093927"
+  can_number: 08511501130937
+  thumb: 
+  region_code: "511501"
+  id: "77"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511501127"
+  exa_number: "150109204"
+  gra_type: "0"
+  birthday: 1989-03-09 00:00:00
+  phone: 
+  r_score: "328.0"
+  receiver: !binary |
+    5YiY5aqa
+
+  description: 
+  edu_length: "3"
+  info_class_id: "1"
+  direction: 
+  h_score: "328.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_161: 
+  address: 
+  name: !binary |
+    6ZmI6IqL56u5
+
+  city: 
+  region: 
+  major_id: "18"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    5oiQ6YO95biC6auY5paw5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5oiQ6YO95biC5aSn55+z6KW/6LevNTblj7fmiJDpg73ogYzkuJrmioDmnK/l
+    rabpmaLpnZLnvormoKHljLo=
+
+  school_name: !binary |
+    5oiQ6YO96IGM5Lia5oqA5pyv5a2m6Zmi
+
+  updated_at: 2009-07-15 13:21:15
+  post_code: "610072"
+  id_number: "510105198909111268"
+  can_number: 08510120520014
+  thumb: 
+  region_code: "510120"
+  id: "161"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "510120701"
+  exa_number: ""
+  gra_type: "0"
+  birthday: 1989-09-11 00:00:00
+  phone: 
+  r_score: "450.0"
+  receiver: !binary |
+    6ZmI6IqL56u5
+
+  description: 
+  edu_length: "2"
+  info_class_id: 
+  direction: 
+  h_score: "450.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_133: 
+  address: 
+  name: !binary |
+    5pa555u8
+
+  city: 
+  region: 
+  major_id: "11"
+  created_at: 2009-07-15 13:21:15
+  region_name: !binary |
+    55yJ5bGx5biC5b2t5bGx5Y6/
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5b2t5bGx5Y6/6IGM5Lia6auY5Lit
+
+  school_name: !binary |
+    5b2t5bGx5Y6/6IGM5Lit
+
+  updated_at: 2009-07-15 13:21:15
+  post_code: "620860"
+  id_number: "513823199001255825"
+  can_number: 08511703606028
+  thumb: 
+  region_code: "511703"
+  id: "133"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511703301"
+  exa_number: "170340319"
+  gra_type: "0"
+  birthday: 1990-01-25 00:00:00
+  phone: 
+  r_score: "373.0"
+  receiver: !binary |
+    5pa555u8
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "373.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_105: 
+  address: 
+  name: !binary |
+    5p2o5bqG
+
+  city: 
+  region: 
+  major_id: "12"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    5rO45bee5biC6b6Z6ams5r2t5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5rO45bee5biC6auY5Z2d5rO45YyW5Lit5a2m
+
+  school_name: !binary |
+    5rO45bee6b6Z6ams5r2t5rO45YyW5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "646003"
+  id_number: "510502198902236036"
+  can_number: 08510402610002
+  thumb: 
+  region_code: "510402"
+  id: "105"
+  entrance_date: 
+  gender: m
+  polity: "0"
+  school_code: "510402101"
+  exa_number: "040240421"
+  gra_type: "0"
+  birthday: 1989-02-23 00:00:00
+  phone: 
+  r_score: "491.0"
+  receiver: !binary |
+    5p2o5bqG
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "491.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 
+students_078: 
+  address: 
+  name: !binary |
+    6YKT5pmT6Iux
+
+  city: 
+  region: 
+  major_id: "8"
+  created_at: 2009-07-15 13:21:14
+  region_name: !binary |
+    5be05Lit5biC5be05bee5Yy6
+
+  confirm_date: 
+  stu_number: 
+  confirm: f
+  rec_addr: !binary |
+    5Zub5bed55yB5be05Lit5biC5be05bee5Yy66byO5bGx6ZWH5Yek5rqq5Lmh
+    5YWt5p2R5YWt56S+
+
+  school_name: !binary |
+    5be05Lit5biC5be05bee5Yy656ys5YWt5Lit5a2m
+
+  updated_at: 2009-07-15 13:21:14
+  post_code: "636000"
+  id_number: "513701198811302920"
+  can_number: 08511501131204
+  thumb: 
+  region_code: "511501"
+  id: "78"
+  entrance_date: 
+  gender: f
+  polity: "0"
+  school_code: "511501136"
+  exa_number: "150107020"
+  gra_type: "0"
+  birthday: 1988-11-30 00:00:00
+  phone: 
+  r_score: "306.0"
+  receiver: !binary |
+    6YKT5pmT6Iux
+
+  description: 
+  edu_length: "3"
+  info_class_id: 
+  direction: 
+  h_score: "306.0"
+  stu_type: "0"
+  nation: !binary |
+    5rGJ5peP
+
+  state: 
+  department_id: 

@@ -1,0 +1,161 @@
+--- 
+majors_020: 
+  name: !binary |
+    5ZWG5Yqh6Iux6K+t
+
+  created_at: 2009-07-15 13:09:33
+  updated_at: 2009-07-16 05:46:23
+  id: "20"
+  department_id: "7"
+majors_009: 
+  name: !binary |
+    5Lq654mp5b2i6LGh6K6+6K6h
+
+  created_at: 2009-07-15 13:09:31
+  updated_at: 2009-07-16 05:48:18
+  id: "9"
+  department_id: "6"
+majors_010: 
+  name: !binary |
+    5Yqo5ryr6K6+6K6h5LiO5Yi25L2c
+
+  created_at: 2009-07-15 13:09:32
+  updated_at: 2009-07-16 05:48:26
+  id: "10"
+  department_id: "6"
+majors_011: 
+  name: !binary |
+    5a+85ri4
+
+  created_at: 2009-07-15 13:09:32
+  updated_at: 2009-07-16 05:47:26
+  id: "11"
+  department_id: "5"
+majors_012: 
+  name: !binary |
+    6K6h566X5py65bqU55So5oqA5pyv
+
+  created_at: 2009-07-15 13:09:33
+  updated_at: 2009-07-16 05:47:18
+  id: "12"
+  department_id: "4"
+majors_001: 
+  name: !binary |
+    6K6h566X5py656eR5a2m5LiO5oqA5pyv
+
+  created_at: 2009-07-10 08:18:26
+  updated_at: 2009-07-10 08:18:26
+  id: "1"
+  department_id: "4"
+majors_013: 
+  name: !binary |
+    6YeR6J6N5LiO6K+B5Yi4
+
+  created_at: 2009-07-15 13:09:33
+  updated_at: 2009-07-16 05:47:11
+  id: "13"
+  department_id: "5"
+majors_002: 
+  name: !binary |
+    5L+h5oGv566h55CG
+
+  created_at: 2009-07-10 08:18:34
+  updated_at: 2009-07-10 08:18:34
+  id: "2"
+  department_id: "4"
+majors_014: 
+  name: !binary |
+    5bqU55So55S15a2Q5oqA5pyv
+
+  created_at: 2009-07-15 13:09:33
+  updated_at: 2009-07-16 05:47:05
+  id: "14"
+  department_id: "4"
+majors_003: 
+  name: !binary |
+    55S15a2Q5L+h5oGv5oqA5pyv
+
+  created_at: 2009-07-10 08:18:59
+  updated_at: 2009-07-10 08:18:59
+  id: "3"
+  department_id: "4"
+majors_015: 
+  name: !binary |
+    6YWS5bqX566h55CG
+
+  created_at: 2009-07-15 13:09:33
+  updated_at: 2009-07-16 05:46:56
+  id: "15"
+  department_id: "5"
+majors_004: 
+  name: !binary |
+    5biC5Zy66JCl6ZSA
+
+  created_at: 2009-07-10 08:19:28
+  updated_at: 2009-07-10 08:19:28
+  id: "4"
+  department_id: "5"
+majors_016: 
+  name: !binary |
+    55S15a2Q5ZWG5Yqh
+
+  created_at: 2009-07-15 13:09:33
+  updated_at: 2009-07-16 05:46:51
+  id: "16"
+  department_id: "5"
+majors_005: 
+  name: !binary |
+    57uP5rWO566h55CG5LiT5LiaMQ==
+
+  created_at: 2009-07-10 08:20:32
+  updated_at: 2009-07-10 08:20:32
+  id: "5"
+  department_id: "5"
+majors_017: 
+  name: !binary |
+    5peF5ri4566h55CG
+
+  created_at: 2009-07-15 13:09:33
+  updated_at: 2009-07-16 05:46:44
+  id: "17"
+  department_id: "5"
+majors_006: 
+  name: !binary |
+    57uP5rWO566h55CG5LiT5LiaMg==
+
+  created_at: 2009-07-10 08:20:43
+  updated_at: 2009-07-10 08:20:43
+  id: "6"
+  department_id: "5"
+majors_018: 
+  name: !binary |
+    57uP5rWO5L+h5oGv566h55CG
+
+  created_at: 2009-07-15 13:09:33
+  updated_at: 2009-07-16 05:46:38
+  id: "18"
+  department_id: "5"
+majors_007: 
+  name: !binary |
+    5a2m5YmN5pWZ6IKyKOW5vOWEv+iJuuacr+aVmeiCsik=
+
+  created_at: 2009-07-15 13:09:31
+  updated_at: 2009-07-16 05:48:32
+  id: "7"
+  department_id: "6"
+majors_019: 
+  name: !binary |
+    6K6h566X5py6572R57uc5oqA5pyv
+
+  created_at: 2009-07-15 13:09:33
+  updated_at: 2009-07-16 05:46:29
+  id: "19"
+  department_id: "4"
+majors_008: 
+  name: !binary |
+    6Im65pyv6K6+6K6hKOW5s+mdouiuvuiuoSk=
+
+  created_at: 2009-07-15 13:09:31
+  updated_at: 2009-07-16 05:48:13
+  id: "8"
+  department_id: "6"

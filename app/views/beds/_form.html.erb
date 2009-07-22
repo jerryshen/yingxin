@@ -1,0 +1,10 @@
+<%= f.error_messages %>
+<p>
+  <%= f.label :name, "床位号" %>
+  <%= f.text_field :name, :class => "required" %>
+</p>
+<%= select_room "bed[room_id]"  %>
+<p>
+  <%= f.label :student_id, "学生" %>
+  <%= f.select :student_id, Student.all.collect {|p| [ p.name, p.id ] }, {:include_blank => "请选择学生..." } %>
+</p>

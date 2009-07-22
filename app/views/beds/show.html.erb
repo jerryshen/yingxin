@@ -1,0 +1,25 @@
+<fieldset>
+  <legend>查看床位</legend>
+  <p>
+    <b>楼号:</b>
+    <%=h @bed.room.building.name %>
+  </p>
+
+  <p>
+    <b>宿舍:</b>
+    <%=h @bed.room.name %>
+  </p>
+
+  <p>
+    <b>床位:</b>
+    <%=h @bed.name %>
+  </p>
+
+  <p>
+    <b>学生:</b>
+    <%=h @bed.student.name %>
+  </p>
+  <p class="bbar">
+    <input type="button" onclick="$page.showListView()" value="返回列表" />
+  </p>
+</fieldset>

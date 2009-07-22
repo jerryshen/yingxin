@@ -7,7 +7,7 @@
 <div id="list-view">
   <form style="margin: 10px 0px;" id="search_form">
     <label for="search_name">
-      名称：
+      床位：
     </label>
     <input type="text" value="" name="search_name" id="search_name"/>
     <input class="button" type="button" id="btnSearch" value="搜索"/>
@@ -16,7 +16,7 @@
   </form>
   <div>
     <div class="nav">
-      <span class="button" id="newItem" onclick="$page.showNewView()"><img  src="/images/icons/new.png"/>新建</span>
+      <span class="button" id="newItem" onclick="$page.showNewView()"><img  src="/images/icons/new.png"/>添加床位</span>
     </div>
     <div id="grid-wrap">
     </div>
@@ -43,26 +43,22 @@
         type: "int",
         resizable: false
       }, {
-        header: "宿舍大楼",
-        dataIndex: 'building_id',
-        sortable: true
-      }, {
-        header: "宿舍号",
+        header: "床位",
         dataIndex: 'name',
         sortable: true
       }, {
-        header: "床位数量",
-        dataIndex: 'beds',
+        header: "宿舍",
+        dataIndex: 'room_id',
         sortable: true
       }, {
-        header: "电话",
-        dataIndex: 'phone',
+        header: "学生",
+        dataIndex: 'student_id',
         sortable: true
       }]
-    var controllerName = "room_students";
+    var controllerName = "beds";
     options = {
       baseUrl: "http://" + window.location.host + "/" + controllerName,
-      gridTitle: "系部管理列表",
+      gridTitle: "床位管理列表",
       newItemLink: "newItem",
       columns: columns
     }

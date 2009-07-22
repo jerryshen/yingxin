@@ -1,9 +1,9 @@
-<% form_for(@room_student) do |f| %>
+<% form_for(@bed) do |f| %>
   <fieldset>
-    <legend>修改新生宿舍分配</legend>
+    <legend>分配床位</legend>
     <%= render :partial => 'form', :locals => { :f => f }  %>
     <p class="bbar">
-      <%= f.submit '保存' %>
+      <%= f.submit '更新' %>
       <input type="button" onclick="$page.showListView()" value="取消" />
     </p>
   </fieldset>

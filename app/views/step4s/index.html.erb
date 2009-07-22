@@ -14,7 +14,6 @@
 <%= javascript_include_tag 'AjaxForm.js' %>
 <div id="list-view">
   <form style="margin: 10px 0px;" id="search_form">
-    <%= page_info  %>
     <%= index_select_class  %>
     <input class="button" type="button" id="btnSearch" value="搜索"/>
     <input value="重置"class="btnreset" type="reset" />
@@ -30,27 +29,7 @@
   var getStudentName = function(value){
     return students[value]
   }
-
-  var numbers = <%= Student.get_number %>
-  var getNumber = function(value){
-    return numbers[value]
-  }
-
-  var departments = <%= Department.to_json %>
-  var getDepartmentName = function(value){
-    return departments[value]
-  }
-
-  var majors = <%= Major.to_json %>
-  var getMajorName = function(value){
-    return majors[value]
-  }
-
-  var classes = <%= InfoClass.to_json %>
-  var getClassName = function(value){
-    return classes[value]
-  }
-
+  
   var makeAsPassLink = function(value, p, record){
     var text = value.toString()=="true" ? "<div class='grid-text-true'></div>" : "<div class='grid-text-false'></div>";
     return String.format("<a href='#' action ='pass' title='Pass' class='gridButton' url='/step4s/pass/{0}'>{1}</a>",record.data.id,text);

@@ -14,7 +14,6 @@
 <%= javascript_include_tag 'AjaxForm.js' %>
 <div id="list-view">
   <form style="margin: 10px 0px;" id="search_form">
-    <%= page_info  %>
     <% unless @current_user.department.majors %>
       <%= index_select_info_class  %>
     <% end %>
@@ -31,26 +30,6 @@
   var students = <%= Student.to_json%>
   var getStudentName = function(value){
     return students[value]
-  }
-
-  var numbers = <%= Student.get_number %>
-  var getNumber = function(value){
-    return numbers[value]
-  }
-
-  var departments = <%= Department.to_json %>
-  var getDepartmentName = function(value){
-    return departments[value]
-  }
-
-  var majors = <%= Major.to_json %>
-  var getMajorName = function(value){
-    return majors[value]
-  }
-
-  var classes = <%= InfoClass.to_json %>
-  var getClassName = function(value){
-    return classes[value]
   }
 
   var makeAsPassLink = function(value, p, record){

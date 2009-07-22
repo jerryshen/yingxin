@@ -31,26 +31,6 @@
     return students[value]
   }
 
-  var numbers = <%= Student.get_number %>
-  var getNumber = function(value){
-    return numbers[value]
-  }
-
-  var departments = <%= Department.to_json %>
-  var getDepartmentName = function(value){
-    return departments[value]
-  }
-
-  var majors = <%= Major.to_json %>
-  var getMajorName = function(value){
-    return majors[value]
-  }
-
-  var classes = <%= InfoClass.to_json %>
-  var getClassName = function(value){
-    return classes[value]
-  }
-
   var makeAsPassLink = function(value, p, record){
     var text = value.toString()=="true" ? "<div class='grid-text-true'></div>" : "<div class='grid-text-false'></div>";
     return String.format("<a href='#' action ='pass' title='Pass' class='gridButton' url='/step6s/pass/{0}'>{1}</a>",record.data.id,text);

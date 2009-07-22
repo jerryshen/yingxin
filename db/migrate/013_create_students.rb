@@ -33,6 +33,9 @@ class CreateStudents < ActiveRecord::Migration
       t.string     :receiver     #收件人
       t.text       :description  #备注
       t.string     :thumb        #照片
+      t.string     :phone
+      t.boolean    :confirm, :default => false
+      t.datetime   :confirm_date
 
       t.timestamps
     end

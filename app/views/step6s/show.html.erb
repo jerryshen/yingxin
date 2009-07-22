@@ -11,11 +11,11 @@
   </p>
   <p>
     <b>是否完成:</b>
-    <%=h proc_format(@step6.pass) %>
+    <%=h proc_format(@step6.step6) %>
   </p>
   <p>
     <b>完成时间:</b>
-    <%=h fuzzy_time(@step6.date) if @step6.date%>
+    <%=h fuzzy_time(@step6.step_date) if @step6.step6_date%>
   </p>
   <p class="bbar">
     <input type="button" onclick="$page.showListView()" value="返回列表" />

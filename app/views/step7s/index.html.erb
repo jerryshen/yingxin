@@ -14,7 +14,6 @@
 <%= javascript_include_tag 'AjaxForm.js' %>
 <div id="list-view">
   <form style="margin: 10px 0px;" id="search_form">
-    <%= page_info  %>
     <%= index_select_class  %>
     <input class="button" type="button" id="btnSearch" value="搜索"/>
     <input value="重置"class="btnreset" type="reset" />
@@ -66,35 +65,19 @@
         type: "int",
         resizable: false
       }, {
-        header: "院系",
-        dataIndex: 'department_id',
-        renderer: getDepartmentName
-      }, {
-        header: "专业",
-        dataIndex: 'major_id',
-        renderer: getMajorName
-      }, {
-        header: "班级",
-        dataIndex: 'info_class_id',
-        renderer: getClassName
-      }, {
-        header: "学号",
-        dataIndex: 'stu_number',
-        renderer: getNumber
-      }, {
         header: "姓名",
         dataIndex: 'student_id',
         sortable: true,
         renderer: getStudentName
       }, {
         header: "公寓入住",
-        dataIndex: 'pass',
+        dataIndex: 'step7',
         type: 'boolean',
         sortable: true,
         renderer: makeAsPassLink
       }, {
         header: "入住时间",
-        dataIndex: 'date',
+        dataIndex: 'step7_date',
         sortable: true
       }]
     var controllerName = "step7s";

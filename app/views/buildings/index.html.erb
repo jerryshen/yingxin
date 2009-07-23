@@ -1,60 +1,189 @@
 <link href="/javascripts/ext-2.2.1/resources/css/ext-all.css" media="screen" rel="stylesheet" type="text/css" />
 <link href="/stylesheets/grid.css" media="screen" rel="stylesheet" type="text/css" />
 <% unless @current_user.theme.nil? %>
-  <link id="theme" href="/javascripts/ext-2.2.1/resources/css/<%= h @current_user.theme %>.css" media="screen" rel="stylesheet" type="text/css" />
+<link id="theme" href="/javascripts/ext-2.2.1/resources/css/<%= h @current_user.theme %>.css" media="screen" rel="stylesheet" type="text/css" />
 <% end %>
 <%= stylesheet_link_tag "form.css" %>
 <div id="list-view">
-  <form style="margin: 10px 0px;" id="search_form">
-    <label for="search_name">
-      大楼：
-    </label>
-    <input type="text" value="" name="search_name" id="search_name"/>
-    <input class="button" type="button" id="btnSearch" value="搜索"/>
-    <input value="重置"class="btnreset" type="reset" />
-    <input value="刷新 " onclick="window.location.reload()" class="btnrefresh" type="button"  />
-  </form>
-  <div>
-    <div class="nav">
-      <span class="button" id="newItem" onclick="$page.showNewView()"><img  src="/images/icons/new.png"/>添加宿舍楼</span>
+    <form style="margin: 10px 0px;" id="search_form">
+        <label for="search_name">
+            名称：
+        </label>
+        <input type="text" value="" name="search_name" id="search_name"/><input class="button" type="button" id="btnSearch" value="搜索"/><input value="重置"class="btnreset" type="reset" /><input value="刷新 " onclick="window.location.reload()" class="btnrefresh" type="button" />
+    </form>
+    <div>
+        <div class="nav">
+            <span class="button" id="newItem" onclick="$page.showNewView()"><img src="/images/icons/new.png"/>添加宿舍楼</span>
+        </div>
+        <div id="grid-wrap">
+        </div>
     </div>
-    <div id="grid-wrap">
-    </div>
-  </div>
 </div>
-<%= javascript_include_tag 'ext-2.2.1/adapter/jquery/jquery.js'%>
-<%= javascript_include_tag 'ext-2.2.1/adapter/jquery/ext-jquery-adapter.js'%>
-<%= javascript_include_tag 'ext-2.2.1/ext-all.js'%>
+<%= javascript_include_tag 'ext-2.2.1/adapter/jquery/jquery.js' %>
+<%= javascript_include_tag 'ext-2.2.1/adapter/jquery/ext-jquery-adapter.js' %>
+<%= javascript_include_tag 'ext-2.2.1/ext-all.js' %>
 <%= javascript_include_tag 'ExtListPage.js' %>
 <%= javascript_include_tag 'jquery-validate/lib/jquery.form.js' %>
 <%= javascript_include_tag 'jquery-validate/jquery.validate.js' %>
 <%= javascript_include_tag 'jquery-validate/localization/messages_cn.js' %>
 <%= javascript_include_tag 'AjaxForm.js' %>
 <script>
-  //{header: [dataIndex(首字母大写)], renderer: money(Function),menuDisabled: [true],
-  // dataIndex: "fieldName" ,width: 100, sortable: [false], resizable: [false]}
-  //框[]中的为默认值
-  Ext.onReady(function(){
-    var columns = [{
-        header: "ID",
-        dataIndex: 'id',
-        width: 30,
-        sortable: true,
-        type: "int",
-        resizable: false
-      }, {
-        header: "楼号",
-        dataIndex: 'name',
-        width: 200,
-        sortable: true
-      }]
-    var controllerName = "buildings";
-    options = {
-      baseUrl: "http://" + window.location.host + "/" + controllerName,
-      gridTitle: "系部管理列表",
-      newItemLink: "newItem",
-      columns: columns
+    //{header: [dataIndex(首字母大写)], renderer: money(Function),menuDisabled: [true],
+    // dataIndex: "fieldName" ,width: 100, sortable: [false], resizable: [false]}
+    //框[]中的为默认值
+    Ext.onReady(function(){
+        var columns = [{
+            header: "ID",
+            dataIndex: 'id',
+            width: 30,
+            sortable: true,
+            type: "int",
+            resizable: false
+        }, {
+            header: "楼号",
+            dataIndex: 'name',
+            width: 200,
+            sortable: true
+        }]
+        var controllerName = "buildings";
+        options = {
+            baseUrl: "http://" + window.location.host + "/" + controllerName,
+            gridTitle: "系部管理列表",
+            newItemLink: "newItem",
+            columns: columns,
+            oprateBarButtons: [function(value, p, record){
+                return String.format("&nbsp;&nbsp;&nbsp;<input type='button' action='gen_room' building_id='{0}'  class='gridButton' value=' 生成宿舍和床位 ' />", value)
+            }
+    ]        ,
+            bindlinks: {
+                "gen_room": function(a, listpage){
+                    var building_id = a.getAttribute("building_id");
+                    a.onclick = function(){
+                        open_gen_form(building_id);
+                    }
+                }
+            }
+        }
+        $page = new ExtListPage(options);
+    })
+    
+    function generate_rooms(building_id, floor_count, floor_room_count, bed_count, room_type){
+        var waitBox = Ext.Msg.show({
+            wait: true,
+            progress: true,
+            msg: '操作时间较长，请耐心等候...',
+            closeable: false
+        });
+        try {
+			$.getJSON("/genarate_room", {
+				building_id: building_id,
+				floor_count: floor_count,
+				room_count: floor_room_count,
+				bed_count: bed_count,
+				room_type: room_type
+			}, function(data){
+				waitBox.hide();
+				if (data && data.msg) {
+					alert(data.msg);
+				}
+				else {
+					alert("操作失败，请稍后重试！");
+				}
+			})
+		}catch(e){
+			waitBox.hide();
+		}
     }
-    $page = new ExtListPage(options);
-  })
+    
+    function open_gen_form(building_id){
+        var win = new Ext.Window({
+            layout: 'fit',
+            width: 260,
+            height: 190,
+            closeAction: 'close',
+            border: false,
+            title: "生成宿舍和床位",
+            items: [{
+                xtype: "form",
+                labelWidth: 70,
+                frame: true,
+                monitorValid: true,
+                listeners: {
+                    clientvalidation: function(formpanel, valid){
+                        Ext.getCmp("btn_generate_room").setDisabled(!valid);
+                    }
+                },
+                items: [{
+                    xtype: "numberfield",
+                    fieldLabel: "楼层数",
+                    name: "floot_count",
+                    id: "floor_count",
+                    minValue: "1",
+                    maxValue: "15",
+                    allowBlank: false,
+                    allowDecimals: false,
+                    emptyText: "输入1..15之间的数值"
+                }, {
+                    xtype: "numberfield",
+                    fieldLabel: "每层宿舍数",
+                    name: "room_count",
+                    id: "room_count",
+                    minValue: "1",
+                    maxValue: "50",
+                    allowBlank: false,
+                    allowDecimals: false,
+                    emptyText: "输入1..50之间的数值"
+                }, {
+                    xtype: 'radiogroup',
+                    fieldLabel: '入住学生',
+                    items: [{
+                        boxLabel: '男生',
+                        name: 'room_type',
+                        inputValue: 0,
+                        checked: true
+                    }, {
+                        boxLabel: '女生',
+                        name: 'room_type',
+                        inputValue: 1
+                    }]
+                }, {
+                    xtype: 'radiogroup',
+                    fieldLabel: '床位数',
+                    items: [{
+                        boxLabel: '4个',
+                        name: 'bed_count',
+                        inputValue: 4,
+                        checked: true
+                    }, {
+                        boxLabel: '6个',
+                        name: 'bed_count',
+                        inputValue: 6
+                    }]
+                }],
+                buttons: [{
+                    id: "btn_generate_room",
+                    text: '生成',
+                    disabled: true,
+                    listeners: {
+                        click: function(button, event){
+                            var f_count = Ext.getCmp("floor_count").getValue();
+                            var r_count = Ext.getCmp("room_count").getValue();
+                            var bed_count_els = document.getElementsByName("bed_count");
+                            var bed_count = bed_count_els[0].checked ? 4 : 6;
+                            var room_type_els = document.getElementsByName("room_type");
+                            var room_type = room_type_els[0].checked ? 0 : 1;
+                            win.close();
+                            generate_rooms(building_id, f_count, r_count, bed_count, room_type);
+                        }
+                    }
+                }, {
+                    text: '取消',
+                    handler: function(){
+                        win.close();
+                    }
+                }]
+            }]
+        });
+        win.show();
+    }
 </script>

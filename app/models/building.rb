@@ -24,4 +24,26 @@ class Building < ActiveRecord::Base
     end
     return hash.to_json
   end
+  
+  #生成宿舍和床位
+  def genarate_room(floor_count, per_floor_room_count, room_type, bed_count)
+    gen_count = 0
+    floor_count.times do |f_no|
+      per_floor_room_count.times do |r_no|
+        begin
+          room = self.rooms.new
+          room.name = "#{f_no + 1}#{(r_no + 1) < 10 ? "0" : ""}#{r_no + 1}"
+          room.room_type = room_type
+          room.bed_count = bed_count
+          if room.save
+            gen_count += 1
+            room.genarate_bed
+          end
+        rescue => error
+          puts error
+        end
+      end
+    end
+    return gen_count
+  end  
 end

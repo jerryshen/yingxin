@@ -9,7 +9,7 @@
 	</tr>
 	<tr>
 		<td class="header"><label>类别：</label></td>
-		<td><span><%= @room.room_type ? "男生宿舍" : "女生宿舍" %></span></td>
+		<td><span><%= @room.room_type == 0 ? "男生宿舍" : "女生宿舍" %></span></td>
 		<td class="header"><label>电话：</label></td>
 		<td><span><%= @room.phone %></span></td>			
 	</tr>

@@ -43,7 +43,7 @@ class BedAssigningController < ApplicationController
       unless @room.nil?
         @beds = Array.new(@room.bed_count)
         @room.beds.each do |bed|
-          @beds[bed.name.to_i - 1] = bed
+          @beds[bed.number - 1] = bed
         end
         render :layout => false
       else

@@ -49,7 +49,7 @@ class ComplexesController < ApplicationController
 
     if(!params[:search_polity].blank?)
       conditions += " AND polity = ? "
-      condition_values << params[:search_poplity]
+      condition_values << params[:search_polity]
     end
 
     if(!params[:search_nation].blank?)
@@ -68,7 +68,7 @@ class ComplexesController < ApplicationController
     end
 
     if(!params[:search][:state])
-      conditions += " AND stat = ? "
+      conditions += " AND state = ? "
       condition_values << params[:search][:state]
     end
 

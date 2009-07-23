@@ -1,10 +1,236 @@
-<fieldset>
-  <legend>查看[<%= @student.name  %>的档案</legend>
-  <p>
-    <b>姓名:</b>
-    <%=h @student.name %>
-  </p>
-  <p class="bbar">
-    <input type="button" onclick="$page.showListView()" value="返回列表" />
-  </p>
-</fieldset>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <title>新生档案</title>
+
+  </head>
+  <body bgcolor="#FFFFFF">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+      <head>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
+      </head>
+      <body>
+        <style>
+          html,body {
+            margin:0px;
+            padding:0px;
+            height:100%;
+          }
+          form,ul,li,p,h1,h2,h3,h4,h5,h6{
+            margin:0;padding:0;
+          }
+          img{
+            border:0;
+          }
+          ul,li{
+            list-style-type:none;
+          }
+          #c_content{
+            font-size:12px;
+            line-height:1.5em;
+            font-family:"Arial";
+            color:#333333;
+          }
+          .dotline{
+            background:url(/images/stu/dotline.gif) repeat-x;
+            background-position:bottom;
+          }
+          .height5{height:5px}
+          .weight60{width:60px}
+          .weight110{width:110px}
+          .weight120{width:120px}
+          .weight180{width:180px}
+          .weight190{width:190px}
+          .weight220{width:220px}
+          .padding10{padding-right:10px}
+          .v2{
+            width:778px;
+          }
+          .v2_top{
+            background:url(/images/stu/v2_top.gif) no-repeat;
+            height:83px;
+            line-height:100px;
+            font-size:14px;
+            font-weight:bold;
+            text-align:left;
+            padding:18px 0 0 42px;
+            margin:0 0 -1px 0;
+            color:#FFFFFF;
+          }
+          *html .v2_top{
+            background:url(/images/stu/v2_top.gif) no-repeat;
+            height:83px;
+            line-height:100px;
+            font-size:14px;
+            font-weight:bold;
+            text-align:left;
+            padding:18px 0 0 42px;
+            margin:0 0 -18px 0;
+            color:#FFFFFF;
+          }
+          .v2_middle{
+            background:#fff;
+            overflow:hidden;
+            -height:1%;
+            border-left:#92B0EC solid 1px;
+            border-right:#92B0EC solid 1px;
+            border-bottom:#92B0EC solid 1px;
+
+          }
+          .v2_t{
+            background:url(/images/stu/v2_bar.gif) no-repeat;
+            width:734px;
+            height:37px;
+            line-height:28px;
+            margin:0 0 10px 20px;
+            padding:0;
+            font-weight:bold;
+            font-size:12px;
+            font-family:"Arial";
+            color:#333333;
+            background-color:#92B0EC;
+          }
+          .v2_t td{
+            height:37px;
+            line-height:28px;
+            font-weight:bold;
+            font-size:12px;
+            font-family:"Arial";
+            color:#333333;
+          }
+          .v_table02{
+            width:700px;
+            line-height:22px;
+            margin:0 0 15px 40px;
+            padding:0px;
+            text-align:left;
+            font-size:12px;
+            font-family:"Arial";
+            color:#333333;
+          }
+        </style>
+        <table width="778" border="0" cellpadding="0" align="center">
+          <tr>
+            <td>
+              <div id="c_content" style="font-size:12px;line-height:1.5em;font-family:Arial;">
+
+              <div class="v2">
+                <div style="font-size:14px;font-weight:bold;text-align:left;" class="v2_top">新生档案</div>
+                <div class="v2_middle">
+                  <div style="width:734px;height:37px;line-height:28px;background-color:#92B0EC;font-weight:bold;" class="v2_t">
+                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                      <tr>
+                        <td width="6">&nbsp;</td>
+                        <td width="97" align="left">基本信息</td>
+
+                        <td width="631">&nbsp;</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <table border="0" cellspacing="0" cellpadding="0" style="width:700px;line-height:22px;" class="v_table02">
+                    <tr>
+                      <td style="width:110px" class="weight110" valign="top">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</td>
+                      <td style="width:190px" class="weight190" valign="top"><%=h @student.name  %></td>
+
+                      <td style="width:110px" class="weight110" valign="top">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：</td>
+                      <td style="width:190px" class="weight190" valign="top"><%=h fuzzy_gender(@student.gender)  %>
+
+                      </td>
+                      <td rowspan="7" style="width:110px" class="weight110" valign="top">
+                        <img src="/uploads/thumbs/<%= @student.thumb  %>" width="90" height="110"/>
+                      </td>
+                    </tr>
+                    <tr>
+
+                      <td valign="top">民&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;族：</td>
+                      <td valign="top"><%=h @student.nation %></td>
+                      <td valign="top">考&nbsp;&nbsp;生&nbsp;&nbsp;号：</td>
+                      <td valign="top"><%=h @student.can_number %>
+                      </td>
+                    </tr>
+                    <tr>
+
+                      <td valign="top">准考证号：</td>
+                      <td valign="top"><%=h @student.exa_number %></td>
+                      <td valign="top">学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号：</td>
+                      <td valign="top"><%=h @student.stu_number %>
+                      </td>
+                    </tr>
+                    <tr>
+
+                      <td valign="top">高考成绩：</td>
+                      <td valign="top"><%= @student.h_score  %>
+                      </td>
+                      <td valign="top">投标成绩：</td>
+                      <td valign="top"><%= @student.h_score  %></td>
+                    </tr>
+                    <tr>
+                      <td valign="top">政治面貌：</td>
+                      <td valign="top"><%=h @student.polity  %></td>
+                      <td valign="top">院&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;系：</td>
+                      <td valign="top"><%=h @student.department.name if @student.department  %></td>
+                    </tr>
+                    <tr>
+                      <td valign="top">专&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;业：</td>
+                      <td valign="top"><%=h @student.major.name if @student.major %>
+                      <td valign="top">班&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;级：</td>
+                      <td valign="top"><%=h @student.info_class.name if @student.info_class %>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td valign="top">地区名称：</td>
+                      <td valign="top"><%=h @student.region_name  %>
+                      <td valign="top">身份证号：</td>
+                      <td valign="top"><%=h @student.id_number %>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td valign="top">教育方向：</td>
+                      <td valign="top"><%=h @student.direction %>
+                      <td valign="top">入学时间：</td>
+                      <td valign="top"><%=h @student.entrance_date %>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td valign="top">学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;制：</td>
+                      <td valign="top"><%=h @student.edu_length %>
+                      <td valign="top">职业学校：</td>
+                      <td valign="top"><%=h @student.school_name %>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td valign="top">出生年月：</td>
+                      <td valign="top"><%=h @student.birthday %>
+                      <td valign="top">生&nbsp;&nbsp;源&nbsp;&nbsp;地：</td>
+                      <td valign="top"><%=h @student.state  %><%=h @student.city  %>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td valign="top">邮政编码：</td>
+                      <td valign="top"><%=h @student.post_code  %>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td valign="top">联系地址：</td>
+                      <td colspan="4" valign="top"><%=h @student.address %>
+                      </td>
+                    </tr>
+
+                  </table>
+
+                </div>
+                <div class="v2_down"/>
+                </div>
+              </div>
+            </td>
+            <p class="bbar">
+              <input type="button" onclick="$page.showListView()" value="返回列表" />
+            </p>
+          </tr>
+        </table>
+      </body>
+    </html>
+  </body>
+</html>

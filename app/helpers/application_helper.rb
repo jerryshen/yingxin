@@ -155,7 +155,7 @@ module ApplicationHelper
   def index_select_class
     options = Department.find(:all, :conditions => ["de_type=?",true]).collect{|x| "<option value='#{x.id}' >#{x.name}</option>"}.join('')
     html = %q{
-        <p><label for="select_department_id">院系</label>
+        <label for="select_department_id">院系</label>
         <select id="select_department_id" name="department_id" style="margin:0px;padding:0px;float:none;">
           <option value='' >请选择院系...</option>
           <options>
@@ -168,7 +168,7 @@ module ApplicationHelper
         <select id="select_class_id" disabled="disabled" name="class_id" style="margin:0px;padding:0px;float:none;">
           <option value='' >请选择班级...</option>
         </select>
-</p>
+
       <script>
         jQuery("#select_department_id").bind("change",function(){
           var v = this.value;

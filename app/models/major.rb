@@ -20,4 +20,5 @@ class Major < ActiveRecord::Base
     end
     return hash.to_json
   end
+  
 end

@@ -31,6 +31,15 @@
 <%= javascript_include_tag 'jquery-validate/localization/messages_cn.js' %>
 <%= javascript_include_tag 'AjaxForm.js' %>
 <script>
+  var buildings = <%= Building.to_json%>
+  var getBuildingName = function(value){
+    return buildings[value]
+  }
+
+  var students = <%= Student.to_json%>
+  var getStuName = function(value){
+    return students[value]
+  }
   //{header: [dataIndex(首字母大写)], renderer: money(Function),menuDisabled: [true],
   // dataIndex: "fieldName" ,width: 100, sortable: [false], resizable: [false]}
   //框[]中的为默认值
@@ -45,14 +54,20 @@
       }, {
         header: "宿舍大楼",
         dataIndex: 'building_id',
-        sortable: true
+        sortable: true,
+        renderer: getBuildingName
       }, {
         header: "宿舍号",
         dataIndex: 'name',
         sortable: true
+      },{
+        header: "宿舍长",
+        dataIndex: 'student_id',
+        sortable: true,
+        renderer: getStuName
       }, {
         header: "床位数量",
-        dataIndex: 'beds',
+        dataIndex: 'bed_count',
         sortable: true
       }, {
         header: "电话",

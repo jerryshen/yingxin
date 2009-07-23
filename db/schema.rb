@@ -44,9 +44,9 @@ ActiveRecord::Schema.define(:version => 27) do
 
   create_table "fee_stds", :force => true do |t|
     t.integer  "major_id"
-    t.float    "fee1"
-    t.float    "fee2"
-    t.float    "fee3"
+    t.float    "fee1",       :default => 0.0
+    t.float    "fee2",       :default => 0.0
+    t.float    "fee3",       :default => 0.0
     t.float    "other",      :default => 0.0
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -105,6 +105,7 @@ ActiveRecord::Schema.define(:version => 27) do
 
   create_table "proces", :force => true do |t|
     t.integer  "student_id"
+    t.integer  "major_id"
     t.boolean  "step1",      :default => false
     t.boolean  "step2",      :default => false
     t.boolean  "step3",      :default => false
@@ -123,6 +124,7 @@ ActiveRecord::Schema.define(:version => 27) do
     t.datetime "updated_at"
   end
 
+  add_index "proces", ["major_id"], :name => "index_proces_on_major_id"
   add_index "proces", ["student_id"], :name => "index_proces_on_student_id"
 
   create_table "role_users", :force => true do |t|

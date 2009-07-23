@@ -23,6 +23,12 @@ page_roles_009:
   page_id: "9"
   role_id: "1"
   id: "9"
+page_roles_033: 
+  created_at: 2009-07-23 01:44:59
+  updated_at: 2009-07-23 01:44:59
+  page_id: "33"
+  role_id: "1"
+  id: "33"
 page_roles_022: 
   created_at: 2009-07-12 08:31:31
   updated_at: 2009-07-12 08:31:31

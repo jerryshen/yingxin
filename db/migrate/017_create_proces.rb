@@ -2,6 +2,7 @@ class CreateProces < ActiveRecord::Migration
   def self.up
     create_table :proces do |t|
       t.references :student
+      t.references :major
       t.boolean :step1, :default => false
       t.boolean :step2, :default => false
       t.boolean :step3, :default => false
@@ -19,6 +20,7 @@ class CreateProces < ActiveRecord::Migration
       t.timestamps
     end
     add_index :proces, :student_id
+    add_index :proces, :major_id
   end
 
   def self.down

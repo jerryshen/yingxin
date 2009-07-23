@@ -61,6 +61,7 @@ class TipsController < ApplicationController
   # PUT /tips/1.xml
   def update
     @tip = Tip.find(params[:id])
+    @tip.user_id = @current_user.id
 
     respond_to do |format|
       if @tip.update_attributes(params[:tip])

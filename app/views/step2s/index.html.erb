@@ -25,9 +25,14 @@
   </div>
 </div>
 <script>
-  var students = <%= Student.to_json%>
+  var students = <%= Student.to_json %>
   var getStudentName = function(value){
     return students[value]
+  }
+
+  var fees = <%= FeeStd.to_json %>
+  var getMajorFee = function(value){
+    return fees[value]
   }
 
   var makeAsPassLink = function(value, p, record){
@@ -69,6 +74,11 @@
         dataIndex: 'student_id',
         sortable: true,
         renderer: getStudentName
+      }, {
+        header: "应缴费用",
+        dataIndex: 'major_id',
+        sortable: true,
+        renderer: getMajorFee
       }, {
         header: "缴费情况",
         dataIndex: 'step2',

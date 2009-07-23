@@ -94,10 +94,10 @@ pages_032:
     57u85ZCI5p+l6K+i
 
   created_at: 2009-07-21 14:01:25
-  updated_at: 2009-07-21 15:04:36
+  updated_at: 2009-07-22 08:05:20
   url: /complexes
   id: "32"
-  icon: ""
+  icon: search.png
   function: !binary |
     57u85ZCI5p+l6K+i
 
@@ -133,6 +133,21 @@ pages_010:
 
   index: 
   page_module_id: "4"
+  hidden: f
+pages_033: 
+  name: !binary |
+    5om56YeP5bqK5L2N5YiG6YWN
+
+  created_at: 2009-07-23 01:44:45
+  updated_at: 2009-07-23 01:44:45
+  url: /bed_assigning
+  id: "33"
+  icon: ""
+  function: !binary |
+    5om56YeP5bqK5L2N5YiG6YWN
+
+  index: 
+  page_module_id: "5"
   hidden: f
 pages_022: 
   name: !binary |
@@ -364,8 +379,8 @@ pages_016:
     5Y2V5Liq5bqK5L2N5YiG6YWN
 
   created_at: 2009-07-10 06:53:12
-  updated_at: 2009-07-12 13:20:49
-  url: /room_students
+  updated_at: 2009-07-22 08:05:36
+  url: /beds
   id: "16"
   icon: bed.png
   function: !binary |

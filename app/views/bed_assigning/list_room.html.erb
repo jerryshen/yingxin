@@ -1,10 +1,15 @@
 <table border="0" cellpadding="0" cellspacing="0">
-<% @floors.each_index do |i| %>
-	<tr>
-		<th><span><%= @floors.count - i %>楼</span></th>
-		<% @floors[i].each do |room| %>
-			<td><a room_id='<%= room.id %>' href="javascript:void(0)" ><%= room.name %></a></td>
-		<% end %>
-	</tr>
-<% end %>
+  <% @floors.each_index do |i| %>
+    <tr>
+      <th><span><%= @floors.length - i %>楼</span></th>
+      <% @floors[i].each do |room| %>
+        <td><a room_id='<%= room.id %>' href="javascript:void(0)" ><%= room.name %></a></td>
+      <% end %>
+    </tr>
+  <% end %>
 </table>
+<div id="summary">
+  <span id="view_summary"> *单击宿舍号，可查看和设置该宿舍的相关信息。</span>
+  <span id="sel_summary" style="display:none"> *单击宿舍号，选择或者取消选择该宿舍;
+    单击楼层，选择或者取消选择该楼层所有宿舍。</span>
+</div>

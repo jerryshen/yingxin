@@ -1,295 +1,349 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>宿舍安排</title>
-        <style>
-            .room_wrap {
-                width: 515px;
-                height: 115px;
-                padding: 15px 8px;
-                border: 1px solid black;
-            } .room_info caption {
-                text-decoration: underline;
-                text-align: left;
-                height: 25px;
-            } .room_info td {
-                width: 100px;
-                border: none;
-            } .room_info td.header {
-                width: 50px;
-                text-align: center;
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>宿舍安排</title>
+    <style>
+      .room_wrap {
+        width: 515px;
+        height: 115px;
+        padding: 15px 8px;
+        border: 1px solid black;
+      } .room_info caption {
+        text-decoration: underline;
+        text-align: left;
+        height: 25px;
+        font-weight: bold;
+        font-size: 15px;
+      } .room_info td {
+        width: 100px;
+        border: none;
+      } .room_info td.header {
+        width: 50px;
+        text-align: center;
+      }
+
+      table {
+        border-collapse: collapse;
+        table-layout: fixed;
+      }
+
+      td.on, th.on {
+        background-color: blue;
+        color: white;
+      }
+      td.on a{
+        color: white;
+      }
+      th{
+        width: 70px;
+        background-color: #FFFFCC;
+      }
+
+      td, th {
+        padding-top: 1px;
+        padding-right: 1px;
+        padding-left: 1px;
+        mso-ignore: padding;
+        color: black;
+        font-size: 11.0pt;
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: none;
+        font-family: 宋体;
+        mso-generic-font-family: auto;
+        mso-font-charset: 134;
+        mso-number-format: General;
+        text-align: general;
+        vertical-align: middle;
+        border-top: .5pt solid windowtext;
+        border-right: .5pt solid windowtext;
+        border-bottom: 1.0pt solid windowtext;
+        border-left: 1.0pt solid windowtext;
+        mso-background-source: auto;
+        mso-pattern: auto;
+        white-space: nowrap;
+      } #building_map {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      } #building_map td {
+        width: 50px;
+        text-align: center;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      a:visited, a:active {
+        color: black;
+      }
+
+      a:hover {
+        background-color: blue;
+        color: white;
+      } #beds td {
+        width: 70px;
+        text-align: center;
+      } #beds {
+        margin-top: 10px;
+      }
+
+      ul.fieldList{
+        list-style-type: none;
+        padding: 0;
+        margin-left: 10px;
+      }
+
+      ul.fieldList li{
+        margin-bottom: 10px;
+        display: block;
+        height: 20px;
+      }
+
+      ul.fieldList li *{
+        display: block;
+        float: left;
+      }
+
+      ul.fieldList li br{
+        float: none;
+        display: auto;
+      }
+
+      form{
+        margin-top: 20px;
+        width: 500px;
+        font-size: 14px;
+      }
+
+      legend{
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      form label{
+        width: 60px;
+      }
+
+      label.formItem{
+        width: 100px;
+        font-weight: bold;
+      }
+
+      #summary{
+        padding-left: 20px;
+        font-size: 12px;
+        color: gray;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <label for="building_id">
+        宿舍楼：<%= select_tag('building_id', options_for_select([["选择大楼..." , ""]] + Building.all.collect{|x| [x.name, x.id] }),{:name => "building_id", :onchange => "view_building()"}) %>
+      </label>
+      <input type="button" value="开启批量设置模式" onclick="enable_setting_mode(true)" id="btnEnableSettingMode" disabled="true"/>
+      <input type="button" value="关闭批量设置模式" onclick="enable_setting_mode(false)" id="btnDisableSettingMode" style="display:none"/>
+    </div>
+    <div id="building_map">
+    </div>
+
+    <div id="room_info">
+    </div>
+    <div id="operate_wrap" style="display:none">
+      <form>
+        <fieldset>
+          <legend>批量设置宿舍</legend>
+          <ul class="fieldList">
+            <li style="height:auto;">
+              <label class="formItem">已选择宿舍：</label>
+              <div id="selected_rooms" style="float:none;clear:both;padding: 5px 0px;margin-left: 30px;"></div>
+            </li>
+            <li>
+              <label class="formItem"  >
+                <input id="ckbClass" type="checkbox" title="启用此项" checked="checked" onchange="disable_field('info_class_id',this.checked)"  />
+                班级：</label>
+              <%= select_tag('info_class_id', options_for_select([["选择班级..." , ""]] + InfoClass.all.collect{|x| [x.name, x.id] }),{:name => "info_class_id"}) %>
+            </li>
+            <li>
+              <label class="formItem">
+                <input id="ckbGender" type="checkbox" title="启用此项" checked="checked" onchange="disable_field('gender',this.checked)" />
+                类别：</label>
+              <label>
+                <input type="radio" value="0" name="gender"  />男生
+              </label>
+              <label>
+                <input type="radio" value="0" name="gender" />女生
+              </label>
+            </li>
+            <li>
+              <label class="formItem">
+                <input id="ckbBedCount" type="checkbox" title="启用此项" checked="checked" onchange="disable_field('bedCount',this.checked)" />
+                床位数：</label>
+              <label>
+                <input type="radio" value="4" name="bedCount"  />4个
+              </label>
+              <label>
+                <input type="radio" value="6" name="bedCount" />6个
+              </label>
+            </li>
+            <li>
+              <input type="button" onclick="do_submit()" value="提  交" style="width: 130px;height: 30px;"/>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+    </div>
+    <%= javascript_include_tag "jquery-validate/lib/jquery" %>
+    <script type="text/javascript">
+      var is_sel_mode = false;
+      function enable_setting_mode(enable){
+        document.getElementById("building_id").disabled = enable;
+        document.getElementById("room_info").innerHTML = "";
+        if(enable){
+          $("th","#building_map").bind("click",function(){
+            if($(this).hasClass("on")){
+              $("th, td",this.parentNode).removeClass("on");
+            }else{
+              $("th, td",this.parentNode).addClass("on");
             }
-            
-            
-            table {
-                border-collapse: collapse;
-                table-layout: fixed;
-            }
-            
-            td.on, th.on {
-                background-color: blue;
-                color: white;
-            }
-			td.on a{
-				color: white;
-			}
-			th{
-				width: 70px;
-				background-color: #FFFFCC;
-			}
-            
-            td, th {
-                padding-top: 1px;
-                padding-right: 1px;
-                padding-left: 1px;
-                mso-ignore: padding;
-                color: black;
-                font-size: 11.0pt;
-                font-weight: 400;
-                font-style: normal;
-                text-decoration: none;
-                font-family: 宋体;
-                mso-generic-font-family: auto;
-                mso-font-charset: 134;
-                mso-number-format: General;
-                text-align: general;
-                vertical-align: middle;
-                border-top: .5pt solid windowtext;
-                border-right: .5pt solid windowtext;
-                border-bottom: 1.0pt solid windowtext;
-                border-left: 1.0pt solid windowtext;
-                mso-background-source: auto;
-                mso-pattern: auto;
-                white-space: nowrap;
-            } #building_map {
-                margin-top: 10px;
-                margin-bottom: 10px;
-            } #building_map td {
-                width: 50px;
-                text-align: center;
-            }
-            
-            a {
-                text-decoration: none;
-                color: black;
-            }
-            
-            a:visited, a:active {
-                color: black;
-            }
-            
-            a:hover {
-                background-color: blue;
-                color: white;
-            } #beds td {
-                width: 70px;
-                text-align: center;
-            } #beds {
-                margin-top: 10px;
-            }
+            update_sel_rooms_box();
+          }).css({cursor: "pointer"}).attr("title","点击选择或取消选择整行");
+        }else{
+          document.getElementById("selected_rooms").innerHTML = "";
+          $("th","#building_map").unbind("click").css({cursor: "auto"}).attr("title","");
+        }
+        $("td, th","#building_map").removeClass("on");
+        is_sel_mode = enable;
+        document.getElementById("operate_wrap").style.display = enable ? "block" : "none";
+        document.getElementById("room_info").style.display = !enable ? "block" : "none";
+        document.getElementById("btnEnableSettingMode").style.display = !enable ? "inline" : "none";
+        document.getElementById("btnDisableSettingMode").style.display = enable ? "inline" : "none";
+        document.getElementById("view_summary").style.display = !enable ? "inline" : "none";
+        document.getElementById("sel_summary").style.display = enable ? "inline" : "none";
+      }
 			
-			ol li{
-				margin-top: 15px;
-				font-size: 12px;
-			}
-			.oltitle{
-				font-weight: bold;
-			}
-        </style>
-    </head>
-    <body>
-        <label for="building_id">
-            宿舍楼：<%= select_tag('building_id', options_for_select([["选择大楼..." , ""]] + Building.all.collect{|x| [x.name, x.id] }),{:name => "building_id", :onchange => "view_building()"}) %>
-        </label>
-        <input type="button" value="开启批量设置模式" onclick="enable_setting_mode(true)" id="btnEnableSettingMode" disabled="true"/>
-		<input type="button" value="关闭批量设置模式" onclick="enable_setting_mode(false)" id="btnDisableSettingMode" style="display:none"/>
-        <div id="building_map">
-        </div>
-        <div id="room_info">
-        </div>
-        <div id="operate_wrap" style="display:none">
-            <ol>
-                <li>
-                    <span class="oltitle">选择设置项</span><br/><br/>
-					<span id="operate_radiogroup">
-                        <label>
-                            <input type="radio" value="info_class" name="operate" checked="checked" onchange="change_operate()"/>设置班级
-                        </label>
-                        <label>
-                            <input type="radio" value="gender" name="operate" onchange="change_operate()"/>设置入住学生性别
-                        </label>
-                        <label>
-                            <input type="radio" value="bed_count" name="operate" onchange="change_operate()"/>设置床位数量
-                        </label>
-                    </span>
-                </li>
-                <li>
-                    <span class="oltitle">选择设定值</span><br/><br/>
-					<span id="class_radiogroup">
-						<%= select_tag('info_class_id', options_for_select([["选择班级..." , ""]] + InfoClass.all.collect{|x| [x.name, x.id] }),{:name => "info_class_id"}) %>
-                    </span>
-                    <span id="room_type_radiogroup" style="display:none">
-                        <label>
-                            <input type="radio" value="0" name="gender" checked="checked"/>男生
-                        </label>
-                        <label>
-                            <input type="radio" value="0" name="gender" />女生
-                        </label>
-                    </span><span id="bed_count_radiogroup" style="display:none">
-                        <label>
-                            <input type="radio" value="4" name="bedCount" checked="checked" />4个床位
-                        </label>
-                        <label>
-                            <input type="radio" value="6" name="bedCount" />6个床位
-                        </label>
-                    </span>
-                </li>
-                <li>
-                    <span class="oltitle">选择要设置的宿舍</span><br/>
-					<p>
-						 请在上方宿舍楼图中：<br/>
-						单击宿舍单元格，可以选择或者取消选择该宿舍;<br/>
-						单击楼层单元格，可以选择或者取消选择该楼层所有宿舍
-					</p>
-                </li>
-				<li>
-					<span class="oltitle">确认选择宿舍和设置后提交</span><br /><br/>
-					<input type="button" onclick="submit()" value="保存设置" style="width: 130px;height: 30px;"/>
-				</li>
-            </ol>
-        </div>
-        <%= javascript_include_tag "jquery-validate/lib/jquery" %>
-        <script>
-            var is_sel_mode = false;
-            function enable_setting_mode(enable){
-				document.getElementById("building_id").disabled = enable;
-				if(enable){
-					document.getElementsByName("operate")[0].click(); //选中选择班级
-					$("th","#building_map").bind("click",function(){
-						if($(this).hasClass("on")){
-							$("th, td",this.parentNode).removeClass("on");	
-						}else{
-							$("th, td",this.parentNode).addClass("on");					
-						}
-					}).css({cursor: "pointer"}).attr("title","点击选择或取消选择整行");
-				}else{
-					$("th","#building_map").unbind("click").css({cursor: "auto"}).attr("title","");
-				}
-				$("td, th","#building_map").removeClass("on");
-                is_sel_mode = enable;
-                document.getElementById("operate_wrap").style.display = enable ? "block" : "none";
-                document.getElementById("room_info").style.display = !enable ? "block" : "none";
-                document.getElementById("btnEnableSettingMode").style.display = !enable ? "inline" : "none";
-                document.getElementById("btnDisableSettingMode").style.display = enable ? "inline" : "none";
-            }
+      function get_radio_group_value(name){
+        var radios = document.getElementsByName(name);
+        var value = "";
+        for (var i = 0, l = radios.length; i < l; i++) {
+          var item = radios[i];
+          if (item.checked) {
+            value = item.value;
+            break;
+          }
+        }
+        return value;
+      }
+
+      function disable_field(fname, enable){
+        var fields = document.getElementsByName(fname);
+        for (var i = 0, l = fields.length; i < l; i++) {
+          fields[i].disabled = !enable;
+        }
+      }
+            
+      function room_click(){
+        var jo = $(this);
+        if (is_sel_mode) {
+          jo.toggleClass("on");
+          update_sel_rooms_box();
+        }
+        else {
+          var building_map = $("#building_map");
+          $("td.on", building_map).removeClass("on");
+          jo.addClass("on");
+          view_room($("a", jo).attr("room_id"));
+        }
+      }
+            
+      var view_building = function(){
+        var building_id = $("#building_id").val();
+        document.getElementById("btnEnableSettingMode").disabled = building_id == "";
+        if (building_id) {
+          $.get("/bed_assigning/list_room", {
+            building_id: building_id
+          }, function(data){
+            var building_map = $("#building_map");
+            building_map.html(data);
+            $("td", building_map).click(room_click);
+          })
+        }
+        else {
+          $("#building_map").empty();
+        }
+      }
+            
+      var view_room = function(room_id){
+        $.get("/bed_assigning/room_info", {
+          room_id: room_id
+        }, function(data){
+          $("#room_info").html(data);
+        })
+      }
+      view_building();
 			
-			function get_radio_group_value(name){
-				var radios = document.getElementsByName(name);
-                var value = "";
-                for (var i = 0, l = radios.length; i < l; i++) {
-                    var item = radios[i];
-                    if (item.checked) {
-                        value = item.value;
-                        break;
-                    }
-                }
-				return value;					
-			}
-            
-            function change_operate(){
-                var mode = get_radio_group_value("operate");
-                document.getElementById("room_type_radiogroup").style.display = mode == "gender" ? "inline" : "none";
-                document.getElementById("bed_count_radiogroup").style.display = mode == "bed_count" ? "inline" : "none";
-                document.getElementById("class_radiogroup").style.display = mode == "info_class" ? "inline" : "none";
-            }
-            
-            function room_click(){
-                var jo = $(this);
-                if (is_sel_mode) {
-                    jo.toggleClass("on");
-                }
-                else {
-                    var building_map = $("#building_map");
-                    $("td.on", building_map).removeClass("on");
-                    jo.addClass("on");
-                    view_room($("a", jo).attr("room_id"));
-                }
-            }
-            
-            var view_building = function(){
-                var building_id = $("#building_id").val();
-				document.getElementById("btnEnableSettingMode").disabled = building_id == "";
-                if (building_id) {
-                    $.get("/bed_assigning/list_room", {
-                        building_id: building_id
-                    }, function(data){
-                        var building_map = $("#building_map");
-                        building_map.html(data);
-                        $("td", building_map).click(room_click);
-                    })
-                }
-                else {
-                    $("#building_map").empty();
-                }
-            }
-            
-            var view_room = function(room_id){
-                $.get("/bed_assigning/room_info", {
-                    room_id: room_id
-                }, function(data){
-                    $("#room_info").html(data);
-                })
-            }
-            view_building();
-			
-			function get_sel_rooms(){
-				var rooms = {id: [], no:[]};
-				$("#building_map td.on a").each(function(){
-					rooms.id.push(this.getAttribute("room_id"));
-					rooms.no.push(this.innerHTML);
-				});
-				return rooms;
-			}
-			
-			function submit(){
-				var rooms = get_sel_rooms();
-				if(rooms.id.length < 2){
-					alert("请至少选择2个宿舍")
-					return;
-				}
-				var operate = get_radio_group_value("operate");
-				var operate_name = {
-					"info_class" : "设置班级",
-					 "bed_count" : "设置床位数量",
-					    "gender" : "设置入住学生性别"
-				}[operate];
-				var setting_value = "";
-				var setting_text = "";
-				if(operate == "info_class"){
-					var select = document.getElementById("info_class_id");
-					setting_value = select.value;
-					setting_text = select.options[select.selectedIndex].text;
-				}else if(operate == "gender"){
-					setting_value = get_radio_group_value("gender");
-					setting_text = setting_value == '1' ? "女生" : "男生";
-				}else if(operate == "bed_count"){
-					setting_value = get_radio_group_value("bedCount");
-					setting_text = setting_value + "个";
-				}
-				if(!setting_value){
-					alert("请" + operate_name);
-					return;
-				}
-				var msg = ["已选择宿舍：\n"];
-				msg.push(rooms.no.join(','));
-				msg.push("。\n\n确认要为以上宿舍");
-				msg.push("【" + operate_name + "】为：" + setting_text);
-				
-				if(confirm(msg.join(''))){
-					alert("操作成功");
-				}
-			}
-        </script>
-    </body>
+      function get_sel_rooms(){
+        var rooms = {id: [], no:[]};
+        $("#building_map td.on a").each(function(){
+          rooms.id.push(this.getAttribute("room_id"));
+          rooms.no.push(this.innerHTML);
+        });
+        return rooms;
+      }
+
+      function update_sel_rooms_box(){
+        var rooms = get_sel_rooms().no.reverse();
+        for(var i=0,l=rooms.length; i<l; i++){
+          if(i == l-1)break;
+          if( (i+1) % 10){
+            rooms[i] += ',&nbsp;';
+          }else{
+            rooms[i] += ',<br/>';
+          }
+        }
+        document.getElementById("selected_rooms").innerHTML = rooms.join('');
+      }
+      
+      function do_submit(){
+        var rooms = get_sel_rooms();
+        if(rooms.id.length < 2){
+          alert("请至少选择2个宿舍")
+          return;
+        }
+
+        var room_class = "";
+        if(document.getElementById("ckbClass").checked){
+          room_class = document.getElementById("info_class_id").value;
+          if(!room_class){
+            alert("请选择宿舍所属班级!")
+            return;
+          }
+        }
+
+        var room_gender = "";
+        if(document.getElementById("ckbGender").checked){
+          room_gender = get_radio_group_value("gender");
+          if(!room_gender){
+            alert("请选择宿舍类别!")
+            return;
+          }
+        }
+
+        var room_bed_count = "";
+        if(document.getElementById("ckbBedCount").checked){
+          room_bed_count = get_radio_group_value("bedCount");
+          if(!room_bed_count){
+            alert("请选择宿舍床位数!")
+            return;
+          }
+        }
+
+        alert("开始提交");
+      }
+    </script>
+  </body>
 </html>

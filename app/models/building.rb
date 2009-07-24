@@ -46,4 +46,33 @@ class Building < ActiveRecord::Base
     end
     return gen_count
   end  
+
+  def update_room(update_rooms, room_type, bed_count, info_class_id)
+    result = {:count => 0, :error => []}
+    changes = {}
+    unless bed_count.blank?
+      changes[:bed_count] = bed_count
+    end
+
+    unless room_type.blank?
+      changes[:room_type] = room_type
+    end
+
+    unless info_class_id.blank?
+      changes[:info_class_id] = info_class_id
+    end
+
+    update_rooms.each do |id|
+      r = self.rooms.find(id)
+      unless r.nil?
+        begin
+          r.update_attributes(changes) 
+          result[:count] += 1
+        rescue => error
+          result[:error].push(error.to_s)
+        end
+      end
+    end
+    return result
+  end
 end

@@ -176,7 +176,7 @@
                 <input type="radio" value="0" name="gender"  />男生
               </label>
               <label>
-                <input type="radio" value="0" name="gender" />女生
+                <input type="radio" value="1" name="gender" />女生
               </label>
             </li>
             <li>
@@ -200,10 +200,19 @@
     <%= javascript_include_tag "jquery-validate/lib/jquery" %>
     <script type="text/javascript">
       var is_sel_mode = false;
+      function reset_form(){
+          document.getElementById("selected_rooms").innerHTML = "";
+          $("th","#building_map").unbind("click").css({cursor: "auto"}).attr("title","");
+          $("#ckbClass,#ckbGender,#ckbBedCount").attr("checked","checded");
+          $("input[type=radio]","#operate_wrap").attr("disabled","").attr("checked","");
+          $("#info_class_id").attr("disabled","").val("");
+      }
+
       function enable_setting_mode(enable){
         document.getElementById("building_id").disabled = enable;
         document.getElementById("room_info").innerHTML = "";
         if(enable){
+          reset_form();
           $("th","#building_map").bind("click",function(){
             if($(this).hasClass("on")){
               $("th, td",this.parentNode).removeClass("on");
@@ -213,8 +222,6 @@
             update_sel_rooms_box();
           }).css({cursor: "pointer"}).attr("title","点击选择或取消选择整行");
         }else{
-          document.getElementById("selected_rooms").innerHTML = "";
-          $("th","#building_map").unbind("click").css({cursor: "auto"}).attr("title","");
         }
         $("td, th","#building_map").removeClass("on");
         is_sel_mode = enable;
@@ -296,7 +303,8 @@
       }
 
       function update_sel_rooms_box(){
-        var rooms = get_sel_rooms().no.reverse();
+        var sel_rooms = get_sel_rooms();
+        var rooms = sel_rooms.no.reverse();
         for(var i=0,l=rooms.length; i<l; i++){
           if(i == l-1)break;
           if( (i+1) % 10){
@@ -342,7 +350,73 @@
           }
         }
 
-        alert("开始提交");
+        var building_id = document.getElementById("building_id").value;
+        $.post("/bed_assigning/update_room",{
+            building_id : building_id,
+              bed_count : room_bed_count,
+              room_type : room_gender,
+          info_class_id : room_class,
+                  rooms : rooms.id.join(',')
+        },function(data){
+          try{
+            data = eval("(function(){return " + data +  "})()");
+            if(data && data.count){
+              alert("成功更新" + data.count + "个宿舍\n" + data.error.join("\n"));
+            }else{
+              alert("操作失败，请稍后再试");
+            }
+          }catch(e){
+              alert("操作失败，请稍后再试");
+          }
+        })
+      }
+
+      function update_room_master(new_master_id, control){
+        if(confirm("你要更新舍长吗？")){
+          var room_id = document.getElementById("curr_room_id").value;
+          $.post("/bed_assigning/update_master",{master_id: new_master_id, room_id: room_id},function(data){
+            if(data.indexOf("成功") != -1){
+              control.setAttribute("init_value",new_master_id);
+            }else{
+              control.value = control.getAttribute("init_value");
+            }
+            alert(data);
+          })
+        }else{
+          control.value = control.getAttribute("init_value");
+        }
+      }
+
+      function update_phone(phone, control){
+        if(confirm("你要更新宿舍电话吗？")){
+          var room_id = document.getElementById("curr_room_id").value;
+          $.post("/bed_assigning/update_phone",{room_id: room_id, phone: phone},function(data){
+            if(data.indexOf("成功") != -1){
+              control.setAttribute("init_value",phone);
+            }else{
+              control.value = control.getAttribute("init_value");
+            }
+            alert(data);
+          })
+        }else{
+          control.value = control.getAttribute("init_value");
+        }
+      }
+
+      function update_room_type(room_type, control){
+        if(confirm("你要更新宿舍类型吗？")){
+          var room_id = document.getElementById("curr_room_id").value;
+          $.post("/bed_assigning/update_room_type",{room_id: room_id, room_type: room_type},function(data){
+            if(data.indexOf("成功") != -1){
+              control.setAttribute("init_value",room_type);
+            }else{
+              $(control).val(control.getAttribute("init_value"));
+            }
+            alert(data);
+          })
+        }else{
+          $(control).val(control.getAttribute("init_value"));
+        }
       }
     </script>
   </body>

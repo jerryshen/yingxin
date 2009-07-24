@@ -1,17 +1,21 @@
 <div class="room_wrap">
+  <input type="hidden" id="curr_room_id" value="<%= @room.id %>" />
 <table class="room_info">
   <caption>#<span><%= @room.name %></span>宿舍&nbsp;&nbsp;&nbsp;</caption>
 	<tr>
 		<td class="header"><label>班级：</label></td>
 		<td><span><%= @room.info_class.name if @room.info_class %></span></td>
 		<td class="header"><label>舍长：</label></td>
-		<td><span><%= @room.master.name if @room.master %></span></td>
+		<td>
+      <%= select_tag 'sel_room_master', options_for_select(@room.roommates.collect{|s| [s.name, s.id]}, @room.master ? @room.mater.id : ""), :init_value => @room.master ? @room.mater.id : "" , :onchange => "update_room_master(this.value, this)" %></td>
 	</tr>
 	<tr>
 		<td class="header"><label>类别：</label></td>
-		<td><span><%= @room.room_type == 0 ? "男生宿舍" : "女生宿舍" %></span></td>
+    <td><span></span>
+      <%= select_tag 'sel_room_type', options_for_select([["男生宿舍",0],["女生宿舍",1]], @room.room_type), :init_value => @room.room_type, :onchange => "update_room_type(this.value,this)" %>
+    </td>
 		<td class="header"><label>电话：</label></td>
-		<td><span><%= @room.phone %></span></td>			
+    <td><input type="text" value="<%= @room.phone %>" onchange="update_phone(this.value,this)" init_value="<%= @room.phone %>" /></td>			
 	</tr>
 </table>
 
@@ -29,7 +33,15 @@
 			入住学生
 		</td>		
 		<% @beds.each do |bed| %>
-			<td><%= bed.student.name if(bed && bed.student) %></td>
+      <td>
+      <% if (bed && bed.student) %>
+       <%=   bed.student.name %><a href='javascript:exit_room(<%= bed.id %>)' style="color:red;font-weight:bold;font-size:15px" title="退宿舍">X</a>
+      <% elsif bed%>
+        <a href="javascript:join_room(<%= bed.id %>)" title="安排学生入住此床位" style="color:green;font-weight:bold">+入住</a>
+      <% else %>
+        <span style="color:red" title="此床位尚未初始化，需要新建">未新建</span> 
+      <% end %>
+    </td>
 		<% end %>
 	</tr>
 </table>

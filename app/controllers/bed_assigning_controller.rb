@@ -51,4 +51,52 @@ class BedAssigningController < ApplicationController
       end
     end
   end
+
+  def update_room
+    room_type = params[:room_type]
+    bed_count = params[:bed_count]
+    info_class_id = params[:info_class_id]
+    rooms = params[:rooms].split(',')
+    building = Building.find(params[:building_id])
+    if building
+      result = building.update_room(rooms, room_type, bed_count, info_class_id) 
+      render :text => result.to_json
+    end
+  end
+
+  def update_master
+    room = Room.find(params[:room_id])
+    if room
+      begin
+        room.update_attributes(:student_id => params[:master_id])
+        render :text => "成功设置舍长"
+      rescue => error
+        render :text => error
+      end
+    end
+  end
+
+  def update_phone
+    room = Room.find(params[:room_id])
+    if room
+      begin
+        room.update_attributes(:phone => params[:phone])
+        render :text => "成功设置宿舍电话"
+      rescue => error
+        render :text => error
+      end
+    end
+  end
+
+  def update_room_type
+    room = Room.find(params[:room_id])
+    if room
+      begin
+        room.update_attributes(:room_type => params[:room_type])
+        render :text => "成功设置宿舍类别"
+      rescue => error
+        render :text => error
+      end
+    end
+  end
 end

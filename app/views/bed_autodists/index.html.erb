@@ -1,0 +1,86 @@
+<link href="/javascripts/ext-2.2.1/resources/css/ext-all.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/grid.css" media="screen" rel="stylesheet" type="text/css" />
+<% unless @current_user.theme.nil? %>
+  <link id="theme" href="/javascripts/ext-2.2.1/resources/css/<%= h @current_user.theme %>.css" media="screen" rel="stylesheet" type="text/css" />
+<% end %>
+<%= stylesheet_link_tag "form.css" %>
+<%= javascript_include_tag 'ext-2.2.1/adapter/jquery/jquery.js'%>
+<%= javascript_include_tag 'ext-2.2.1/adapter/jquery/ext-jquery-adapter.js'%>
+<%= javascript_include_tag 'ext-2.2.1/ext-all.js'%>
+<%= javascript_include_tag 'ExtListPage.js' %>
+<%= javascript_include_tag 'jquery-validate/lib/jquery.form.js' %>
+<%= javascript_include_tag 'jquery-validate/jquery.validate.js' %>
+<%= javascript_include_tag 'jquery-validate/localization/messages_cn.js' %>
+<%= javascript_include_tag 'AjaxForm.js' %>
+<div id="list-view">
+  <form style="margin: 10px 0px;" id="search_form">
+    <%= index_select_class  %>
+    <label for="search_name">姓名：
+      <input type="text" value="" name="search_name" id="search_name"/>
+    </label>
+    <input class="button" type="button" id="btnSearch" value="搜索"/>
+  </form>
+  <div>
+    <div class="nav">
+      <span class="button" id="newItem" onclick="$page.showNewView()"><img  src="/images/icons/new.png"/>添加新生</span>
+    </div>
+    <div id="grid-wrap">
+    </div>
+  </div>
+</div>
+<script>
+    var beds = <%= Student.get_beds %>
+  var getRoomInfo = function(value){
+    return beds[value]
+  }
+  //{header: [dataIndex(首字母大写)], renderer: money(Function),menuDisabled: [true],
+  // dataIndex: "fieldName" ,width: 100, sortable: [false], resizable: [false]}
+  //框[]中的为默认值
+  Ext.onReady(function(){
+    var columns = [{
+        header: "ID",
+        dataIndex: 'id',
+        width: 30,
+        sortable: true,
+        type: "int",
+        resizable: false
+      }, {
+        header: "学号",
+        dataIndex: 'stu_number',
+        sortable: true
+      }, {
+        header: "姓名",
+        dataIndex: 'name',
+        sortable: true
+      }, {
+        header: "性别",
+        dataIndex: 'gender',
+        sortable: true
+      }, {
+        header: "院系",
+        dataIndex: 'department_id',
+        sortable: true
+      }, {
+        header: "专业",
+        dataIndex: 'major_id',
+        sortable: true
+      }, {
+        header: "班级",
+        dataIndex: 'info_classs_id',
+        sortable: true
+      }, {
+        header: "宿舍",
+        dataIndex: 'id',
+        sortable: true
+      }]
+    var controllerName = "students";
+    options = {
+      baseUrl: "http://" + window.location.host + "/" + controllerName,
+      gridTitle: "查询和自动分配宿舍",
+      newItemLink: "newItem",
+      columns: columns,
+      disableOprateColumn: true
+    }
+    $page = new ExtListPage(options);
+  })
+</script>

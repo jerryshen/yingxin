@@ -23,9 +23,18 @@ class Student < ActiveRecord::Base
 
   def self.to_json
     hash = {}
-    find_by_sql("select id,name from students").each do |row|
+    self.find_by_sql("select id,name from students").each do |row|
       attrs = row.attributes
       hash[attrs["id"]] = attrs["name"]
+    end
+    return hash.to_json
+  end
+
+  def self.get_beds
+    hash = {}
+    self.find_by_sql("select id, p.name from students INNER JOIN beds p ON p.student_id = students.id").each do |row|
+      attrs = row.attributes
+      hash[attrs["id"]] = attrs["p.name"]
     end
     return hash.to_json
   end

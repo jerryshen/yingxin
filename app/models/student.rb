@@ -31,11 +31,11 @@ class Student < ActiveRecord::Base
     return hash.to_json
   end
 
-  def self.get_beds
+  def self.get_can_num
     hash = {}
-    self.find_by_sql("select id, p.name from students INNER JOIN beds p ON p.student_id = students.id").each do |row|
+    self.find_by_sql("select id,can_number from students").each do |row|
       attrs = row.attributes
-      hash[attrs["id"]] = attrs["p.name"]
+      hash[attrs["id"]] = attrs["can_number"]
     end
     return hash.to_json
   end

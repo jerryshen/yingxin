@@ -17,8 +17,8 @@
     <%= index_select_class  %>
     <div style="margin: 10px 0px;"><label for="search_name">姓名</label>
     <input type="text" value="" name="search_name" id="search_name" size="15"/>
-    <label for="search_name">学号</label>
-    <input type="text" value="" name="search_stu_number" id="search_stu_number" size="15"/>
+    <label for="search_can_number">考生号</label>
+    <input type="text" value="" name="search_can_number" id="search_can_number" size="15"/>
     <input class="button" type="button" id="btnSearch" value="搜索"/>
     <input value="重置"class="btnreset" type="reset" />
     <input value="刷新 " onclick="window.location.reload()" class="btnrefresh" type="button"  />
@@ -34,9 +34,13 @@
   var getStudentName = function(value){
     return students[value]
   }
+  var nums = <%= Student.get_can_num %>
+  var getCanNum = function(value){
+    return nums[value]
+  }
 
   var makeAsPassLink = function(value, p, record){
-    var text = value.toString()=="true" ? "<div class='grid-text-true'></div>" : "<div class='grid-text-false'></div>";
+    var text = value.toString()=="true" ? "<div class='grid-text-true'>已缴纳</div>" : "<div class='grid-text-false'>未缴纳</div>";
     return String.format("<a href='#' action ='pass' title='Pass' class='gridButton' url='/step3s/pass/{0}'>{1}</a>",record.data.id,text);
   }
 
@@ -58,17 +62,20 @@
       });
     })
   }
-  //{header: [dataIndex(首字母大写)], renderer: money(Function),menuDisabled: [true],
-  // dataIndex: "fieldName" ,width: 100, sortable: [false], resizable: [false]}
-  //框[]中的为默认值
   Ext.onReady(function(){
     var columns = [{
-        header: "ID",
+        header: "序号",
         dataIndex: 'id',
-        width: 30,
+        width: 40,
         sortable: true,
         type: "int",
         resizable: false
+      }, {
+        header: "考生号",
+        dataIndex: 'student_id',
+        sortable: true,
+        width: 150,
+        renderer: getCanNum
       }, {
         header: "姓名",
         dataIndex: 'student_id',
@@ -83,7 +90,8 @@
       }, {
         header: "缴纳时间",
         dataIndex: 'step3_date',
-        sortable: true
+        sortable: true,
+        width: 160
       }]
     var controllerName = "step3s";
     options = {

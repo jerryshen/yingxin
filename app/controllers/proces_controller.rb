@@ -46,9 +46,9 @@ class ProcesController < ApplicationController
       condition_values << []
     end
 
-    if(!params[:search_stu_number].blank?)
-      conditions += " AND p.stu_number = ?"
-      condition_values << params[:search_stu_number]
+    if(!params[:search_can_number].blank?)
+      conditions += " AND p.can_number = ?"
+      condition_values << params[:search_can_number]
     end
 
     if(conditions != "1=1")

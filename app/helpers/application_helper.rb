@@ -79,7 +79,7 @@ module ApplicationHelper
               data: {id: v},
               type: "POST",
               success: function(data){
-                var users = Ext.util.JSON.decode(data); 
+                var users = eval("(function(){ return "+ data + "})()");
                 for(var i=0, l=users.length; i<l; i++){
                   var option = document.createElement("option");
                   var u = users[i];
@@ -131,7 +131,7 @@ module ApplicationHelper
               data: {id: v},
               type: "POST",
               success: function(data){
-                var majors = Ext.util.JSON.decode(data);
+                var majors = eval("(function(){ return "+ data + "})()");
                 for(var i=0, l=majors.length; i<l; i++){
                   var option = document.createElement("option");
                   var u = majors[i];
@@ -169,12 +169,12 @@ module ApplicationHelper
           <option value='' >请选择班级...</option>
         </select>
 
-      <script>
+      <script type="text/javascript" style="display:none">
         jQuery("#select_department_id").bind("change",function(){
           var v = this.value;
           var select = document.getElementById("select_major_id");
           select.disabled = true;
-          jQuery(select).empty();
+          jQuery(select).empty().val('').change();
           var option = document.createElement("option");
           option.setAttribute("value",'');
           option.text = "请选择专业...";
@@ -185,7 +185,7 @@ module ApplicationHelper
               data: {id: v},
               type: "POST",
               success: function(data){
-                var majors = Ext.util.JSON.decode(data);
+                var majors = eval("(function(){ return "+ data + "})()");
                 for(var i=0, l=majors.length; i<l; i++){
                   var option = document.createElement("option");
                   var u = majors[i];
@@ -200,13 +200,11 @@ module ApplicationHelper
             select.disabled = true;
           }
         })
-      </script>
-      <script>
         jQuery("#select_major_id").bind("change",function(){
           var v = this.value;
           var select = document.getElementById("select_class_id");
           select.disabled = true;
-          jQuery(select).empty();
+          jQuery(select).empty().val('').change();
           var option = document.createElement("option");
           option.setAttribute("value",'');
           option.text = "请选择班级...";
@@ -217,7 +215,7 @@ module ApplicationHelper
               data: {id: v},
               type: "POST",
               success: function(data){
-                var classes = Ext.util.JSON.decode(data);
+                var classes =  eval("(function(){ return "+ data + "})()");
                 for(var i=0, l=classes.length; i<l; i++){
                   var option = document.createElement("option");
                   var u = classes[i];
@@ -235,6 +233,49 @@ module ApplicationHelper
       </script>
     }
     html.sub!("<options>",options)
+  end
+
+  def select_student
+     sel_class = index_select_class.gsub!("select_department_id","select_department_id2").gsub!("select_major_id","select_major_id2").gsub!("select_class_id","select_class_id2");
+     html = %q{
+        <label for="select_student_id">学生</label>
+        <select id="select_student_id" disabled="disabled" name="student_id" style="margin:0px;padding:0px;float:none;">
+          <option value='' >请选择学生...</option>
+        </select>
+        <script type="text/javascript" style="display:none">
+          jQuery("#select_class_id2").bind("change",function(){
+                  var v = this.value;
+                  var select = document.getElementById("select_student_id");
+                  select.disabled = true;
+                  jQuery(select).empty().val('').change();
+                  var option = document.createElement("option");
+                  option.setAttribute("value",'');
+                  option.text = "请选择学生...";
+                  select.options.add(option);
+                  if(v){
+                    jQuery.ajax({
+                      url: "/info_classes/students_to_json",
+                      data: {id: v},
+                      type: "POST",
+                      success: function(data){
+                        var classes =  eval("(function(){ return "+ data + "})()");
+                        for(var i=0, l=classes.length; i<l; i++){
+                          var option = document.createElement("option");
+                          var u = classes[i];
+                          option.setAttribute("value",u.id);
+                          option.text = u.name;
+                          select.options.add(option);
+                        }
+                        select.disabled = false;
+                      }
+                    })
+                  }else{
+                    select.disabled = true;
+                  }
+                })
+        </script>
+     }
+     sel_class + html
   end
 
   def select_nation

@@ -3,7 +3,7 @@ class Bed < ActiveRecord::Base
 	belongs_to :student
 
 	validates_presence_of :room_id, :number
-	before_save :validates_roommate_gender, :validates_bed_number
+	before_save :validates_roommate_gender, :validates_bed_number, :validates_havnt_assigning
 
 	private
 	def validates_roommate_gender
@@ -15,6 +15,12 @@ class Bed < ActiveRecord::Base
 			end
 		end
 	end
+
+  def validates_havnt_assigning
+    if student && student.bed
+      raise "该学生已经入住：#{student.full_bed}"
+    end
+  end
 
 	def validates_bed_number
 		bed_count = self.room.bed_count

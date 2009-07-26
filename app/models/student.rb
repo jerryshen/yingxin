@@ -4,6 +4,7 @@ class Student < ActiveRecord::Base
   belongs_to :info_class, :foreign_key => 'info_class_id'
 
   belongs_to :room_student
+  has_one :bed
 
   # process end
   def self.proc_end(proc)
@@ -37,6 +38,15 @@ class Student < ActiveRecord::Base
       hash[attrs["id"]] = attrs["p.name"]
     end
     return hash.to_json
+  end
+
+  def full_bed
+    if bed
+      room = bed.room
+      "#{room.building.name}#{room.name}室#{bed.number}号床"
+    else
+      ""
+    end
   end
 
   #import students to all steps and proces

@@ -3,9 +3,16 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>宿舍安排</title>
+    <link href="/javascripts/ext-2.2.1/resources/css/ext-all.css" media="screen" rel="stylesheet" type="text/css" />
+    <%= javascript_include_tag 'ext-2.2.1/adapter/jquery/jquery.js'%>
+    <%= javascript_include_tag 'ext-2.2.1/adapter/jquery/ext-jquery-adapter.js'%>
+    <%= javascript_include_tag 'ext-2.2.1/ext-all.js'%>
     <style>
+      fieldset{
+        padding: 10px;
+      }
       .room_wrap {
-        width: 515px;
+        width: 800px;
         height: 115px;
         padding: 15px 8px;
         border: 1px solid black;
@@ -38,6 +45,7 @@
       th{
         width: 70px;
         background-color: #FFFFCC;
+        text-align: center;
       }
 
       td, th {
@@ -84,7 +92,7 @@
         background-color: blue;
         color: white;
       } #beds td {
-        width: 70px;
+        width: 85px;
         text-align: center;
       } #beds {
         margin-top: 10px;
@@ -93,7 +101,6 @@
       ul.fieldList{
         list-style-type: none;
         padding: 0;
-        margin-left: 10px;
       }
 
       ul.fieldList li{
@@ -114,7 +121,7 @@
 
       form{
         margin-top: 20px;
-        width: 500px;
+        width: 700px;
         font-size: 14px;
       }
 
@@ -138,9 +145,21 @@
         color: gray;
         margin-top: 5px;
       }
+
+      #student_selector{
+        padding: 15px 25px;
+      }
+
+      .x-window-mc, .x-btn button, .x-window-tl .x-window-header{
+        font-size: 12px;
+      }
+
+      .x-panel-bwrap{
+        display: none;
+      }
     </style>
   </head>
-  <body>
+  <body style="margin-left:20px;margin-top:20px;">
     <div>
       <label for="building_id">
         宿舍楼：<%= select_tag('building_id', options_for_select([["选择大楼..." , ""]] + Building.all.collect{|x| [x.name, x.id] }),{:name => "building_id", :onchange => "view_building()"}) %>
@@ -164,9 +183,9 @@
             </li>
             <li>
               <label class="formItem"  >
-                <input id="ckbClass" type="checkbox" title="启用此项" checked="checked" onchange="disable_field('info_class_id',this.checked)"  />
+                <input id="ckbClass" type="checkbox" title="启用此项" checked="checked" onchange="disable_field('class_id',this.checked)"  />
                 班级：</label>
-              <%= select_tag('info_class_id', options_for_select([["选择班级..." , ""]] + InfoClass.all.collect{|x| [x.name, x.id] }),{:name => "info_class_id"}) %>
+               <%= index_select_class %>
             </li>
             <li>
               <label class="formItem">
@@ -183,12 +202,13 @@
               <label class="formItem">
                 <input id="ckbBedCount" type="checkbox" title="启用此项" checked="checked" onchange="disable_field('bedCount',this.checked)" />
                 床位数：</label>
-              <label>
-                <input type="radio" value="4" name="bedCount"  />4个
-              </label>
-              <label>
-                <input type="radio" value="6" name="bedCount" />6个
-              </label>
+                <select id="sel_bedCount" name="bedCount">
+                  <option value="4">4个</option>
+                  <option value="5">5个</option>
+                  <option value="6">8个</option>
+                  <option value="7">7个</option>
+                  <option value="8">8个</option>
+                </select>
             </li>
             <li>
               <input type="button" onclick="do_submit()" value="提  交" style="width: 130px;height: 30px;"/>
@@ -197,7 +217,12 @@
         </fieldset>
       </form>
     </div>
-    <%= javascript_include_tag "jquery-validate/lib/jquery" %>
+    <div style="display:none">
+    <div id="student_selector">
+      <%= select_student  %>
+    </div>
+    </div>
+   
     <script type="text/javascript">
       var is_sel_mode = false;
       function reset_form(){
@@ -205,7 +230,9 @@
           $("th","#building_map").unbind("click").css({cursor: "auto"}).attr("title","");
           $("#ckbClass,#ckbGender,#ckbBedCount").attr("checked","checded");
           $("input[type=radio]","#operate_wrap").attr("disabled","").attr("checked","");
-          $("#info_class_id").attr("disabled","").val("");
+          $("#select_class_id, #select_major_id").attr("disabled","disabled").val("");
+          $("#select_department_id").attr("disabled","").val("");
+          $("#sel_bedCount").val('4');
       }
 
       function enable_setting_mode(enable){
@@ -283,8 +310,9 @@
           $("#building_map").empty();
         }
       }
-            
+      var curr_room = null;
       var view_room = function(room_id){
+        curr_room = room_id;
         $.get("/bed_assigning/room_info", {
           room_id: room_id
         }, function(data){
@@ -304,7 +332,7 @@
 
       function update_sel_rooms_box(){
         var sel_rooms = get_sel_rooms();
-        var rooms = sel_rooms.no.reverse();
+        var rooms = sel_rooms.no.sort();
         for(var i=0,l=rooms.length; i<l; i++){
           if(i == l-1)break;
           if( (i+1) % 10){
@@ -318,14 +346,14 @@
       
       function do_submit(){
         var rooms = get_sel_rooms();
-        if(rooms.id.length < 2){
-          alert("请至少选择2个宿舍")
+        if(rooms.id.length < 1){
+          alert("请至少选择1个宿舍")
           return;
         }
 
         var room_class = "";
         if(document.getElementById("ckbClass").checked){
-          room_class = document.getElementById("info_class_id").value;
+          room_class = document.getElementById("select_class_id").value;
           if(!room_class){
             alert("请选择宿舍所属班级!")
             return;
@@ -343,7 +371,7 @@
 
         var room_bed_count = "";
         if(document.getElementById("ckbBedCount").checked){
-          room_bed_count = get_radio_group_value("bedCount");
+          room_bed_count = document.getElementById("sel_bedCount").value;
           if(!room_bed_count){
             alert("请选择宿舍床位数!")
             return;
@@ -418,6 +446,71 @@
           $(control).val(control.getAttribute("init_value"));
         }
       }
+
+      function assigning_bed(student_id){
+          $.post("/bed_assigning/assigning_bed",{bed_id: curr_setting_bed, student_id: student_id},function(data){
+            if(data.indexOf("成功") != -1){
+             sel_student_win.hide();
+             view_room(curr_room);
+            }else{
+            }
+            alert(data);
+          })
+      }
+
+      var sel_student_win = null;
+      function init_student_selector_win(bed_id){
+        sel_student_win = new Ext.Window({
+            title: "选择入住学生",
+            width: 285,
+            height: 210,
+            modal: true,
+            closeAction: "hide",
+            buttons: [{
+                text: "确定",
+                handler: function(){
+                  var student_id = document.getElementById("select_student_id").value;
+                  if(!student_id){
+                    alert("请选择入住学生！");
+                    return;
+                  }
+                 // sel_student_win.hide();
+                  assigning_bed(student_id);
+                }
+            },{
+                text: "取消",
+                handler: function(){
+                  sel_student_win.hide();
+                }
+            }]
+        });
+        sel_student_win.add(Ext.get("student_selector"));
+      }
+
+      var curr_setting_bed = null;
+      function join_room(bed_id){
+        curr_setting_bed = bed_id;
+        if(!sel_student_win)init_student_selector_win();
+        $("#select_department_id2").val("").change();
+        sel_student_win.show();
+      }
+
+      function exit_room(bed_id){
+        if(confirm("确定要退床吗？")){
+          $.post("/bed_assigning/exit_room",{bed_id: bed_id},function(data){
+            if(data.indexOf("成功") != -1){
+              view_room(curr_room);
+            }else{
+            }
+            alert(data);
+          })
+        }
+      }
+
+      jQuery(function(){
+       $("#select_department_id, #select_major_id, #select_class_id").attr("style","").prev().css({"width":"40px","margin-left":"5px"});
+       $("#select_department_id2, #select_major_id2, #select_class_id2").after("<br/><br/>");
+      })
     </script>
   </body>
 </html>

@@ -23,7 +23,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :students
   map.resources :rooms
   map.resources :buildings
-  map.resources :info_classes
+  map.resources :info_classes, :collection => { :selector => :get}
   map.resources :majors
   map.resources :app_configs
   map.resources :role_users

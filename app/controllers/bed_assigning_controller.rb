@@ -71,7 +71,7 @@ class BedAssigningController < ApplicationController
         room.update_attributes(:student_id => params[:master_id])
         render :text => "成功设置舍长"
       rescue => error
-        render :text => error
+        render :text => "操作失败，" + error.to_s
       end
     end
   end
@@ -83,7 +83,7 @@ class BedAssigningController < ApplicationController
         room.update_attributes(:phone => params[:phone])
         render :text => "成功设置宿舍电话"
       rescue => error
-        render :text => error
+        render :text => "操作失败，" + error.to_s
       end
     end
   end
@@ -95,8 +95,33 @@ class BedAssigningController < ApplicationController
         room.update_attributes(:room_type => params[:room_type])
         render :text => "成功设置宿舍类别"
       rescue => error
-        render :text => error
+        render :text => "操作失败，" + error.to_s
       end
     end
+  end
+
+  def assigning_bed
+    bed = Bed.find(params[:bed_id])
+    if bed
+      begin
+        bed.update_attributes(:student_id => params[:student_id])
+        render :text => "成功安排入住"
+      rescue => error
+        render :text => "操作失败，" + error.to_s
+      end
+    end
+  end
+
+  def exit_room
+   bed = Bed.find(params[:bed_id])
+   if bed
+      begin
+        bed.student = nil
+        bed.save
+        render :text => "成功退床"
+      rescue => error
+        render :text => "操作失败，" + error.to_s
+      end
+   end
   end
 end

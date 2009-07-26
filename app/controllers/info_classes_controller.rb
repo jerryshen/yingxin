@@ -1,4 +1,5 @@
 class InfoClassesController < ApplicationController
+   protect_from_forgery :except => [:students_to_json]
   # GET /info_classes
   # GET /info_classes.xml
   def index
@@ -84,6 +85,19 @@ class InfoClassesController < ApplicationController
       format.html { redirect_to(info_classes_url) }
       format.xml  { head :ok }
       format.json { render :text => '{status: "success"}'}
+    end
+  end
+
+  def selector
+   # render :layout => false
+  end
+
+  def students_to_json
+    if request.post?
+      info_class = InfoClass.find(params[:id])
+      if(info_class)
+        render :text => info_class.students_to_json
+      end
     end
   end
 

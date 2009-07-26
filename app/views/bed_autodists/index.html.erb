@@ -29,10 +29,6 @@
   </div>
 </div>
 <script>
-    var beds = <%= Student.get_beds %>
-  var getRoomInfo = function(value){
-    return beds[value]
-  }
   //{header: [dataIndex(首字母大写)], renderer: money(Function),menuDisabled: [true],
   // dataIndex: "fieldName" ,width: 100, sortable: [false], resizable: [false]}
   //框[]中的为默认值
@@ -41,37 +37,29 @@
         header: "ID",
         dataIndex: 'id',
         width: 30,
-        sortable: true,
         type: "int",
         resizable: false
       }, {
         header: "学号",
-        dataIndex: 'stu_number',
-        sortable: true
+        dataIndex: 'stu_number'
       }, {
         header: "姓名",
-        dataIndex: 'name',
-        sortable: true
+        dataIndex: 'name'
       }, {
         header: "性别",
-        dataIndex: 'gender',
-        sortable: true
+        dataIndex: 'gender'
       }, {
         header: "院系",
-        dataIndex: 'department_id',
-        sortable: true
+        dataIndex: 'department_id'
       }, {
         header: "专业",
-        dataIndex: 'major_id',
-        sortable: true
+        dataIndex: 'major_id'
       }, {
         header: "班级",
-        dataIndex: 'info_classs_id',
-        sortable: true
+        dataIndex: 'info_classs_id'
       }, {
         header: "宿舍",
-        dataIndex: 'id',
-        sortable: true
+        dataIndex: 'full_bed'
       }]
     var controllerName = "students";
     options = {

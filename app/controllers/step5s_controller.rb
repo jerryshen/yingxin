@@ -99,6 +99,24 @@ class Step5sController < ApplicationController
       condition_values << params[:class_id]
     end
 
+    if(!params[:search_name].blank?)
+      students = Student.find(:all, :conditions => ["name like ?", "%#{params[:search_name]}%"])
+      ids = []
+      unless students.blank?
+        students.each do |u|
+          ids.push(u.id)
+        end
+      end
+      idss = ids.join(",")
+      conditions += " AND p.id in (#{idss})"
+      condition_values << []
+    end
+
+    if(!params[:search_stu_number].blank?)
+      conditions += " AND p.stu_number = ?"
+      condition_values << params[:search_stu_number]
+    end
+
     if(conditions != '1=1 AND p.department_id = #{department_id}')
       option_conditions = [conditions,condition_values].flatten!
       @step5s = Proce.paginate(:order =>"id DESC", :joins => joins,:conditions => option_conditions,:per_page=> @pagesize, :page => params[:page] || 1)

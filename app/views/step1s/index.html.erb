@@ -15,9 +15,14 @@
 <div id="list-view">
   <form style="margin: 10px 0px;" id="search_form">
     <%= index_select_class  %>
+    <div style="margin: 10px 0px;"><label for="search_name">姓名</label>
+    <input type="text" value="" name="search_name" id="search_name" size="15"/>
+    <label for="search_name">学号</label>
+    <input type="text" value="" name="search_stu_number" id="search_stu_number" size="15"/>
     <input class="button" type="button" id="btnSearch" value="搜索"/>
     <input value="重置"class="btnreset" type="reset" />
     <input value="刷新 " onclick="window.location.reload()" class="btnrefresh" type="button"  />
+    </div>
   </form>
   <div>
     <div id="grid-wrap">
@@ -89,6 +94,7 @@
       gridTitle: "入学资格复查管理列表",
       newItemLink: "newItem",
       columns: columns,
+      disableDestroyButton: true,
       bindlinks: {
         "pass" : bind_pass_link_click
       }

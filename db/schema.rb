@@ -167,7 +167,6 @@ ActiveRecord::Schema.define(:version => 27) do
     t.float    "h_score"
     t.float    "r_score"
     t.integer  "polity"
-    t.integer  "department_id"
     t.integer  "major_id"
     t.integer  "info_class_id"
     t.string   "direction"
@@ -199,7 +198,6 @@ ActiveRecord::Schema.define(:version => 27) do
     t.datetime "updated_at"
   end
 
-  add_index "students", ["department_id"], :name => "index_students_on_department_id"
   add_index "students", ["info_class_id"], :name => "index_students_on_info_class_id"
   add_index "students", ["major_id"], :name => "index_students_on_major_id"
 

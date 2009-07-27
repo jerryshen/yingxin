@@ -8,7 +8,6 @@ class CreateStudents < ActiveRecord::Migration
       t.float      :h_score      #高考成绩
       t.float      :r_score      #投标成绩
       t.integer    :polity       #政治面貌
-      t.references :department   #院系
       t.references :major        #专业
       t.references :info_class   #班级
       t.string     :direction    #教育方向
@@ -39,7 +38,6 @@ class CreateStudents < ActiveRecord::Migration
 
       t.timestamps
     end
-    add_index :students, :department_id
     add_index :students, :major_id
     add_index :students, :info_class_id
   end

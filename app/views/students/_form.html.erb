@@ -1,114 +1,102 @@
 <%= f.error_messages %>
 
-<div style="float:left;width:50%"><p>
-    <%= f.label :can_number, "考生号" %>
-    <%= f.text_field :can_number %>
-</p></div>
+<p>
+  <%= f.label :can_number, "考生号" %>
+  <%= f.text_field :can_number %>
+</p>
 
-<div style="float:left;width:50%"><p>
-    <%= f.label :exa_number, "准考证号" %>
-    <%= f.text_field :exa_number %>
-</p></div>
+<p>
+  <%= f.label :exa_number, "准考证号" %>
+  <%= f.text_field :exa_number %>
+</p>
 
-<div style="float:left;width:50%"><p>
-    <%= f.label :stu_number, "学号" %>
-    <%= f.text_field :stu_number %>
-</p></div>
+<%= select_class(@student.major_id, @student.info_class_id)  %>
 
-<div style="float:left;width:50%"><p>
-    <%= f.label :h_score, "高考成绩" %>
-    <%= f.text_field :h_score %>
-</p></div>
+<p>
+  <%= f.label :stu_number, "学号" %>
+  <%= f.text_field :stu_number %>
+</p>
 
-<div style="float:left;width:50%"><p>
-    <%= f.label :name, "姓名" %>
-    <%= f.text_field :name %>
-</p></div>
+<p>
+  <%= f.label :name, "姓名" %>
+  <%= f.text_field :name %>
+</p>
 
-<div style="float:left;width:50%"><p>
-    <%= f.label :r_score, "投标成绩" %>
-    <%= f.text_field :r_score %>
-</p></div>
+<p>
+  <%= f.label :h_score, "高考成绩" %>
+  <%= f.text_field :h_score %>
+</p>
 
-<div style="float:left;width:50%"><p>
-    <label>政治面貌</label>
-    <label for="polity"><%= f.radio_button :polity, "0" %>群众</label>
-    <label for="polity"><%= f.radio_button :polity, "1" %>共青团员</label>
-    <label for="polity"><%= f.radio_button :polity, "2" %>中共党员</label>
-</p></div>
+<p>
+  <%= f.label :r_score, "投标成绩" %>
+  <%= f.text_field :r_score %>
+</p>
 
-<div style="float:left;width:50%"><p>
-    <%= f.label :department_id, "院系" %>
-    <%= f.select :department_id, Department.all.collect {|p| [ p.name, p.id ] }, {:include_blank => "请选择院系..." } %>
-</p></div>
+<p>
+  <label>政治面貌</label>
+  <label for="polity"><%= f.radio_button :polity, "0" %>群众</label>
+  <label for="polity"><%= f.radio_button :polity, "1" %>共青团员</label>
+  <label for="polity"><%= f.radio_button :polity, "2" %>中共党员</label>
+</p>
 
-<div style="float:left;width:50%"><p>
-    <%= f.label :major_id, "专业" %>
-    <%= f.select :major_id, Major.all.collect {|p| [ p.name, p.id ] }, {:include_blank => "请选择专业..." } %>
-</p></div>
+<p>
+  <label>性别</label>
+  <label for="gender"><%= f.radio_button :gender, "m" %>男</label>
+  <label for="gender"><%= f.radio_button :gender, "f" %>女</label>
+</p>
 
-<div style="float:left;width:50%"><p>
-    <%= f.label :info_class_id, "专业" %>
-    <%= f.select :info_class_id, InfoClass.all.collect {|p| [ p.name, p.id ] }, {:include_blank => "请选择专业..." } %>
-</p></div>
+<p>
+  <%= f.label :direction, "教育方向" %>
+  <%= f.text_field :direction %>
+</p>
 
-<div style="float:left;width:50%"><p>
-    <%= f.label :direction, "教育方向" %>
-    <%= f.text_field :direction %>
-</p></div>
+<p>
+  <%= f.label :id_number, "身份证" %>
+  <%= f.text_field :id_number %>
+</p>
 
-<div style="float:left;width:50%"><p>
-    <%= f.label :id_number, "身份证" %>
-    <%= f.text_field :id_number %>
-</p></div>
+<p>
+  <%= f.label :nation, "民族" %>
+  <%= f.text_field :nation  %>
+</p>
 
-<div style="float:left;width:50%"><p>
-    <label>性别</label>
-    <label for="gender"><%= f.radio_button :gender, "m" %>男</label>
-    <label for="gender"><%= f.radio_button :gender, "f" %>女</label>
-</p></div>
+<p>
+  <%= f.label :birthday, "出生边月" %>
+  <%= f.date_select :birthday, {:start_year => 1985, :end_year => 2000, :order => [:year, :month, :day],:use_month_numbers => true}, {:style => "width:80px"} %>
+</p>
 
-<div style="float:left;width:50%"><p>
-    <%= f.label :nation, "民族" %>
-    <%= f.text_field :nation  %>
-</p></div>
+<p>
+  <%= f.label :entrance_date, "入学时间" %>
+  <%= f.date_select :entrance_date, {:start_year => 2009, :end_year => 2010, :order => [:year, :month, :day],:use_month_numbers => true}, { :style => "width:80px"} %>
+</p>
 
-<div style="float:left;width:50%"><p>
-    <%= f.label :entrance_date, "入学时间" %>
-    <%= f.date_select :entrance_date, {:start_year => 2009, :end_year => 2010, :order => [:year, :month, :day],:use_month_numbers => true}, { :style => "width:80px"} %>
-</p></div>
+<p>
+  <%= f.label :school_code, "中学代码" %>
+  <%= f.text_field :school_code %>
+</p>
 
-<div style="float:left;width:50%"><p>
-    <%= f.label :school_code, "中学代码" %>
-    <%= f.text_field :school_code %>
-</p></div>
+<p>
+  <%= f.label :school_name, "中学名称" %>
+  <%= f.text_field :school_name %>
+</p>
 
-<div style="float:left;width:50%"><p>
-    <%= f.label :school_name, "中学名称" %>
-    <%= f.text_field :school_name %>
-</p></div>
+<p>
+  <%= f.label :edu_length, "学制" %>
+  <%= f.text_field :edu_length  %>
+</p>
 
-<div style="float:left;width:50%"><p>
-    <%= f.label :edu_length, "学制" %>
-    <%= f.text_field :edu_length  %>
-</p></div>
+<p>
+  <%= f.label :post_code, "邮政编码" %>
+  <%= f.text_field :post_code  %>
+</p>
 
-<div style="float:left;width:50%"><p>
-    <%= f.label :post_code, "邮政编码" %>
-    <%= f.text_field :post_code  %>
-</p></div>
 
-<div style="float:left;width:50%"><p>
-    <%= f.label :birthday, "出生边月" %>
-    <%= f.date_select :birthday, {:start_year => 1985, :end_year => 2000, :order => [:year, :month, :day],:use_month_numbers => true}, {:style => "width:80px"} %>
-</p></div>
+<p>
+  <%= f.label :address, "联系地址" %>
+  <%= f.text_field :address %>
+</p>
 
-<div style="float:left;width:100%"><p>
-    <%= f.label :address, "联系地址" %>
-    <%= f.text_field :address %>
-</p></div>
-
-<div style="float:left;width:100%"><p>
-    <label for="state_city">生源地</label>
-    <%= state_and_city_select :student, :state, :city, {:state => {:include_blank => '请选择省'}, :city => {:include_blank => '请选择城市'}}  %>
-</p></div>
+<p>
+  <label for="state_city">生源地</label>
+  <%= state_and_city_select :student, :state, :city, {:state => {:include_blank => '请选择省'}, :city => {:include_blank => '请选择城市'}}  %>
+</p>

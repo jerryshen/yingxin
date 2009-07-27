@@ -2,6 +2,7 @@
 proces_131: 
   student_id: "131"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:49
   step5: f
@@ -21,6 +22,7 @@ proces_131:
 proces_076: 
   student_id: "76"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:46
   step5: f
@@ -40,6 +42,7 @@ proces_076:
 proces_048: 
   student_id: "48"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:44
   step5: f
@@ -59,6 +62,7 @@ proces_048:
 proces_103: 
   student_id: "103"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:47
   step5: f
@@ -78,6 +82,7 @@ proces_103:
 proces_160: 
   student_id: "160"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:50
   step5: f
@@ -97,6 +102,7 @@ proces_160:
 proces_132: 
   student_id: "132"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:49
   step5: f
@@ -116,6 +122,7 @@ proces_132:
 proces_077: 
   student_id: "77"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:46
   step5: f
@@ -135,6 +142,7 @@ proces_077:
 proces_049: 
   student_id: "49"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:44
   step5: f
@@ -154,6 +162,7 @@ proces_049:
 proces_104: 
   student_id: "104"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:47
   step5: f
@@ -173,6 +182,7 @@ proces_104:
 proces_161: 
   student_id: "161"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:50
   step5: f
@@ -192,6 +202,7 @@ proces_161:
 proces_133: 
   student_id: "133"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:49
   step5: f
@@ -211,6 +222,7 @@ proces_133:
 proces_078: 
   student_id: "78"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:46
   step5: f
@@ -230,6 +242,7 @@ proces_078:
 proces_105: 
   student_id: "105"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:47
   step5: f
@@ -249,6 +262,7 @@ proces_105:
 proces_190: 
   student_id: "190"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:52
   step5: f
@@ -268,6 +282,7 @@ proces_190:
 proces_162: 
   student_id: "162"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:50
   step5: f
@@ -287,6 +302,7 @@ proces_162:
 proces_134: 
   student_id: "134"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:49
   step5: f
@@ -306,6 +322,7 @@ proces_134:
 proces_079: 
   student_id: "79"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:46
   step5: f
@@ -325,6 +342,7 @@ proces_079:
 proces_106: 
   student_id: "106"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:48
   step5: f
@@ -344,6 +362,7 @@ proces_106:
 proces_020: 
   student_id: "20"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:43
   step5: f
@@ -363,11 +382,12 @@ proces_020:
 proces_191: 
   student_id: "191"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:52
   step5: f
   step6: f
-  updated_at: 2009-07-17 08:24:52
+  updated_at: 2009-07-23 09:34:32
   step7: f
   step7_date: 
   id: "191"
@@ -376,12 +396,13 @@ proces_191:
   step1_date: 
   step3_date: 
   step1: f
-  step2_date: 
-  step2: f
+  step2_date: 2009-07-23 09:34:32
+  step2: t
   step5_date: 
 proces_163: 
   student_id: "163"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:51
   step5: f
@@ -401,6 +422,7 @@ proces_163:
 proces_135: 
   student_id: "135"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:49
   step5: f
@@ -420,6 +442,7 @@ proces_135:
 proces_107: 
   student_id: "107"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:48
   step5: f
@@ -439,6 +462,7 @@ proces_107:
 proces_021: 
   student_id: "21"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:43
   step5: f
@@ -458,11 +482,12 @@ proces_021:
 proces_192: 
   student_id: "192"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:52
   step5: f
   step6: f
-  updated_at: 2009-07-17 08:24:52
+  updated_at: 2009-07-23 09:34:31
   step7: f
   step7_date: 
   id: "192"
@@ -471,12 +496,13 @@ proces_192:
   step1_date: 
   step3_date: 
   step1: f
-  step2_date: 
-  step2: f
+  step2_date: 2009-07-23 09:34:31
+  step2: t
   step5_date: 
 proces_164: 
   student_id: "164"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:51
   step5: f
@@ -496,6 +522,7 @@ proces_164:
 proces_136: 
   student_id: "136"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:49
   step5: f
@@ -515,6 +542,7 @@ proces_136:
 proces_108: 
   student_id: "108"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:48
   step5: f
@@ -534,6 +562,7 @@ proces_108:
 proces_050: 
   student_id: "50"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:44
   step5: f
@@ -553,6 +582,7 @@ proces_050:
 proces_022: 
   student_id: "22"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:43
   step5: f
@@ -572,11 +602,12 @@ proces_022:
 proces_193: 
   student_id: "193"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:52
   step5: f
   step6: f
-  updated_at: 2009-07-17 08:24:52
+  updated_at: 2009-07-23 09:34:31
   step7: f
   step7_date: 
   id: "193"
@@ -585,12 +616,13 @@ proces_193:
   step1_date: 
   step3_date: 
   step1: f
-  step2_date: 
-  step2: f
+  step2_date: 2009-07-23 09:34:31
+  step2: t
   step5_date: 
 proces_165: 
   student_id: "165"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:51
   step5: f
@@ -610,6 +642,7 @@ proces_165:
 proces_137: 
   student_id: "137"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:49
   step5: f
@@ -629,6 +662,7 @@ proces_137:
 proces_109: 
   student_id: "109"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:48
   step5: f
@@ -648,6 +682,7 @@ proces_109:
 proces_051: 
   student_id: "51"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:45
   step5: f
@@ -667,6 +702,7 @@ proces_051:
 proces_023: 
   student_id: "23"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:43
   step5: f
@@ -686,11 +722,12 @@ proces_023:
 proces_194: 
   student_id: "194"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:52
   step5: f
   step6: f
-  updated_at: 2009-07-17 08:24:52
+  updated_at: 2009-07-23 09:34:29
   step7: f
   step7_date: 
   id: "194"
@@ -699,12 +736,13 @@ proces_194:
   step1_date: 
   step3_date: 
   step1: f
-  step2_date: 
-  step2: f
+  step2_date: 2009-07-23 09:34:29
+  step2: t
   step5_date: 
 proces_166: 
   student_id: "166"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:51
   step5: f
@@ -724,6 +762,7 @@ proces_166:
 proces_138: 
   student_id: "138"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:49
   step5: f
@@ -743,6 +782,7 @@ proces_138:
 proces_080: 
   student_id: "80"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:46
   step5: f
@@ -762,6 +802,7 @@ proces_080:
 proces_052: 
   student_id: "52"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:45
   step5: f
@@ -781,6 +822,7 @@ proces_052:
 proces_024: 
   student_id: "24"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:43
   step5: f
@@ -800,11 +842,12 @@ proces_024:
 proces_195: 
   student_id: "195"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:52
   step5: f
   step6: f
-  updated_at: 2009-07-17 08:24:52
+  updated_at: 2009-07-23 09:34:28
   step7: f
   step7_date: 
   id: "195"
@@ -813,12 +856,13 @@ proces_195:
   step1_date: 
   step3_date: 
   step1: f
-  step2_date: 
-  step2: f
+  step2_date: 2009-07-23 09:34:28
+  step2: t
   step5_date: 
 proces_167: 
   student_id: "167"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:51
   step5: f
@@ -838,6 +882,7 @@ proces_167:
 proces_139: 
   student_id: "139"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:49
   step5: f
@@ -857,6 +902,7 @@ proces_139:
 proces_081: 
   student_id: "81"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:46
   step5: f
@@ -876,6 +922,7 @@ proces_081:
 proces_053: 
   student_id: "53"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:45
   step5: f
@@ -895,6 +942,7 @@ proces_053:
 proces_025: 
   student_id: "25"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:43
   step5: f
@@ -914,11 +962,12 @@ proces_025:
 proces_196: 
   student_id: "196"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:52
   step5: f
   step6: f
-  updated_at: 2009-07-17 08:24:52
+  updated_at: 2009-07-23 09:34:27
   step7: f
   step7_date: 
   id: "196"
@@ -927,12 +976,13 @@ proces_196:
   step1_date: 
   step3_date: 
   step1: f
-  step2_date: 
-  step2: f
+  step2_date: 2009-07-23 09:34:27
+  step2: t
   step5_date: 
 proces_168: 
   student_id: "168"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:51
   step5: f
@@ -952,6 +1002,7 @@ proces_168:
 proces_082: 
   student_id: "82"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:46
   step5: f
@@ -971,6 +1022,7 @@ proces_082:
 proces_054: 
   student_id: "54"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:45
   step5: f
@@ -990,6 +1042,7 @@ proces_054:
 proces_026: 
   student_id: "26"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:43
   step5: f
@@ -1009,11 +1062,12 @@ proces_026:
 proces_197: 
   student_id: "197"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:52
   step5: f
   step6: f
-  updated_at: 2009-07-17 08:24:52
+  updated_at: 2009-07-23 09:34:26
   step7: f
   step7_date: 
   id: "197"
@@ -1022,12 +1076,13 @@ proces_197:
   step1_date: 
   step3_date: 
   step1: f
-  step2_date: 
-  step2: f
+  step2_date: 2009-07-23 09:34:26
+  step2: t
   step5_date: 
 proces_169: 
   student_id: "169"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:51
   step5: f
@@ -1047,6 +1102,7 @@ proces_169:
 proces_055: 
   student_id: "55"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:45
   step5: f
@@ -1066,6 +1122,7 @@ proces_055:
 proces_110: 
   student_id: "110"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:48
   step5: f
@@ -1085,6 +1142,7 @@ proces_110:
 proces_027: 
   student_id: "27"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:43
   step5: f
@@ -1104,6 +1162,7 @@ proces_027:
 proces_083: 
   student_id: "83"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:46
   step5: f
@@ -1123,11 +1182,12 @@ proces_083:
 proces_198: 
   student_id: "198"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:52
   step5: f
   step6: f
-  updated_at: 2009-07-17 08:24:52
+  updated_at: 2009-07-23 09:34:24
   step7: f
   step7_date: 
   id: "198"
@@ -1136,12 +1196,13 @@ proces_198:
   step1_date: 
   step3_date: 
   step1: f
-  step2_date: 
-  step2: f
+  step2_date: 2009-07-23 09:34:24
+  step2: t
   step5_date: 
 proces_056: 
   student_id: "56"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:45
   step5: f
@@ -1161,6 +1222,7 @@ proces_056:
 proces_111: 
   student_id: "111"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:48
   step5: f
@@ -1180,6 +1242,7 @@ proces_111:
 proces_028: 
   student_id: "28"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:43
   step5: f
@@ -1199,6 +1262,7 @@ proces_028:
 proces_084: 
   student_id: "84"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:46
   step5: f
@@ -1218,11 +1282,12 @@ proces_084:
 proces_199: 
   student_id: "199"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:52
   step5: f
   step6: f
-  updated_at: 2009-07-17 08:24:52
+  updated_at: 2009-07-23 09:34:23
   step7: f
   step7_date: 
   id: "199"
@@ -1231,12 +1296,13 @@ proces_199:
   step1_date: 
   step3_date: 
   step1: f
-  step2_date: 
-  step2: f
+  step2_date: 2009-07-23 09:34:23
+  step2: t
   step5_date: 
 proces_140: 
   student_id: "140"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:49
   step5: f
@@ -1256,6 +1322,7 @@ proces_140:
 proces_057: 
   student_id: "57"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:45
   step5: f
@@ -1275,6 +1342,7 @@ proces_057:
 proces_112: 
   student_id: "112"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:48
   step5: f
@@ -1294,6 +1362,7 @@ proces_112:
 proces_029: 
   student_id: "29"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:43
   step5: f
@@ -1313,6 +1382,7 @@ proces_029:
 proces_085: 
   student_id: "85"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:46
   step5: f
@@ -1332,6 +1402,7 @@ proces_085:
 proces_141: 
   student_id: "141"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:49
   step5: f
@@ -1351,6 +1422,7 @@ proces_141:
 proces_058: 
   student_id: "58"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:45
   step5: f
@@ -1370,6 +1442,7 @@ proces_058:
 proces_113: 
   student_id: "113"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:48
   step5: f
@@ -1389,6 +1462,7 @@ proces_113:
 proces_086: 
   student_id: "86"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:46
   step5: f
@@ -1408,6 +1482,7 @@ proces_086:
 proces_170: 
   student_id: "170"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:51
   step5: f
@@ -1427,6 +1502,7 @@ proces_170:
 proces_142: 
   student_id: "142"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:49
   step5: f
@@ -1446,6 +1522,7 @@ proces_142:
 proces_059: 
   student_id: "59"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:45
   step5: f
@@ -1465,6 +1542,7 @@ proces_059:
 proces_114: 
   student_id: "114"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:48
   step5: f
@@ -1484,6 +1562,7 @@ proces_114:
 proces_087: 
   student_id: "87"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:46
   step5: f
@@ -1503,6 +1582,7 @@ proces_087:
 proces_171: 
   student_id: "171"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:51
   step5: f
@@ -1522,6 +1602,7 @@ proces_171:
 proces_143: 
   student_id: "143"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:49
   step5: f
@@ -1541,6 +1622,7 @@ proces_143:
 proces_115: 
   student_id: "115"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:48
   step5: f
@@ -1560,6 +1642,7 @@ proces_115:
 proces_088: 
   student_id: "88"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:46
   step5: f
@@ -1579,6 +1662,7 @@ proces_088:
 proces_001: 
   student_id: "1"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:42
   step5: f
@@ -1598,6 +1682,7 @@ proces_001:
 proces_172: 
   student_id: "172"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:51
   step5: f
@@ -1617,6 +1702,7 @@ proces_172:
 proces_144: 
   student_id: "144"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:50
   step5: f
@@ -1636,6 +1722,7 @@ proces_144:
 proces_116: 
   student_id: "116"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:48
   step5: f
@@ -1655,6 +1742,7 @@ proces_116:
 proces_030: 
   student_id: "30"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:43
   step5: f
@@ -1674,6 +1762,7 @@ proces_030:
 proces_089: 
   student_id: "89"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:47
   step5: f
@@ -1693,30 +1782,32 @@ proces_089:
 proces_002: 
   student_id: "2"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:42
   step5: f
   step6: f
-  updated_at: 2009-07-23 07:58:35
+  updated_at: 2009-07-26 09:31:05
   step7: f
   step7_date: 
   id: "2"
   step6_date: 
   step4_date: 
-  step1_date: 
+  step1_date: 2009-07-26 09:31:05
   step3_date: 
-  step1: f
+  step1: t
   step2_date: 
   step2: f
   step5_date: 
 proces_200: 
   student_id: "200"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:53
   step5: f
   step6: f
-  updated_at: 2009-07-23 08:33:31
+  updated_at: 2009-07-23 09:34:20
   step7: f
   step7_date: 
   id: "200"
@@ -1725,12 +1816,13 @@ proces_200:
   step1_date: 
   step3_date: 
   step1: f
-  step2_date: 
-  step2: f
+  step2_date: 2009-07-23 09:34:20
+  step2: t
   step5_date: 
 proces_173: 
   student_id: "173"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:51
   step5: f
@@ -1750,6 +1842,7 @@ proces_173:
 proces_145: 
   student_id: "145"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:50
   step5: f
@@ -1769,6 +1862,7 @@ proces_145:
 proces_117: 
   student_id: "117"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:48
   step5: f
@@ -1788,6 +1882,7 @@ proces_117:
 proces_031: 
   student_id: "31"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:43
   step5: f
@@ -1807,6 +1902,7 @@ proces_031:
 proces_003: 
   student_id: "3"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:42
   step5: f
@@ -1826,6 +1922,7 @@ proces_003:
 proces_174: 
   student_id: "174"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:51
   step5: f
@@ -1845,6 +1942,7 @@ proces_174:
 proces_146: 
   student_id: "146"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:50
   step5: f
@@ -1864,6 +1962,7 @@ proces_146:
 proces_118: 
   student_id: "118"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:48
   step5: f
@@ -1883,6 +1982,7 @@ proces_118:
 proces_060: 
   student_id: "60"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:45
   step5: f
@@ -1902,6 +2002,7 @@ proces_060:
 proces_032: 
   student_id: "32"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:43
   step5: f
@@ -1921,6 +2022,7 @@ proces_032:
 proces_004: 
   student_id: "4"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:42
   step5: f
@@ -1940,6 +2042,7 @@ proces_004:
 proces_175: 
   student_id: "175"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:51
   step5: f
@@ -1959,6 +2062,7 @@ proces_175:
 proces_147: 
   student_id: "147"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:50
   step5: f
@@ -1978,6 +2082,7 @@ proces_147:
 proces_119: 
   student_id: "119"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:48
   step5: f
@@ -1997,6 +2102,7 @@ proces_119:
 proces_061: 
   student_id: "61"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:45
   step5: f
@@ -2016,6 +2122,7 @@ proces_061:
 proces_033: 
   student_id: "33"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:44
   step5: f
@@ -2035,6 +2142,7 @@ proces_033:
 proces_005: 
   student_id: "5"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:42
   step5: f
@@ -2054,6 +2162,7 @@ proces_005:
 proces_176: 
   student_id: "176"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:51
   step5: f
@@ -2073,6 +2182,7 @@ proces_176:
 proces_148: 
   student_id: "148"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:50
   step5: f
@@ -2092,6 +2202,7 @@ proces_148:
 proces_034: 
   student_id: "34"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:44
   step5: f
@@ -2111,6 +2222,7 @@ proces_034:
 proces_006: 
   student_id: "6"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:42
   step5: f
@@ -2130,6 +2242,7 @@ proces_006:
 proces_090: 
   student_id: "90"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:47
   step5: f
@@ -2149,6 +2262,7 @@ proces_090:
 proces_062: 
   student_id: "62"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:45
   step5: f
@@ -2168,6 +2282,7 @@ proces_062:
 proces_177: 
   student_id: "177"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:51
   step5: f
@@ -2187,6 +2302,7 @@ proces_177:
 proces_149: 
   student_id: "149"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:50
   step5: f
@@ -2206,6 +2322,7 @@ proces_149:
 proces_035: 
   student_id: "35"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:44
   step5: f
@@ -2225,6 +2342,7 @@ proces_035:
 proces_007: 
   student_id: "7"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:42
   step5: f
@@ -2244,6 +2362,7 @@ proces_007:
 proces_091: 
   student_id: "91"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:47
   step5: f
@@ -2263,6 +2382,7 @@ proces_091:
 proces_063: 
   student_id: "63"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:45
   step5: f
@@ -2282,6 +2402,7 @@ proces_063:
 proces_178: 
   student_id: "178"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:51
   step5: f
@@ -2301,6 +2422,7 @@ proces_178:
 proces_036: 
   student_id: "36"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:44
   step5: f
@@ -2320,6 +2442,7 @@ proces_036:
 proces_008: 
   student_id: "8"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:42
   step5: f
@@ -2339,6 +2462,7 @@ proces_008:
 proces_092: 
   student_id: "92"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:47
   step5: f
@@ -2358,6 +2482,7 @@ proces_092:
 proces_064: 
   student_id: "64"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:45
   step5: f
@@ -2377,6 +2502,7 @@ proces_064:
 proces_179: 
   student_id: "179"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:51
   step5: f
@@ -2396,6 +2522,7 @@ proces_179:
 proces_120: 
   student_id: "120"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:48
   step5: f
@@ -2415,6 +2542,7 @@ proces_120:
 proces_037: 
   student_id: "37"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:44
   step5: f
@@ -2434,6 +2562,7 @@ proces_037:
 proces_009: 
   student_id: "9"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:42
   step5: f
@@ -2453,6 +2582,7 @@ proces_009:
 proces_093: 
   student_id: "93"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:47
   step5: f
@@ -2472,6 +2602,7 @@ proces_093:
 proces_065: 
   student_id: "65"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:45
   step5: f
@@ -2491,6 +2622,7 @@ proces_065:
 proces_121: 
   student_id: "121"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:48
   step5: f
@@ -2510,6 +2642,7 @@ proces_121:
 proces_038: 
   student_id: "38"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:44
   step5: f
@@ -2529,6 +2662,7 @@ proces_038:
 proces_094: 
   student_id: "94"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:47
   step5: f
@@ -2548,6 +2682,7 @@ proces_094:
 proces_066: 
   student_id: "66"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:45
   step5: f
@@ -2567,6 +2702,7 @@ proces_066:
 proces_150: 
   student_id: "150"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:50
   step5: f
@@ -2586,6 +2722,7 @@ proces_150:
 proces_122: 
   student_id: "122"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:48
   step5: f
@@ -2605,6 +2742,7 @@ proces_122:
 proces_039: 
   student_id: "39"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:44
   step5: f
@@ -2624,6 +2762,7 @@ proces_039:
 proces_095: 
   student_id: "95"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:47
   step5: f
@@ -2643,6 +2782,7 @@ proces_095:
 proces_067: 
   student_id: "67"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:45
   step5: f
@@ -2662,6 +2802,7 @@ proces_067:
 proces_151: 
   student_id: "151"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:50
   step5: f
@@ -2681,6 +2822,7 @@ proces_151:
 proces_123: 
   student_id: "123"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:48
   step5: f
@@ -2700,6 +2842,7 @@ proces_123:
 proces_096: 
   student_id: "96"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:47
   step5: f
@@ -2719,6 +2862,7 @@ proces_096:
 proces_068: 
   student_id: "68"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:45
   step5: f
@@ -2738,6 +2882,7 @@ proces_068:
 proces_180: 
   student_id: "180"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:52
   step5: f
@@ -2757,6 +2902,7 @@ proces_180:
 proces_152: 
   student_id: "152"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:50
   step5: f
@@ -2776,6 +2922,7 @@ proces_152:
 proces_124: 
   student_id: "124"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:48
   step5: f
@@ -2795,6 +2942,7 @@ proces_124:
 proces_097: 
   student_id: "97"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:47
   step5: f
@@ -2814,25 +2962,27 @@ proces_097:
 proces_010: 
   student_id: "10"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:42
   step5: f
   step6: f
-  updated_at: 2009-07-17 08:24:42
+  updated_at: 2009-07-26 09:31:30
   step7: f
   step7_date: 
   id: "10"
   step6_date: 
   step4_date: 
-  step1_date: 
+  step1_date: 2009-07-26 09:31:30
   step3_date: 
-  step1: f
+  step1: t
   step2_date: 
   step2: f
   step5_date: 
 proces_069: 
   student_id: "69"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:45
   step5: f
@@ -2852,6 +3002,7 @@ proces_069:
 proces_181: 
   student_id: "181"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:52
   step5: f
@@ -2871,6 +3022,7 @@ proces_181:
 proces_153: 
   student_id: "153"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:50
   step5: f
@@ -2890,6 +3042,7 @@ proces_153:
 proces_125: 
   student_id: "125"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:48
   step5: f
@@ -2909,6 +3062,7 @@ proces_125:
 proces_098: 
   student_id: "98"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:47
   step5: f
@@ -2928,6 +3082,7 @@ proces_098:
 proces_011: 
   student_id: "11"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:42
   step5: f
@@ -2947,6 +3102,7 @@ proces_011:
 proces_182: 
   student_id: "182"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:52
   step5: f
@@ -2966,6 +3122,7 @@ proces_182:
 proces_154: 
   student_id: "154"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:50
   step5: f
@@ -2985,6 +3142,7 @@ proces_154:
 proces_126: 
   student_id: "126"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:49
   step5: f
@@ -3004,6 +3162,7 @@ proces_126:
 proces_040: 
   student_id: "40"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:44
   step5: f
@@ -3023,6 +3182,7 @@ proces_040:
 proces_099: 
   student_id: "99"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:47
   step5: f
@@ -3042,6 +3202,7 @@ proces_099:
 proces_012: 
   student_id: "12"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:43
   step5: f
@@ -3061,6 +3222,7 @@ proces_012:
 proces_183: 
   student_id: "183"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:52
   step5: f
@@ -3080,6 +3242,7 @@ proces_183:
 proces_155: 
   student_id: "155"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:50
   step5: f
@@ -3099,6 +3262,7 @@ proces_155:
 proces_127: 
   student_id: "127"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:49
   step5: f
@@ -3118,6 +3282,7 @@ proces_127:
 proces_013: 
   student_id: "13"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:43
   step5: f
@@ -3137,6 +3302,7 @@ proces_013:
 proces_041: 
   student_id: "41"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:44
   step5: f
@@ -3156,6 +3322,7 @@ proces_041:
 proces_184: 
   student_id: "184"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:52
   step5: f
@@ -3175,6 +3342,7 @@ proces_184:
 proces_156: 
   student_id: "156"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:50
   step5: f
@@ -3194,6 +3362,7 @@ proces_156:
 proces_128: 
   student_id: "128"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:49
   step5: f
@@ -3213,6 +3382,7 @@ proces_128:
 proces_014: 
   student_id: "14"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:43
   step5: f
@@ -3232,6 +3402,7 @@ proces_014:
 proces_070: 
   student_id: "70"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:45
   step5: f
@@ -3251,6 +3422,7 @@ proces_070:
 proces_042: 
   student_id: "42"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:44
   step5: f
@@ -3270,6 +3442,7 @@ proces_042:
 proces_185: 
   student_id: "185"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:52
   step5: f
@@ -3289,6 +3462,7 @@ proces_185:
 proces_157: 
   student_id: "157"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:50
   step5: f
@@ -3308,6 +3482,7 @@ proces_157:
 proces_129: 
   student_id: "129"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:49
   step5: f
@@ -3327,6 +3502,7 @@ proces_129:
 proces_015: 
   student_id: "15"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:43
   step5: f
@@ -3346,6 +3522,7 @@ proces_015:
 proces_071: 
   student_id: "71"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:46
   step5: f
@@ -3365,6 +3542,7 @@ proces_071:
 proces_043: 
   student_id: "43"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:44
   step5: f
@@ -3384,6 +3562,7 @@ proces_043:
 proces_186: 
   student_id: "186"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:52
   step5: f
@@ -3403,6 +3582,7 @@ proces_186:
 proces_158: 
   student_id: "158"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:50
   step5: f
@@ -3422,6 +3602,7 @@ proces_158:
 proces_016: 
   student_id: "16"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:43
   step5: f
@@ -3441,6 +3622,7 @@ proces_016:
 proces_072: 
   student_id: "72"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:46
   step5: f
@@ -3460,6 +3642,7 @@ proces_072:
 proces_044: 
   student_id: "44"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:44
   step5: f
@@ -3479,6 +3662,7 @@ proces_044:
 proces_187: 
   student_id: "187"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:52
   step5: f
@@ -3498,6 +3682,7 @@ proces_187:
 proces_159: 
   student_id: "159"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:50
   step5: f
@@ -3517,6 +3702,7 @@ proces_159:
 proces_017: 
   student_id: "17"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:43
   step5: f
@@ -3536,6 +3722,7 @@ proces_017:
 proces_073: 
   student_id: "73"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:46
   step5: f
@@ -3555,6 +3742,7 @@ proces_073:
 proces_045: 
   student_id: "45"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:44
   step5: f
@@ -3574,6 +3762,7 @@ proces_045:
 proces_100: 
   student_id: "100"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:47
   step5: f
@@ -3593,6 +3782,7 @@ proces_100:
 proces_188: 
   student_id: "188"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:52
   step5: f
@@ -3612,6 +3802,7 @@ proces_188:
 proces_018: 
   student_id: "18"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:43
   step5: f
@@ -3631,6 +3822,7 @@ proces_018:
 proces_074: 
   student_id: "74"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:46
   step5: f
@@ -3650,6 +3842,7 @@ proces_074:
 proces_046: 
   student_id: "46"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:44
   step5: f
@@ -3669,6 +3862,7 @@ proces_046:
 proces_101: 
   student_id: "101"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:47
   step5: f
@@ -3688,6 +3882,7 @@ proces_101:
 proces_189: 
   student_id: "189"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:52
   step5: f
@@ -3707,6 +3902,7 @@ proces_189:
 proces_130: 
   student_id: "130"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:49
   step5: f
@@ -3726,6 +3922,7 @@ proces_130:
 proces_075: 
   student_id: "75"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:46
   step5: f
@@ -3745,6 +3942,7 @@ proces_075:
 proces_047: 
   student_id: "47"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:44
   step5: f
@@ -3764,6 +3962,7 @@ proces_047:
 proces_102: 
   student_id: "102"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:47
   step5: f
@@ -3783,6 +3982,7 @@ proces_102:
 proces_019: 
   student_id: "19"
   step3: f
+  major_id: 
   step4: f
   created_at: 2009-07-17 08:24:43
   step5: f

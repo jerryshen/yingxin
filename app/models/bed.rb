@@ -34,4 +34,5 @@ class Bed < ActiveRecord::Base
 			raise "#{self.room.name}宿舍已经存在编号为#{self.number}的床位"
 		end
 	end
+
 end

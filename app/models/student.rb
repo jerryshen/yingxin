@@ -102,6 +102,20 @@ class Student < ActiveRecord::Base
     return true
   end
 
+  def self.auto_assigning_bed(ids)
+    count = 0
+    ids.each do |id|
+      student = self.find(id)
+      if student
+        begin
+         count += 1 if student.info_class.assigning_bed(student)
+        rescue
+        end
+      end
+    end
+    return count
+  end
+
   private
   def self.sendto_class(classes, students)
     i = 0

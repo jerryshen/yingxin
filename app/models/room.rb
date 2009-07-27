@@ -19,6 +19,17 @@ class Room < ActiveRecord::Base
     end
   end
 
+  def find_a_free_bed
+    free_bed = nil
+    self.beds.each do |b|
+      unless b.student
+        free_bed = b
+        break
+      end
+    end
+    return free_bed
+  end
+
   private
     def validates_no_students_in_before_change_type
       if self.changed.include?("room_type") and !self.roommates.empty?

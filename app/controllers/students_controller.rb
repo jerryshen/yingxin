@@ -3,7 +3,6 @@ class StudentsController < ApplicationController
   # GET /students
   # GET /students.xml
   def index
-    @students = Student.all
     @search_major = ''
     respond_to do |format|
       format.html # index.html.erb

@@ -4,8 +4,6 @@ class PageModulesController < ApplicationController
   # GET /page_modules
   # GET /page_modules.xml
   def index
-    @page_modules = PageModule.all
-
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @page_modules }

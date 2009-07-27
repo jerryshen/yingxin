@@ -4,8 +4,6 @@ class RolesController < ApplicationController
   # GET /roles
   # GET /roles.xml
   def index
-    @roles = Role.all
-
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @roles }

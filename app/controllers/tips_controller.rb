@@ -2,8 +2,6 @@ class TipsController < ApplicationController
   # GET /tips
   # GET /tips.xml
   def index
-    @tips = Tip.all
-
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @tips }

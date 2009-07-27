@@ -2,8 +2,6 @@ class BedsController < ApplicationController
   # GET /beds
   # GET /beds.xml
   def index
-    @beds = Bed.all
-
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @beds }

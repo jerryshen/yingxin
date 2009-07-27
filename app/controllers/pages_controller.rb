@@ -2,8 +2,6 @@ class PagesController < ApplicationController
   # GET /pages
   # GET /pages.xml
   def index
-    @pages = Page.all
-
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @pages }

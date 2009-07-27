@@ -2,8 +2,6 @@ class ComplexesController < ApplicationController
   # GET /complexes
   # GET /complexes.xml
   def index
-    @complexes = Student.all
-
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @complexes }

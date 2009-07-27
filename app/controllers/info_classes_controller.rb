@@ -3,8 +3,6 @@ class InfoClassesController < ApplicationController
   # GET /info_classes
   # GET /info_classes.xml
   def index
-    @info_classes = InfoClass.all
-
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @info_classes }

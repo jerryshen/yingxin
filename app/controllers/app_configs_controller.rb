@@ -1,9 +1,6 @@
 class AppConfigsController < ApplicationController
-  # GET /app_configs
-  # GET /app_configs.xml
-  def index
-    @app_configs = AppConfig.all
 
+  def index
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @app_configs }
@@ -11,8 +8,6 @@ class AppConfigsController < ApplicationController
     end
   end
 
-  # GET /app_configs/1
-  # GET /app_configs/1.xml
   def show
     @app_config = AppConfig.find(params[:id])
 
@@ -22,8 +17,6 @@ class AppConfigsController < ApplicationController
     end
   end
 
-  # GET /app_configs/new
-  # GET /app_configs/new.xml
   def new
     @app_config = AppConfig.new
 
@@ -33,13 +26,12 @@ class AppConfigsController < ApplicationController
     end
   end
 
-  # GET /app_configs/1/edit
+
   def edit
     @app_config = AppConfig.find(params[:id])
   end
 
-  # POST /app_configs
-  # POST /app_configs.xml
+
   def create
     @app_config = AppConfig.new(params[:app_config])
 
@@ -56,8 +48,6 @@ class AppConfigsController < ApplicationController
     end
   end
 
-  # PUT /app_configs/1
-  # PUT /app_configs/1.xml
   def update
     @app_config = AppConfig.find(params[:id])
 
@@ -74,8 +64,6 @@ class AppConfigsController < ApplicationController
     end
   end
 
-  # DELETE /app_configs/1
-  # DELETE /app_configs/1.xml
   def destroy
     @app_config = AppConfig.find(params[:id])
     @app_config.destroy

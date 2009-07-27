@@ -2,9 +2,6 @@ class Step2sController < ApplicationController
   # GET /step2s
   # GET /step2s.xml
   def index
-    @step2s = Proce.all
-    @subject = Subject.find_by_index(2)
-
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @step2s }

@@ -2,8 +2,6 @@ class BedAutodistsController < ApplicationController
   # GET /bed_autodists
   # GET /bed_autodists.xml
   def index
-    @bed_autodists = Student.all
-
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @bed_autodists }

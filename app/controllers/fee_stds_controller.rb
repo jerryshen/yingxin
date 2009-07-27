@@ -2,8 +2,6 @@ class FeeStdsController < ApplicationController
   # GET /fee_stds
   # GET /fee_stds.xml
   def index
-    @fee_stds = FeeStd.all
-
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @fee_stds }

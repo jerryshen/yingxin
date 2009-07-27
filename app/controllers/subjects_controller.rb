@@ -2,8 +2,6 @@ class SubjectsController < ApplicationController
   # GET /subjects
   # GET /subjects.xml
   def index
-    @subjects = Subject.all
-
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @subjects }

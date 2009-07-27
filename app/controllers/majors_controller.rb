@@ -3,8 +3,6 @@ class MajorsController < ApplicationController
   # GET /majors
   # GET /majors.xml
   def index
-    @majors = Major.all
-
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @majors }

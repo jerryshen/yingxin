@@ -3,8 +3,6 @@ class BuildingsController < ApplicationController
   # GET /buildings
   # GET /buildings.xml
   def index
-    @buildings = Building.all
-    
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @buildings }

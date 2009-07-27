@@ -2,8 +2,6 @@ class TempsController < ApplicationController
   # GET /temps
   # GET /temps.xml
   def index
-    @temps = Temp.all
-
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @temps }

@@ -85,10 +85,17 @@ class Step5sController < ApplicationController
     joins = "INNER JOIN students p ON proces.student_id=p.id"
     conditions = "1=1 AND p.department_id = #{department_id}"
     condition_values = []
-
-    if(!params[:major_id].blank?)
-      conditions += " AND p.major_id = ? "
-      condition_values << params[:major_id]
+    if(!params[:department_id].blank?)
+      majors = Department.find(params[:department_id]).majors
+      ids = []
+      unless majors.blank?
+        majors.each do |m|
+          ids.push(m.id)
+        end
+      end
+      idss = ids.join(",")
+      conditions += " AND p.major_id in (#{idss}) "
+      condition_values << []
     end
 
     if(!params[:class_id].blank?)

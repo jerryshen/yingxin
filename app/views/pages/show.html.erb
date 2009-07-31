@@ -25,6 +25,11 @@
     <%=h @page.hidden ? "是":"否" %>
   </p>
 
+  <p>
+    <b>显示顺序:</b>
+    <%=h @page.index %>
+  </p>
+
   <p class="bbar">
     <input type="button" onclick="$page.showListView()" value="返回列表" />
   </p>

@@ -4,7 +4,7 @@ class CreatePages < ActiveRecord::Migration
       t.string :name
       t.text :function
       t.string :url
-      t.integer :index
+      t.integer :index, :default => 0
       t.string :icon
       t.references :page_module
       t.boolean :hidden, :default => false

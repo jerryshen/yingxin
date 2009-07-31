@@ -1,23 +1,13 @@
-#+------------+--------------+------+-----+---------+----------------+
-#| Field      | Type         | Null | Key | Default | Extra          |
-#+------------+--------------+------+-----+---------+----------------+
-#| id         | int(11)      | NO   | PRI | NULL    | auto_increment |
-#| name       | varchar(255) | YES  |     | NULL    |                |
-#| function   | varchar(255) | YES  |     | NULL    |                |
-#| url        | varchar(255) | YES  |     | NULL    |                |
-#| module_id  | int(11)      | YES  | MUL | NULL    |                |
-#| hidden     | tinyint(1)   | YES  |     | NULL    |                |
-#| created_at | datetime     | YES  |     | NULL    |                |
-#| updated_at | datetime     | YES  |     | NULL    |                |
-#+------------+--------------+------+-----+---------+----------------+
 class CreatePages < ActiveRecord::Migration
   def self.up
-    create_table :pages, :options => 'default charset=utf8' do |t|
+    create_table :pages  do |t|
       t.string :name
       t.text :function
       t.string :url
+      t.integer :index, :default => 0
+      t.string :icon
       t.references :page_module
-      t.boolean :hidden
+      t.boolean :hidden, :default => false
 
       t.timestamps
     end

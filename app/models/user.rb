@@ -83,7 +83,7 @@ class User < ActiveRecord::Base
   def accessable_pages
     pages = []
     self.roles.each{ |r| pages += r.pages }
-    return pages 
+    return pages.sort!{|x,y| x.index <=> y.index} 
   end
 
   #用户的菜单列表

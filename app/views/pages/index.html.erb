@@ -79,25 +79,24 @@
         resizable: false
       }, {
         header: "名称",
-        dataIndex: 'name',
-        sortable: true
+        dataIndex: 'name'
       }, {
         header: "页面功能",
-        dataIndex: 'function',
-        sortable: true
+        dataIndex: 'function'
       }, {
         header: "链接",
-        dataIndex: 'url',
-        sortable: true
+        dataIndex: 'url'
       },{
         header: "图标",
-        dataIndex: "icon",
-        sortable: true
+        dataIndex: "icon"
       }, {
         header: "页面模块",
         dataIndex: 'page_module_id',
-        sortable: true,
         renderer : getPageModuleName
+      },{
+        header: "显示顺序",
+        dataIndex: 'index',
+        sortable: true
       }, {
         header: "是否隐藏",
         dataIndex: 'hidden',

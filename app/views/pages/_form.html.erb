@@ -20,6 +20,10 @@
   <%= f.text_field :icon %>
 </p>
 <p>
+  <%= f.label :index, "显示顺序" %>
+  <%= f.text_field :index %>
+</p>
+<p>
   <label>是否隐藏</label>
   <label for="hidden"><%= f.radio_button :hidden, false  %>显示</label>
   <label for="hidden"><%= f.radio_button :hidden, true   %>隐藏</label>

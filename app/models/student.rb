@@ -8,7 +8,7 @@ class Student < ActiveRecord::Base
 
   # process end
   def self.proc_end(proc)
-    if proc.step1 && proc.step2 && proc.step3 && proc.step4 && proc.step5 && proc.step6 && proc.step7 == true
+    if proc.step1 && proc.step2 == true
       student = Student.find(proc.student_id)
       student.update_attributes(:confirm => true, :confirm_date => Time.now)
     end
@@ -16,7 +16,7 @@ class Student < ActiveRecord::Base
 
   #process restart
   def self.proc_restart(proc)
-    if proc.step1 && proc.step2 && proc.step3 && proc.step4 && proc.step5 && proc.step6 && proc.step7 == false
+    if proc.step1 && proc.step2 == false
       student = Student.find(proc.student_id)
       student.update_attributes(:confirm => false, :confirm_date => nil)
     end

@@ -37,6 +37,12 @@
         <option value="true">已报到</option>
         <option value="false">未报到</option>
       </select>
+      <label>已复查学生缴费情况</label>
+      <select name="search_fee" id="search_fee">
+        <option value="">全部...</option>
+        <option value="true">已缴费</option>
+        <option value="false">未缴费</option>
+      </select>
     </div>
     <div style="margin: 10px 0px;">
       <label for="search_number">学号</label>
@@ -44,9 +50,9 @@
       <label for="search_name">姓名</label>
       <input type="text" value="" name="search_name" id="search_name" size="15"/>
 
-    <input class="button" type="button" id="btnSearch" value="搜索"/>
-    <input value="重置"class="btnreset" type="reset" />
-    <input value="刷新 " onclick="window.location.reload()" class="btnrefresh" type="button"  />
+      <input class="button" type="button" id="btnSearch" value="搜索"/>
+      <input value="重置"class="btnreset" type="reset" />
+      <input value="刷新 " onclick="window.location.reload()" class="btnrefresh" type="button"  />
     </div>
   </form>
   <div>

@@ -53,7 +53,7 @@
     Ext.get(alink).on("click",function(){
       Ext.Ajax.request({
         url: url,
-        success: function(rq,params){ //rq:请求的响应，params请求时的参数（此处为｛url,success,failure｝)
+        success: function(rq,params){
           if(rq.responseText=="true"){
             $page.refreshGridData();
           }else{
@@ -61,7 +61,7 @@
           }
         },
         failure: function(){
-          Ext.MessageBox.show({msg:"请求服务器失败，请检查网络连接或与系统管理员联系",buttons: Ext.MessageBox.OK,icon:Ext.MessageBox.WARNING});
+          Ext.MessageBox.show({msg:"该生还未进行入学资格复查，操作失败！",buttons: Ext.MessageBox.OK,icon:Ext.MessageBox.WARNING});
         }
       });
     })

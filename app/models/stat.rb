@@ -23,8 +23,13 @@ class Stat
       count = {"major_id" => "合计", "ar_count" => all_ars, "ov_count" => all_ovs, "percent" => percent }
     else
       majors = Department.find(department_id).majors
-      all_ars = Student.count(:conditions => ["department_id =?", department_id])
-      all_ovs = Student.count(:conditions => ["department_id =? AND confirm =?", department_id, true])
+      ids = []
+      majors.each do |m|
+        ids.push(m.id)
+      end
+      idss = ids.join(",")
+      all_ars = Student.count(:conditions => ["major_id in (#{idss})"])
+      all_ovs = Student.count(:conditions => ["major_id in (#{idss}) AND confirm =?",true])
       percent = all_ars == 0 ? "0%" : (all_ovs / all_ars*100).to_s + "%"
       count = {"major_id" => "合计", "ar_count" => all_ars, "ov_count" => all_ovs, "percent" => percent }
     end
@@ -32,8 +37,8 @@ class Stat
     majors.each do |m|
       ar_stus = Student.count(:conditions => ["major_id =?", m.id])
       ov_stus = Student.count(:conditions => ["major_id =? AND confirm =?", m.id, true])
-      #      la_stus = Student.find(:all,
-      #        :conditions => ["major_id =? AND confirm =?",m.id, false])
+#            la_stus = Student.find(:all,
+#              :conditions => ["major_id =? AND confirm =?",m.id, false])
       percent = ar_stus == 0 ? "0%" : (ov_stus / ar_stus*100).to_s + "%"
       arr.push({"major_id" => m.id, "ar_count" => ar_stus, "ov_count" => ov_stus, "percent" => percent})
     end

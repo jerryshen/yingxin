@@ -60,14 +60,14 @@ class Step5sController < ApplicationController
     @step5 = Proce.find(params[:id])
     if !@step5.step5
       if @step5.update_attributes(:step5 => true, :step5_date => Time.now)
-        Student.proc_end(@step5)
+#        Student.proc_end(@step5)
         render :text =>"true"
       else
         render :text => "false"
       end
     else
       if @step5.update_attributes(:step5 => false, :step5_date => nil)
-        Student.proc_restart(@step5)
+#        Student.proc_restart(@step5)
         render :text =>"true"
       else
         render :text => "false"
@@ -123,10 +123,10 @@ class Step5sController < ApplicationController
 
     if(conditions != '1=1 AND p.department_id = #{department_id}')
       option_conditions = [conditions,condition_values].flatten!
-      @step5s = Proce.paginate(:order =>"id DESC", :joins => joins,:conditions => option_conditions,:per_page=> @pagesize, :page => params[:page] || 1)
+      @step5s = Proce.paginate(:order =>"id ASC", :joins => joins,:conditions => option_conditions,:per_page=> @pagesize, :page => params[:page] || 1)
       count = Proce.count(:joins => joins, :conditions => option_conditions)
     else
-      @step5s = Proce.paginate(:order =>"id DESC",:per_page=> @pagesize, :page => params[:page] || 1)
+      @step5s = Proce.paginate(:order =>"id ASC",:per_page=> @pagesize, :page => params[:page] || 1)
       count = Proce.count(:joins => joins, :conditions => conditions)
     end
     return render_json(@step5s,count)

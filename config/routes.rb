@@ -5,8 +5,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :complexes
 
-
-  map.resources :stats
+  map.resources :stats, :collection => {:export_all => :get}
   map.resources :temps
   map.resources :proces
   map.resources :step7s

@@ -40,7 +40,7 @@
   }
 
   var makeAsPassLink = function(value, p, record){
-    var text = value.toString()=="true" ? "<div class='grid-text-true'>已缴纳</div>" : "<div class='grid-text-false'>未缴纳</div>";
+    var text = value.toString()=="true" ? "<div class='grid-text-true-noneed'>已缴纳</div>" : "<div class='grid-text-false'>未缴纳</div>";
     return String.format("<a href='#' action ='pass' title='Pass' class='gridButton' url='/step3s/pass/{0}'>{1}</a>",record.data.id,text);
   }
 

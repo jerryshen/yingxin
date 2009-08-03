@@ -14,8 +14,9 @@
       <% end %>
     </select>
     <input class="button" type="button" id="btnSearch" value="搜索"/>
-    <input value="重置"class="btnreset" type="reset" />
-    <input value="刷新 " onclick="window.location.reload()" class="btnrefresh" type="button"  />
+    <input value="重置" class="btnreset" type="reset" />
+    <input value="刷新" onclick="window.location.reload()" class="btnrefresh" type="button"  />
+    <%= link_to "导出未报到学生列表", :action => 'export_all'  %>
   </form>
   <div>
     <div id="grid-wrap">
@@ -31,9 +32,33 @@
   var getMajorName = function(value){
     return majors[value]
   }
-  //{header: [dataIndex(首字母大写)], renderer: money(Function),menuDisabled: [true],
-  // dataIndex: "fieldName" ,width: 100, sortable: [false], resizable: [false]}
-  //框[]中的为默认值
+
+  var makeAsExportLink = function(value, p, record){
+    var data = record.data;
+    return String.format("<a href='javascript:void(0)' action ='export' title='导出' class='gridButton' major_id='{0}' url='/stats/export'>导出</a>", data.major_id);
+  }
+
+  var bind_export_link_click = function(alink){
+    var url = alink.getAttribute("url");
+    var major_id = alink.getAttribute("major_id");
+    Ext.get(alink).on("click",function(){
+      Ext.Ajax.request({
+        url: url,
+        params: {major_id: major_id},
+       success: function(rq,params){ //rq:请求的响应，params请求时的参数（此处为｛url,success,failure｝)
+          if(rq.responseText=="true"){
+            $page.refreshGridData();
+          }else{
+            Ext.MessageBox.show({msg:"导出失败",buttons: Ext.MessageBox.OK,icon:Ext.MessageBox.ERROR});
+          }
+        },
+        failure: function(){
+          Ext.MessageBox.show({msg:"导出d失败",buttons: Ext.MessageBox.OK,icon:Ext.MessageBox.WARNING});
+        }
+      });
+    })
+  }
+
   Ext.onReady(function(){
     var columns = [{
         header: "专业名称",
@@ -49,6 +74,12 @@
       }, {
         header: "报到率",
         dataIndex: 'percent'
+      },{
+        header: "导出未报到学生列表",
+        dataIndex: 'major_id',
+        width: 150,
+        sortable: false,
+        renderer: makeAsExportLink
       }]
     var controllerName = "stats";
     options = {
@@ -56,7 +87,10 @@
       gridTitle: "报到率汇总列表",
       newItemLink: "newItem",
       columns: columns,
-      disableOprateColumn: true
+      disableOprateColumn: true,
+      bindlinks: {
+        "export": bind_export_link_click
+      }
     }
     $page = new ExtListPage(options);
   })

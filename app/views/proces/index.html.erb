@@ -39,8 +39,12 @@
     return nums[value]
   }
 
-  var condition = function(value){
+  var needed = function(value){
     return value.toString()=="true" ? "<div class='grid-text-true'>已完成</div>" : "<div class='grid-text-false'>未完成</div>"
+  }
+
+    var noneeded = function(value){
+    return value.toString()=="true" ? "<div class='grid-text-true-noneed'>已完成</div>" : "<div class='grid-text-false'>未完成</div>"
   }
   Ext.onReady(function(){
     var columns = [{
@@ -66,7 +70,7 @@
         dataIndex: 'step1',
         type: 'boolean',
         sortable: true,
-        renderer: condition
+        renderer: needed
       }, {
         header: "复查时间",
         dataIndex: 'step1_date',
@@ -78,7 +82,7 @@
         dataIndex: 'step2',
         type: 'boolean',
         sortable: true,
-        renderer: condition
+        renderer: needed
       }, {
         header: "缴纳时间",
         dataIndex: 'step2_date',
@@ -90,7 +94,7 @@
         dataIndex: 'step3',
         type: 'boolean',
         sortable: true,
-        renderer: condition
+        renderer: noneeded
       }, {
         header: "复查时间",
         dataIndex: 'step3_date',
@@ -102,7 +106,7 @@
         dataIndex: 'step4',
         type: 'boolean',
         sortable: true,
-        renderer: condition
+        renderer: noneeded
       }, {
         header: "办理时间",
         dataIndex: 'step4_date',
@@ -114,7 +118,7 @@
         dataIndex: 'step5',
         type: 'boolean',
         sortable: true,
-        renderer: condition
+        renderer: noneeded
       }, {
         header: "注册时间",
         dataIndex: 'step5_date',
@@ -126,7 +130,7 @@
         dataIndex: 'step6',
         type: 'boolean',
         sortable: true,
-        renderer: condition
+        renderer: noneeded
       }, {
         header: "购买时间",
         dataIndex: 'step6_date',
@@ -138,7 +142,7 @@
         dataIndex: 'step7',
         type: 'boolean',
         sortable: true,
-        renderer: condition
+        renderer: noneeded
       }, {
         header: "入住时间",
         dataIndex: 'step7_date',

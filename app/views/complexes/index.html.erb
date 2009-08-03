@@ -61,9 +61,18 @@
   </div>
 </div>
 <script>
-  //{header: [dataIndex(首字母大写)], renderer: money(Function),menuDisabled: [true],
-  // dataIndex: "fieldName" ,width: 100, sortable: [false], resizable: [false]}
-  //框[]中的为默认值
+  var departments = <%= Department.to_json%>
+  var getDepartmentName = function(value){
+    return departments[value]
+  }
+  var majors = <%= Major.to_json%>
+  var getMajorName = function(value){
+    return majors[value]
+  }
+  var classes = <%= InfoClass.to_json%>
+  var getClassName = function(value){
+    return clesses[value]
+  }
   Ext.onReady(function(){
     var columns = [{
         header: "ID",
@@ -92,15 +101,18 @@
       }, {
         header: "院系",
         dataIndex: 'department_id',
-        sortable: true
+        sortable: true,
+        renderer: getDepartmentName
       }, {
         header: "专业",
         dataIndex: 'major_id',
-        sortable: true
+        sortable: true,
+        renderer: getMajorName
       }, {
         header: "班级",
         dataIndex: 'info_class_id',
-        sortable: true
+        sortable: true,
+        renderer: getClassName
       }, {
         header: "报到情况",
         dataIndex: 'confirm',

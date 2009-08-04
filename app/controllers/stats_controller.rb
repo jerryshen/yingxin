@@ -20,7 +20,7 @@ class StatsController < ApplicationController
       end
     end
     send_data csv_string,
-      :type=>'text/csv; charset=iso-8859-1; header=present',
+      :type=>'text/csv; charset=utf-8; header=present',
       :disposition => "attachment; filename=未报到学生.csv"
   end
 
@@ -37,7 +37,7 @@ class StatsController < ApplicationController
       end
 
       send_data csv_string,
-        :type=>'text/csv; charset=iso-8859-1; header=present',
+        :type=>'text/csv; charset=utf-8; header=present',
         :disposition => "attachment; filename= #{major.name}未报道学生列表.csv"
 
 

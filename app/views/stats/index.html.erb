@@ -35,7 +35,7 @@
 
   var makeAsExportLink = function(value, p, record){
     var data = record.data;
-    return String.format("<a href='javascript:void(0)' action ='export' title='导出' class='gridButton' major_id='{0}' url='/stats/export'>导出</a>", data.major_id);
+    return String.format("<a href='/stats/export?major_id={0}'  title='导出' target='_blank' >导出</a>", data.major_id);
   }
 
   var bind_export_link_click = function(alink){

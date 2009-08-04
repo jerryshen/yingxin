@@ -1,4 +1,5 @@
 class ComplexesController < ApplicationController
+  require "fastercsv"
   # GET /complexes
   # GET /complexes.xml
   def index
@@ -16,6 +17,20 @@ class ComplexesController < ApplicationController
       format.html # show.html.erb
       format.xml  { render :xml => @complex }
     end
+  end
+
+  def export
+    @students = Student.find(:all, :joins => "INNER JOIN proces p ON students.id = p.student_id", :conditions => ["p.step1 =? AND p.step2 = ?", true, false])
+
+    csv_string = FasterCSV.generate do |csv|
+      csv << ["考生号","姓名","院系","专业"]
+      @students.each do |u|
+        csv << [u.can_number, u.name, u.major.department.name, u.major.name]
+      end
+    end
+    send_data csv_string,
+      :type=>'text/csv; charset=iso-8859-1; header=present',
+      :disposition => "attachment; filename=报到却未缴费学生.csv"
   end
 
   private

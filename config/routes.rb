@@ -3,7 +3,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :beds
 
-  map.resources :complexes
+  map.resources :complexes, :collection => { :export => :get}
 
   map.resources :stats, :collection => {:export_all => :get, :export => :get}
   map.resources :temps

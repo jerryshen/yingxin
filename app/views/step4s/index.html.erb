@@ -40,7 +40,7 @@
   }
 
   var makeAsPassLink = function(value, p, record){
-    var text = value.toString()=="true" ? "<div class='grid-text-true-noneed'>已办理</div>" : "<div class='grid-text-false'>未办理</div>";
+    var text = value.toString()=="true" ? "<div class='grid-text-true'>已办理</div>" : "<div class='grid-text-true-noneed'>未办理</div>";
     return String.format("<a href='#' action ='pass' title='Pass' class='gridButton' url='/step4s/pass/{0}'>{1}</a>",record.data.id,text);
   }
 
@@ -57,7 +57,7 @@
           }
         },
         failure: function(){
-          Ext.MessageBox.show({msg:"请求服务器失败，请检查网络连接或与系统管理员联系",buttons: Ext.MessageBox.OK,icon:Ext.MessageBox.WARNING});
+          Ext.MessageBox.show({msg:"该生还未进行入学资格复查，操作失败！",buttons: Ext.MessageBox.OK,icon:Ext.MessageBox.WARNING});
         }
       });
     })

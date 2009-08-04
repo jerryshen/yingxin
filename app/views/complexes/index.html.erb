@@ -43,6 +43,7 @@
         <option value="true">已缴费</option>
         <option value="false">未缴费</option>
       </select>
+      <%= link_to "导出未缴费学生列表", :action => 'export'  %>
     </div>
     <div style="margin: 10px 0px;">
       <label for="search_number">学号</label>
@@ -71,7 +72,10 @@
   }
   var classes = <%= InfoClass.to_json%>
   var getClassName = function(value){
-    return clesses[value]
+    return classes[value]
+  }
+  var genderFormat = function(value, p, record){
+    return value.toString()=="m" ? "男" : "女"
   }
   Ext.onReady(function(){
     var columns = [{
@@ -97,7 +101,8 @@
       }, {
         header: "性别",
         dataIndex: 'gender',
-        sortable: true
+        sortable: true,
+        renderer: genderFormat
       }, {
         header: "院系",
         dataIndex: 'department_id',

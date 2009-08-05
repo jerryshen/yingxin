@@ -65,7 +65,7 @@ class ApplicationController < ActionController::Base
   def hash_to_json(records,total)
     json_texts = []
     records.to_a.each{|cat| json_texts << cat.to_json}
-     return "{'count':#{total},'rows':[#{json_texts.join(",")}]}"
+    return "{'count':#{total},'rows':[#{json_texts.join(",")}]}"
   end
 
   def load_page_data
@@ -73,6 +73,17 @@ class ApplicationController < ActionController::Base
     if(params[:page_size])
       param_pagesize = params[:page_size].to_i
       if param_pagesize > 0 then @pagesize = param_pagesize end
+    end
+  end
+
+  #utf8 to gbk
+  def convert(str)
+    require 'iconv'
+    begin
+      converter = Iconv.new("GB2312", "UTF-8")
+      converter.iconv(str)
+    rescue
+      str
     end
   end
 end

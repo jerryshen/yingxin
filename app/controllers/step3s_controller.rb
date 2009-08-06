@@ -58,6 +58,7 @@ class Step3sController < ApplicationController
 
   def pass
     @step3 = Proce.find(params[:id])
+    if @step3.step1 == true
     if !@step3.step3
       if @step3.update_attributes(:step3 => true, :step3_date => Time.now)
 #        Student.proc_end(@step3)
@@ -72,6 +73,9 @@ class Step3sController < ApplicationController
       else
         render :text => "false"
       end
+    end
+    else
+      render :text => "false"
     end
   end
 

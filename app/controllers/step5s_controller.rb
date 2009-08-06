@@ -58,20 +58,24 @@ class Step5sController < ApplicationController
 
   def pass
     @step5 = Proce.find(params[:id])
-    if !@step5.step5
-      if @step5.update_attributes(:step5 => true, :step5_date => Time.now)
-#        Student.proc_end(@step5)
-        render :text =>"true"
+    if @step5.step1 == true
+      if !@step5.step5
+        if @step5.update_attributes(:step5 => true, :step5_date => Time.now)
+          #        Student.proc_end(@step5)
+          render :text =>"true"
+        else
+          render :text => "false"
+        end
       else
-        render :text => "false"
+        if @step5.update_attributes(:step5 => false, :step5_date => nil)
+          #        Student.proc_restart(@step5)
+          render :text =>"true"
+        else
+          render :text => "false"
+        end
       end
     else
-      if @step5.update_attributes(:step5 => false, :step5_date => nil)
-#        Student.proc_restart(@step5)
-        render :text =>"true"
-      else
-        render :text => "false"
-      end
+      render :text => "false"
     end
   end
 

@@ -58,20 +58,24 @@ class Step7sController < ApplicationController
 
   def pass
     @step7 = Proce.find(params[:id])
-    if !@step7.step7
-      if @step7.update_attributes(:step7 => true, :step7_date => Time.now)
-#        Student.proc_end(@step7)
-        render :text =>"true"
+    if @step7.step1 == true
+      if !@step7.step7
+        if @step7.update_attributes(:step7 => true, :step7_date => Time.now)
+          #        Student.proc_end(@step7)
+          render :text =>"true"
+        else
+          render :text => "false"
+        end
       else
-        render :text => "false"
+        if @step7.update_attributes(:step7 => false, :step7_date => nil)
+          #        Student.proc_restart(@step7)
+          render :text =>"true"
+        else
+          render :text => "false"
+        end
       end
     else
-      if @step7.update_attributes(:step7 => false, :step7_date => nil)
-#        Student.proc_restart(@step7)
-        render :text =>"true"
-      else
-        render :text => "false"
-      end
+      render :text => "false"
     end
   end
 

@@ -53,7 +53,7 @@
           if(rq.responseText=="true"){
             $page.refreshGridData();
           }else{
-            Ext.MessageBox.show({msg:"更新隐藏/显示状态失败",buttons: Ext.MessageBox.OK,icon:Ext.MessageBox.ERROR});
+            Ext.MessageBox.show({msg:"该生还未进行入学资格复查，操作失败！",buttons: Ext.MessageBox.OK,icon:Ext.MessageBox.ERROR});
           }
         },
         failure: function(){

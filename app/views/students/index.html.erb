@@ -16,7 +16,8 @@
   </form>
   <div>
     <div class="nav">
-      <span class="button" id="newItem" onclick="$page.showNewView()"><img  src="/images/icons/new.png"/>添加新生</span>
+      <a class="button" id="newItem" href="javascript:$page.showNewView()"><img  src="/images/icons/new.png"/>添加新生</a>
+      &nbsp;&nbsp;&nbsp;<a id="print" class="button" href="/students:print" target="_blank"><img src="/images/icons/printer.png" />打印</a>
     </div>
     <div id="grid-wrap">
     </div>
@@ -67,5 +68,19 @@
       columns: columns
     }
     $page = new ExtListPage(options);
+    var selmajor = document.getElementById("search_major");
+    var setPrintHref = function(event){
+      var v = selmajor.value;
+      var print = document.getElementById("print");
+      var href = ''
+      if(!v){
+        href = "/students:print";
+      }else{
+        href = "/major/" + v + "/students:print";
+      }
+      print.setAttribute("href", href);
+    }
+    selmajor.onchange = setPrintHref;
+    setPrintHref();
   })
 </script>

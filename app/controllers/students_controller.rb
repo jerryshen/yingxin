@@ -11,6 +11,20 @@ class StudentsController < ApplicationController
     end
   end
 
+  def print
+    if params[:major_id].blank?
+      @students = Student.all
+      @caption = "所有新生"
+    else
+      major = Major.find(params[:major_id].to_i)
+      if major
+        @students = major.students
+        @caption = "#{major.name}专业新生"
+      end
+    end
+    render :layout => false
+  end
+
   # GET /students/1
   # GET /students/1.xml
   def show

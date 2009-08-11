@@ -1,0 +1,23 @@
+<fieldset>
+  <legend>查看[<%= @green_path.student.name %>的缴费</legend>
+    <p>
+    <b>姓名:</b>
+    <%=h @green_path.student.name %>
+  </p>
+      <p>
+    <b>专业:</b>
+    <%=h @green_path.student.department.name if @green_path.student.department %>
+    <%=h @green_path.student.major.name if @green_path.student.major%>
+  </p>
+  <p>
+    <b>是否减免:</b>
+    <%=h proc_format(@green_path.remit) %>
+  </p>
+  <p>
+    <b>减免时间:</b>
+    <%=h fuzzy_time(@green_path.remit_date) if @green_path.remit_date%>
+  </p>
+  <p class="bbar">
+    <input type="button" onclick="$page.showListView()" value="返回列表" />
+  </p>
+</fieldset>

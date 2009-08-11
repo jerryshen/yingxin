@@ -1,5 +1,9 @@
 <%= f.error_messages %>
 <p>
+  <%= f.label :index, "序号" %>
+  <%= f.text_field :index, :class => "required number" %>
+</p>
+<p>
   <%= f.label :name, "名称" %>
   <%= f.text_field :name, :class => "required" %>
 </p>

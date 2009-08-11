@@ -75,6 +75,25 @@ class Step1sController < ApplicationController
     end
   end
 
+  def leave
+    @step1 = Proce.find(params[:id])
+    if !@step1.leave
+      if @step1.update_attributes(:leave => true, :step1 => true, :step1_date => Time.now)
+        Student.proc_end(@step1)
+        render :text =>"true"
+      else
+        render :text => "false"
+      end
+    else
+      if @step1.update_attributes(:leave => false, :step1 => false, :step1_date => nil)
+        Student.proc_restart(@step1)
+        render :text =>"true"
+      else
+        render :text => "false"
+      end
+    end
+  end
+
   private
 
   def get_json

@@ -31,9 +31,10 @@
 <%= javascript_include_tag 'jquery-validate/localization/messages_cn.js' %>
 <%= javascript_include_tag 'AjaxForm.js' %>
 <script>
-  //{header: [dataIndex(首字母大写)], renderer: money(Function),menuDisabled: [true],
-  // dataIndex: "fieldName" ,width: 100, sortable: [false], resizable: [false]}
-  //框[]中的为默认值
+  var departments = <%= Department.to_json%>
+  var getDepartmentName = function(value){
+    return departments[value]
+  }
   Ext.onReady(function(){
     var columns = [{
         header: "ID",
@@ -50,6 +51,11 @@
       }, {
         header: "院系",
         dataIndex: 'department_id',
+        sortable: true,
+        renderer: getDepartmentName
+      }, {
+        header: "校区",
+        dataIndex: 'campus',
         sortable: true
       }]
     var controllerName = "majors";

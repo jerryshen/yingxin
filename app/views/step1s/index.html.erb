@@ -16,12 +16,12 @@
   <form style="margin: 10px 0px;" id="search_form">
     <%= index_select_class  %>
     <div style="margin: 10px 0px;"><label for="search_name">姓名</label>
-    <input type="text" value="" name="search_name" id="search_name" size="15"/>
-    <label for="search_can_number">考生号</label>
-    <input type="text" value="" name="search_can_number" id="search_can_number" size="15"/>
-    <input class="button" type="button" id="btnSearch" value="搜索"/>
-    <input value="重置"class="btnreset" type="reset" />
-    <input value="刷新 " onclick="window.location.reload()" class="btnrefresh" type="button"  />
+      <input type="text" value="" name="search_name" id="search_name" size="15"/>
+      <label for="search_can_number">考生号</label>
+      <input type="text" value="" name="search_can_number" id="search_can_number" size="15"/>
+      <input class="button" type="button" id="btnSearch" value="搜索"/>
+      <input value="重置"class="btnreset" type="reset" />
+      <input value="刷新 " onclick="window.location.reload()" class="btnrefresh" type="button"  />
     </div>
   </form>
   <div>
@@ -38,7 +38,18 @@
   var getCanNum = function(value){
     return nums[value]
   }
-
+  var genders = <%= Proce.get_gender %>
+  var getGender = function(value){
+    return genders[value]
+  }
+  var majors = <%= Proce.get_major %>
+  var getMajorName = function(value){
+    return majors[value]
+  }
+  var campuses = <%= Proce.get_campus %>
+  var getCampus = function(value){
+    return campuses[value]
+  }
   var makeAsPassLink = function(value, p, record){
     var text = value.toString()=="true" ? "<div class='grid-text-true'>已复查</div>" : "<div class='grid-text-false'>未复查</div>";
     return String.format("<a href='#' action ='pass' title='Pass' class='gridButton' url='/step1s/pass/{0}'>{1}</a>",record.data.id,text);
@@ -62,6 +73,31 @@
       });
     })
   }
+
+    var makeAsLeaveLink = function(value, p, record){
+    var text = value.toString()=="true" ? "请假" : "无特殊情况";
+    return String.format("<a href='#' action ='leave' title='Leave' class='gridButton' url='/step1s/leave/{0}'>{1}</a>",record.data.id,text);
+  }
+
+  var bind_leave_link_click = function(alink){
+    var url = alink.getAttribute("url");
+    Ext.get(alink).on("click",function(){
+      Ext.Ajax.request({
+        url: url,
+        success: function(rq,params){ //rq:请求的响应，params请求时的参数（此处为｛url,success,failure｝)
+          if(rq.responseText=="true"){
+            $page.refreshGridData();
+          }else{
+            Ext.MessageBox.show({msg:"更新隐藏/显示状态失败",buttons: Ext.MessageBox.OK,icon:Ext.MessageBox.ERROR});
+          }
+        },
+        failure: function(){
+          Ext.MessageBox.show({msg:"请求服务器失败，请检查网络连接或与系统管理员联系",buttons: Ext.MessageBox.OK,icon:Ext.MessageBox.WARNING});
+        }
+      });
+    })
+  }
+
   Ext.onReady(function(){
     var columns = [{
         header: "序号",
@@ -82,16 +118,39 @@
         sortable: true,
         renderer: getStudentName
       }, {
+        header: "性别",
+        dataIndex: 'student_id',
+        sortable: true,
+        width: 50,
+        renderer: getGender
+      }, {
+        header: "专业",
+        dataIndex: 'student_id',
+        sortable: true,
+        width: 120,
+        renderer: getMajorName
+      }, {
+        header: "校区",
+        dataIndex: 'student_id',
+        sortable: true,
+        renderer: getCampus
+      }, {
         header: "入学资格复查",
         dataIndex: 'step1',
         type: 'boolean',
         sortable: true,
         renderer: makeAsPassLink
       }, {
-        header: "通过时间",
+        header: "复查时间",
         dataIndex: 'step1_date',
         sortable: true,
         width: 160
+      }, {
+        header: "特殊情况",
+        dataIndex: 'leave',
+        type: 'boolean',
+        sortable: true,
+        renderer: makeAsLeaveLink
       }]
     var controllerName = "step1s";
     options = {
@@ -101,7 +160,8 @@
       columns: columns,
       disableDestroyButton: true,
       bindlinks: {
-        "pass" : bind_pass_link_click
+        "pass" : bind_pass_link_click,
+        "leave": bind_leave_link_click
       }
     }
     $page = new ExtListPage(options);

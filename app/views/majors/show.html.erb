@@ -4,9 +4,13 @@
     <b>名称:</b>
     <%=h @major.name %>
   </p>
-    <p>
+  <p>
     <b>院系:</b>
     <%=h @major.department.name %>
+  </p>
+  <p>
+    <b>校区:</b>
+    <%=h @major.campus %>
   </p>
   <p class="bbar">
     <input type="button" onclick="$page.showListView()" value="返回列表" />

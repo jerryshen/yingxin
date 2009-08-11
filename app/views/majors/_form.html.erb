@@ -7,3 +7,8 @@
   <%= f.label :name, "专业名称" %>
   <%= f.text_field :name, :class => "required" %>
 </p>
+<p>
+  <label>校区</label>
+  <label for="campus"><%= f.radio_button :campus, "南校区"  %>南校区</label>
+  <label for="campus"><%= f.radio_button :campus, "北校区"  %>北校区</label>
+</p>

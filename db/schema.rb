@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 27) do
+ActiveRecord::Schema.define(:version => 22) do
 
   create_table "app_configs", :force => true do |t|
     t.string   "key"
@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(:version => 27) do
     t.boolean  "de_type",    :default => false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "index"
   end
 
   create_table "fee_stds", :force => true do |t|
@@ -66,6 +67,7 @@ ActiveRecord::Schema.define(:version => 27) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "campus"
   end
 
   add_index "majors", ["department_id"], :name => "index_majors_on_department_id"
@@ -93,7 +95,7 @@ ActiveRecord::Schema.define(:version => 27) do
     t.string   "name"
     t.text     "function"
     t.string   "url"
-    t.integer  "index"
+    t.integer  "index",          :default => 0
     t.string   "icon"
     t.integer  "page_module_id"
     t.boolean  "hidden",         :default => false
@@ -122,6 +124,10 @@ ActiveRecord::Schema.define(:version => 27) do
     t.datetime "step7_date"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.datetime "remit_date"
+    t.boolean  "remit",      :default => false
+    t.boolean  "leave",      :default => false
+    t.datetime "leave_date"
   end
 
   add_index "proces", ["major_id"], :name => "index_proces_on_major_id"

@@ -40,7 +40,18 @@
   var getCanNum = function(value){
     return nums[value]
   }
-
+  var genders = <%= Proce.get_gender %>
+  var getGender = function(value){
+    return genders[value]
+  }
+  var majors = <%= Proce.get_major %>
+  var getMajorName = function(value){
+    return majors[value]
+  }
+  var campuses = <%= Proce.get_campus %>
+  var getCampus = function(value){
+    return campuses[value]
+  }
   var makeAsPassLink = function(value, p, record){
     var text = value.toString()=="true" ? "<div class='grid-text-true'>已注册</div>" : "<div class='grid-text-true-noneed'>未注册</div>";
     return String.format("<a href='#' action ='pass' title='Pass' class='gridButton' url='/step5s/pass/{0}'>{1}</a>",record.data.id,text);
@@ -83,6 +94,23 @@
         dataIndex: 'student_id',
         sortable: true,
         renderer: getStudentName
+      }, {
+        header: "性别",
+        dataIndex: 'student_id',
+        sortable: true,
+        width: 50,
+        renderer: getGender
+      }, {
+        header: "专业",
+        dataIndex: 'student_id',
+        sortable: true,
+        width: 120,
+        renderer: getMajorName
+      }, {
+        header: "校区",
+        dataIndex: 'student_id',
+        sortable: true,
+        renderer: getCampus
       }, {
         header: "入学报到注册",
         dataIndex: 'step5',

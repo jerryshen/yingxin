@@ -44,7 +44,6 @@ class MajorsController < ApplicationController
 
     respond_to do |format|
       if @major.save
-        flash[:notice] = 'Major was successfully created.'
         format.html { redirect_to(@major) }
         format.xml  { render :xml => @major, :status => :created, :location => @major }
         format.json { render :text => '{status: "success", message: "成功添加专业！"}'}
@@ -63,7 +62,6 @@ class MajorsController < ApplicationController
 
     respond_to do |format|
       if @major.update_attributes(params[:major])
-        flash[:notice] = 'Major was successfully updated.'
         format.html { redirect_to(@major) }
         format.xml  { head :ok }
         format.json { render :text => '{status: "success", message: "成功更新专业！"}'}

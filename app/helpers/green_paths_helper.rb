@@ -1,0 +1,2 @@
+module GreenPathsHelper
+end

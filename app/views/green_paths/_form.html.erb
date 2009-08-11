@@ -1,0 +1,21 @@
+<%= f.error_messages %>
+<p>
+  <label for="stu">姓名:</label>
+  <label for="name"><%=h @green_path.student.name %></label>
+</p>
+<p>
+  <label for="dep">专业:</label>
+  <label for="name">
+    <%=h @green_path.student.department.name if @green_path.student.department %>
+    <%=h @green_path.student.major.name if @green_path.student.major %>
+  </label>
+</p>
+<p>
+  <label for="info_cla">班级:</label>
+  <label for="name"><%=h @green_path.student.info_class.name if @green_path.student.info_class %></label>
+</p>
+<p>
+  <label>缴费:</label>
+  <label for="check"><%= f.radio_button :remit, true  %>减免</label>
+  <label for="check"><%= f.radio_button :remit, false %>不减免</label>
+</p>

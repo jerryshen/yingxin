@@ -161,10 +161,10 @@ class StudentsController < ApplicationController
       conditions = []
       conditions << sql.join(" AND ")
       conditions += values
-      @students = Student.paginate(:order =>"id DESC", :conditions => conditions,:per_page=> @pagesize,:page => params[:page] || 1)
+      @students = Student.paginate(:order =>"id ASC", :conditions => conditions,:per_page=> @pagesize,:page => params[:page] || 1)
       count = Student.count(:conditions => conditions)
     else
-      @students = Student.paginate(:order =>"id DESC",:per_page=> @pagesize,:page => params[:page] || 1)
+      @students = Student.paginate(:order =>"id ASC",:per_page=> @pagesize,:page => params[:page] || 1)
       count = Student.count
     end
     return render_json(@students,count)

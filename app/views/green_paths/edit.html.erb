@@ -1,0 +1,10 @@
+<% form_for(@green_path) do |f| %>
+  <fieldset>
+    <legend>费用减免</legend>
+    <%= render :partial => 'form', :locals => { :f => f }  %>
+    <p class="bbar">
+      <%= f.submit '更新' %>
+      <input type="button" onclick="$page.showListView()" value="取消" />
+    </p>
+  </fieldset>
+<% end %>

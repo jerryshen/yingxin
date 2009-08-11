@@ -31,17 +31,23 @@
 <%= javascript_include_tag 'jquery-validate/localization/messages_cn.js' %>
 <%= javascript_include_tag 'AjaxForm.js' %>
 <script>
-  //{header: [dataIndex(首字母大写)], renderer: money(Function),menuDisabled: [true],
-  // dataIndex: "fieldName" ,width: 100, sortable: [false], resizable: [false]}
-  //框[]中的为默认值
+  var departmentType = function(value, p, record){
+          return value.toString()=="true" ? "面向学生" : "面向全部"
+        }
   Ext.onReady(function(){
     var columns = [{
         header: "ID",
         dataIndex: 'id',
-        width: 30,
+        width: 40,
         sortable: true,
         type: "int",
-        resizable: false
+        resizable: false,
+        hidden: true
+      }, {
+        header: "序号",
+        dataIndex: 'index',
+        width: 40,
+        sortable: true
       }, {
         header: "名称",
         dataIndex: 'name',
@@ -51,7 +57,8 @@
         header: "类型",
         dataIndex: 'de_type',
         type: 'boolean',
-        sortable: true
+        sortable: true,
+        renderer: departmentType
       }]
     var controllerName = "departments";
     options = {

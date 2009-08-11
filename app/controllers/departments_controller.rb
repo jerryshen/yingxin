@@ -108,10 +108,10 @@ class DepartmentsController < ApplicationController
   def get_json
     load_page_data
     if(params[:search_name] && params[:search_name].to_s!='')
-      @departments = Department.paginate(:order =>"id DESC", :conditions => ["name like ?","%#{params[:search_name]}%"],:per_page=> @pagesize,:page => params[:page] || 1)
+      @departments = Department.paginate(:conditions => ["name like ?","%#{params[:search_name]}%"],:per_page=> @pagesize,:page => params[:page] || 1).sort_by{|x| x.index}
       count = Department.count(:conditions =>["name like ?","%#{params[:search_name]}%"])
     else
-      @departments = Department.paginate(:order =>"id DESC",:per_page=> @pagesize,:page => params[:page] || 1)
+      @departments = Department.paginate(:per_page=> @pagesize,:page => params[:page] || 1).sort_by{|x| x.index}
       count = Department.count
     end
     return render_json(@departments,count)

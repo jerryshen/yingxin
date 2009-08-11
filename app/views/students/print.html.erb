@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<title>Students: print</title>
+<style type="text/css" media="all">
+  @media print{
+    input {display:none}
+  }
+  table{
+    empty-cells:hide; 
+    border-collapse:collapse; 
+    border:1px solid black;
+    text-align:center;
+    font-size: 13px;
+  } 
+table td{border-bottom:1px solid black; border-right:1px solid black; padding:.5em}
+table caption{height: 20px; font-size: 15px}
+</style>
+</head>
+<body>
+<input type="button" value="打印" onclick="window.print()" style="width:120px;height:30px" />
+<table cellpadding="0" cellspacing="0" class="text1">
+  <caption><%= @caption %></caption>
+  <thead style="display:table-header-group;font-weight:bold;">
+    <tr>
+      <td>报名号</td> 
+      <td style="width:80px">姓名</td>
+      <td>性别</td>
+      <td>身份证</td>
+      <td>出生年月</td>
+      <td style="width:120px">签名一</td>
+      <td style="width:120px">签名二</td>
+      <td style="width:120px">签名三</td>
+      <td style="width:150px">备注</td>
+    </tr>
+  </thead>
+  <tbody>
+    <% @students.each do |s| %>
+      <tr>
+        <td><%= s.exa_number %></td> 
+        <td><%= s.name %></td>
+        <td><%= s.gender == "f" ? "女" : "男" %></td>
+        <td><%= s.id_number %></td>
+        <td><%= s.birthday.strftime("%Y-%m-%d") %></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</body>
+</html>

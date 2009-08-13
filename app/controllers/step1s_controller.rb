@@ -20,6 +20,11 @@ class Step1sController < ApplicationController
     end
   end
 
+  def baodao
+    @student = Student.find(params[:id])
+    render :layout => false
+  end
+
   # GET /step1s/1/edit
   def edit
     @step1 = Proce.find(params[:id])

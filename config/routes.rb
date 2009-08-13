@@ -88,6 +88,7 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/genarate_room', :controller => "buildings", :action => "genarate_room"
   map.connect '/major/:major_id/students:print', :controller => "students", :action => "print"
   map.connect '/students:print', :controller => "students", :action => "print"
+  map.connect '/baodaodan/:id', :controller => "step1s", :action => "baodao"
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
 end

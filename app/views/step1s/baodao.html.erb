@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head> 
+<style type="text/css" media="all">
+  body{
+    margin: 0 auto;
+  }
+  .wrap{
+    margin: 0 auto;
+    width: 753px;
+  }
+
+  @media print{
+    input {display:none}
+  }
+  table{
+    empty-cells:hide; 
+    border-collapse:collapse; 
+    border:1px solid black;
+    text-align:center;
+    font-size: 13px;
+  } 
+table td, table th{border-bottom:1px solid black; border-right:1px solid black; padding:.5em}
+table caption{height: 20px; font-size: 15px}
+.blsx
+{
+  text-align: left;
+}
+.student
+{
+  margin: 0 auto;
+}
+.student th
+{
+  width: 110px;
+  text-align: right;
+}
+.student td
+{
+  width: 200px;
+}
+.order
+{
+  margin-top: 30px;
+  line-height: 18px;
+}
+
+.order tr
+{
+  height: 60px;
+}
+.sign
+{
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+td.sign
+{
+  vertical-align: bottom;
+}
+
+h3.title
+{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+h3.note{
+  display: block;
+  width: 20px;
+  float: left;
+  margin-top: 0;
+}
+
+ul
+{
+  padding 0;
+  margin: 0;
+  width: 700px;
+  list-style-type: none;
+}
+
+div.note{
+  margin-bottom: 50px;
+  line-height: 23px;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<input type="button" value="打印" onclick="window.print()" style="width:120px;height:30px" />
+<h3 class="title">成都职业技术学院新生报到流程单</h3>
+<table class="student">
+	<tr>
+        <th>新生姓名：</th><td><%= @student.name %></td>
+        <th>性别：</th><td><%= @student.gender == "f" ? "女" : "男" %></td>
+	</tr>
+	<tr>
+        <th>考生号：</th><td><%= @student.can_number %></td>
+        <th>就读专业：</th><td><%= @student.major.name %></td>
+	</tr>
+</table>
+<table class="order">
+	<tr>
+      <th style="width:45px">办理<br/>顺序</th>
+		<th>办理项目</th>
+		<th>办理地点</th>
+		<th>办理部门</th>
+		<th>办理事项</th>
+        <th style="width:100px">经办人签字<br/>或签章</th>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>入学资格复查</td>
+		<td>教学楼前广场</td>
+		<td>招生就业处</td>
+		<td class="blsx">1、校方录取通知书<br/>
+		2、领取《2009级新生报到流程单》
+		</td>
+		<td class="sign">&nbsp;&nbsp;&nbsp;月&nbsp;&nbsp;&nbsp;&nbsp;日</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>缴纳费用</td>
+		<td>实训楼一楼</td>
+		<td>计财处</td>
+		<td class="blsx">按报到专业缴纳学费、代管费、住宿费。<br/>
+			（注：通过银行转帐的请出示转帐凭单）
+		</td>
+		<td class="sign">&nbsp;&nbsp;&nbsp;月&nbsp;&nbsp;&nbsp;&nbsp;日</td>
+	</tr>	
+	<tr>
+		<td>3</td>
+        <td>缴纳<br/>军训费</td>
+		<td>行政楼前广场</td>
+		<td>保卫处</td>
+		<td class="blsx">缴纳军训食宿费270元/人，军训服装费48元/人</td>
+		<td class="sign">&nbsp;&nbsp;&nbsp;月&nbsp;&nbsp;&nbsp;&nbsp;日</td>
+	</tr>	
+	<tr>
+		<td>4</td>
+		<td>办理保险</td>
+		<td>行政楼前广场</td>
+		<td>学生处</td>
+		<td class="blsx">办理保险50元/人.年</td>
+		<td class="sign">&nbsp;&nbsp;&nbsp;月&nbsp;&nbsp;&nbsp;&nbsp;日</td>
+	</tr>	
+	<tr>
+		<td>5</td>
+		<td>入学报到注册</td>
+		<td>钟楼广场</td>
+		<td>各分院（部）辅导员处</td>
+		<td class="blsx">
+		1、填写《新生基本信息登记表》，交纸质档案（如有）<br />
+		2、交身份证（或户口籍）复印件1份（可在现场免费复印）：交一寸相片8张<br />
+		3、注册学籍（凭缴费发票办理）<br />
+		4、领取《2008级军训及入学教育日程安排表》和《学生管理手册》
+		</td>
+		<td class="sign">&nbsp;&nbsp;&nbsp;月&nbsp;&nbsp;&nbsp;&nbsp;日</td>
+	</tr>	
+	<tr>
+		<td>6</td>
+		<td>购买<br/>日用品</td>
+		<td>体育馆</td>
+		<td>后勤产业处</td>
+		<td class="blsx">购买卧具及生活日用品</td>
+		<td class="sign">&nbsp;&nbsp;&nbsp;月&nbsp;&nbsp;&nbsp;&nbsp;日</td>
+	</tr>	
+	<tr>
+		<td>7</td>
+		<td>入住学生公寓</td>
+		<td>学生公寓第3栋</td>
+		<td>宿舍管理<br/>中心</td>
+		<td class="blsx">1、签定《入住学生公寓承诺书》，上交1寸照片2张
+			<br/>2、入住公寓
+		</td>
+		<td class="sign">&nbsp;&nbsp;&nbsp;月&nbsp;&nbsp;&nbsp;&nbsp;日</td>
+	</tr>	
+	<tr>
+		<td colspan="4">备注</td>
+		<td class="blsx">
+			1、体检在军训期间进行,费用55元/人<br/>
+			2、户口迁移暂缓
+		</td>
+		<td></td>
+	</tr>
+</table>
+<div class="sign">请新生仔细阅读办理事项，办理完毕后确认签字：_____________________</div>
+<div class="note">
+<h3 class="note">注：</h3>
+<ul>
+	<li>1、报到流程完毕后，务必将此表交回各分院（部）辅导员处。</li>
+	<li>2、辅导员收齐本班新生报到表并与本班新生核对无误后，统一交到各分院（部）汇总，以审核新生报到数据，请分院（部）领导签字。</li>
+	<li>3、辅导员于10月6日当天将本班新生报到数据信息上报招生就业处审核，作为退档依据。</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

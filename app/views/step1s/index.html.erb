@@ -158,7 +158,10 @@
       gridTitle: "入学资格复查管理列表",
       newItemLink: "newItem",
       columns: columns,
-      disableDestroyButton: true,
+      disableDestroyButton: true, 
+      oprateBarButtons: [function(value, p, record){
+        return String.format("&nbsp;&nbsp;&nbsp;<a href='/baodaodan/{0}' target='_blank' >打印报到单</a>", record.data.student_id);
+      }],
       bindlinks: {
         "pass" : bind_pass_link_click,
         "leave": bind_leave_link_click

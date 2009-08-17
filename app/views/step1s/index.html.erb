@@ -160,7 +160,7 @@
       columns: columns,
       disableDestroyButton: true, 
       oprateBarButtons: [function(value, p, record){
-        return String.format("&nbsp;&nbsp;&nbsp;<a href='/baodaodan/{0}' target='_blank' >打印报到单</a>", record.data.student_id);
+        return String.format("&nbsp;&nbsp;&nbsp;<a href='/baodaodan/{0}' target='_blank' ><img src='/images/icons/printer.png' title='打印报到单'></img></a>", record.data.student_id);
       }],
       bindlinks: {
         "pass" : bind_pass_link_click,

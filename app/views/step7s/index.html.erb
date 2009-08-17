@@ -50,6 +50,10 @@
   var getCampus = function(value){
     return campuses[value]
   }
+  var beds = <%= Proce.get_beds %>
+  var getBeds = function(value){
+    return beds[value]
+  }
   var makeAsPassLink = function(value, p, record){
     var text = value.toString()=="true" ? "<div class='grid-text-true'>已入住</div>" : "<div class='grid-text-true-noneed'>未入住</div>";
     return String.format("<a href='#' action ='pass' title='Pass' class='gridButton' url='/step7s/pass/{0}'>{1}</a>",record.data.id,text);
@@ -120,6 +124,11 @@
         dataIndex: 'step7_date',
         sortable: true,
         width: 160
+      }, {
+        header: "宿舍",
+        dataIndex: 'student_id',
+        sortable: true,
+        renderer: getBeds
       }]
     var controllerName = "step7s";
     options = {

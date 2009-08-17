@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 22) do
+ActiveRecord::Schema.define(:version => 23) do
 
   create_table "app_configs", :force => true do |t|
     t.string   "key"
@@ -172,7 +172,7 @@ ActiveRecord::Schema.define(:version => 22) do
     t.string   "name"
     t.float    "h_score"
     t.float    "r_score"
-    t.integer  "polity"
+    t.string   "polity"
     t.integer  "major_id"
     t.integer  "info_class_id"
     t.string   "direction"

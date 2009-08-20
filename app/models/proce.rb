@@ -27,6 +27,15 @@ class Proce < ActiveRecord::Base
     return hash.to_json
   end
 
+  def self.get_fee
+    hash = {}
+    find_by_sql("select f.major_id,s.id, s.major_id, p.student_id,(f.fee1+f.fee2+f.fee3+f.other) fee from fee_stds f INNER JOIN proces p INNER JOIN students s ON p.student_id = s.id AND f.major_id = s.major_id ").each do |row|
+      attrs = row.attributes
+      hash[attrs["id"]] = attrs["fee"]
+    end
+    return hash.to_json
+  end
+
   def self.get_campus
     hash = {}
     find_by_sql("select s.id, s.major_id, m.campus from students s INNER JOIN majors m ON s.major_id = m.id").each do |row|

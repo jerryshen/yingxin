@@ -31,26 +31,27 @@
 <%= javascript_include_tag 'jquery-validate/localization/messages_cn.js' %>
 <%= javascript_include_tag 'AjaxForm.js' %>
 <script>
-  //{header: [dataIndex(首字母大写)], renderer: money(Function),menuDisabled: [true],
-  // dataIndex: "fieldName" ,width: 100, sortable: [false], resizable: [false]}
-  //框[]中的为默认值
+  var majors = <%= Major.to_json %>
+  var getMajorName = function(value){
+    return majors[value]
+  }
   Ext.onReady(function(){
     var columns = [{
-        header: "ID",
+        header: "序号",
         dataIndex: 'id',
-        width: 30,
+        width: 40,
         sortable: true,
         type: "int",
         resizable: false
       }, {
         header: "名称",
         dataIndex: 'name',
-        width: 200,
         sortable: true
       }, {
         header: "专业",
         dataIndex: 'major_id',
-        sortable: true
+        sortable: true,
+        renderer: getMajorName
       }]
     var controllerName = "info_classes";
     options = {

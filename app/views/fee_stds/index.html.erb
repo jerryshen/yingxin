@@ -29,7 +29,7 @@
 <%= javascript_include_tag 'jquery-validate/localization/messages_cn.js' %>
 <%= javascript_include_tag 'AjaxForm.js' %>
 <script>
-    var majors = <%= User.to_json%>
+    var majors = <%= Major.to_json%>
   var getMajorName = function(value){
     return majors[value]
   }

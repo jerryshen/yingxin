@@ -57,6 +57,9 @@ class TempsController < ApplicationController
     end
   end
 
+  def import
+    Temp.import_to_students
+  end
   private
 
     def get_json

@@ -38,7 +38,7 @@
   var getCanNum = function(value){
     return nums[value]
   }
-  var fees = <%= FeeStd.to_json %>
+  var fees = <%= Proce.get_fee  %>
   var getMajorFee = function(value){
     return fees[value]
   }
@@ -115,7 +115,7 @@
         renderer: getCampus
       }, {
         header: "应缴费用",
-        dataIndex: 'major_id',
+        dataIndex: 'student_id',
         sortable: true,
         renderer: getMajorFee
       }, {

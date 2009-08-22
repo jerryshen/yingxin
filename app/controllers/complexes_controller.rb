@@ -41,9 +41,16 @@ class ComplexesController < ApplicationController
     conditions = "1=1"
     condition_values = []
     if(!params[:department_id].blank?)
-      joins = ""
-      conditions += " AND department_id = ? "
-      condition_values << params[:department_id]
+      majors = Department.find(params[:department_id]).majors
+      ids = []
+      unless majors.blank?
+        majors.each do |m|
+          ids.push(m.id)
+        end
+      end
+      idss = ids.join(",")
+      conditions += " AND major_id in (#{idss}) "
+      condition_values << []
     end
 
     if(!params[:major_id].blank?)

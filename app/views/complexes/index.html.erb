@@ -62,7 +62,7 @@
   </div>
 </div>
 <script>
-  var departments = <%= Department.to_json%>
+  var departments = <%= Major.get_department_name %>
   var getDepartmentName = function(value){
     return departments[value]
   }
@@ -105,7 +105,7 @@
         renderer: genderFormat
       }, {
         header: "院系",
-        dataIndex: 'department_id',
+        dataIndex: 'major_id',
         sortable: true,
         renderer: getDepartmentName
       }, {

@@ -20,5 +20,13 @@ class Major < ActiveRecord::Base
     end
     return hash.to_json
   end
-  
+
+  def self.get_department_name
+    hash = {}
+    find_by_sql("select m.id,d.name from majors m INNER JOIN departments d ON m.department_id = d.id").each do |row|
+      attrs = row.attributes
+      hash[attrs["id"]] = attrs["name"]
+    end
+    return hash.to_json
+  end
 end

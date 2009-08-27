@@ -1,0 +1,26 @@
+<fieldset>
+  <legend>查看缴费情况</legend>
+  <p>
+    <b>报名号:</b>
+    <%=h @fee_temp.f1 %>
+  </p>
+
+  <p>
+    <b>应收费用:</b>
+    <%=h @fee_temp.f2 %>
+  </p>
+
+  <p>
+    <b>减免费用:</b>
+    <%=h @fee_temp.f3 %>
+  </p>
+
+  <p>
+    <b>实收费用:</b>
+    <%=h @fee_temp.f4 %>
+  </p>
+
+  <p class="bbar">
+    <input type="button" onclick="$page.showListView()" value="返回列表" />
+  </p>
+</fieldset>

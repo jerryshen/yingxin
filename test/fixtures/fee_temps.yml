@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  f1: MyString
+  f2: 1.5
+  f3: 1.5
+  f4: 1.5
+
+two:
+  f1: MyString
+  f2: 1.5
+  f3: 1.5
+  f4: 1.5

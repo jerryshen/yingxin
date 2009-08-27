@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 23) do
+ActiveRecord::Schema.define(:version => 259) do
 
   create_table "app_configs", :force => true do |t|
     t.string   "key"
@@ -54,6 +54,15 @@ ActiveRecord::Schema.define(:version => 23) do
   end
 
   add_index "fee_stds", ["major_id"], :name => "index_fee_stds_on_major_id"
+
+  create_table "fee_temps", :force => true do |t|
+    t.string   "f1"
+    t.float    "f2",         :default => 0.0
+    t.float    "f3",         :default => 0.0
+    t.float    "f4",         :default => 0.0
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "info_classes", :force => true do |t|
     t.integer  "major_id"
@@ -202,6 +211,7 @@ ActiveRecord::Schema.define(:version => 23) do
     t.datetime "confirm_date"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "signup_number"
   end
 
   add_index "students", ["info_class_id"], :name => "index_students_on_info_class_id"

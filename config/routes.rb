@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :fee_temps
+
   map.resources :green_paths
 
   map.resources :bed_autodists

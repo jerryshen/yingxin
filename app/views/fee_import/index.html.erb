@@ -1,0 +1,6 @@
+<h3>导入已交款数据</h3>
+<% form_for :myform, :url=>{:controller=>"fee_import", :action=>"import"}, :html => { :multipart => true } do |f| -%>
+选择csv文件:<%= f.file_field :file -%>
+<%= submit_tag 'Submit' -%>
+<% end -%>
+

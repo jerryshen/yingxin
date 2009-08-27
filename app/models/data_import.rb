@@ -1,5 +1,5 @@
-#require 'excelrill'
-require 'excelrillinux' #winOLE less
+require 'excelrill'
+#require 'excelrillinux' #winOLE less
 require 'file_upload_util'
 class DataImport
   def self.collet_excel_data(file)

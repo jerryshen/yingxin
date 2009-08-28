@@ -1,5 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :fee_temps
+  map.resources :fee_temps, :collection => { :ensure_fee => :post}
 
   map.resources :green_paths
 
@@ -88,6 +88,7 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/signin', :controller => 'admin', :action => 'login'
   map.connect '/welcome', :controller => "welcome"
   map.connect '/genarate_room', :controller => "buildings", :action => "genarate_room"
+
   map.connect '/major/:major_id/students:print', :controller => "students", :action => "print"
   map.connect '/students:print', :controller => "students", :action => "print"
   map.connect '/baodaodan/:id', :controller => "step1s", :action => "baodao"

@@ -37,32 +37,50 @@
         dataIndex: 'id',
         width: 40,
         sortable: true,
-        type: "int",
-        resizable: false
+        type: "int"
       }, {
         header: "报名号",
         dataIndex: 'f1',
-        sortable: true
+        width: 120
       }, {
         header: "应该",
         dataIndex: 'f2',
-        sortable: true
+        width: 70
       },{
         header: "减免金额",
         dataIndex: 'f3',
-        sortable: true
+        width: 70
       },{
         header: "实收金额",
         dataIndex: 'f4',
-        sortable: true
+        width: 70
       }]
     var controllerName = "fee_temps";
     options = {
       baseUrl: "http://" + window.location.host + "/" + controllerName,
       gridTitle: "财务",
       newItemLink: "newItem",
-      columns: columns
+      columns: columns,
+      oprateBarButtons: [function(value, p, record){
+          return String.format("&nbsp;&nbsp;&nbsp;<input type='button' action='ensure_fee' data_id='{0}'  class='gridButton' value='确认交费' />", value)
+        }
+      ],
+      bindlinks: {
+        "ensure_fee": function(a, listpage){
+          var id = a.getAttribute("data_id");
+          a.onclick = function(){
+            ensure_fee(id);
+          }
+        }
+      }
     }
     $page = new ExtListPage(options);
   })
+
+  function ensure_fee(id){
+    $.post("/fee_temps/ensure_fee", {id:id}, function(data){
+      var json = eval("(function(){return " + data + "})()");
+      if(json.msg)alert(json.msg);
+    })
+  }
 </script>

@@ -1,4 +1,5 @@
 class FeeTempsController < ApplicationController
+  protect_from_forgery :except => [:ensure_fee]
   # GET /fee_temps
   # GET /fee_temps.xml
   def index
@@ -52,6 +53,17 @@ class FeeTempsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to(fee_temps_url) }
       format.xml  { head :ok }
+      format.json { render :text => '{status: "success"}'}
+    end
+  end
+
+  def ensure_fee
+    record = FeeTemp.find(params[:id])
+    if record
+      #do something
+      render :json => {:status => "success",:msg => "操作成功"}
+      #or
+      #render :json => {:status => "fail",:msg => "操作失败"}
     end
   end
 

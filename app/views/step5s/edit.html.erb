@@ -1,6 +1,6 @@
 <% form_for(@step5) do |f| %>
   <fieldset>
-    <legend>修改[<%= @step5.user.name  %>]的入学报到注册情况</legend>
+    <legend>修改[<%= @step5.student.name  %>]的入学报到注册情况</legend>
     <%= render :partial => 'form', :locals => { :f => f }  %>
     <p class="bbar">
       <%= f.submit '保存' %>

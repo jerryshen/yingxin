@@ -57,7 +57,7 @@
   </form>
   <div>
     <div class="nav">
-      <span><%= link_to "导出已报到学生列表", :action => 'export_confirm_true'  %></span> | <span><%= link_to "导出未缴费学生列表", :action => 'export_no_fee'  %></span>
+      <span><%= link_to "导出已报到学生列表", :action => 'export_confirm_true'  %></span> | <span><%= link_to "导出未缴费学生列表", :action => 'export_no_fee'  %></span> | <span><%= link_to "导出未报到学生列表", :action => 'export_no_signup'  %></span>
     </div>
     <div id="grid-wrap">
     </div>
@@ -78,6 +78,9 @@
   }
   var genderFormat = function(value, p, record){
     return value.toString()=="m" ? "男" : "女"
+  }
+  var signupFormat = function(value, p, record){
+    return value.toString()=="true" ? "已报到" : "未报到"
   }
   Ext.onReady(function(){
     var columns = [{
@@ -123,7 +126,8 @@
       }, {
         header: "报到情况",
         dataIndex: 'confirm',
-        sortable: true
+        sortable: true,
+        renderer: signupFormat
       }]
     var controllerName = "complexes";
     options = {

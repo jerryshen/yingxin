@@ -23,9 +23,9 @@ class ComplexesController < ApplicationController
     @students = Student.find(:all, :joins => "INNER JOIN proces p ON students.id = p.student_id", :conditions => ["p.step1 =? AND p.step2 = ?", true, false])
 
     csv_string = FasterCSV.generate do |csv|
-      csv << [convert("考生号"),convert("姓名"),convert("院系"),convert("专业")]
+      csv << [convert("考生号"),convert("姓名"),convert("身份证号"),convert("出生年月"),convert("性别"),convert("院系"),convert("专业")]
       @students.each do |u|
-        csv << [convert(u.can_number), convert(u.name), convert(u.major.department.name), convert(u.major.name)]
+        csv << [convert(u.can_number), convert(u.name), convert(u.id_number), convert(format_birth(u.birthday)), convert(format_gender(u.gender)), convert(u.major.department.name), convert(u.major.name)]
       end
     end
     send_data csv_string,
@@ -37,9 +37,9 @@ class ComplexesController < ApplicationController
     @students = Student.find(:all, :joins => "INNER JOIN proces p ON students.id = p.student_id", :conditions => ["p.step1 =? AND p.step2 = ?", true, true])
 
     csv_string = FasterCSV.generate do |csv|
-      csv << [convert("考生号"),convert("姓名"),convert("院系"),convert("专业")]
+      csv << [convert("考生号"),convert("姓名"),convert("身份证号"),convert("出生年月"),convert("性别"),convert("院系"),convert("专业")]
       @students.each do |u|
-        csv << [convert(u.can_number), convert(u.name), convert(u.major.department.name), convert(u.major.name)]
+        csv << [convert(u.can_number), convert(u.name), convert(u.id_number), convert(format_birth(u.birthday)), convert(format_gender(u.gender)), convert(u.major.department.name), convert(u.major.name)]
       end
     end
     send_data csv_string,
@@ -51,9 +51,9 @@ class ComplexesController < ApplicationController
     @students = Student.find(:all, :conditions => ["confirm = ?", false])
 
     csv_string = FasterCSV.generate do |csv|
-      csv << [convert("考生号"),convert("姓名"),convert("院系"),convert("专业")]
+      csv << [convert("考生号"),convert("姓名"),convert("身份证号"),convert("出生年月"),convert("性别"),convert("院系"),convert("专业")]
       @students.each do |u|
-        csv << [convert(u.can_number), convert(u.name), convert(u.major.department.name), convert(u.major.name)]
+        csv << [convert(u.can_number), convert(u.name), convert(u.id_number), convert(format_birth(u.birthday)), convert(format_gender(u.gender)), convert(u.major.department.name), convert(u.major.name)]
       end
     end
     send_data csv_string,
@@ -149,15 +149,36 @@ class ComplexesController < ApplicationController
       condition_values << [true, value]
     end
 
-    if(conditions != "1=1")
-      option_conditions = [conditions,condition_values].flatten!
-      @complexes = Student.paginate(:order =>"id ASC", :joins => joins, :conditions => option_conditions,:per_page=> @pagesize, :page => params[:page] || 1)
-      count = Student.count(:joins => joins, :conditions => option_conditions)
+    if @current_user.roles.first.name == "超级管理员"
+      if(conditions != "1=1")
+        option_conditions = [conditions,condition_values].flatten!
+        @complexes = Student.paginate(:order =>"id ASC", :joins => joins, :conditions => option_conditions,:per_page=> @pagesize, :page => params[:page] || 1)
+        count = Student.count(:joins => joins, :conditions => option_conditions)
+      else
+        @complexes = Student.paginate(:order =>"id ASC",:per_page=> @pagesize, :page => params[:page] || 1)
+        count = Student.count
+      end
     else
-      @complexes = Student.paginate(:order =>"id ASC",:per_page=> @pagesize, :page => params[:page] || 1)
-      count = Student.count
+      department_id = @current_user.department_id
+      majors = Department.find(department_id).majors
+      ids = []
+      unless majors.blank?
+        majors.each do |m|
+          ids.push(m.id)
+        end
+      end
+      idss = ids.join(",")
+
+      if(conditions != "1=1")
+        option_conditions = [conditions,condition_values].flatten!
+        @complexes = Student.find(:all,:conditions => ["major_id in (#{idss}) "]).paginate(:order =>"id ASC", :joins => joins, :conditions => option_conditions,:per_page=> @pagesize, :page => params[:page] || 1)
+        count = Student.find(:all,:conditions => ["major_id in (#{idss}) "]).count(:joins => joins, :conditions => option_conditions)
+      else
+        @complexes = Student.find(:all,:conditions => ["major_id in (#{idss}) "]).paginate(:order =>"id ASC",:per_page=> @pagesize, :page => params[:page] || 1)
+        count = Student.find(:all,:conditions => ["major_id in (#{idss}) "]).count
+      end
+      return render_json(@complexes,count)
     end
-    return render_json(@complexes,count)
   end
   
 end

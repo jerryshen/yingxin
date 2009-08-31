@@ -76,6 +76,16 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  #format dirthday
+  def format_birth(date)
+    date.strftime("%Y-%m-%d")
+  end
+
+  #format gender
+  def format_gender(gender)
+    return gender == "m" ? "男" : "女"
+  end
+
   #utf8 to gbk
   def convert(str)
     require 'iconv'

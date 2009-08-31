@@ -86,26 +86,18 @@ class Step5sController < ApplicationController
 
     department_id = @current_user.department.id
 
-    joins = "INNER JOIN students p ON proces.student_id=p.id"
-    conditions = "1=1 AND p.department_id = #{department_id}"
-    condition_values = []
-    if(!params[:department_id].blank?)
-      majors = Department.find(params[:department_id]).majors
-      ids = []
-      unless majors.blank?
-        majors.each do |m|
-          ids.push(m.id)
-        end
+    majors = Department.find(department_id).majors
+    ids = []
+    unless majors.blank?
+      majors.each do |m|
+        ids.push(m.id)
       end
-      idss = ids.join(",")
-      conditions += " AND p.major_id in (#{idss}) "
-      condition_values << []
     end
+    idss = ids.join(",")
 
-    if(!params[:class_id].blank?)
-      conditions += " AND p.info_class_id = ? "
-      condition_values << params[:class_id]
-    end
+    joins = "INNER JOIN students p ON proces.student_id=p.id"
+    conditions = "1=1 AND p.major_id in (#{idss})"
+    condition_values = []
 
     if(!params[:search_name].blank?)
       students = Student.find(:all, :conditions => ["name like ?", "%#{params[:search_name]}%"])
@@ -125,7 +117,7 @@ class Step5sController < ApplicationController
       condition_values << params[:search_can_number]
     end
 
-    if(conditions != '1=1 AND p.department_id = #{department_id}')
+    if(conditions != "1=1 AND p.major_id in (#{idss})")
       option_conditions = [conditions,condition_values].flatten!
       @step5s = Proce.paginate(:order =>"id ASC", :joins => joins,:conditions => option_conditions,:per_page=> @pagesize, :page => params[:page] || 1)
       count = Proce.count(:joins => joins, :conditions => option_conditions)

@@ -6,7 +6,7 @@
 	</head>
 	<body>
 		<h3>欢迎使用迎新系统</h3>
-		<h4>最新通知</h4>
+                <h4>最新通知</h4><a href="javascript:window.location.reload()" title="点击重新载入最新通知">收取通知</a>
 		<ul>
 		<% @tips.each do |tip| %>
 			<li><a title="<%= h(tip.title) %> " href="javascript:parent.open_page('/tips/<%= tip.id %>','<%= h(tip.title) %>')" > <%= h(tip.title) %></a></li>

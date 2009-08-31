@@ -1,5 +1,5 @@
 class FeeTempsController < ApplicationController
-  protect_from_forgery :except => [:ensure_fee]
+  protect_from_forgery :except => [:ensure_one, :ensure_all]
   # GET /fee_temps
   # GET /fee_temps.xml
   def index
@@ -57,17 +57,46 @@ class FeeTempsController < ApplicationController
     end
   end
 
-  def ensure_fee
-    record = FeeTemp.find(params[:id])
-    if record
-      #do something
-      render :json => {:status => "success",:msg => "操作成功"}
-      #or
-      #render :json => {:status => "fail",:msg => "操作失败"}
+  def ensure_all
+    begin
+      count = FeeTemp.count
+      n = 0
+      FeeTemp.find_each do |record|
+        n += 1 if ensure_fee(record)
+      end
+      render :json => {:status => "success", :msg=>"成功确认#{n}条收款记录，忽略#{count-n}条记录!"}
+    rescue
+      render :json => {:status => "fail",:msg => "操作失败"}
     end
   end
 
-    private
+  def ensure_one
+    record = FeeTemp.find(params[:id])
+    begin
+      if record and ensure_fee(record) 
+        return render :json => {:status => "success",:msg => "操作成功"}
+      end
+    rescue
+    end
+    render :json => {:status => "fail",:msg => "操作失败"}
+  end
+
+  private
+  def ensure_fee(record)
+    student = Student.first(:conditions => {:signup_number => record.f1})
+    unless student.nil?
+      if record.f4 > 0 or record.f2 == record.f3
+        proc = student.proce
+        if proc
+         proc.update_attributes(:step2 => true)
+        end
+      end
+      record.destroy
+      return true
+    end
+    return false
+  end
+
   def get_json
     load_page_data
     if(!params[:search_name].blank?)

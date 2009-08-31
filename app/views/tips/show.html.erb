@@ -1,8 +1,9 @@
+﻿<% if false %>
 <fieldset>
   <legend>查看通知</legend>
   <p>
     <b>标题:</b>
-    <%=h @tip.title %>
+    
   </p>
   <p>
     <b>内容:</b>
@@ -20,3 +21,63 @@
     <input type="button" onclick="$page.showListView()" value="返回列表" />
   </p>
 </fieldset>
+<% end %>
+
+
+<style>
+body{
+width: 800px;
+margin: auto;
+padding: auto;
+text-align: center;
+}
+p{
+text-align: left;
+text-indent: 20px;
+}
+.meta span{
+	font-weight: bold;
+	
+}
+.meta label{
+	margin-left: 20px;
+	display: block;
+}
+</style>
+
+<h1>公告</h1>
+<hr />
+
+<h3><%=h @tip.title %></h3>
+
+
+<p>
+<%=h @tip.content %>
+</p>
+
+
+<div style="float:right;margin-right:50px;" class="meta">
+	<label >发布人：<span > <%= h @tip.user.name %> </span></label>
+	<label >发布时间：<span> <%= h @tip.created_at.to_s[0..15] %> </span></label>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

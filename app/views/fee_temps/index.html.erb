@@ -16,7 +16,8 @@
   </form>
   <div>
     <div class="nav">
-      <span class="button" id="newItem" onclick="$page.showNewView()"><img  src="/images/icons/new.png"/>导入</span>
+      <span class="button" id="newItem" onclick="$page.showNewView()"><img  src="/images/icons/new.png"/>新建</span>
+      <input type="button" class="button" onclick="ensure_all()" style="width:120px" value="确认所有交费" />
     </div>
     <div id="grid-wrap">
     </div>
@@ -62,14 +63,14 @@
       newItemLink: "newItem",
       columns: columns,
       oprateBarButtons: [function(value, p, record){
-          return String.format("&nbsp;&nbsp;&nbsp;<input type='button' action='ensure_fee' data_id='{0}'  class='gridButton' value='确认交费' />", value)
+          return String.format("&nbsp;&nbsp;&nbsp;<input type='button' action='ensure_one' data_id='{0}'  class='gridButton' value='确认交费' />", value)
         }
       ],
       bindlinks: {
-        "ensure_fee": function(a, listpage){
+        "ensure_one": function(a, listpage){
           var id = a.getAttribute("data_id");
           a.onclick = function(){
-            ensure_fee(id);
+            ensure_one(id);
           }
         }
       }
@@ -77,10 +78,30 @@
     $page = new ExtListPage(options);
   })
 
-  function ensure_fee(id){
-    $.post("/fee_temps/ensure_fee", {id:id}, function(data){
+  function ensure_one(id){
+    $.post("/fee_temps/ensure_one", {id:id}, function(data){
       var json = eval("(function(){return " + data + "})()");
+      if(json.status == "success")$page.refreshGridData();
       if(json.msg)alert(json.msg);
     })
+  }
+
+  function ensure_all(){
+     var waitBox = Ext.Msg.show({
+            wait: true,
+            progress: true,
+            msg: '操作时间较长，请耐心等候...',
+            closeable: false
+     });
+    try{
+      $.post("/fee_temps/ensure_all",  function(data){
+        var json = eval("(function(){return " + data + "})()");
+        waitBox.hide();
+        $page.refreshGridData();
+        if(json.msg)alert(json.msg);
+      })
+    }catch(e){
+      waitBox.hide();
+    }
   }
 </script>

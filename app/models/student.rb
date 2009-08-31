@@ -5,6 +5,7 @@ class Student < ActiveRecord::Base
 
   belongs_to :room_student
   has_one :bed
+  has_one :proce
 
   # process end
   def self.proc_end(proc)

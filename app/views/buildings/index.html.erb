@@ -98,11 +98,12 @@
     function open_gen_form(building_id){
         var win = new Ext.Window({
             layout: 'fit',
-            width: 260,
+            width: 360,
             height: 190,
             closeAction: 'close',
             border: false,
             title: "生成宿舍和床位",
+			modal: true,
             items: [{
                 xtype: "form",
                 labelWidth: 90,
@@ -137,12 +138,12 @@
                     xtype: 'radiogroup',
                     fieldLabel: '入住学生',
                     items: [{
-                        boxLabel: '男生',
+                        boxLabel: '男',
                         name: 'room_type',
                         inputValue: 0,
                         checked: true
                     }, {
-                        boxLabel: '女生',
+                        boxLabel: '女',
                         name: 'room_type',
                         inputValue: 1
                     }]

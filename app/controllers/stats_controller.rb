@@ -21,7 +21,7 @@ class StatsController < ApplicationController
     end
     send_data csv_string,
       :type=>'text/csv; charset=utf-8; header=present',
-      :disposition => "attachment; filename=未报到学生.csv"
+      :disposition => "attachment; filename=#{convert("未报到学生")}.csv"
   end
 
   def export

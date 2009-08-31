@@ -39,7 +39,7 @@ class Stat
       ov_stus = Student.count(:conditions => ["major_id =? AND confirm =?", m.id, true])
 #            la_stus = Student.find(:all,
 #              :conditions => ["major_id =? AND confirm =?",m.id, false])
-      percent = ar_stus == 0 ? "0%" : (ov_stus / ar_stus*100).to_s + "%"
+      percent = ar_stus == 0 ? "0%" : (ov_stus.to_f / ar_stus.to_f*100).round(2).to_s + "%"
       arr.push({"major_id" => m.id, "ar_count" => ar_stus, "ov_count" => ov_stus, "percent" => percent})
     end
     return arr << count

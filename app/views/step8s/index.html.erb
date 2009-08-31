@@ -16,12 +16,12 @@
   <form style="margin: 10px 0px;" id="search_form">
     <%= index_select_class  %>
     <div style="margin: 10px 0px;"><label for="search_name">姓名</label>
-    <input type="text" value="" name="search_name" id="search_name" size="15"/>
-    <label for="search_can_number">考生号</label>
-    <input type="text" value="" name="search_can_number" id="search_can_number" size="15"/>
-    <input class="button" type="button" id="btnSearch" value="搜索"/>
-    <input value="重置"class="btnreset" type="reset" />
-    <input value="刷新 " onclick="window.location.reload()" class="btnrefresh" type="button"  />
+      <input type="text" value="" name="search_name" id="search_name" size="15"/>
+      <label for="search_can_number">考生号</label>
+      <input type="text" value="" name="search_can_number" id="search_can_number" size="15"/>
+      <input class="button" type="button" id="btnSearch" value="搜索"/>
+      <input value="重置"class="btnreset" type="reset" />
+      <input value="刷新 " onclick="window.location.reload()" class="btnrefresh" type="button"  />
     </div>
   </form>
   <div>
@@ -30,17 +30,13 @@
   </div>
 </div>
 <script>
-  var students = <%= Student.to_json %>
+  var students = <%= Student.to_json%>
   var getStudentName = function(value){
     return students[value]
   }
   var nums = <%= Student.get_can_num %>
   var getCanNum = function(value){
     return nums[value]
-  }
-  var fees = <%= Proce.get_fee  %>
-  var getMajorFee = function(value){
-    return fees[value]
   }
   var genders = <%= Proce.get_gender %>
   var getGender = function(value){
@@ -54,9 +50,13 @@
   var getCampus = function(value){
     return campuses[value]
   }
+  var beds = <%= Proce.get_beds %>
+  var getBeds = function(value){
+    return beds[value]
+  }
   var makeAsPassLink = function(value, p, record){
-    var text = value.toString()=="true" ? "<div class='grid-text-true'>绿色通道</div>" : "<div class='grid-text-true-noneed'>正常</div>";
-    return String.format("<a href='#' action ='pass' title='Pass' class='gridButton' url='/green_paths/pass/{0}'>{1}</a>",record.data.id,text);
+    var text = value.toString()=="true" ? "<div class='grid-text-true'>已注册</div>" : "<div class='grid-text-true-noneed'>未注册</div>";
+    return String.format("<a href='#' action ='pass' title='Pass' class='gridButton' url='/step8s/pass/{0}'>{1}</a>",record.data.id,text);
   }
 
   var bind_pass_link_click = function(alink){
@@ -64,7 +64,7 @@
     Ext.get(alink).on("click",function(){
       Ext.Ajax.request({
         url: url,
-        success: function(rq,params){
+        success: function(rq,params){ //rq:请求的响应，params请求时的参数（此处为｛url,success,failure｝)
           if(rq.responseText=="true"){
             $page.refreshGridData();
           }else{
@@ -114,29 +114,24 @@
         sortable: true,
         renderer: getCampus
       }, {
-        header: "应缴费用",
-        dataIndex: 'student_id',
-        sortable: true,
-        renderer: getMajorFee
-      }, {
-        header: "减免",
-        dataIndex: 'remit',
+        header: "教务处注册",
+        dataIndex: 'step8',
         type: 'boolean',
         sortable: true,
         renderer: makeAsPassLink
       }, {
-        header: "通过时间",
-        dataIndex: 'remit_date',
+        header: "注册时间",
+        dataIndex: 'step8_date',
         sortable: true,
         width: 160
       }]
-    var controllerName = "green_paths";
+    var controllerName = "step8s";
     options = {
       baseUrl: "http://" + window.location.host + "/" + controllerName,
-      gridTitle: "绿色通道学费减免列表",
+      gridTitle: "教务处注册管理列表",
       newItemLink: "newItem",
-      disableDestroyButton: true,
       columns: columns,
+      disableDestroyButton: true,
       bindlinks: {
         "pass" : bind_pass_link_click
       }

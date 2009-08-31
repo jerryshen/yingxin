@@ -33,7 +33,7 @@ class ComplexesController < ApplicationController
       :disposition => "attachment; filename=#{convert("报到却未缴费学生")}.csv"
   end
 
-    def export_confirm_true
+  def export_confirm_true
     @students = Student.find(:all, :joins => "INNER JOIN proces p ON students.id = p.student_id", :conditions => ["p.step1 =? AND p.step2 = ?", true, true])
 
     csv_string = FasterCSV.generate do |csv|
@@ -45,6 +45,20 @@ class ComplexesController < ApplicationController
     send_data csv_string,
       :type=>'text/csv; charset=utf-8; header=present',
       :disposition => "attachment; filename=#{convert("已报到学生")}.csv"
+  end
+
+  def export_no_signup
+    @students = Student.find(:all, :conditions => ["confirm = ?", false])
+
+    csv_string = FasterCSV.generate do |csv|
+      csv << [convert("考生号"),convert("姓名"),convert("院系"),convert("专业")]
+      @students.each do |u|
+        csv << [convert(u.can_number), convert(u.name), convert(u.major.department.name), convert(u.major.name)]
+      end
+    end
+    send_data csv_string,
+      :type=>'text/csv; charset=utf-8; header=present',
+      :disposition => "attachment; filename=#{convert("未报到学生")}.csv"
   end
 
   private

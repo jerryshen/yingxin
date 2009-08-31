@@ -1,0 +1,10 @@
+<% form_for(@step7) do |f| %>
+  <fieldset>
+    <legend>学生公寓入住</legend>
+    <%= render :partial => 'form', :locals => { :f => f }  %>
+    <p class="bbar">
+      <%= f.submit '更新' %>
+      <input type="button" onclick="$page.showListView()" value="取消" />
+    </p>
+  </fieldset>
+<% end %>

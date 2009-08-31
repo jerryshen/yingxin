@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :step8s
+
   map.resources :fee_temps, :collection => { :ensure_fee => :post}
 
   map.resources :green_paths
@@ -7,7 +9,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :beds
 
-  map.resources :complexes, :collection => { :export_no_fee => :get, :export_confirm_true => :get}
+  map.resources :complexes, :collection => { :export_no_fee => :get, :export_confirm_true => :get, :export_no_signup => :get}
 
   map.resources :stats, :collection => {:export_all => :get, :export => :get}
   map.resources :temps

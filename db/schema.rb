@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 259) do
+ActiveRecord::Schema.define(:version => 26) do
 
   create_table "app_configs", :force => true do |t|
     t.string   "key"
@@ -137,6 +137,8 @@ ActiveRecord::Schema.define(:version => 259) do
     t.boolean  "remit",      :default => false
     t.boolean  "leave",      :default => false
     t.datetime "leave_date"
+    t.boolean  "step8",      :default => false
+    t.datetime "step8_date"
   end
 
   add_index "proces", ["major_id"], :name => "index_proces_on_major_id"

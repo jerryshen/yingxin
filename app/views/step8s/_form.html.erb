@@ -1,0 +1,21 @@
+<%= f.error_messages %>
+<p>
+  <label for="stu">姓名:</label>
+  <label for="name"><%=h @step7.student.name %></label>
+</p>
+<p>
+  <label for="dep">专业:</label>
+  <label for="name">
+    <%=h @step7.student.department.name if @step7.student.department %>
+    <%=h @step7.student.major.name if @step7.student.major %>
+  </label>
+</p>
+<p>
+  <label for="info_cla">班级:</label>
+  <label for="name"><%=h @step7.student.info_class.name if @step7.student.info_class %></label>
+</p>
+<p>
+  <label>入住学生公寓:</label>
+  <label for="check"><%= f.radio_button :step7, true  %>入住</label>
+  <label for="check"><%= f.radio_button :step7, false %>未入住</label>
+</p>

@@ -48,7 +48,7 @@
         var controllerName = "buildings";
         options = {
             baseUrl: "http://" + window.location.host + "/" + controllerName,
-            gridTitle: "系部管理列表",
+            gridTitle: "宿舍楼列表",
             newItemLink: "newItem",
             columns: columns,
             oprateBarButtons: [function(value, p, record){
@@ -155,10 +155,22 @@
                         inputValue: 4,
                         checked: true
                     }, {
+                        boxLabel: '5个',
+                        name: 'bed_count',
+                        inputValue: 5
+                      },{
                         boxLabel: '6个',
                         name: 'bed_count',
                         inputValue: 6
-                    }]
+                      },{
+                        boxLabel: '7个',
+                        name: 'bed_count',
+                        inputValue: 7
+                      },{
+                        boxLabel: '8个',
+                        name: 'bed_count',
+                        inputValue: 8
+                      }]
                 }],
                 buttons: [{
                     id: "btn_generate_room",

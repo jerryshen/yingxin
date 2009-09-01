@@ -149,36 +149,35 @@ class ComplexesController < ApplicationController
       condition_values << [true, value]
     end
 
-    if @current_user.roles.first.name == "超级管理员"
-      if(conditions != "1=1")
-        option_conditions = [conditions,condition_values].flatten!
-        @complexes = Student.paginate(:order =>"id ASC", :joins => joins, :conditions => option_conditions,:per_page=> @pagesize, :page => params[:page] || 1)
-        count = Student.count(:joins => joins, :conditions => option_conditions)
-      else
-        @complexes = Student.paginate(:order =>"id ASC",:per_page=> @pagesize, :page => params[:page] || 1)
-        count = Student.count
-      end
+    #    if @current_user.roles.first.name == "超级管理员"
+    if(conditions != "1=1")
+      option_conditions = [conditions,condition_values].flatten!
+      @complexes = Student.paginate(:order =>"id ASC", :joins => joins, :conditions => option_conditions,:per_page=> @pagesize, :page => params[:page] || 1)
+      count = Student.count(:joins => joins, :conditions => option_conditions)
     else
-      department_id = @current_user.department_id
-      majors = Department.find(department_id).majors
-      ids = []
-      unless majors.blank?
-        majors.each do |m|
-          ids.push(m.id)
-        end
-      end
-      idss = ids.join(",")
-
-      if(conditions != "1=1")
-        option_conditions = [conditions,condition_values].flatten!
-        @complexes = Student.find(:all,:conditions => ["major_id in (#{idss}) "]).paginate(:order =>"id ASC", :joins => joins, :conditions => option_conditions,:per_page=> @pagesize, :page => params[:page] || 1)
-        count = Student.find(:all,:conditions => ["major_id in (#{idss}) "]).count(:joins => joins, :conditions => option_conditions)
-      else
-        @complexes = Student.find(:all,:conditions => ["major_id in (#{idss}) "]).paginate(:order =>"id ASC",:per_page=> @pagesize, :page => params[:page] || 1)
-        count = Student.find(:all,:conditions => ["major_id in (#{idss}) "]).count
-      end
-      return render_json(@complexes,count)
+      @complexes = Student.paginate(:order =>"id ASC",:per_page=> @pagesize, :page => params[:page] || 1)
+      count = Student.count
     end
+    #    else
+    #      department_id = @current_user.department_id
+    #      majors = Department.find(department_id).majors
+    #      ids = []
+    #      unless majors.blank?
+    #        majors.each do |m|
+    #          ids.push(m.id)
+    #        end
+    #      end
+    #      idss = ids.join(",")
+    #
+    #      if(conditions != "1=1")
+    #        option_conditions = [conditions,condition_values].flatten!
+    #        @complexes = Student.find(:all,:conditions => ["major_id in (#{idss}) "]).paginate(:order =>"id ASC", :joins => joins, :conditions => option_conditions,:per_page=> @pagesize, :page => params[:page] || 1)
+    #        count = Student.find(:all,:conditions => ["major_id in (#{idss}) "]).count(:joins => joins, :conditions => option_conditions)
+    #      else
+    #        @complexes = Student.find(:all,:conditions => ["major_id in (#{idss}) "]).paginate(:order =>"id ASC",:per_page=> @pagesize, :page => params[:page] || 1)
+    #        count = Student.find(:all,:conditions => ["major_id in (#{idss}) "]).count
+    #      end
+    return render_json(@complexes,count)
   end
   
 end

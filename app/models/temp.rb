@@ -20,8 +20,24 @@ class Temp < ActiveRecord::Base
     else
       students.each do |d|
 
-        gender = d.f3 == "男" ? "m" : "f"
-        major_id = Major.find_by_name(d.f20).id
+        gender = d.f3 == "1" ? "m" : "f"
+
+        case d.f20
+        when "05"
+          major_id = 5
+        when "08"
+          major_id = 8
+        when "12"
+          major_id = 18
+        when "27"
+          major_id = 27
+        when "29"
+          major_id = 29
+        when "24"
+          major_id = 30
+        when "31"
+          major_id = 31
+        end
 
         Student.create(
           :name         => d.name,

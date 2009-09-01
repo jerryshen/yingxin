@@ -1,5 +1,5 @@
-#require 'excelrill'
-require 'excelrillinux' #winOLE less
+require 'excelrill'
+#require 'excelrillinux' #winOLE less
 require 'file_upload_util'
 class DataImport
   def self.collet_excel_data(file)
@@ -16,7 +16,7 @@ class DataImport
   end
   
   def self.parse(file_path)
-    headers = %w{KSH ZKZH  XM  XBMC  CSNY  CJ  TDCJ  ZZMMMC  MZMC  KSLBMC  BYLBMC  ZXDM  ZXMC  DQDM  DQMC  SFZH  JTDZ  YZBM  LXDH  SJR ZYMC  XZ}
+    headers = %w{KSH ZKZH  XM  XBMC  CSNY  CJ  TDCJ  ZZMMMC  MZMC  KSLBMC  BYLBMC  ZXDM  ZXMC  DQDM  DQMC  SFZH  JTDZ  YZBM  LXDH  SJR TDZY  XZ}
     fields = %w{f1  f2  name  f3  f4  f5  f6  f7  f8  f9  f10 f11 f12 f13 f14 f15 f16 f17 f18 f19 f20 f21}      
     header_field = {}
     headers.each_index do |i|

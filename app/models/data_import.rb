@@ -16,7 +16,7 @@ class DataImport
   end
   
   def self.parse(file_path)
-    headers = %w{KSH ZKZH  XM  XBMC  CSNY  CJ  TDCJ  ZZMMMC  MZMC  KSLBMC  BYLBMC  ZXDM  ZXMC  DQDM  DQMC  SFZH  JTDZ  YZBM  LXDH  SJR TDZY  XZ}
+    headers = %w{KSH ZKZH  XM  XBDM  CSNY  CJ  TDCJ  ZZMMMC  MZMC  KSLBMC  BYLBMC  ZXDM  ZXMC  DQDM  DQMC  SFZH  JTDZ  YZBM  LXDH  SJR LQZY  XZ}
     fields = %w{f1  f2  name  f3  f4  f5  f6  f7  f8  f9  f10 f11 f12 f13 f14 f15 f16 f17 f18 f19 f20 f21}      
     header_field = {}
     headers.each_index do |i|
@@ -45,7 +45,7 @@ class DataImport
         end
         
         end_row_no = rows_count + end_row
-        (start_row...end_row_no).each do |row|
+        (start_row..end_row_no).each do |row|
             row_data = {}
             (0...cols_count).each do |col|
               unless ignore_cols.include?(col) #非忽略列

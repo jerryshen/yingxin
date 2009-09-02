@@ -29,15 +29,15 @@ class StatsController < ApplicationController
     @students = Student.find(:all, :conditions => ["major_id = ? AND confirm = ?", major.id, false])
     
     csv_string = FasterCSV.generate do |csv|
-      csv << [convert("考生号"),convert("姓名"),convert("专业")]
+      csv << [convert("考生号"),convert("姓名"),convert("身份证号"),convert("出生年月"),convert("性别"),convert("院系"),convert("专业")]
       @students.each do |u|
-        csv << [convert(u.can_number), convert(u.name),  convert(u.major.name)]
+        csv << [convert(u.can_number), convert(u.name), convert(u.id_number), convert(format_birth(u.birthday)), convert(format_gender(u.gender)), convert(u.major.department.name), convert(u.major.name)]
       end
     end
 
     send_data csv_string,
       :type=>'text/csv; charset=utf-8; header=present',
-      :disposition => "attachment; filename= #{major.name}未报道学生列表.csv"
+      :disposition => "attachment; filename= #{convert(major.name)}#{convert("未报道学生列表")}.csv"
   end
   
   private

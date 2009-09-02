@@ -61,14 +61,14 @@ class Step2sController < ApplicationController
     if @step2.step1 == true
     if !@step2.step2
       if @step2.update_attributes(:step2 => true, :step2_date => Time.now)
-        Student.proc_end(@step2)
+#        Student.proc_end(@step2)
         render :text =>"true"
       else
         render :text => "false"
       end
     else
       if @step2.update_attributes(:step2 => false, :step2_date => nil)
-        Student.proc_restart(@step2)
+#        Student.proc_restart(@step2)
         render :text =>"true"
       else
         render :text => "false"

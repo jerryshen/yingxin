@@ -53,4 +53,12 @@ class Proce < ActiveRecord::Base
     end
     return hash.to_json
   end
+
+  def self.signup_done
+    proces = Proce.find(:all, :conditions => ["step1 = ?", true])
+    proces.each do |p|
+      student = Student.find(p.student_id)
+      student.update_attributes(:confirm => true, :confirm_date => Time.now)
+    end
+  end
 end

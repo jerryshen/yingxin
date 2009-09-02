@@ -84,7 +84,7 @@ class Step5sController < ApplicationController
   def get_json
     load_page_data
 
-    department_id = @current_user.department.id
+    department_id = @current_user.department_id
 
     majors = Department.find(department_id).majors
     ids = []
@@ -93,10 +93,10 @@ class Step5sController < ApplicationController
         ids.push(m.id)
       end
     end
-    idss = ids.join(",")
+    @idss = ids.join(",")
 
     joins = "INNER JOIN students p ON proces.student_id=p.id"
-    conditions = "1=1 AND p.major_id in (#{idss})"
+    conditions = "1=1"
     condition_values = []
 
     if(!params[:search_name].blank?)
@@ -108,22 +108,22 @@ class Step5sController < ApplicationController
         end
       end
       idss = ids.join(",")
-      conditions += " AND p.id in (#{idss})"
+      conditions += " AND p.id in (#{idss}) AND p.major_id in (#{@idss})"
       condition_values << []
     end
 
     if(!params[:search_can_number].blank?)
-      conditions += " AND p.can_number = ?"
+      conditions += " AND p.can_number = ? AND p.major_id in (#{@idss})"
       condition_values << params[:search_can_number]
     end
 
-    if(conditions != "1=1 AND p.major_id in (#{idss})")
+    if(conditions != "1=1")
       option_conditions = [conditions,condition_values].flatten!
       @step5s = Proce.paginate(:order =>"id ASC", :joins => joins,:conditions => option_conditions,:per_page=> @pagesize, :page => params[:page] || 1)
       count = Proce.count(:joins => joins, :conditions => option_conditions)
     else
-      @step5s = Proce.paginate(:order =>"id ASC",:per_page=> @pagesize, :page => params[:page] || 1)
-      count = Proce.count(:joins => joins, :conditions => conditions)
+      @step5s = Proce.paginate(:order =>"id ASC",:joins => joins,:conditions => ["p.major_id in (#{@idss})"], :per_page=> @pagesize, :page => params[:page] || 1)
+      count = Proce.count(:joins => joins, :conditions => ["p.major_id in (#{@idss})"])
     end
     return render_json(@step5s,count)
   end

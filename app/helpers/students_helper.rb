@@ -18,7 +18,7 @@ def select_class(major_id, class_id)
       </p>
       <p>
         <label for="select_class_id">班级</label>
-        <select id="select_class_id" disabled="disabled" name="student[info_class_id]" class="required">
+        <select id="select_class_id" disabled="disabled" name="student[info_class_id]">
           <option value='' >选择班级...</option>
           <class_options>
         </select>

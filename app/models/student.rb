@@ -7,9 +7,11 @@ class Student < ActiveRecord::Base
   has_one :bed
   has_one :proce
 
+  validates_presence_of  :can_number, :gender, :name, :major_id
+
   # process end
   def self.proc_end(proc)
-    if proc.step1 && proc.step2 == true
+    if proc.step1 == true
       student = Student.find(proc.student_id)
       student.update_attributes(:confirm => true, :confirm_date => Time.now)
     end
@@ -17,7 +19,7 @@ class Student < ActiveRecord::Base
 
   #process restart
   def self.proc_restart(proc)
-    if proc.step1 && proc.step2 == false
+    if proc.step1 == false
       student = Student.find(proc.student_id)
       student.update_attributes(:confirm => false, :confirm_date => nil)
     end

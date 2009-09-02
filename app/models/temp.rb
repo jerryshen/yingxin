@@ -19,111 +19,62 @@ class Temp < ActiveRecord::Base
       return "no data"
     else
       students.each do |d|
-
-        gender = d.f3 == "1" ? "m" : "f"
-
-        case d.f20
-        when "05"
-          major_id = 5
-        when "08"
-          major_id = 8
-        when "12"
-          major_id = 18
-        when "27"
-          major_id = 27
-        when "29"
-          major_id = 29
-        when "24"
-          major_id = 30
-        when "31"
-          major_id = 31
-        end
-
-        Student.create(
-          :name         => d.name,
-          :can_number   => d.f1,
-          :exa_number   => d.f2,
-          :gender       => gender,
-          :birthday     => d.f4.to_time,
-          :h_score      => d.f5,
-          :r_score      => d.f6,
-          :polity       => d.f7,
-          :nation       => d.f8,
-          :stu_type     => d.f9,
-          :gra_type     => d.f10,
-          :school_code  => d.f11,
-          :school_name  => d.f12,
-          :region_code  => d.f13,
-          :region_name  => d.f14,
-          :id_number    => d.f15,
-          :rec_addr    => d.f16,
-          :post_code    => d.f17,
-          :phone        => d.f18,
-          :receiver     => d.f19,
-          :major_id     => major_id,
-          :edu_length   => d.f21)
-      end
-    end
-  end
+        gender = d.f3 == "男" ? "m" : "f"
 
 
-  def self.update_and_new
-    students = Temp.all
-    if students.blank?
-      return "no data"
-    else
-      students.each do |d|
         student = Student.find_by_can_number(d.f1)
-        gender = d.f3 == "1" ? "m" : "f"
-
-        case d.f20
-        when "05"
-          major_id = 5
-        when "08"
-          major_id = 8
-        when "12"
-          major_id = 18
-        when "27"
-          major_id = 27
-        when "29"
-          major_id = 29
-        when "24"
-          major_id = 30
-        when "31"
-          major_id = 31
-        end
-
-        major_id = ""
-        if student.blank?
-          students.each do |d|
-
-            Student.create(
-              :name         => d.name,
-              :can_number   => d.f1,
-              :exa_number   => d.f2,
-              :gender       => gender,
-              :birthday     => d.f4.to_time,
-              :h_score      => d.f5,
-              :r_score      => d.f6,
-              :polity       => d.f7,
-              :nation       => d.f8,
-              :stu_type     => d.f9,
-              :gra_type     => d.f10,
-              :school_code  => d.f11,
-              :school_name  => d.f12,
-              :region_code  => d.f13,
-              :region_name  => d.f14,
-              :id_number    => d.f15,
-              :rec_addr    => d.f16,
-              :post_code    => d.f17,
-              :phone        => d.f18,
-              :receiver     => d.f19,
-              :major_id     => major_id,
-              :edu_length   => d.f21)
-          end
+        
+        if student
+          student.update_attributes(:gender => gender, :major_id => d.f20.to_i)
         else
-          student.update_attributes(:major_id => major_id)
+          Student.create(
+            :name         => d.name,
+            :can_number   => d.f1,
+            :exa_number   => d.f2,
+            :gender       => gender,
+            :birthday     => d.f4.to_time,
+            :h_score      => d.f5,
+            :r_score      => d.f6,
+            :polity       => d.f7,
+            :nation       => d.f8,
+            :stu_type     => d.f9,
+            :gra_type     => d.f10,
+            :school_code  => d.f11,
+            :school_name  => d.f12,
+            :region_code  => d.f13,
+            :region_name  => d.f14,
+            :id_number    => d.f15,
+            :rec_addr    => d.f16,
+            :post_code    => d.f17,
+            :phone        => d.f18,
+            :receiver     => d.f19,
+            :major_id     => d.f20.to_i,
+            :edu_length   => d.f21)
         end
+        
+        #        Student.create(
+        #          :name         => d.name,
+        #          :can_number   => d.f1,
+        #          :exa_number   => d.f2,
+        #          :gender       => gender,
+        #          :birthday     => d.f4.to_time,
+        #          :h_score      => d.f5,
+        #          :r_score      => d.f6,
+        #          :polity       => d.f7,
+        #          :nation       => d.f8,
+        #          :stu_type     => d.f9,
+        #          :gra_type     => d.f10,
+        #          :school_code  => d.f11,
+        #          :school_name  => d.f12,
+        #          :region_code  => d.f13,
+        #          :region_name  => d.f14,
+        #          :id_number    => d.f15,
+        #          :rec_addr    => d.f16,
+        #          :post_code    => d.f17,
+        #          :phone        => d.f18,
+        #          :receiver     => d.f19,
+        #          :major_id     => major_id,
+        #          :edu_length   => d.f21)
       end
     end
   end

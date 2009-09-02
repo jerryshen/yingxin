@@ -48,10 +48,10 @@ class StatsController < ApplicationController
     department_id = params[:search_department_id]
     if(!department_id.blank?)
       @stats = Stat.get_detail_data(department_id).paginate(:order =>"id DESC",:per_page=> @pagesize,:page => params[:page] || 1)
-      count = Stat.get_detail_data(department_id).count
+      count = Stat.get_detail_data(department_id).length
     else
       @stats = Stat.get_detail_data("").paginate(:order =>"id DESC",:per_page=> @pagesize,:page => params[:page] || 1)
-      count = Stat.get_detail_data("").count
+      count = Stat.get_detail_data("").length
     end
     return hash_to_json(@stats,count)
   end

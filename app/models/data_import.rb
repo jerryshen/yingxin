@@ -45,7 +45,7 @@ class DataImport
         end
         
         end_row_no = rows_count + end_row
-        (start_row..end_row_no).each do |row|
+        (start_row...end_row_no).each do |row|
             row_data = {}
             (0...cols_count).each do |col|
               unless ignore_cols.include?(col) #非忽略列

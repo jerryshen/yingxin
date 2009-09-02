@@ -167,6 +167,10 @@ class StudentsController < ApplicationController
       sql.push("name like ?")
       values.push("%#{params[:search_name]}%")
     end
+    if(!params[:search_can_number].blank?)
+      sql.push("can_number =?")
+      values.push(params[:search_can_number])
+    end
     if(params[:search_major] && params[:search_major].to_s!='')
       sql.push("major_id = ?")
       values.push(params[:search_major])      

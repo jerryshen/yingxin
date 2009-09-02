@@ -6,9 +6,10 @@
 <%= stylesheet_link_tag "form.css" %>
 <div id="list-view">
   <form style="margin: 10px 0px;" id="search_form">
-    <label for="search_name">姓名：
-      <input type="text" value="" name="search_name" id="search_name"/>
-    </label>
+    <label for="search_name">姓名：</label>
+    <input type="text" value="" name="search_name" id="search_name" size="15"/>
+    <label for="search_can_number">考生号</label>
+    <input type="text" value="" name="search_can_number" id="search_can_number" size="15"/>
     <label for="search_major">专业：
       <%= select_tag('search_major', options_for_select([["选择专业..." , ""]] + Major.all.collect{|x| [x.name, x.id] },@search_major),{:name => "search_major"}) %>
     </label>

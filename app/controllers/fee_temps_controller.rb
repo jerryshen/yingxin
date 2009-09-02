@@ -83,12 +83,12 @@ class FeeTempsController < ApplicationController
 
   private
   def ensure_fee(record)
-    student = Student.first(:conditions => {:signup_number => record.f1})
+    student = Student.first(:conditions => {:can_number => record.f1})
     unless student.nil?
       if record.f4 > 0 or record.f2 == record.f3
         proc = student.proce
         if proc
-         proc.update_attributes(:step2 => true)
+          proc.update_attributes(:step2 => true)
         end
       end
       record.destroy

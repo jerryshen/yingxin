@@ -40,8 +40,9 @@
       <label>已复查学生缴费情况</label>
       <select name="search_fee" id="search_fee">
         <option value="">全部...</option>
-        <option value="true">已缴费</option>
-        <option value="false">未缴费</option>
+        <option value="0">已缴费(非绿色通道)</option>
+        <option value="1">已缴费(律色通道)</option>
+        <option value="2">未缴费</option>
       </select>
     </div>
     <div style="margin: 10px 0px;">
@@ -57,7 +58,7 @@
   </form>
   <div>
     <div class="nav">
-      <span><%= link_to "导出已报到学生列表", :action => 'export_confirm_true'  %></span> | <span><%= link_to "导出未缴费学生列表", :action => 'export_no_fee'  %></span> | <span><%= link_to "导出未报到学生列表", :action => 'export_no_signup'  %></span>
+      <span><%= link_to "导出已报到学生列表", :action => 'export_confirm_true'  %></span> | <span><%= link_to "导出未缴费学生列表", :action => 'export_no_fee'  %></span> | <span><%= link_to "导出绿色通道学生列表", :action => 'export_green_path'  %></span> | <span><%= link_to "导出未报到学生列表", :action => 'export_no_signup'  %></span>
     </div>
     <div id="grid-wrap">
     </div>
@@ -84,25 +85,86 @@
   }
   Ext.onReady(function(){
     var columns = [{
-        header: "ID",
+        header: "序号",
         dataIndex: 'id',
-        width: 30,
+        width: 40,
         sortable: true,
         type: "int",
         resizable: false
       }, {
-        header: "考生号",
-        dataIndex: 'can_number',
-        width: 120,
-        sortable: true
-      }, {
         header: "学号",
         dataIndex: 'stu_number',
+        sortable: true,
+        hidden: true
+      }, {
+        header: "考生号",
+        dataIndex: 'can_number',
+        width: 130,
         sortable: true
       }, {
         header: "姓名",
         dataIndex: 'name',
         sortable: true
+      }, {
+        header: "高考成绩",
+        dataIndex: 'h_score',
+        sortable: true,
+        hidden: true
+      }, {
+        header: "投档成绩",
+        dataIndex: 'r_score',
+        sortable: true,
+        hidden: true
+      }, {
+        header: "政治面貌",
+        dataIndex: 'polity',
+        sortable: true,
+        hidden: true
+      }, {
+        header: "专业方向",
+        dataIndex: 'direction',
+        sortable: true,
+        hidden: true
+      }, {
+        header: "身份证号",
+        dataIndex: 'id_number',
+        sortable: true,
+        hidden: true
+      }, {
+        header: "中学代码",
+        dataIndex: 'school_code',
+        sortable: true,
+        hidden: true
+      }, {
+        header: "中学名称",
+        dataIndex: 'school_name',
+        sortable: true,
+        hidden: true
+      }, {
+        header: "学制",
+        dataIndex: 'edu_length',
+        sortable: true,
+        hidden: true
+      }, {
+        header: "邮政编码",
+        dataIndex: 'post_co',
+        sortable: true,
+        hidden: true
+      }, {
+        header: "联系地址",
+        dataIndex: 'address',
+        sortable: true,
+        hidden: true
+      }, {
+        header: "生源地－省",
+        dataIndex: 'state',
+        sortable: true,
+        hidden: true
+      }, {
+        header: "生源地－市",
+        dataIndex: 'city',
+        sortable: true,
+        hidden: true
       }, {
         header: "性别",
         dataIndex: 'gender',

@@ -21,47 +21,37 @@ class ComplexesController < ApplicationController
 
   def export_no_fee
     @students = Student.find(:all, :joins => "INNER JOIN proces p ON students.id = p.student_id", :conditions => ["p.step1 =? AND p.step2 = ?", true, false])
+    data_export(@students)
+  end
 
+  def export_confirm_true
+    @students = Student.find(:all, :joins => "INNER JOIN proces p ON students.id = p.student_id", :conditions => ["p.step1 =?", true])
+    data_export(@students)
+  end
+
+  def export_no_signup
+    @students = Student.find(:all, :conditions => ["confirm = ?", false])
+    data_export(@students)
+  end
+
+  def export_green_path
+    @students = Student.find(:all, :joins => "INNER JOIN proces p ON students.id = p.student_id", :conditions => ["p.step1 = ? AND p.remit = ?", true, true])
+    data_export(@students)
+  end
+
+  private
+
+  def data_export(students)
     csv_string = FasterCSV.generate do |csv|
       csv << [convert("考生号"),convert("姓名"),convert("身份证号"),convert("出生年月"),convert("性别"),convert("院系"),convert("专业")]
-      @students.each do |u|
-        csv << [convert(u.can_number), convert(u.name), convert(u.id_number), convert(format_birth(u.birthday)), convert(format_gender(u.gender)), convert(u.major.department.name), convert(u.major.name)]
+      students.each do |u|
+        csv << [u.can_number, convert(u.name), u.id_number, format_birth(u.birthday), convert(format_gender(u.gender)), convert(u.major.department.name), convert(u.major.name)]
       end
     end
     send_data csv_string,
       :type=>'text/csv; charset=utf-8; header=present',
       :disposition => "attachment; filename=#{convert("报到却未缴费学生")}.csv"
   end
-
-  def export_confirm_true
-    @students = Student.find(:all, :joins => "INNER JOIN proces p ON students.id = p.student_id", :conditions => ["p.step1 =? AND p.step2 = ?", true, true])
-
-    csv_string = FasterCSV.generate do |csv|
-      csv << [convert("考生号"),convert("姓名"),convert("身份证号"),convert("出生年月"),convert("性别"),convert("院系"),convert("专业")]
-      @students.each do |u|
-        csv << [convert(u.can_number), convert(u.name), convert(u.id_number), convert(format_birth(u.birthday)), convert(format_gender(u.gender)), convert(u.major.department.name), convert(u.major.name)]
-      end
-    end
-    send_data csv_string,
-      :type=>'text/csv; charset=utf-8; header=present',
-      :disposition => "attachment; filename=#{convert("已报到学生")}.csv"
-  end
-
-  def export_no_signup
-    @students = Student.find(:all, :conditions => ["confirm = ?", false])
-
-    csv_string = FasterCSV.generate do |csv|
-      csv << [convert("考生号"),convert("姓名"),convert("身份证号"),convert("出生年月"),convert("性别"),convert("院系"),convert("专业")]
-      @students.each do |u|
-        csv << [convert(u.can_number), convert(u.name), convert(u.id_number), convert(format_birth(u.birthday)), convert(format_gender(u.gender)), convert(u.major.department.name), convert(u.major.name)]
-      end
-    end
-    send_data csv_string,
-      :type=>'text/csv; charset=utf-8; header=present',
-      :disposition => "attachment; filename=#{convert("未报到学生")}.csv"
-  end
-
-  private
 
   def get_json
     load_page_data
@@ -143,9 +133,17 @@ class ComplexesController < ApplicationController
 
     if(!params[:search_fee].blank?)
       joins = "INNER JOIN proces p ON students.id = p.student_id"
-      value = (params[:search_fee] == "true" ? true : false)
-
-      conditions += " AND p.step1 = ? AND p.step2 = ? "
+      case params[:search_fee]
+      when "0"
+        value = true
+        conditions += " AND p.step1 = ? AND p.step2 = ?"
+      when "1"
+        value = true
+        conditions += " AND p.step1 = ? AND p.remit = ?"
+      when "2"
+        value = false
+        conditions += " AND p.step1 = ? AND p.step2 = ?"
+      end
       condition_values << [true, value]
     end
 

@@ -58,7 +58,10 @@
   </form>
   <div>
     <div class="nav">
-      <span><%= link_to "导出已报到学生列表", :action => 'export_confirm_true'  %></span> | <span><%= link_to "导出未缴费学生列表", :action => 'export_no_fee'  %></span> | <span><%= link_to "导出绿色通道学生列表", :action => 'export_green_path'  %></span> | <span><%= link_to "导出未报到学生列表", :action => 'export_no_signup'  %></span>
+      <span><%= link_to "导出已报到学生名单", :action => 'export_confirm_true'  %></span> | <span><%= link_to "导出未缴费学生名单", :action => 'export_no_fee'  %></span> | <span><%= link_to "导出绿色通道学生名单", :action => 'export_green_path'  %></span> | <span><%= link_to "导出未报到学生名单", :action => 'export_no_signup'  %></span>
+    </div>
+        <div class="nav">
+      <span><%= link_to "教务处注册学生名单", :action => 'export_signup_true'  %></span> | <span><%= link_to "请假学生名单", :action => 'export_abersent'  %></span>
     </div>
     <div id="grid-wrap">
     </div>

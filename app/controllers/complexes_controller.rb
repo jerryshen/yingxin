@@ -32,14 +32,26 @@ class ComplexesController < ApplicationController
   end
 
   def export_no_signup
-    filename = "未报到学生列表"
+    filename = "未报到学生名单"
     @students = Student.find(:all, :conditions => ["confirm = ?", false])
     data_export(@students,filename)
   end
 
   def export_green_path
-    filename = "绿色通道学生列表"
+    filename = "绿色通道学生名单"
     @students = Student.find(:all, :joins => "INNER JOIN proces p ON students.id = p.student_id", :conditions => ["p.step1 = ? AND p.remit = ?", true, true])
+    data_export(@students,filename)
+  end
+
+  def export_signup_true
+    filename = "教务处注册学生名单"
+    @students = Student.find(:all, :joins => "INNER JOIN proces p ON students.id = p.student_id", :conditions => ["p.step1 = ? AND p.step8 = ?", true, true])
+    data_export(@students,filename)
+  end
+
+  def export_abersent
+    filename = "请假学生名单"
+    @students = Student.find(:all, :joins => "INNER JOIN proces p ON students.id = p.student_id", :conditions => ["p.step1 = ? AND p.leave = ?", true, true])
     data_export(@students,filename)
   end
 

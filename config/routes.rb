@@ -9,7 +9,8 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :beds
 
-  map.resources :complexes, :collection => { :export_no_fee => :get, :export_confirm_true => :get, :export_no_signup => :get, :export_green_path => :get}
+  map.resources :complexes, :collection => { :export_no_fee => :get, :export_confirm_true => :get, :export_no_signup => :get, :export_green_path => :get,
+    :export_signup_true => :get, :export_abersent => :get}
 
   map.resources :stats, :collection => {:export_all => :get, :export => :get}
   map.resources :temps

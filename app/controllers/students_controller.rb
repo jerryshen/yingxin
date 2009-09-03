@@ -1,5 +1,5 @@
 class StudentsController < ApplicationController
-  protect_from_forgery :except => [:prev, :next, :last]
+  protect_from_forgery :except => [:prev, :next, :last, :data_migrate]
   # GET /students
   # GET /students.xml
   def index
@@ -158,6 +158,16 @@ class StudentsController < ApplicationController
     end
   end
 
+  def data_migrate
+    begin
+      count = Student.count - Proce.count
+      Student.import_to_proce
+      render :json => {:status => "success", :msg=>"成功确认#{count}条记录!"}
+    rescue
+      render :json => {:status => "fail",:msg => "操作失败"}
+    end
+  end
+
   private
   def get_json
     load_page_data
@@ -173,7 +183,7 @@ class StudentsController < ApplicationController
     end
     if(params[:search_major] && params[:search_major].to_s!='')
       sql.push("major_id = ?")
-      values.push(params[:search_major])      
+      values.push(params[:search_major])
     end
     if sql.length > 0
       conditions = []

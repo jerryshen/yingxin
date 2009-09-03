@@ -22,6 +22,7 @@
       <a class="button" id="newItem" href="javascript:$page.showNewView()"><img  src="/images/icons/new.png"/>添加新生</a>
       &nbsp;&nbsp;&nbsp;<a id="print" class="button" href="/students:print" target="_blank"><img src="/images/icons/printer.png" />打印</a>
       <span style="color:blue">(*如按专业分别打印，请先选择专业。)</span>
+      <input type="button" class="button" onclick="ensure_all()" style="width:120px" value="报到流程数据同步" />
     </div>
     <div id="grid-wrap">
     </div>
@@ -200,4 +201,23 @@
     selmajor.onchange = setPrintHref;
     setPrintHref();
   })
+
+  function ensure_all(){
+    var waitBox = Ext.Msg.show({
+      wait: true,
+      progress: true,
+      msg: '操作时间较长，请耐心等候...',
+      closeable: false
+    });
+    try{
+      $.post("/students/data_migrate",  function(data){
+        var json = eval("(function(){return " + data + "})()");
+        waitBox.hide();
+        $page.refreshGridData();
+        if(json.msg)alert(json.msg);
+      })
+    }catch(e){
+      waitBox.hide();
+    }
+  }
 </script>

@@ -90,7 +90,7 @@ class ApplicationController < ActionController::Base
   def convert(str)
     require 'iconv'
     begin
-      converter = Iconv.new("GB2312", "UTF-8")
+      converter = Iconv.new("GBK", "UTF-8")
       converter.iconv(str)
     rescue
       str

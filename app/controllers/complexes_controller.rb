@@ -11,11 +11,11 @@ class ComplexesController < ApplicationController
   end
 
   def show
-    @complex = Student.find(params[:id])
+    @student = Student.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
-      format.xml  { render :xml => @complex }
+      format.xml  { render :xml => @student }
     end
   end
 

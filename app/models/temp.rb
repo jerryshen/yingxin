@@ -20,10 +20,7 @@ class Temp < ActiveRecord::Base
     else
       students.each do |d|
         gender = d.f3 == "男" ? "m" : "f"
-
-
         student = Student.find_by_can_number(d.f1)
-        
         if student
           student.update_attributes(:gender => gender, :major_id => d.f20.to_i)
         else

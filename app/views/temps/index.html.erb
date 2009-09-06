@@ -14,11 +14,14 @@
 <%= javascript_include_tag 'AjaxForm.js' %>
 <div id="list-view">
   <form style="margin: 10px 0px;" id="search_form">
-    <input class="button" type="button" id="btnSearch" value="搜索"/>
-    <input value="重置"class="btnreset" type="reset" />
+    <input class="button" type="button" id="btnSearch" value="刷新数据"/>
     <input value="刷新 " onclick="window.location.reload()" class="btnrefresh" type="button"  />
   </form>
   <div>
+    <div class="nav">
+      <span style="color:blue">*为保证数据准确性，你导入的数据将先存放在此临时表，请确认后点击数据同步按钮将无错的数据迁移进正式表！</span>
+      <input type="button" class="button" onclick="ensure_all()" style="width:120px" value="信新生数据同步" />
+    </div>
     <div id="grid-wrap">
     </div>
   </div>
@@ -30,9 +33,9 @@
 
   Ext.onReady(function(){
     var columns = [{
-        header: "ID",
+        header: "序号",
         dataIndex: 'id',
-        width: 30,
+        width: 50,
         sortable: true,
         type: "int",
         resizable: false
@@ -136,4 +139,22 @@
     }
     $page = new ExtListPage(options);
   })
+
+  function ensure_all(){
+    var waitBox = Ext.Msg.show({
+      wait: true,
+      progress: true,
+      msg: '操作时间较长，请耐心等候...',
+      closeable: false
+    });
+    try{
+      $.post("/temps/import_to_students",  function(data){
+        var json = eval("(function(){return " + data + "})()");
+        waitBox.hide();
+        if(json.msg)alert(json.msg);
+      })
+    }catch(e){
+      waitBox.hide();
+    }
+  }
 </script>

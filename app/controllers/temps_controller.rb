@@ -57,12 +57,18 @@ class TempsController < ApplicationController
     end
   end
 
-  def import
-    Temp.import_to_students
+  def import_to_students
+    begin
+      count = Temp.count - Student.count
+      Temp.import_to_students
+      render :json => {:status => "success", :msg=>"成功确认#{count}条记录!"}
+    rescue
+      render :json => {:status => "fail",:msg => "操作失败"}
+    end
   end
   private
 
-    def get_json
+  def get_json
     load_page_data
 
     conditions = '1=1'

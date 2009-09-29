@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-    <title>新生档案</title>
+      <title>新生档案</title>
 
   </head>
   <body bgcolor="#FFFFFF">
@@ -116,112 +116,105 @@
             <td>
               <div id="c_content" style="font-size:12px;line-height:1.5em;font-family:Arial;">
 
-              <div class="v2">
-                <div style="font-size:14px;font-weight:bold;text-align:left;" class="v2_top">新生档案</div>
-                <div class="v2_middle">
-                  <div style="width:734px;height:37px;line-height:28px;background-color:#92B0EC;font-weight:bold;" class="v2_t">
-                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                <div class="v2">
+                  <div style="font-size:14px;font-weight:bold;text-align:left;" class="v2_top">新生档案</div>
+                  <div class="v2_middle">
+                    <div style="width:734px;height:37px;line-height:28px;background-color:#92B0EC;font-weight:bold;" class="v2_t">
+                      <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                        <tr>
+                          <td width="6">&nbsp;</td>
+                          <td width="97" align="left">基本信息</td>
+
+                          <td width="631">&nbsp;</td>
+                        </tr>
+                      </table>
+                    </div>
+                    <table border="0" cellspacing="0" cellpadding="0" style="width:700px;line-height:22px;" class="v_table02">
                       <tr>
-                        <td width="6">&nbsp;</td>
-                        <td width="97" align="left">基本信息</td>
+                        <td style="width:110px" class="weight110" valign="top">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</td>
+                        <td style="width:190px" class="weight190" valign="top"><%=h @student.name  %></td>
 
-                        <td width="631">&nbsp;</td>
+                        <td style="width:110px" class="weight110" valign="top">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：</td>
+                        <td style="width:190px" class="weight190" valign="top"><%=h fuzzy_gender(@student.gender)  %>
+
+                        </td>
+                        <td rowspan="7" style="width:110px" class="weight110" valign="top">
+                          <img src="/uploads/thumbs/<%= @student.thumb  %>" width="90" height="110"/>
+                        </td>
                       </tr>
+                      <tr>
+
+                        <td valign="top">民&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;族：</td>
+                        <td valign="top"><%=h @student.nation %></td>
+                        <td valign="top">考&nbsp;&nbsp;生&nbsp;&nbsp;号：</td>
+                        <td valign="top"><%=h @student.can_number %>
+                        </td>
+                      </tr>
+                      <tr>
+
+                        <td valign="top">准考证号：</td>
+                        <td valign="top"><%=h @student.exa_number %></td>
+                        <td valign="top">学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号：</td>
+                        <td valign="top"><%=h @student.stu_number %>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top">政治面貌：</td>
+                        <td valign="top"><%=h @student.polity  %></td>
+                        <td valign="top">院&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;系：</td>
+                        <td valign="top"><%=h @student.department.name if @student.department  %></td>
+                      </tr>
+                      <tr>
+                        <td valign="top">专&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;业：</td>
+                        <td valign="top"><%=h @student.major.name if @student.major %>
+                          <td valign="top">班&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;级：</td>
+                          <td valign="top"><%=h @student.info_class.name if @student.info_class %>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td valign="top">地区名称：</td>
+                        <td valign="top"><%=h @student.region_name  %>
+                          <td valign="top">身份证号：</td>
+                          <td valign="top"><%=h @student.id_number %>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td valign="top">教育方向：</td>
+                        <td valign="top"><%=h @student.direction %>
+                          <td valign="top">入学时间：</td>
+                          <td valign="top"><%=h @student.entrance_date %>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td valign="top">学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;制：</td>
+                        <td valign="top"><%=h @student.edu_length %>
+                          <td valign="top">职业学校：</td>
+                          <td valign="top"><%=h @student.school_name %>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td valign="top">出生年月：</td>
+                        <td valign="top"><%=h @student.birthday %>
+                          <td valign="top">生&nbsp;&nbsp;源&nbsp;&nbsp;地：</td>
+                          <td valign="top"><%=h @student.state  %><%=h @student.city  %>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td valign="top">邮政编码：</td>
+                        <td valign="top"><%=h @student.post_code  %></td>
+                        <td valign="top">联系电话：</td>
+                        <td valign="top"><%=h @student.phone%></td>
+                      </tr>
+                      <tr>
+                        <td valign="top">联系地址：</td>
+                        <td colspan="4" valign="top"><%=h @student.rec_addr %>
+                        </td>
+                      </tr>
+
                     </table>
+
                   </div>
-                  <table border="0" cellspacing="0" cellpadding="0" style="width:700px;line-height:22px;" class="v_table02">
-                    <tr>
-                      <td style="width:110px" class="weight110" valign="top">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</td>
-                      <td style="width:190px" class="weight190" valign="top"><%=h @student.name  %></td>
-
-                      <td style="width:110px" class="weight110" valign="top">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：</td>
-                      <td style="width:190px" class="weight190" valign="top"><%=h fuzzy_gender(@student.gender)  %>
-
-                      </td>
-                      <td rowspan="7" style="width:110px" class="weight110" valign="top">
-                        <img src="/uploads/thumbs/<%= @student.thumb  %>" width="90" height="110"/>
-                      </td>
-                    </tr>
-                    <tr>
-
-                      <td valign="top">民&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;族：</td>
-                      <td valign="top"><%=h @student.nation %></td>
-                      <td valign="top">考&nbsp;&nbsp;生&nbsp;&nbsp;号：</td>
-                      <td valign="top"><%=h @student.can_number %>
-                      </td>
-                    </tr>
-                    <tr>
-
-                      <td valign="top">准考证号：</td>
-                      <td valign="top"><%=h @student.exa_number %></td>
-                      <td valign="top">学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号：</td>
-                      <td valign="top"><%=h @student.stu_number %>
-                      </td>
-                    </tr>
-                    <tr>
-
-                      <td valign="top">高考成绩：</td>
-                      <td valign="top"><%=h @student.h_score %>分</td>
-                      <td valign="top">投档成绩：</td>
-                      <td valign="top"><%=h @student.r_score %>分
-                      </td>
-                    </tr>
-                    <tr>
-                      <td valign="top">政治面貌：</td>
-                      <td valign="top"><%=h @student.polity  %></td>
-                      <td valign="top">院&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;系：</td>
-                      <td valign="top"><%=h @student.department.name if @student.department  %></td>
-                    </tr>
-                    <tr>
-                      <td valign="top">专&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;业：</td>
-                      <td valign="top"><%=h @student.major.name if @student.major %>
-                      <td valign="top">班&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;级：</td>
-                      <td valign="top"><%=h @student.info_class.name if @student.info_class %>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td valign="top">地区名称：</td>
-                      <td valign="top"><%=h @student.region_name  %>
-                      <td valign="top">身份证号：</td>
-                      <td valign="top"><%=h @student.id_number %>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td valign="top">教育方向：</td>
-                      <td valign="top"><%=h @student.direction %>
-                      <td valign="top">入学时间：</td>
-                      <td valign="top"><%=h @student.entrance_date %>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td valign="top">学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;制：</td>
-                      <td valign="top"><%=h @student.edu_length %>
-                      <td valign="top">职业学校：</td>
-                      <td valign="top"><%=h @student.school_name %>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td valign="top">出生年月：</td>
-                      <td valign="top"><%=h @student.birthday %>
-                      <td valign="top">生&nbsp;&nbsp;源&nbsp;&nbsp;地：</td>
-                      <td valign="top"><%=h @student.state  %><%=h @student.city  %>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td valign="top">邮政编码：</td>
-                      <td valign="top"><%=h @student.post_code  %>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td valign="top">联系地址：</td>
-                      <td colspan="4" valign="top"><%=h @student.address %>
-                      </td>
-                    </tr>
-
-                  </table>
-
-                </div>
-                <div class="v2_down"/>
+                  <div class="v2_down"/>
                 </div>
               </div>
             </td>
